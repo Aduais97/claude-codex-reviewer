@@ -2586,8 +2586,8 @@ def main() -> None:
     )
     parser.add_argument(
         "command",
-        choices=["full", "prompt", "review", "fix", "merge"],
-        help="Pipeline to run (prompt=build & validate spec only)",
+        choices=["execute-technical-review", "etr", "full", "prompt", "review", "fix", "merge"],
+        help="Pipeline to run. 'execute-technical-review' (or 'etr') runs the full pipeline.",
     )
     parser.add_argument("--config", "-c", required=True, help="Config JSON path")
     parser.add_argument("--max-rounds", "-r", type=int, help="Override max rounds")
@@ -2611,6 +2611,8 @@ def main() -> None:
     log.info(f"Loaded config: {len(config['branches'])} branches")
 
     commands = {
+        "execute-technical-review": cmd_full,
+        "etr": cmd_full,
         "full": cmd_full,
         "prompt": cmd_prompt,
         "review": cmd_review,
