@@ -6,16 +6,11 @@
     "require_tests_pass": false,
     "branches": [
         {
-            "name": "fix/example-feature",
+            "name": "feature/example-feature",
             "directory": "/Users/ahmadduais/projects/my-project",
-            "author_model": "claude",
-            "prompt_file": "/Users/ahmadduais/projects/my-project/PROMPT.md"
-        },
-        {
-            "name": "fix/another-feature",
-            "directory": "/Users/ahmadduais/projects/my-project-codex",
             "author_model": "codex",
-            "prompt_file": "/Users/ahmadduais/projects/my-project-codex/PROMPT.md"
+            "prompt_file": "/Users/ahmadduais/projects/my-project/PROMPT.md",
+            "user_requirements": "Describe what you want built here in plain English. Claude will expand this into a full technical spec, Codex will review it for gaps, then Codex will write the code, and Claude will review the code."
         }
     ]
 }

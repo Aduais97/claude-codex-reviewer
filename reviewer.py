@@ -2,18 +2,20 @@
 """
 reviewer.py - Cross-Model Code Review & Fix Agent (macOS)
 
-Automates cross-model code review between Claude and Codex:
-  - Claude reviews Codex's code, Codex reviews Claude's code
-  - Verifies implementations match the original spec/prompt
-  - Feeds fixes back to original model, escalates if needed
-  - Handles merge conflicts automatically
-  - Outputs merge-ready commits + summary report
+Dispatch Rules:
+  1. Claude BUILDS the prompt/spec from user requirements
+  2. Codex REVIEWS the prompt for gaps and completeness
+  3. Codex WRITES the code based on the finalized prompt
+  4. Claude REVIEWS the code for bugs, security, and correctness
+  5. Codex FIXES issues found by Claude's review
+  6. Claude RE-REVIEWS until clean or max rounds hit
 
 Usage:
-    python3 reviewer.py full   --config config.json   # spec check + review + fix + merge
-    python3 reviewer.py review --config config.json   # review only
-    python3 reviewer.py fix    --config config.json   # fix from saved reviews
-    python3 reviewer.py merge  --config config.json   # merge only
+    python3 reviewer.py full    --config config.json   # full pipeline (prompt build + review + code + fix + merge)
+    python3 reviewer.py prompt  --config config.json   # build & validate prompt only
+    python3 reviewer.py review  --config config.json   # code review only
+    python3 reviewer.py fix     --config config.json   # fix from saved reviews
+    python3 reviewer.py merge   --config config.json   # merge only
 
 Config format (review_config.json):
 {
@@ -23,22 +25,21 @@ Config format (review_config.json):
     "auto_merge": true,
     "branches": [
         {
-            "name": "fix/sites-page",
+            "name": "feature/roster-system",
             "directory": "/Users/ahmadduais/projects/my-project",
-            "author_model": "claude",
-            "prompt_file": "/Users/ahmadduais/projects/my-project/PROMPT.md"
-        },
-        {
-            "name": "fix/grid-analytics",
-            "directory": "/Users/ahmadduais/projects/my-project-codex",
             "author_model": "codex",
-            "prompt_file": "/Users/ahmadduais/projects/my-project-codex/PROMPT.md"
+            "prompt_file": "/Users/ahmadduais/projects/my-project/PROMPT.md",
+            "user_requirements": "Build a guard roster system with shift scheduling and SMS notifications"
         }
     ]
 }
 
-The prompt_file field is the original spec/prompt given to the instance.
-The reviewer uses it to verify the implementation matches what was asked for.
+Fields:
+  - user_requirements: Plain English description of what you want built.
+    Claude will expand this into a full technical spec (prompt_file).
+  - prompt_file: Where the generated/finalized spec is saved.
+    Codex reviews it for gaps, then uses it to write code.
+  - author_model: Should be "codex" (Codex writes, Claude reviews).
 """
 
 from __future__ import annotations
@@ -520,15 +521,17 @@ def opposite_model(model: str) -> str:
 
 
 def get_reviewer_model(branch_config: dict, config: dict | None = None) -> str:
-    """Get the reviewer model for a branch, respecting overrides.
+    """Get the reviewer model for a branch.
 
-    Priority: branch.reviewer_model > config.reviewer_model > opposite(author)
+    Default dispatch: Codex writes code, Claude reviews code.
+    Priority: branch.reviewer_model > config.reviewer_model > "claude"
     """
     if branch_config.get("reviewer_model"):
         return branch_config["reviewer_model"]
     if config and config.get("reviewer_model"):
         return config["reviewer_model"]
-    return opposite_model(branch_config["author_model"])
+    # Default: Claude always reviews (Codex is the author)
+    return "claude"
 
 
 def write_prompt_file(directory: str, filename: str, content: str) -> str:
@@ -800,6 +803,129 @@ def phase_review_with_retries(
 # Prompt templates
 # ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
+PROMPT_BUILD_PROMPT = """You are Claude, acting as a technical architect and prompt engineer.
+
+The user has provided these requirements for a feature/project:
+
+USER REQUIREMENTS:
+{user_requirements}
+
+PROJECT CONTEXT:
+- Branch: {branch}
+- Project directory: {directory}
+
+YOUR TASK:
+Build a complete, detailed technical spec/prompt that a code-writing AI (Codex) will use
+to implement this feature. The spec must be thorough enough that Codex can build it
+without asking questions.
+
+Your spec MUST include:
+1. OVERVIEW: What is being built and why
+2. REQUIREMENTS: Numbered list of every feature/behavior expected
+3. TECHNICAL DESIGN:
+   - File structure and where new files go
+   - Database schema changes (if any)
+   - API endpoints with request/response shapes (if any)
+   - UI components and their behavior (if any)
+   - Integration points with existing code
+4. EDGE CASES: What should happen in error scenarios
+5. TESTING REQUIREMENTS: What tests must be written
+   - Unit tests for each function/endpoint
+   - Integration tests for workflows
+   - Edge case tests
+6. ACCEPTANCE CRITERIA: How to verify the feature works correctly
+7. OUT OF SCOPE: What this feature explicitly does NOT include
+
+FORMAT:
+Write the spec as a clean Markdown document. Be specific — include function names,
+file paths, data shapes, and expected behaviors. Do not be vague.
+
+RULES:
+- Do NOT write any code. Spec only.
+- Do NOT leave placeholder sections. Every section must have real content.
+- If the user requirements are vague, make reasonable assumptions and document them.
+- Think about security implications and include them in requirements.
+- Think about performance implications for large datasets.
+
+Write the complete spec now.
+"""
+
+PROMPT_REVIEW_PROMPT = """You are Codex, acting as a spec reviewer and gap analyst.
+
+You have been given a technical spec that YOU will later need to implement.
+Before you write any code, review the spec for completeness and flag any gaps.
+
+THE SPEC TO REVIEW:
+Read the file _review_spec.txt in the current directory. It contains the full spec.
+
+ORIGINAL USER REQUIREMENTS (what was asked for):
+{user_requirements}
+
+YOUR TASK:
+Review the spec critically. You are the one who has to build this — so flag anything
+that would block you or leave you guessing during implementation.
+
+Check for:
+1. MISSING REQUIREMENTS: Things the user asked for that the spec doesn't cover
+2. AMBIGUOUS SECTIONS: Parts where you wouldn't know what to build
+3. MISSING TECHNICAL DETAILS: Undefined data shapes, unclear API contracts, missing schemas
+4. MISSING ERROR HANDLING: What happens when things fail?
+5. MISSING TEST CASES: Are the testing requirements specific enough?
+6. DEPENDENCY GAPS: Does the spec assume libraries/services that aren't mentioned?
+7. SECURITY GAPS: Auth, validation, injection risks not addressed
+8. CONTRADICTIONS: Parts of the spec that conflict with each other
+
+Output your review as JSON with this EXACT structure:
+
+```json
+{{
+    "verdict": "approved" or "needs_revision",
+    "completeness_pct": 85,
+    "gaps": [
+        {{
+            "section": "Which part of the spec",
+            "type": "missing" or "ambiguous" or "contradictory" or "incomplete",
+            "description": "What is wrong or missing",
+            "suggestion": "What should be added or clarified"
+        }}
+    ],
+    "strengths": ["What the spec does well"],
+    "summary": "Overall assessment"
+}}
+```
+
+RULES:
+- Only flag REAL gaps that would block or confuse implementation.
+- Do NOT flag style or formatting preferences.
+- If the spec is complete and implementable, return {{"verdict": "approved", "gaps": [], ...}}.
+- Your response MUST contain a JSON code block.
+- Do NOT modify any files. Review only.
+"""
+
+PROMPT_REVISION_PROMPT = """You are Claude, revising a technical spec based on Codex's feedback.
+
+ORIGINAL SPEC:
+Read the file _review_spec.txt in the current directory.
+
+CODEX'S FEEDBACK (gaps found):
+{gaps_json}
+
+ORIGINAL USER REQUIREMENTS:
+{user_requirements}
+
+YOUR TASK:
+1. Read the original spec and Codex's feedback carefully.
+2. Address EVERY gap Codex identified.
+3. Rewrite the spec with all gaps filled — do not just append notes.
+4. Keep everything Codex said was strong.
+5. Output the COMPLETE revised spec as a Markdown document.
+
+RULES:
+- Output ONLY the revised spec. No commentary before or after.
+- Do NOT write any code. Spec only.
+- Every gap must be resolved with specific, implementable content.
+"""
+
 REVIEW_PROMPT = """You are reviewing code changes on branch '{branch}' (diff from '{base}').
 
 INSTRUCTIONS:
@@ -974,6 +1100,209 @@ Build the missing features now.
 # ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 # Core phases
 # ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+def phase_build_prompt(
+    branch_config: dict,
+    config: dict | None = None,
+) -> str:
+    """Phase 0.5: Claude builds the technical spec from user requirements."""
+    branch = branch_config["name"]
+    directory = branch_config["directory"]
+    user_requirements = branch_config.get("user_requirements", "")
+    prompt_file = branch_config.get("prompt_file", "")
+
+    if not user_requirements:
+        if prompt_file and os.path.exists(prompt_file):
+            log.info(f"  Prompt file already exists for '{branch}', skipping build")
+            return prompt_file
+        log.warning(f"  No user_requirements for '{branch}' and no existing prompt_file, skipping")
+        return ""
+
+    log.info(f"{'='*60}")
+    log.info(f"PROMPT BUILD: {branch}  (builder=claude)")
+    log.info(f"{'='*60}")
+    log.info(f"  User requirements: {user_requirements[:200]}")
+
+    prompt = PROMPT_BUILD_PROMPT.format(
+        user_requirements=user_requirements,
+        branch=branch,
+        directory=directory,
+    )
+
+    build_timeout = scaled_timeout(300, len(user_requirements), max_timeout=900)
+    output = run_claude(
+        prompt,
+        directory,
+        timeout=build_timeout,
+        idle_timeout=scaled_idle_timeout(build_timeout),
+        log_label=f"claude prompt-build {branch}",
+    )
+
+    # Save the generated spec
+    if not prompt_file:
+        prompt_file = os.path.join(directory, "PROMPT.md")
+        branch_config["prompt_file"] = prompt_file
+
+    with open(prompt_file, "w", encoding="utf-8") as f:
+        f.write(output)
+    log.info(f"  Spec written to {prompt_file} ({len(output):,} chars)")
+
+    # Save log
+    ts = datetime.now().strftime("%Y%m%d_%H%M%S")
+    log_path = LOG_DIR / f"prompt_build_{branch.replace('/', '_')}_{ts}.json"
+    with open(log_path, "w", encoding="utf-8") as f:
+        json.dump(
+            {
+                "branch": branch,
+                "builder_model": "claude",
+                "user_requirements": user_requirements,
+                "spec_length": len(output),
+                "prompt_file": prompt_file,
+                "timestamp": ts,
+            },
+            f,
+            indent=2,
+        )
+
+    return prompt_file
+
+
+def phase_review_prompt(
+    branch_config: dict,
+    config: dict | None = None,
+) -> dict:
+    """Phase 0.6: Codex reviews Claude's spec for gaps before writing code."""
+    branch = branch_config["name"]
+    directory = branch_config["directory"]
+    user_requirements = branch_config.get("user_requirements", "")
+    prompt_file = branch_config.get("prompt_file", "")
+
+    if not prompt_file or not os.path.exists(prompt_file):
+        log.info(f"  No prompt_file for '{branch}', skipping prompt review")
+        return {"verdict": "approved", "gaps": [], "summary": "No spec to review."}
+
+    log.info(f"{'='*60}")
+    log.info(f"PROMPT REVIEW: {branch}  (reviewer=codex)")
+    log.info(f"{'='*60}")
+
+    # Write spec for Codex to read
+    with open(prompt_file, "r", encoding="utf-8") as f:
+        spec_content = f.read()
+    write_prompt_file(directory, "_review_spec.txt", spec_content)
+
+    prompt = PROMPT_REVIEW_PROMPT.format(
+        user_requirements=user_requirements or "(see spec file)",
+    )
+
+    review_timeout = scaled_timeout(300, len(spec_content), max_timeout=900)
+    output = run_codex(
+        prompt,
+        directory,
+        timeout=review_timeout,
+        idle_timeout=scaled_idle_timeout(review_timeout),
+        log_label=f"codex prompt-review {branch}",
+    )
+
+    cleanup_file(os.path.join(directory, "_review_spec.txt"))
+
+    # Parse Codex's review
+    result = {"verdict": "approved", "gaps": [], "summary": ""}
+    for candidate in _structured_output_candidates(output, "verdict"):
+        parsed = _parse_expected_json(candidate, "verdict")
+        if parsed is not None:
+            result = parsed
+            break
+
+    # Save log
+    ts = datetime.now().strftime("%Y%m%d_%H%M%S")
+    log_path = LOG_DIR / f"prompt_review_{branch.replace('/', '_')}_{ts}.json"
+    with open(log_path, "w", encoding="utf-8") as f:
+        json.dump(
+            {
+                "branch": branch,
+                "reviewer_model": "codex",
+                "result": result,
+                "raw_excerpt": output[:2000],
+                "timestamp": ts,
+            },
+            f,
+            indent=2,
+        )
+
+    gaps = result.get("gaps", [])
+    verdict = result.get("verdict", "unknown")
+    log.info(f"  Verdict: {verdict}  |  Gaps: {len(gaps)}")
+    for gap in gaps[:10]:
+        log.info(f"    [{gap.get('type', '?')}] {gap.get('section', '?')}: {gap.get('description', '?')[:80]}")
+
+    return result
+
+
+def phase_revise_prompt(
+    branch_config: dict,
+    prompt_review: dict,
+    config: dict | None = None,
+) -> str:
+    """Phase 0.7: Claude revises the spec based on Codex's gap feedback."""
+    branch = branch_config["name"]
+    directory = branch_config["directory"]
+    user_requirements = branch_config.get("user_requirements", "")
+    prompt_file = branch_config.get("prompt_file", "")
+
+    gaps = prompt_review.get("gaps", [])
+    if not gaps:
+        log.info(f"  No gaps found for '{branch}', spec is approved")
+        return prompt_file
+
+    log.info(f"{'='*60}")
+    log.info(f"PROMPT REVISION: {branch}  ({len(gaps)} gaps, reviser=claude)")
+    log.info(f"{'='*60}")
+
+    # Write current spec for Claude to read
+    with open(prompt_file, "r", encoding="utf-8") as f:
+        spec_content = f.read()
+    write_prompt_file(directory, "_review_spec.txt", spec_content)
+
+    gaps_json = json.dumps(gaps, indent=2)
+    prompt = PROMPT_REVISION_PROMPT.format(
+        gaps_json=gaps_json,
+        user_requirements=user_requirements or "(see spec file)",
+    )
+
+    revision_timeout = scaled_timeout(300, len(spec_content) + len(gaps_json), max_timeout=900)
+    output = run_claude(
+        prompt,
+        directory,
+        timeout=revision_timeout,
+        idle_timeout=scaled_idle_timeout(revision_timeout),
+        log_label=f"claude prompt-revision {branch}",
+    )
+
+    cleanup_file(os.path.join(directory, "_review_spec.txt"))
+
+    # Overwrite spec with revised version
+    with open(prompt_file, "w", encoding="utf-8") as f:
+        f.write(output)
+    log.info(f"  Revised spec written to {prompt_file} ({len(output):,} chars)")
+
+    # Save log
+    ts = datetime.now().strftime("%Y%m%d_%H%M%S")
+    log_path = LOG_DIR / f"prompt_revision_{branch.replace('/', '_')}_{ts}.json"
+    with open(log_path, "w", encoding="utf-8") as f:
+        json.dump(
+            {
+                "branch": branch,
+                "reviser_model": "claude",
+                "gaps_addressed": len(gaps),
+                "revised_spec_length": len(output),
+                "timestamp": ts,
+            },
+            f,
+            indent=2,
+        )
+
+    return prompt_file
+
 
 def phase_spec_check(
     branch_config: dict,
@@ -1832,6 +2161,7 @@ def cmd_full(config: dict) -> None:
     max_test_rounds = config.get("max_test_rounds", max_rounds + 2)
 
     log.info(f"Starting full pipeline: {len(branches)} branches, max {max_rounds} review rounds, max {max_test_rounds} total rounds")
+    log.info(f"Dispatch: Claude builds prompts -> Codex reviews prompts -> Codex writes code -> Claude reviews code")
 
     # Phase 0: Pre-flight checks
     preflight_issues = phase_preflight(config)
@@ -1839,6 +2169,46 @@ def cmd_full(config: dict) -> None:
     if worktree_blocked:
         log.error("ABORTING: merge directory has uncommitted changes. Commit or stash first.")
         return
+
+    # Phase 0.5: Claude builds prompts from user requirements
+    has_requirements = any(bc.get("user_requirements") for bc in branches)
+    if has_requirements:
+        log.info(f"\n{'#'*60}")
+        log.info("PHASE 0.5: PROMPT BUILD (Claude)")
+        log.info(f"{'#'*60}")
+
+        for bc in branches:
+            branch = bc["name"]
+            if bc.get("user_requirements"):
+                prompt_file = phase_build_prompt(bc, config)
+
+                if prompt_file:
+                    # Phase 0.6: Codex reviews the prompt for gaps
+                    log.info(f"\n{'#'*60}")
+                    log.info("PHASE 0.6: PROMPT REVIEW (Codex)")
+                    log.info(f"{'#'*60}")
+
+                    prompt_review = phase_review_prompt(bc, config)
+
+                    if prompt_review.get("verdict") == "needs_revision":
+                        # Phase 0.7: Claude revises based on Codex's feedback
+                        log.info(f"\n{'#'*60}")
+                        log.info("PHASE 0.7: PROMPT REVISION (Claude)")
+                        log.info(f"{'#'*60}")
+
+                        phase_revise_prompt(bc, prompt_review, config)
+
+                        # Re-review after revision (one round)
+                        log.info(f"  Re-reviewing revised spec...")
+                        second_review = phase_review_prompt(bc, config)
+                        if second_review.get("verdict") == "needs_revision":
+                            remaining_gaps = len(second_review.get("gaps", []))
+                            log.warning(
+                                f"  Spec still has {remaining_gaps} gap(s) after revision. "
+                                f"Proceeding with current spec."
+                            )
+                        else:
+                            log.info(f"  Revised spec approved by Codex")
 
     # Phase 1: Spec Compliance Check
     has_specs = any(bc.get("prompt_file") for bc in branches)
@@ -2163,6 +2533,41 @@ def cmd_fix(config: dict) -> None:
         log.info(f"  {branch}: {status}")
 
 
+def cmd_prompt(config: dict) -> None:
+    """Build and validate prompts only (Claude builds, Codex reviews)."""
+    branches = config["branches"]
+
+    for bc in branches:
+        branch = bc["name"]
+        if not bc.get("user_requirements"):
+            log.warning(f"  No user_requirements for '{branch}', skipping")
+            continue
+
+        # Claude builds the spec
+        prompt_file = phase_build_prompt(bc, config)
+        if not prompt_file:
+            continue
+
+        # Codex reviews for gaps
+        prompt_review = phase_review_prompt(bc, config)
+
+        if prompt_review.get("verdict") == "needs_revision":
+            # Claude revises
+            phase_revise_prompt(bc, prompt_review, config)
+
+            # Codex re-reviews
+            second_review = phase_review_prompt(bc, config)
+            if second_review.get("verdict") == "approved":
+                log.info(f"  Spec APPROVED after revision for '{branch}'")
+            else:
+                remaining = len(second_review.get("gaps", []))
+                log.warning(f"  Spec has {remaining} remaining gap(s) for '{branch}'")
+        else:
+            log.info(f"  Spec APPROVED on first pass for '{branch}'")
+
+        log.info(f"  Final spec: {bc.get('prompt_file', 'N/A')}")
+
+
 def cmd_merge(config: dict) -> None:
     """Merge only."""
     results = phase_merge(config)
@@ -2181,8 +2586,8 @@ def main() -> None:
     )
     parser.add_argument(
         "command",
-        choices=["full", "review", "fix", "merge"],
-        help="Pipeline to run",
+        choices=["full", "prompt", "review", "fix", "merge"],
+        help="Pipeline to run (prompt=build & validate spec only)",
     )
     parser.add_argument("--config", "-c", required=True, help="Config JSON path")
     parser.add_argument("--max-rounds", "-r", type=int, help="Override max rounds")
@@ -2207,6 +2612,7 @@ def main() -> None:
 
     commands = {
         "full": cmd_full,
+        "prompt": cmd_prompt,
         "review": cmd_review,
         "fix": cmd_fix,
         "merge": cmd_merge,
