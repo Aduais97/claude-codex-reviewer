@@ -1,0 +1,21 @@
+{
+    "base_branch": "main",
+    "merge_directory": "/Users/ahmadduais/projects/my-project",
+    "max_rounds": 2,
+    "auto_merge": true,
+    "require_tests_pass": false,
+    "branches": [
+        {
+            "name": "fix/example-feature",
+            "directory": "/Users/ahmadduais/projects/my-project",
+            "author_model": "claude",
+            "prompt_file": "/Users/ahmadduais/projects/my-project/PROMPT.md"
+        },
+        {
+            "name": "fix/another-feature",
+            "directory": "/Users/ahmadduais/projects/my-project-codex",
+            "author_model": "codex",
+            "prompt_file": "/Users/ahmadduais/projects/my-project-codex/PROMPT.md"
+        }
+    ]
+}
