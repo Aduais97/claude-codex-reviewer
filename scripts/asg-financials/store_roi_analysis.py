@@ -113,6 +113,14 @@ def extract_woolworths_data() -> list[dict]:
                 inv_num = str(vals.get("D", file_inv_num or ""))
                 inv_date = vals.get("E", None)
                 store_num = str(vals.get("I", ""))
+
+                # Skip INV-0005 (work month Feb 2025, outside analysis period Mar 2025+)
+                try:
+                    if int(float(inv_num)) == 5:
+                        continue
+                except (ValueError, TypeError):
+                    pass
+
                 amt_excl = float(vals.get("J", 0) or 0)
                 gst = float(vals.get("K", 0) or 0)
                 amt_incl = float(vals.get("L", 0) or 0)
