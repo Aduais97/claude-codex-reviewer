@@ -3178,7 +3178,7 @@ def _render_inline_bold(pdf, text: str, bullet_prefix: str = "") -> None:
 
 
 def _render_table(pdf, rows: list[list[str]], has_header: bool) -> None:
-    """Render a table in the PDF."""
+    """Render a table with proper text wrapping using multi_cell."""
     if not rows:
         return
 
@@ -3186,29 +3186,96 @@ def _render_table(pdf, rows: list[list[str]], has_header: bool) -> None:
     if num_cols == 0:
         return
 
-    page_width = 190
-    col_width = page_width / num_cols
-
-    for row_idx, row in enumerate(rows):
+    # Normalize rows
+    for row in rows:
         while len(row) < num_cols:
             row.append("")
 
-        if row_idx == 0 and has_header:
+    page_width = 190  # mm usable width (A4 with margins)
+    line_h = 5        # line height in mm
+    min_col_w = 18    # minimum column width
+
+    # --- Calculate column widths proportional to content ---
+    col_max_len = [0] * num_cols
+    for row in rows:
+        for ci, cell in enumerate(row):
+            col_max_len[ci] = max(col_max_len[ci], len(cell))
+    total_len = sum(col_max_len) or 1
+    col_widths = [max(min_col_w, (clen / total_len) * page_width) for clen in col_max_len]
+    # Scale to fit page_width exactly
+    scale = page_width / sum(col_widths)
+    col_widths = [w * scale for w in col_widths]
+
+    def _count_lines(text: str, width: float) -> int:
+        """Estimate how many lines text will take at the given width."""
+        if not text:
+            return 1
+        chars_per_line = max(1, int(width / 2.0))  # ~2mm per char at font size 9
+        lines = 1
+        for paragraph in text.split("\n"):
+            lines += max(1, math.ceil(len(paragraph) / chars_per_line)) - (1 if lines == 1 else 0)
+        return max(1, lines)
+
+    def _render_row(row_data: list[str], is_header: bool, is_alt: bool) -> None:
+        """Render a single row with multi_cell for proper text wrapping."""
+        # Pre-calculate the tallest cell in this row
+        if is_header:
             pdf.set_font("Helvetica", "B", 9)
-            pdf.set_fill_color(0, 51, 102)
-            pdf.set_text_color(255, 255, 255)
-            for cell in row:
-                pdf.cell(col_width, 6, cell[:30], border=1, fill=True, align="C")
-            pdf.ln()
-            pdf.set_text_color(0, 0, 0)
         else:
             pdf.set_font("Helvetica", "", 9)
-            bg = row_idx % 2 == 0
-            if bg:
-                pdf.set_fill_color(240, 240, 240)
-            for cell in row:
-                pdf.cell(col_width, 6, cell[:30], border=1, fill=bg, align="L")
-            pdf.ln()
+
+        max_lines = 1
+        for ci, cell in enumerate(row_data):
+            nl = _count_lines(cell, col_widths[ci] - 2)
+            if nl > max_lines:
+                max_lines = nl
+        row_h = max_lines * line_h
+
+        # Check page break - if row won't fit, add new page and reprint header
+        if pdf.get_y() + row_h > pdf.h - pdf.b_margin:
+            pdf.add_page()
+            if has_header and rows:
+                _render_row(rows[0], True, False)
+
+        x_start = pdf.get_x()
+        y_start = pdf.get_y()
+
+        for ci, cell in enumerate(row_data):
+            x_pos = x_start + sum(col_widths[:ci])
+            pdf.set_xy(x_pos, y_start)
+
+            # Background fill
+            if is_header:
+                pdf.set_font("Helvetica", "B", 9)
+                pdf.set_fill_color(0, 51, 102)
+                pdf.set_text_color(255, 255, 255)
+            else:
+                pdf.set_font("Helvetica", "", 9)
+                pdf.set_text_color(0, 0, 0)
+                if is_alt:
+                    pdf.set_fill_color(240, 240, 240)
+                else:
+                    pdf.set_fill_color(255, 255, 255)
+
+            # Draw cell background + border
+            pdf.rect(x_pos, y_start, col_widths[ci], row_h, "DF")
+
+            # Draw text inside cell with padding
+            pdf.set_xy(x_pos + 1, y_start + 1)
+            align = "C" if is_header else "L"
+            pdf.multi_cell(col_widths[ci] - 2, line_h, cell, align=align)
+
+        # Move to next row
+        pdf.set_xy(x_start, y_start + row_h)
+        pdf.set_text_color(0, 0, 0)
+
+    # Render all rows
+    for row_idx, row in enumerate(rows):
+        if row_idx == 0 and has_header:
+            _render_row(row, True, False)
+        else:
+            is_alt = row_idx % 2 == 0
+            _render_row(row, False, is_alt)
 
     pdf.ln(3)
 
