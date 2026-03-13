@@ -42,14 +42,16 @@ PDF_OUTPUT = os.path.join(OUTPUT_DIR, "ASG_Store_ROI_Analysis.pdf")
 # ---------------------------------------------------------------------------
 # Cost assumptions (per hour, NZD)
 # ---------------------------------------------------------------------------
-# Average guard wage ~$26.50/hr + oncosts (ACC 1.4%, KiwiSaver 3%, annual leave 8%, sick leave 2.5%)
-# Total oncost multiplier ~1.15
-AVG_GUARD_WAGE = 26.50
-ONCOST_MULTIPLIER = 1.15
-AVG_GUARD_COST_PER_HR = AVG_GUARD_WAGE * ONCOST_MULTIPLIER  # ~$30.48
-# Senior guard premium
-SENIOR_GUARD_WAGE = 28.50
-SENIOR_GUARD_COST_PER_HR = SENIOR_GUARD_WAGE * ONCOST_MULTIPLIER  # ~$32.78
+# Cost per billable hour derived from actual payroll data (Mar 2025 - Feb 2026):
+#   Guard gross + KiwiSaver + reimbursements = $2,231,395 over 71,536 billed hrs = $31.19/hr
+#   GM salary allocation = $89,610 / 71,536 hrs = $1.25/hr
+#   Total effective cost per billable hour = $32.45/hr
+# Using guard-only cost for direct store margin; GM shown as overhead.
+AVG_GUARD_COST_PER_HR = 31.19  # actual from payroll / billable hours
+GM_OVERHEAD_PER_HR = 1.25      # GM salary allocated per billable hour
+TOTAL_COST_PER_HR = 32.45     # fully loaded cost per billable hour
+# For store-level ROI we use TOTAL_COST_PER_HR to match P&L gross profit
+SENIOR_GUARD_COST_PER_HR = TOTAL_COST_PER_HR  # same allocation basis
 
 # Woolworths contracted charge rates (excl GST)
 WW_STANDARD_RATE = 42.10
@@ -58,7 +60,7 @@ WW_SENIOR_RATE = 45.00
 # We back-calculate hours from revenue / charge rate.
 # Using standard rate as conservative estimate (maximises hours, conservative margin).
 
-print(f"Cost assumptions: Guard ${AVG_GUARD_COST_PER_HR:.2f}/hr, Senior ${SENIOR_GUARD_COST_PER_HR:.2f}/hr")
+print(f"Cost per billable hour: ${TOTAL_COST_PER_HR:.2f}/hr (guard ${AVG_GUARD_COST_PER_HR:.2f} + GM overhead ${GM_OVERHEAD_PER_HR:.2f})")
 print(f"Woolworths charge rates: Standard ${WW_STANDARD_RATE}/hr, Senior ${WW_SENIOR_RATE}/hr (excl GST)")
 
 
@@ -361,7 +363,7 @@ def aggregate_store_data(records: list[dict]) -> dict:
             if data["total_hours"] > 0 else 0
         )
         # Estimate cost
-        data["estimated_cost"] = data["total_hours"] * AVG_GUARD_COST_PER_HR
+        data["estimated_cost"] = data["total_hours"] * TOTAL_COST_PER_HR
         data["gross_margin"] = data["total_revenue"] - data["estimated_cost"]
         data["margin_pct"] = (
             (data["gross_margin"] / data["total_revenue"] * 100)
@@ -1369,7 +1371,7 @@ def generate_pdf_report(
 
     heading("5.4 Cost Control", 2)
     body(
-        f"Labour cost is estimated at ${AVG_GUARD_COST_PER_HR:.2f}/hr including oncosts. "
+        f"Labour cost is ${TOTAL_COST_PER_HR:.2f}/hr per billable hour (from actual payroll data). "
         f"Reducing average cost per hour by even $1.00 would improve combined margins by "
         f"${(ww_total_hrs + bn_total_hrs) * 1.0:,.0f} over the analysis period. "
         f"Strategies include optimising rostering efficiency, reducing travel time between stores, "
@@ -1383,11 +1385,12 @@ def generate_pdf_report(
     bullet(f"Bunnings: {len(set(r['invoice_num'] for r in bunnings_records))} PDF invoices")
     bullet("SalesInvoices CSV export from Xero (cross-reference)")
     pdf.ln(2)
-    body("Cost Assumptions:")
-    bullet(f"Average guard hourly wage: ${AVG_GUARD_WAGE:.2f}")
-    bullet(f"Oncost multiplier: {ONCOST_MULTIPLIER:.0%} (ACC, KiwiSaver, leave provisions)")
-    bullet(f"Effective cost per hour: ${AVG_GUARD_COST_PER_HR:.2f}")
-    bullet("Senior guard wage premium not separately modelled (conservative approach)")
+    body("Cost Basis (from actual payroll, Mar 2025 - Feb 2026):")
+    bullet("Total guard cost (gross + KiwiSaver + reimbursements): $2,231,395")
+    bullet("GM salary allocation: $89,610")
+    bullet("Total employment cost: $2,321,005 over 71,536 billable hours")
+    bullet(f"Effective cost per billable hour: ${TOTAL_COST_PER_HR:.2f}")
+    bullet("Note: ZFI revenue is gross before credit notes (~$66K in credits issued)")
     pdf.ln(2)
     body("Limitations:")
     bullet("Labour costs are estimated using average rates - actual per-store costs may vary")
