@@ -51,7 +51,15 @@ AVG_GUARD_COST_PER_HR = AVG_GUARD_WAGE * ONCOST_MULTIPLIER  # ~$30.48
 SENIOR_GUARD_WAGE = 28.50
 SENIOR_GUARD_COST_PER_HR = SENIOR_GUARD_WAGE * ONCOST_MULTIPLIER  # ~$32.78
 
+# Woolworths contracted charge rates (excl GST)
+WW_STANDARD_RATE = 42.10
+WW_SENIOR_RATE = 45.00
+# ZFI files do NOT contain actual hours - Quantity column is a macro field.
+# We back-calculate hours from revenue / charge rate.
+# Using standard rate as conservative estimate (maximises hours, conservative margin).
+
 print(f"Cost assumptions: Guard ${AVG_GUARD_COST_PER_HR:.2f}/hr, Senior ${SENIOR_GUARD_COST_PER_HR:.2f}/hr")
+print(f"Woolworths charge rates: Standard ${WW_STANDARD_RATE}/hr, Senior ${WW_SENIOR_RATE}/hr (excl GST)")
 
 
 # ===================================================================
@@ -106,7 +114,9 @@ def extract_woolworths_data() -> list[dict]:
                 amt_excl = float(vals.get("J", 0) or 0)
                 gst = float(vals.get("K", 0) or 0)
                 amt_incl = float(vals.get("L", 0) or 0)
-                hours = float(vals.get("Q", 0) or 0)
+                # ZFI Quantity column is a macro-calculated field, NOT actual hours.
+                # Back-calculate estimated hours from revenue / contracted rate.
+                hours = amt_excl / WW_STANDARD_RATE if amt_excl > 0 else 0
 
                 # Parse date
                 if isinstance(inv_date, datetime):
@@ -127,7 +137,7 @@ def extract_woolworths_data() -> list[dict]:
                     "gst": gst,
                     "revenue_incl_gst": amt_incl,
                     "service_type": "Covert Guarding",
-                    "hourly_rate": round(amt_excl / hours, 2) if hours > 0 else 0,
+                    "hourly_rate": WW_STANDARD_RATE,
                     "source_file": fname,
                 })
                 row_count += 1
