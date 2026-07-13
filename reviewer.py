@@ -423,12 +423,14 @@ def _escape_prompt(prompt: str) -> str:
 
 def _build_claude_cmd(prompt: str, use_prompt_file: bool = True, cwd: str = ".") -> str:
     """Build the Claude CLI command string."""
+    # Unset CLAUDECODE env var to allow nested sessions
+    prefix = "unset CLAUDECODE; "
     if use_prompt_file:
         prompt_path = os.path.join(cwd, "_prompt_input.txt")
         with open(prompt_path, "w", encoding="utf-8") as f:
             f.write(prompt)
-        return f"cat '{prompt_path}' | {CLAUDE_EXE} --dangerously-skip-permissions -p -"
-    return f"{CLAUDE_EXE} --dangerously-skip-permissions -p '{_escape_prompt(prompt)}'"
+        return f"{prefix}cat '{prompt_path}' | {CLAUDE_EXE} --dangerously-skip-permissions -p -"
+    return f"{prefix}{CLAUDE_EXE} --dangerously-skip-permissions -p '{_escape_prompt(prompt)}'"
 
 
 def _build_codex_cmd(prompt: str, use_prompt_file: bool = True, cwd: str = ".") -> str:
@@ -2576,18 +2578,995 @@ def cmd_merge(config: dict) -> None:
 
 
 # ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+# Document Analysis Pipeline
+# ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+def _extract_pdf_text(filepath: str) -> str:
+    """Extract text from a PDF file using PyPDF2."""
+    try:
+        import PyPDF2
+        reader = PyPDF2.PdfReader(filepath)
+        pages = []
+        for i, page in enumerate(reader.pages):
+            text = page.extract_text()
+            if text and text.strip():
+                pages.append(f"[Page {i+1}]\n{text}")
+        return "\n\n".join(pages)
+    except Exception as e:
+        log.warning(f"  Could not extract PDF text from {filepath}: {e}")
+        return f"(PDF extraction failed: {e})"
+
+
+def _extract_excel_text(filepath: str) -> str:
+    """Extract text from an Excel file using openpyxl."""
+    try:
+        import openpyxl
+        wb = openpyxl.load_workbook(filepath, data_only=True)
+        sheets = []
+        for sheet_name in wb.sheetnames:
+            ws = wb[sheet_name]
+            rows = []
+            for row in ws.iter_rows(min_row=1, max_row=min(ws.max_row, 200), values_only=False):
+                vals = [str(cell.value) if cell.value is not None else "" for cell in row]
+                if any(v for v in vals):
+                    rows.append("\t".join(vals))
+            if rows:
+                sheets.append(f"[Sheet: {sheet_name}]\n" + "\n".join(rows))
+        return "\n\n".join(sheets)
+    except Exception as e:
+        log.warning(f"  Could not extract Excel text from {filepath}: {e}")
+        return f"(Excel extraction failed: {e})"
+
+
+def _extract_email_text(filepath: str) -> str:
+    """Extract text from an .eml file."""
+    try:
+        import email as email_mod
+        from email import policy as email_policy
+        with open(filepath, "rb") as f:
+            msg = email_mod.message_from_binary_file(f, policy=email_policy.default)
+        parts = [
+            f"From: {msg['From']}",
+            f"To: {msg['To']}",
+            f"Date: {msg['Date']}",
+            f"Subject: {msg['Subject']}",
+            "",
+        ]
+        for part in msg.walk():
+            ct = part.get_content_type()
+            if ct == "text/plain":
+                parts.append(part.get_content())
+            elif ct == "text/html":
+                html = part.get_content()
+                text = re.sub(r"<[^>]+>", " ", html)
+                text = re.sub(r"\s+", " ", text).strip()
+                parts.append(text)
+        return "\n".join(parts)
+    except Exception as e:
+        log.warning(f"  Could not extract email text from {filepath}: {e}")
+        return f"(Email extraction failed: {e})"
+
+
+def phase_ingest_documents(config: dict) -> str:
+    """Ingest all documents from the source directory into a single text corpus."""
+    source_dir = config["source_directory"]
+    log.info(f"{'='*60}")
+    log.info(f"DOCUMENT INGESTION: {source_dir}")
+    log.info(f"{'='*60}")
+
+    documents = []
+    file_count = 0
+
+    for root, dirs, files in os.walk(source_dir):
+        for fname in sorted(files):
+            fpath = os.path.join(root, fname)
+            lower = fname.lower()
+
+            if lower.startswith("."):
+                continue
+
+            text = None
+            if lower.endswith(".pdf"):
+                text = _extract_pdf_text(fpath)
+            elif lower.endswith((".xlsx", ".xls")):
+                text = _extract_excel_text(fpath)
+            elif lower.endswith(".eml"):
+                text = _extract_email_text(fpath)
+            elif lower.endswith((".txt", ".md", ".csv")):
+                try:
+                    with open(fpath, "r", encoding="utf-8") as f:
+                        text = f.read()
+                except Exception:
+                    pass
+
+            if text and text.strip():
+                rel_path = os.path.relpath(fpath, source_dir)
+                documents.append(f"{'='*60}\nDOCUMENT: {rel_path}\n{'='*60}\n{text}")
+                file_count += 1
+                log.info(f"  Ingested: {rel_path} ({len(text):,} chars)")
+
+    corpus = "\n\n\n".join(documents)
+    log.info(f"  Total: {file_count} documents, {len(corpus):,} chars")
+
+    # Save corpus
+    ts = datetime.now().strftime("%Y%m%d_%H%M%S")
+    corpus_path = LOG_DIR / f"analysis_corpus_{ts}.txt"
+    with open(corpus_path, "w", encoding="utf-8") as f:
+        f.write(corpus)
+    log.info(f"  Corpus saved: {corpus_path}")
+
+    return corpus
+
+
+ANALYSIS_FRAMEWORK_PROMPT = """You are Claude, acting as a senior strategy consultant at a Big Four firm (Deloitte style).
+
+You have been provided with a corpus of documents related to a proposed acquisition target.
+Read the file _analysis_corpus.txt in the current directory. It contains all source documents.
+
+ACQUIRER CONTEXT:
+{acquirer_context}
+
+ANALYSIS REQUIREMENTS:
+{user_requirements}
+
+YOUR TASK:
+Build a comprehensive analysis framework (table of contents + key questions + methodology) for a
+Deloitte-style acquisition analysis report. This framework will be used to write the full report.
+
+The framework MUST cover:
+
+1. EXECUTIVE SUMMARY STRUCTURE
+   - Investment thesis (bull/bear case)
+   - Key metrics overview
+   - Recommendation summary
+
+2. BUSINESS OVERVIEW
+   - Company history and evolution
+   - Service lines and revenue breakdown
+   - Market position and competitive advantages
+   - Client portfolio analysis (concentration risk)
+   - Technology partnerships and IP
+
+3. ORGANISATIONAL ANALYSIS (CRITICAL FOCUS)
+   - Full org structure mapping
+   - Headcount analysis by function (revenue-generating vs overhead)
+   - Span of control analysis
+   - Operational redundancy assessment
+   - Comparison to industry benchmarks for company of this size
+   - Identification of overstaffing or understaffing areas
+   - Key person risk assessment
+   - Post-acquisition integration workforce plan
+
+4. FINANCIAL ANALYSIS
+   - Historical P&L trend analysis (3-year)
+   - Revenue composition and growth drivers
+   - Gross margin analysis by service line
+   - EBITDA bridge and normalisation
+   - Balance sheet strength assessment
+   - Working capital analysis
+   - Cash flow assessment
+   - Forward projections and budget review
+
+5. VALUATION ANALYSIS
+   - Comparable transactions
+   - EBITDA multiple range
+   - Revenue multiple range
+   - DCF considerations
+   - Premium/discount factors
+
+6. STRATEGIC FIT ASSESSMENT
+   - Synergies with acquirer's existing business
+   - Cross-selling opportunities
+   - Operational integration considerations
+   - Technology capability gaps being filled
+   - Geographic/market expansion
+
+7. RISK ASSESSMENT
+   - Client concentration risk
+   - Key person dependency
+   - Technology obsolescence
+   - Market/competitive risks
+   - Integration risks
+   - Regulatory risks
+
+8. DEAL STRUCTURE CONSIDERATIONS
+   - Recommended offer range
+   - Financing structure
+   - Earn-out mechanics
+   - Retention mechanisms for key staff
+
+OUTPUT:
+Write the framework as a detailed Markdown document with specific analytical questions
+and data points to address in each section. Be specific about what financial metrics,
+ratios, and benchmarks to use.
+
+RULES:
+- Do NOT write the actual analysis yet. Framework only.
+- Be specific about methodology (e.g. "Calculate revenue per FTE" not just "analyse efficiency")
+- Include the specific data sources from the ingested documents
+- Focus heavily on the organisational structure question
+"""
+
+ANALYSIS_REVIEW_PROMPT = """You are Codex, acting as a quality assurance reviewer for a Big Four consulting engagement.
+
+You have been given an analysis framework for an acquisition report.
+Read the file _analysis_framework.txt in the current directory.
+
+Also read the file _analysis_corpus.txt to understand the source data available.
+
+ACQUIRER CONTEXT:
+{acquirer_context}
+
+YOUR TASK:
+Review the framework critically. Flag any gaps that would make the final report incomplete
+or unprofessional by Big Four standards.
+
+Check for:
+1. MISSING ANALYSIS AREAS that a Deloitte M&A report would include
+2. INSUFFICIENT DEPTH on the organisational analysis (must be forensic)
+3. MISSING FINANCIAL METRICS or ratios
+4. WEAK VALUATION METHODOLOGY
+5. MISSING RISK FACTORS
+6. GAPS IN STRATEGIC FIT ANALYSIS specific to security industry M&A
+7. MISSING BENCHMARKS or comparables
+8. AREAS WHERE SOURCE DATA EXISTS but framework doesn't use it
+
+Output your review as JSON:
+
+```json
+{{
+    "verdict": "approved" or "needs_revision",
+    "completeness_pct": 85,
+    "gaps": [
+        {{
+            "section": "Which part of the framework",
+            "type": "missing" or "insufficient" or "methodological",
+            "description": "What is wrong or missing",
+            "suggestion": "What should be added"
+        }}
+    ],
+    "strengths": ["What the framework does well"],
+    "summary": "Overall assessment"
+}}
+```
+
+RULES:
+- Hold this to genuine Big Four standards
+- Flag real gaps only, not style preferences
+- Do NOT modify any files. Review only.
+"""
+
+ANALYSIS_WRITE_PROMPT = """You are Claude, acting as a Principal in Deloitte's M&A Advisory practice.
+
+Read the following files in the current directory:
+1. _analysis_corpus.txt — All source documents (financials, org chart, IM, email, valuations)
+2. _analysis_framework.txt — The approved analysis framework
+
+ACQUIRER CONTEXT:
+{acquirer_context}
+
+ANALYSIS REQUIREMENTS:
+{user_requirements}
+
+YOUR TASK:
+Write the COMPLETE acquisition analysis report following the framework. This must be a
+professional, publication-ready document that could be presented to a board of directors.
+
+WRITING STANDARDS:
+- Professional, authoritative tone — not academic, not casual
+- Lead with insights, not descriptions
+- Every claim backed by data from the source documents
+- Use specific numbers, percentages, and comparisons throughout
+- Include tables where they aid comprehension
+- Flag risks and opportunities with equal rigour
+- Be direct about concerns — do not bury bad news
+
+CRITICAL: ORGANISATIONAL ANALYSIS
+The acquirer specifically wants forensic analysis of whether the target has too many
+operational/non-revenue-generating staff for a company of this size. You MUST:
+- Map every employee by function (sales, delivery, support, admin, management)
+- Calculate revenue per FTE, GP per FTE
+- Compare to industry benchmarks (electronic security integrators of similar size)
+- Identify specific redundancies or overstaffing
+- Model post-acquisition headcount scenarios
+- Quantify potential savings from org restructuring
+
+FINANCIAL STANDARDS:
+- All figures in NZD unless stated
+- Show 3-year trends where data permits
+- Normalise earnings clearly with add-back justifications
+- Show EBITDA bridge from reported to normalised
+- Validate the seller's normalised profit claims
+
+VALUATION STANDARDS:
+- Use at minimum: EV/EBITDA, EV/Revenue, capitalised earnings
+- Show range not single point
+- Compare to the seller's asking price
+- Provide clear recommendation on fair value
+
+OUTPUT FORMAT:
+Write as a complete Markdown document with proper headings, tables, and sections.
+The document should be 8,000-15,000 words — comprehensive but focused.
+
+Do NOT include a cover page or table of contents — those will be generated separately.
+Start directly with the Executive Summary.
+"""
+
+ANALYSIS_QA_PROMPT = """You are Codex, acting as the Quality Assurance Partner on a Big Four M&A engagement.
+
+Read the following files in the current directory:
+1. _analysis_report.txt — The draft acquisition analysis report
+2. _analysis_corpus.txt — All source documents
+3. _analysis_framework.txt — The approved framework
+
+YOUR TASK:
+Perform a rigorous quality review of the draft report. Check for:
+
+1. FACTUAL ACCURACY: Do all numbers match the source documents?
+2. COMPLETENESS: Does the report cover all framework sections?
+3. ANALYTICAL DEPTH: Is the organisational analysis truly forensic?
+4. VALUATION RIGOUR: Are multiples and ranges properly supported?
+5. INTERNAL CONSISTENCY: Do numbers add up? Do conclusions follow from analysis?
+6. MISSING INSIGHTS: Important patterns in the data that weren't discussed?
+7. RISK COMPLETENESS: Are all material risks identified?
+8. RECOMMENDATION CLARITY: Is the recommended action clear and defensible?
+
+Output your review as JSON:
+
+```json
+{{
+    "verdict": "pass" or "needs_revision",
+    "quality_score": 85,
+    "issues": [
+        {{
+            "severity": "critical" or "major" or "minor",
+            "section": "Which section",
+            "description": "What is wrong",
+            "suggestion": "How to fix it"
+        }}
+    ],
+    "factual_errors": ["List any numbers that don't match source data"],
+    "missing_analysis": ["Analysis the framework required but report omits"],
+    "summary": "Overall quality assessment"
+}}
+```
+
+RULES:
+- Check EVERY number against source documents
+- Flag missing sections from the framework
+- Be specific about what needs to change
+- Do NOT modify any files. Review only.
+"""
+
+ANALYSIS_REVISION_PROMPT = """You are Claude, revising an acquisition analysis report based on QA feedback.
+
+Read the following files in the current directory:
+1. _analysis_report.txt — Your draft report
+2. _analysis_qa.json — The QA reviewer's feedback
+3. _analysis_corpus.txt — Source documents (for fact-checking)
+4. _analysis_framework.txt — The approved framework
+
+YOUR TASK:
+1. Address EVERY issue flagged in the QA review
+2. Fix all factual errors
+3. Add any missing analysis
+4. Strengthen any weak sections
+5. Output the COMPLETE revised report
+
+RULES:
+- Output ONLY the revised report. No commentary.
+- The revised report must be complete — do not output just the changed sections.
+- Every factual error must be corrected against source documents.
+- Every "critical" and "major" issue must be fully resolved.
+"""
+
+
+def _generate_pdf_from_markdown(markdown_text: str, output_path: str, title: str) -> bool:
+    """Generate a PDF from Markdown text using fpdf2."""
+    try:
+        from fpdf import FPDF
+
+        def _sanitize(text: str) -> str:
+            """Replace Unicode chars that aren't supported by core PDF fonts."""
+            replacements = {
+                "\u2014": "-",   # em dash
+                "\u2013": "-",   # en dash
+                "\u2018": "'",   # left single quote
+                "\u2019": "'",   # right single quote
+                "\u201c": '"',   # left double quote
+                "\u201d": '"',   # right double quote
+                "\u2026": "...", # ellipsis
+                "\u2022": "*",   # bullet
+                "\u2023": ">",   # triangular bullet
+                "\u25e6": "o",   # white bullet
+                "\u00a0": " ",   # non-breaking space
+                "\u2002": " ",   # en space
+                "\u2003": " ",   # em space
+                "\u200b": "",    # zero-width space
+                "\u27a2": ">",   # rightwards arrowhead
+                "\u2192": "->",  # rightwards arrow
+                "\u2713": "[Y]", # check mark
+                "\u2717": "[X]", # cross mark
+                "\u25cf": "*",   # black circle
+                "\u25cb": "o",   # white circle
+                "\u2605": "*",   # star
+            }
+            for old, new in replacements.items():
+                text = text.replace(old, new)
+            # Catch any remaining non-latin-1 chars
+            return text.encode("latin-1", errors="replace").decode("latin-1")
+
+        class AnalysisPDF(FPDF):
+            def header(self):
+                if self.page_no() == 1:
+                    return
+                self.set_font("Helvetica", "I", 8)
+                self.set_text_color(128, 128, 128)
+                self.cell(0, 10, "CONFIDENTIAL - Prepared for Absolute Security Group", align="C")
+                self.ln(5)
+
+            def footer(self):
+                self.set_y(-15)
+                self.set_font("Helvetica", "I", 8)
+                self.set_text_color(128, 128, 128)
+                self.cell(0, 10, f"Page {self.page_no()}/{{nb}}", align="C")
+
+        pdf = AnalysisPDF(orientation="P", unit="mm", format="A4")
+        pdf.alias_nb_pages()
+        pdf.set_auto_page_break(auto=True, margin=20)
+
+        # Cover page
+        pdf.add_page()
+        pdf.set_fill_color(0, 51, 102)
+        pdf.rect(0, 0, 210, 297, "F")
+        pdf.set_y(80)
+        pdf.set_font("Helvetica", "B", 28)
+        pdf.set_text_color(255, 255, 255)
+        pdf.multi_cell(0, 14, "Acquisition Analysis", align="C")
+        pdf.ln(5)
+        pdf.set_font("Helvetica", "", 18)
+        pdf.multi_cell(0, 10, "Focus Digital Security Solutions Ltd", align="C")
+        pdf.ln(15)
+        pdf.set_font("Helvetica", "", 14)
+        pdf.multi_cell(0, 8, "Prepared for: Absolute Security Group Limited", align="C")
+        pdf.ln(5)
+        pdf.multi_cell(0, 8, f"Date: {datetime.now():%B %Y}", align="C")
+        pdf.ln(20)
+        pdf.set_font("Helvetica", "I", 10)
+        pdf.multi_cell(0, 6, "CONFIDENTIAL", align="C")
+        pdf.ln(3)
+        pdf.set_font("Helvetica", "", 9)
+        pdf.multi_cell(
+            0, 5,
+            _sanitize(
+                "This report has been prepared using a cross-model AI analysis pipeline.\n"
+                "Claude (Anthropic) performed primary analysis. Codex (OpenAI) performed quality review.\n"
+                "All findings should be verified through independent due diligence."
+            ),
+            align="C",
+        )
+
+        # Content pages
+        pdf.add_page()
+        pdf.set_text_color(0, 0, 0)
+
+        # Sanitize all text for latin-1 compatibility
+        markdown_text = _sanitize(markdown_text)
+        lines = markdown_text.split("\n")
+        in_table = False
+        table_rows: list[list[str]] = []
+        table_header_done = False
+
+        for line in lines:
+            stripped = line.strip()
+
+            # Table handling
+            if "|" in stripped and stripped.startswith("|") and stripped.endswith("|"):
+                cells = [c.strip() for c in stripped.split("|")[1:-1]]
+                if all(set(c) <= {"-", ":", " "} for c in cells):
+                    table_header_done = True
+                    continue
+                if not in_table:
+                    in_table = True
+                    table_rows = []
+                    table_header_done = False
+                table_rows.append(cells)
+                continue
+            elif in_table:
+                _render_table(pdf, table_rows, table_header_done)
+                in_table = False
+                table_rows = []
+                table_header_done = False
+
+            if not stripped:
+                pdf.ln(3)
+                continue
+
+            # Headings
+            if stripped.startswith("# "):
+                pdf.ln(6)
+                pdf.set_font("Helvetica", "B", 20)
+                pdf.set_text_color(0, 51, 102)
+                pdf.multi_cell(0, 10, stripped[2:])
+                pdf.set_text_color(0, 0, 0)
+                pdf.ln(2)
+                pdf.set_draw_color(0, 51, 102)
+                pdf.line(10, pdf.get_y(), 200, pdf.get_y())
+                pdf.ln(4)
+            elif stripped.startswith("## "):
+                pdf.ln(4)
+                pdf.set_font("Helvetica", "B", 16)
+                pdf.set_text_color(0, 51, 102)
+                pdf.multi_cell(0, 8, stripped[3:])
+                pdf.set_text_color(0, 0, 0)
+                pdf.ln(2)
+            elif stripped.startswith("### "):
+                pdf.ln(3)
+                pdf.set_font("Helvetica", "B", 13)
+                pdf.set_text_color(51, 51, 51)
+                pdf.multi_cell(0, 7, stripped[4:])
+                pdf.set_text_color(0, 0, 0)
+                pdf.ln(1)
+            elif stripped.startswith("#### "):
+                pdf.ln(2)
+                pdf.set_font("Helvetica", "BI", 11)
+                pdf.multi_cell(0, 6, stripped[5:])
+                pdf.ln(1)
+            elif stripped.startswith(("- ", "* ", "• ")):
+                pdf.set_font("Helvetica", "", 10)
+                bullet_text = stripped.lstrip("-*• ").strip()
+                # Handle bold within bullets
+                if "**" in bullet_text:
+                    pdf.set_x(15)
+                    _render_inline_bold(pdf, bullet_text, bullet_prefix="  •  ")
+                else:
+                    pdf.set_x(15)
+                    pdf.multi_cell(0, 5, f"  •  {bullet_text}")
+            elif stripped.startswith(("  - ", "  * ")):
+                pdf.set_font("Helvetica", "", 10)
+                bullet_text = stripped.strip().lstrip("-* ").strip()
+                pdf.set_x(22)
+                pdf.multi_cell(0, 5, f"  ◦  {bullet_text}")
+            elif stripped.startswith("> "):
+                pdf.set_font("Helvetica", "I", 10)
+                pdf.set_text_color(80, 80, 80)
+                pdf.set_x(15)
+                pdf.multi_cell(0, 5, stripped[2:])
+                pdf.set_text_color(0, 0, 0)
+            elif stripped.startswith("---") or stripped.startswith("***"):
+                pdf.ln(2)
+                pdf.set_draw_color(200, 200, 200)
+                pdf.line(10, pdf.get_y(), 200, pdf.get_y())
+                pdf.ln(4)
+            else:
+                pdf.set_font("Helvetica", "", 10)
+                if "**" in stripped:
+                    _render_inline_bold(pdf, stripped)
+                else:
+                    pdf.multi_cell(0, 5, stripped)
+                pdf.ln(1)
+
+        # Flush any remaining table
+        if in_table and table_rows:
+            _render_table(pdf, table_rows, table_header_done)
+
+        pdf.output(output_path)
+        log.info(f"  PDF generated: {output_path}")
+        return True
+
+    except Exception as e:
+        log.error(f"  PDF generation failed: {e}")
+        import traceback
+        traceback.print_exc()
+        return False
+
+
+def _render_inline_bold(pdf, text: str, bullet_prefix: str = "") -> None:
+    """Render text with **bold** markers inline."""
+    parts = text.split("**")
+    if bullet_prefix:
+        pdf.write(5, bullet_prefix)
+    for i, part in enumerate(parts):
+        if not part:
+            continue
+        if i % 2 == 1:
+            pdf.set_font("Helvetica", "B", 10)
+        else:
+            pdf.set_font("Helvetica", "", 10)
+        pdf.write(5, part)
+    pdf.ln(5)
+
+
+def _render_table(pdf, rows: list[list[str]], has_header: bool) -> None:
+    """Render a table with proper text wrapping using multi_cell."""
+    if not rows:
+        return
+
+    num_cols = max(len(r) for r in rows)
+    if num_cols == 0:
+        return
+
+    # Normalize rows
+    for row in rows:
+        while len(row) < num_cols:
+            row.append("")
+
+    page_width = 190  # mm usable width (A4 with margins)
+    line_h = 5        # line height in mm
+    min_col_w = 18    # minimum column width
+
+    # --- Calculate column widths proportional to content ---
+    col_max_len = [0] * num_cols
+    for row in rows:
+        for ci, cell in enumerate(row):
+            col_max_len[ci] = max(col_max_len[ci], len(cell))
+    total_len = sum(col_max_len) or 1
+    col_widths = [max(min_col_w, (clen / total_len) * page_width) for clen in col_max_len]
+    # Scale to fit page_width exactly
+    scale = page_width / sum(col_widths)
+    col_widths = [w * scale for w in col_widths]
+
+    def _count_lines(text: str, width: float) -> int:
+        """Estimate how many lines text will take at the given width."""
+        if not text:
+            return 1
+        chars_per_line = max(1, int(width / 2.0))  # ~2mm per char at font size 9
+        lines = 1
+        for paragraph in text.split("\n"):
+            lines += max(1, math.ceil(len(paragraph) / chars_per_line)) - (1 if lines == 1 else 0)
+        return max(1, lines)
+
+    def _render_row(row_data: list[str], is_header: bool, is_alt: bool) -> None:
+        """Render a single row with multi_cell for proper text wrapping."""
+        # Pre-calculate the tallest cell in this row
+        if is_header:
+            pdf.set_font("Helvetica", "B", 9)
+        else:
+            pdf.set_font("Helvetica", "", 9)
+
+        max_lines = 1
+        for ci, cell in enumerate(row_data):
+            nl = _count_lines(cell, col_widths[ci] - 2)
+            if nl > max_lines:
+                max_lines = nl
+        row_h = max_lines * line_h
+
+        # Check page break - if row won't fit, add new page and reprint header
+        if pdf.get_y() + row_h > pdf.h - pdf.b_margin:
+            pdf.add_page()
+            if has_header and rows:
+                _render_row(rows[0], True, False)
+
+        x_start = pdf.get_x()
+        y_start = pdf.get_y()
+
+        for ci, cell in enumerate(row_data):
+            x_pos = x_start + sum(col_widths[:ci])
+            pdf.set_xy(x_pos, y_start)
+
+            # Background fill
+            if is_header:
+                pdf.set_font("Helvetica", "B", 9)
+                pdf.set_fill_color(0, 51, 102)
+                pdf.set_text_color(255, 255, 255)
+            else:
+                pdf.set_font("Helvetica", "", 9)
+                pdf.set_text_color(0, 0, 0)
+                if is_alt:
+                    pdf.set_fill_color(240, 240, 240)
+                else:
+                    pdf.set_fill_color(255, 255, 255)
+
+            # Draw cell background + border
+            pdf.rect(x_pos, y_start, col_widths[ci], row_h, "DF")
+
+            # Draw text inside cell with padding
+            pdf.set_xy(x_pos + 1, y_start + 1)
+            align = "C" if is_header else "L"
+            pdf.multi_cell(col_widths[ci] - 2, line_h, cell, align=align)
+
+        # Move to next row
+        pdf.set_xy(x_start, y_start + row_h)
+        pdf.set_text_color(0, 0, 0)
+
+    # Render all rows
+    for row_idx, row in enumerate(rows):
+        if row_idx == 0 and has_header:
+            _render_row(row, True, False)
+        else:
+            is_alt = row_idx % 2 == 0
+            _render_row(row, False, is_alt)
+
+    pdf.ln(3)
+
+
+def cmd_analyze(config: dict) -> None:
+    """Document analysis pipeline: ingest -> framework -> review -> write -> QA -> PDF."""
+    source_dir = config["source_directory"]
+    output_dir = config.get("output_directory", source_dir)
+    user_requirements = config.get("user_requirements", "")
+    acquirer_context = config.get("acquirer_context", "")
+    max_rounds = config.get("max_rounds", 1)
+
+    os.makedirs(output_dir, exist_ok=True)
+
+    # Use source_dir as the working directory for model runs
+    work_dir = output_dir
+
+    log.info(f"Starting document analysis pipeline")
+    log.info(f"  Source: {source_dir}")
+    log.info(f"  Output: {output_dir}")
+    log.info(f"  Dispatch: Claude builds framework -> Codex reviews -> Claude writes analysis -> Codex QA")
+
+    # Phase 1: Document Ingestion
+    log.info(f"\n{'#'*60}")
+    log.info("PHASE 1: DOCUMENT INGESTION")
+    log.info(f"{'#'*60}")
+
+    corpus = phase_ingest_documents(config)
+
+    # Truncate corpus if too large for context
+    if len(corpus) > 100_000:
+        corpus = corpus[:100_000] + "\n\n... CORPUS TRUNCATED (>100K chars) ..."
+
+    write_prompt_file(work_dir, "_analysis_corpus.txt", corpus)
+
+    # Phase 2: Claude builds analysis framework
+    log.info(f"\n{'#'*60}")
+    log.info("PHASE 2: ANALYSIS FRAMEWORK (Claude)")
+    log.info(f"{'#'*60}")
+
+    framework_prompt = ANALYSIS_FRAMEWORK_PROMPT.format(
+        acquirer_context=acquirer_context,
+        user_requirements=user_requirements,
+    )
+
+    framework_timeout = scaled_timeout(600, len(corpus), max_timeout=1200)
+    framework_output = run_claude(
+        framework_prompt,
+        work_dir,
+        timeout=framework_timeout,
+        idle_timeout=scaled_idle_timeout(framework_timeout),
+        log_label="claude analysis-framework",
+    )
+
+    write_prompt_file(work_dir, "_analysis_framework.txt", framework_output)
+    log.info(f"  Framework: {len(framework_output):,} chars")
+
+    # Phase 3: Codex reviews framework
+    log.info(f"\n{'#'*60}")
+    log.info("PHASE 3: FRAMEWORK REVIEW (Codex)")
+    log.info(f"{'#'*60}")
+
+    review_prompt = ANALYSIS_REVIEW_PROMPT.format(
+        acquirer_context=acquirer_context,
+    )
+
+    review_timeout = scaled_timeout(300, len(framework_output), max_timeout=900)
+    review_output = run_codex(
+        review_prompt,
+        work_dir,
+        timeout=review_timeout,
+        idle_timeout=scaled_idle_timeout(review_timeout),
+        log_label="codex framework-review",
+    )
+
+    framework_review = {"verdict": "approved", "gaps": []}
+    for candidate in _structured_output_candidates(review_output, "verdict"):
+        parsed = _parse_expected_json(candidate, "verdict")
+        if parsed is not None:
+            framework_review = parsed
+            break
+
+    gaps = framework_review.get("gaps", [])
+    log.info(f"  Verdict: {framework_review.get('verdict')}  |  Gaps: {len(gaps)}")
+
+    # Phase 3.5: If gaps found, Claude revises framework
+    if framework_review.get("verdict") == "needs_revision" and gaps:
+        log.info(f"\n{'#'*60}")
+        log.info("PHASE 3.5: FRAMEWORK REVISION (Claude)")
+        log.info(f"{'#'*60}")
+
+        revision_prompt = f"""You are Claude, revising an analysis framework based on reviewer feedback.
+
+Read the file _analysis_framework.txt in the current directory.
+
+REVIEWER FEEDBACK (gaps found):
+{json.dumps(gaps, indent=2)}
+
+YOUR TASK:
+1. Address EVERY gap identified
+2. Rewrite the framework with all gaps filled
+3. Output the COMPLETE revised framework
+
+RULES:
+- Output ONLY the revised framework. No commentary.
+"""
+        revision_timeout = scaled_timeout(300, len(framework_output) + len(json.dumps(gaps)))
+        revised = run_claude(
+            revision_prompt,
+            work_dir,
+            timeout=revision_timeout,
+            idle_timeout=scaled_idle_timeout(revision_timeout),
+            log_label="claude framework-revision",
+        )
+        write_prompt_file(work_dir, "_analysis_framework.txt", revised)
+        log.info(f"  Revised framework: {len(revised):,} chars")
+
+    # Phase 4: Claude writes the full analysis
+    log.info(f"\n{'#'*60}")
+    log.info("PHASE 4: FULL ANALYSIS (Claude)")
+    log.info(f"{'#'*60}")
+
+    write_prompt = ANALYSIS_WRITE_PROMPT.format(
+        acquirer_context=acquirer_context,
+        user_requirements=user_requirements,
+    )
+
+    write_timeout = scaled_timeout(900, len(corpus), max_timeout=2400)
+    analysis_output = run_claude(
+        write_prompt,
+        work_dir,
+        timeout=write_timeout,
+        idle_timeout=scaled_idle_timeout(write_timeout),
+        log_label="claude analysis-write",
+    )
+
+    write_prompt_file(work_dir, "_analysis_report.txt", analysis_output)
+    log.info(f"  Analysis draft: {len(analysis_output):,} chars")
+
+    # Phase 5: Codex QA review
+    log.info(f"\n{'#'*60}")
+    log.info("PHASE 5: QUALITY REVIEW (Codex)")
+    log.info(f"{'#'*60}")
+
+    qa_timeout = scaled_timeout(600, len(analysis_output), max_timeout=1800)
+    qa_output = run_codex(
+        ANALYSIS_QA_PROMPT,
+        work_dir,
+        timeout=qa_timeout,
+        idle_timeout=scaled_idle_timeout(qa_timeout),
+        log_label="codex analysis-qa",
+    )
+
+    qa_review = {"verdict": "pass", "issues": []}
+    for candidate in _structured_output_candidates(qa_output, "verdict"):
+        parsed = _parse_expected_json(candidate, "verdict")
+        if parsed is not None:
+            qa_review = parsed
+            break
+
+    write_prompt_file(work_dir, "_analysis_qa.json", json.dumps(qa_review, indent=2))
+
+    issues = qa_review.get("issues", [])
+    critical_major = [i for i in issues if i.get("severity") in ("critical", "major")]
+    log.info(f"  QA Verdict: {qa_review.get('verdict')}  |  Issues: {len(issues)} ({len(critical_major)} critical/major)")
+
+    # Phase 5.5: If QA issues, Claude revises
+    for round_num in range(1, max_rounds + 1):
+        if qa_review.get("verdict") == "pass" or not critical_major:
+            break
+
+        log.info(f"\n{'#'*60}")
+        log.info(f"PHASE 5.5: REVISION ROUND {round_num} (Claude)")
+        log.info(f"{'#'*60}")
+
+        revision_timeout = scaled_timeout(900, len(analysis_output), max_timeout=2400)
+        revised_output = run_claude(
+            ANALYSIS_REVISION_PROMPT,
+            work_dir,
+            timeout=revision_timeout,
+            idle_timeout=scaled_idle_timeout(revision_timeout),
+            log_label=f"claude analysis-revision-r{round_num}",
+        )
+
+        analysis_output = revised_output
+        write_prompt_file(work_dir, "_analysis_report.txt", analysis_output)
+        log.info(f"  Revised report: {len(analysis_output):,} chars")
+
+        # Re-QA
+        log.info(f"  Re-running QA...")
+        qa_output = run_codex(
+            ANALYSIS_QA_PROMPT,
+            work_dir,
+            timeout=qa_timeout,
+            idle_timeout=scaled_idle_timeout(qa_timeout),
+            log_label=f"codex analysis-qa-r{round_num}",
+        )
+
+        qa_review = {"verdict": "pass", "issues": []}
+        for candidate in _structured_output_candidates(qa_output, "verdict"):
+            parsed = _parse_expected_json(candidate, "verdict")
+            if parsed is not None:
+                qa_review = parsed
+                break
+
+        write_prompt_file(work_dir, "_analysis_qa.json", json.dumps(qa_review, indent=2))
+        issues = qa_review.get("issues", [])
+        critical_major = [i for i in issues if i.get("severity") in ("critical", "major")]
+        log.info(f"  QA Verdict: {qa_review.get('verdict')}  |  Remaining issues: {len(critical_major)} critical/major")
+
+    # Phase 6: Generate PDF
+    log.info(f"\n{'#'*60}")
+    log.info("PHASE 6: PDF GENERATION")
+    log.info(f"{'#'*60}")
+
+    ts = datetime.now().strftime("%Y%m%d_%H%M%S")
+    pdf_path = os.path.join(output_dir, f"FDSS_Acquisition_Analysis_{ts}.pdf")
+    md_path = os.path.join(output_dir, f"FDSS_Acquisition_Analysis_{ts}.md")
+
+    # Save markdown
+    with open(md_path, "w", encoding="utf-8") as f:
+        f.write(analysis_output)
+    log.info(f"  Markdown saved: {md_path}")
+
+    # Generate PDF
+    success = _generate_pdf_from_markdown(
+        analysis_output,
+        pdf_path,
+        "Acquisition Analysis — Focus Digital Security Solutions Ltd",
+    )
+
+    # Cleanup temp files
+    for tmp in ["_analysis_corpus.txt", "_analysis_framework.txt",
+                "_analysis_report.txt", "_analysis_qa.json"]:
+        cleanup_file(os.path.join(work_dir, tmp))
+
+    # Save final log
+    log_path = LOG_DIR / f"analysis_report_{ts}.json"
+    with open(log_path, "w", encoding="utf-8") as f:
+        json.dump(
+            {
+                "source_directory": source_dir,
+                "output_directory": output_dir,
+                "pdf_path": pdf_path,
+                "md_path": md_path,
+                "pdf_generated": success,
+                "qa_verdict": qa_review.get("verdict"),
+                "qa_issues_remaining": len(critical_major),
+                "report_length": len(analysis_output),
+                "timestamp": ts,
+            },
+            f,
+            indent=2,
+        )
+
+    # Summary
+    log.info(f"\n{'='*60}")
+    log.info("  ANALYSIS PIPELINE COMPLETE")
+    log.info(f"{'='*60}")
+    log.info(f"  PDF:      {pdf_path}")
+    log.info(f"  Markdown: {md_path}")
+    log.info(f"  QA:       {qa_review.get('verdict')} ({len(critical_major)} critical/major remaining)")
+    log.info(f"  Log:      {log_path}")
+
+    report_text = (
+        f"\n{'='*60}\n"
+        f"  ANALYSIS COMPLETE\n"
+        f"  PDF: {pdf_path}\n"
+        f"  Markdown: {md_path}\n"
+        f"{'='*60}\n"
+    )
+    print(report_text)
+
+
+# ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 # CLI
 # ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
 def main() -> None:
     parser = argparse.ArgumentParser(
-        description="Cross-Model Code Review & Fix Agent",
+        description="Cross-Model Code Review & Fix Agent + Document Analysis",
         formatter_class=argparse.RawDescriptionHelpFormatter,
     )
     parser.add_argument(
         "command",
-        choices=["execute-technical-review", "etr", "full", "prompt", "review", "fix", "merge"],
-        help="Pipeline to run. 'execute-technical-review' (or 'etr') runs the full pipeline.",
+        choices=[
+            "execute-technical-review", "etr", "full",
+            "prompt", "review", "fix", "merge",
+            "analyze", "analyse", "document-analysis",
+        ],
+        help="Pipeline to run. 'analyze'/'analyse' runs the document analysis pipeline.",
     )
     parser.add_argument("--config", "-c", required=True, help="Config JSON path")
     parser.add_argument("--max-rounds", "-r", type=int, help="Override max rounds")
@@ -2608,7 +3587,10 @@ def main() -> None:
     log.info(f"Claude CLI: {CLAUDE_EXE}")
     log.info(f"Codex CLI: {CODEX_CMD}")
     log.info(f"Log directory: {LOG_DIR}")
-    log.info(f"Loaded config: {len(config['branches'])} branches")
+
+    is_analysis = args.command in ("analyze", "analyse", "document-analysis")
+    if not is_analysis:
+        log.info(f"Loaded config: {len(config['branches'])} branches")
 
     commands = {
         "execute-technical-review": cmd_full,
@@ -2618,6 +3600,9 @@ def main() -> None:
         "review": cmd_review,
         "fix": cmd_fix,
         "merge": cmd_merge,
+        "analyze": cmd_analyze,
+        "analyse": cmd_analyze,
+        "document-analysis": cmd_analyze,
     }
     commands[args.command](config)
 
