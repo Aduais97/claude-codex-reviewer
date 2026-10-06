@@ -4,7 +4,10 @@ generate-pdf standards (ReportLab, A4, 54/62pt margins, 10pt body min 8pt,
 navy+gold, clean tables, no tinted callout boxes). 3-page budget: compact
 masthead on page 1 instead of a title page + ToC.
 
-Usage: .venv/bin/python generate_blueprint_pdf.py <blueprint.md> <out.pdf>
+Usage: .venv/bin/python generate_blueprint_pdf.py <doc.md> <out.pdf> \
+           [masthead_title] [masthead_subtitle] [header_left]
+Defaults render the growth blueprint; pass the three optional args for other
+documents (e.g. the Week-1 Execution Kit). Page totals are computed (2-pass).
 """
 
 import re, sys, datetime
@@ -51,17 +54,26 @@ def inline(md):
     return md
 
 
+DOC = {
+    "title": "ONLINE GROWTH BLUEPRINT",
+    "subtitle": ("Beaded occasion dresses · NZ-based · built on the Hormozi "
+                 "frameworks · hardened by ETR multi-agent review"),
+    "header": "ONLINE GROWTH BLUEPRINT  |  Beaded Occasion Dresses — NZ",
+    "total": "?",
+}
+
+
 def header_footer(canvas, doc):
     canvas.saveState()
     canvas.setStrokeColor(BORDER); canvas.setLineWidth(0.5)
     canvas.line(ML, H - 40, W - MR, H - 40)
     canvas.setFont("Helvetica", 7); canvas.setFillColor(TEXT_L)
-    canvas.drawString(ML, H - 36, "ONLINE GROWTH BLUEPRINT  |  Beaded Occasion Dresses — NZ")
+    canvas.drawString(ML, H - 36, DOC["header"])
     canvas.drawRightString(W - MR, H - 36, "CONFIDENTIAL")
     canvas.line(ML, 40, W - MR, 40)
     canvas.setFont("Helvetica", 7.5)
     canvas.drawString(ML, 30, datetime.date.today().strftime("%d %B %Y"))
-    canvas.drawCentredString(W / 2, 30, f"Page {doc.page} of 3")
+    canvas.drawCentredString(W / 2, 30, f"Page {doc.page} of {DOC['total']}")
     canvas.drawRightString(W - MR, 30, "Prepared by Ahmad Duais")
     canvas.restoreState()
 
@@ -77,7 +89,10 @@ def make_table(rows):
             "td", fontName="Helvetica", fontSize=8.5, leading=11,
             textColor=TEXT_D)) for c in r])
     avail = W - ML - MR
-    first = avail * (0.30 if n <= 3 else 0.26)
+    if all(len(r[0]) <= 4 for r in rows):
+        first = avail * 0.09
+    else:
+        first = avail * (0.30 if n <= 3 else 0.26)
     widths = [first] + [(avail - first) / (n - 1)] * (n - 1)
     t = Table(data, colWidths=widths, repeatRows=1)
     style = [("BACKGROUND", (0, 0), (-1, 0), NAVY),
@@ -96,12 +111,10 @@ def make_table(rows):
 
 
 def masthead(story):
-    story.append(Paragraph("ONLINE GROWTH BLUEPRINT", ParagraphStyle(
+    story.append(Paragraph(DOC["title"], ParagraphStyle(
         "t", fontName="Helvetica-Bold", fontSize=20, leading=24,
         textColor=NAVY)))
-    story.append(Paragraph(
-        "Beaded occasion dresses · NZ-based · built on the Hormozi "
-        "frameworks · hardened by ETR multi-agent review", ParagraphStyle(
+    story.append(Paragraph(DOC["subtitle"], ParagraphStyle(
             "st", fontName="Helvetica-Oblique", fontSize=9.5, leading=13,
             textColor=TEXT_M, spaceBefore=3)))
     story.append(Spacer(1, 5))
@@ -183,13 +196,19 @@ def build(md_path, out_path):
 
     doc.build(story)
     import fitz
-    n = fitz.open(out_path).page_count
-    print(f"PDF written: {out_path} ({n} pages)")
-    if n > 3:
-        print("WARNING: over the 3-page budget — trim content.")
+    return fitz.open(out_path).page_count
 
 
 if __name__ == "__main__":
-    if len(sys.argv) != 3:
+    if len(sys.argv) < 3:
         sys.exit(__doc__)
-    build(sys.argv[1], sys.argv[2])
+    if len(sys.argv) > 3:
+        DOC["title"] = sys.argv[3]
+    if len(sys.argv) > 4:
+        DOC["subtitle"] = sys.argv[4]
+    if len(sys.argv) > 5:
+        DOC["header"] = sys.argv[5]
+    n = build(sys.argv[1], sys.argv[2])
+    DOC["total"] = str(n)
+    n = build(sys.argv[1], sys.argv[2])
+    print(f"PDF written: {sys.argv[2]} ({n} pages)")
