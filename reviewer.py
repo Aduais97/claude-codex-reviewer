@@ -2961,6 +2961,172 @@ RULES:
 """
 
 
+# ━━━ Generic document-analysis prompts (config: "analysis_mode": "generic") ━━━
+# The acquisition prompts above assume an M&A corpus; these derive the task
+# entirely from user_requirements so the pipeline can review/harden any corpus
+# (strategy docs, legal drafts, plans) without self-contradictory scaffolding.
+
+GENERIC_FRAMEWORK_PROMPT = """You are Claude, acting as a senior analyst leading a document review engagement.
+
+Read the file _analysis_corpus.txt in the current directory. It contains all source documents.
+
+ENGAGEMENT CONTEXT:
+{acquirer_context}
+
+TASK REQUIREMENTS:
+{user_requirements}
+
+YOUR TASK:
+Build the analysis framework (structure + key questions + methodology) that will govern the
+final written deliverable. Derive the framework ENTIRELY from the TASK REQUIREMENTS and the
+corpus — do not impose a template from another domain.
+
+The framework MUST:
+1. Map every explicit requirement in TASK REQUIREMENTS to a framework section.
+2. Add the sections a rigorous professional would include for this task type even if unasked.
+3. Name the specific corpus documents/data each section will draw on.
+4. State the output format the requirements demand (findings with severity, verdicts,
+   tables, exact replacement wording, etc.) so the writer can follow it precisely.
+5. Flag any requirement the corpus cannot support (missing data) rather than inventing input.
+
+OUTPUT:
+Write the framework as a detailed Markdown document with specific questions and methods per
+section. Framework only — do NOT write the analysis yet.
+"""
+
+GENERIC_REVIEW_PROMPT = """You are Codex, acting as a quality assurance reviewer on a document review engagement.
+
+Read the file _analysis_framework.txt in the current directory.
+Also read _analysis_corpus.txt to understand the source data and the TASK REQUIREMENTS
+embedded in the engagement.
+
+ENGAGEMENT CONTEXT:
+{acquirer_context}
+
+YOUR TASK:
+Review the framework critically against the task requirements and the corpus. Flag any gap
+that would make the final deliverable incomplete, off-task, or unprofessional.
+
+Check for:
+1. Requirements in the task that the framework does not cover
+2. Framework sections with no supporting corpus data (invented input)
+3. Missing rigour a senior professional would expect for this task type
+4. Output-format mismatches with what the requirements demand
+
+Output your review as JSON:
+
+```json
+{{
+    "verdict": "approved" or "needs_revision",
+    "completeness_pct": 85,
+    "gaps": [
+        {{
+            "section": "Which part of the framework",
+            "type": "missing" or "insufficient" or "methodological",
+            "description": "What is wrong or missing",
+            "suggestion": "What should be added"
+        }}
+    ],
+    "strengths": ["What the framework does well"],
+    "summary": "Overall assessment"
+}}
+```
+
+RULES:
+- Flag real gaps only, not style preferences
+- Do NOT modify any files. Review only.
+"""
+
+GENERIC_WRITE_PROMPT = """You are Claude, writing the final deliverable of a document review engagement.
+
+Read the following files in the current directory:
+1. _analysis_corpus.txt — All source documents
+2. _analysis_framework.txt — The approved framework
+
+ENGAGEMENT CONTEXT:
+{acquirer_context}
+
+TASK REQUIREMENTS:
+{user_requirements}
+
+YOUR TASK:
+Write the COMPLETE deliverable following the framework, in exactly the output format the
+TASK REQUIREMENTS demand.
+
+WRITING STANDARDS:
+- Professional, direct tone — lead with findings and conclusions, not descriptions
+- Every claim grounded in the corpus; quote or cite the source document for key points
+- Be direct about problems — do not bury bad news
+- Use tables where they aid comprehension
+- As long as the task demands and no longer — do not pad
+
+Do NOT include a cover page or table of contents. Start directly with the opening section
+the requirements call for (summary, verdict, or findings).
+"""
+
+GENERIC_QA_PROMPT = """You are Codex, acting as the final quality gate on a document review engagement.
+
+Read the following files in the current directory:
+1. _analysis_report.txt — The draft deliverable
+2. _analysis_corpus.txt — All source documents (includes the task requirements)
+3. _analysis_framework.txt — The approved framework
+
+YOUR TASK:
+Perform a rigorous quality review of the draft. Check for:
+
+1. TASK FIDELITY: Does the draft do what the task requirements asked, in the demanded format?
+2. FACTUAL ACCURACY: Do all claims, numbers and quotes match the source documents?
+3. COMPLETENESS: Does the draft cover every framework section?
+4. INTERNAL CONSISTENCY: Do conclusions follow from the analysis? Any contradictions?
+5. MISSING INSIGHTS: Important patterns in the corpus that weren't discussed?
+
+Output your review as JSON:
+
+```json
+{
+    "verdict": "pass" or "needs_revision",
+    "quality_score": 85,
+    "issues": [
+        {
+            "severity": "critical" or "major" or "minor",
+            "section": "Which section",
+            "description": "What is wrong",
+            "suggestion": "How to fix it"
+        }
+    ],
+    "factual_errors": ["Claims that don't match source data"],
+    "missing_analysis": ["Analysis the framework required but the draft omits"],
+    "summary": "Overall quality assessment"
+}
+```
+
+RULES:
+- Check claims against the source documents
+- Be specific about what needs to change
+- Do NOT modify any files. Review only.
+"""
+
+GENERIC_REVISION_PROMPT = """You are Claude, revising a review deliverable based on QA feedback.
+
+Read the following files in the current directory:
+1. _analysis_report.txt — Your draft
+2. _analysis_qa.json — The QA reviewer's feedback
+3. _analysis_corpus.txt — Source documents (for fact-checking)
+4. _analysis_framework.txt — The approved framework
+
+YOUR TASK:
+1. Address EVERY issue flagged in the QA review
+2. Fix all factual errors
+3. Add any missing analysis
+4. Output the COMPLETE revised deliverable
+
+RULES:
+- Output ONLY the revised deliverable. No commentary.
+- The revision must be complete — do not output just the changed sections.
+- Every "critical" and "major" issue must be fully resolved.
+"""
+
+
 def _generate_pdf_from_markdown(markdown_text: str, output_path: str, title: str) -> bool:
     """Generate a PDF from Markdown text using fpdf2."""
     try:
@@ -3288,6 +3454,29 @@ def cmd_analyze(config: dict) -> None:
     acquirer_context = config.get("acquirer_context", "")
     max_rounds = config.get("max_rounds", 1)
 
+    # "acquisition" (default, legacy M&A template) or "generic" (task derived
+    # entirely from user_requirements — use for any non-acquisition corpus).
+    analysis_mode = config.get("analysis_mode", "acquisition")
+    if analysis_mode == "generic":
+        tmpl_framework = GENERIC_FRAMEWORK_PROMPT
+        tmpl_review = GENERIC_REVIEW_PROMPT
+        tmpl_write = GENERIC_WRITE_PROMPT
+        tmpl_qa = GENERIC_QA_PROMPT
+        tmpl_revision = GENERIC_REVISION_PROMPT
+        default_basename = "Document_Analysis"
+        default_title = "Document Analysis Report"
+    else:
+        tmpl_framework = ANALYSIS_FRAMEWORK_PROMPT
+        tmpl_review = ANALYSIS_REVIEW_PROMPT
+        tmpl_write = ANALYSIS_WRITE_PROMPT
+        tmpl_qa = ANALYSIS_QA_PROMPT
+        tmpl_revision = ANALYSIS_REVISION_PROMPT
+        default_basename = "FDSS_Acquisition_Analysis"
+        default_title = "Acquisition Analysis — Focus Digital Security Solutions Ltd"
+    output_basename = config.get("output_basename", default_basename)
+    report_title = config.get("report_title", default_title)
+    log.info(f"  Analysis mode: {analysis_mode}")
+
     os.makedirs(output_dir, exist_ok=True)
 
     # Use source_dir as the working directory for model runs
@@ -3316,7 +3505,7 @@ def cmd_analyze(config: dict) -> None:
     log.info("PHASE 2: ANALYSIS FRAMEWORK (Claude)")
     log.info(f"{'#'*60}")
 
-    framework_prompt = ANALYSIS_FRAMEWORK_PROMPT.format(
+    framework_prompt = tmpl_framework.format(
         acquirer_context=acquirer_context,
         user_requirements=user_requirements,
     )
@@ -3338,7 +3527,7 @@ def cmd_analyze(config: dict) -> None:
     log.info("PHASE 3: FRAMEWORK REVIEW (Codex)")
     log.info(f"{'#'*60}")
 
-    review_prompt = ANALYSIS_REVIEW_PROMPT.format(
+    review_prompt = tmpl_review.format(
         acquirer_context=acquirer_context,
     )
 
@@ -3398,7 +3587,7 @@ RULES:
     log.info("PHASE 4: FULL ANALYSIS (Claude)")
     log.info(f"{'#'*60}")
 
-    write_prompt = ANALYSIS_WRITE_PROMPT.format(
+    write_prompt = tmpl_write.format(
         acquirer_context=acquirer_context,
         user_requirements=user_requirements,
     )
@@ -3422,7 +3611,7 @@ RULES:
 
     qa_timeout = scaled_timeout(600, len(analysis_output), max_timeout=1800)
     qa_output = run_codex(
-        ANALYSIS_QA_PROMPT,
+        tmpl_qa,
         work_dir,
         timeout=qa_timeout,
         idle_timeout=scaled_idle_timeout(qa_timeout),
@@ -3453,7 +3642,7 @@ RULES:
 
         revision_timeout = scaled_timeout(900, len(analysis_output), max_timeout=2400)
         revised_output = run_claude(
-            ANALYSIS_REVISION_PROMPT,
+            tmpl_revision,
             work_dir,
             timeout=revision_timeout,
             idle_timeout=scaled_idle_timeout(revision_timeout),
@@ -3467,7 +3656,7 @@ RULES:
         # Re-QA
         log.info(f"  Re-running QA...")
         qa_output = run_codex(
-            ANALYSIS_QA_PROMPT,
+            tmpl_qa,
             work_dir,
             timeout=qa_timeout,
             idle_timeout=scaled_idle_timeout(qa_timeout),
@@ -3492,8 +3681,8 @@ RULES:
     log.info(f"{'#'*60}")
 
     ts = datetime.now().strftime("%Y%m%d_%H%M%S")
-    pdf_path = os.path.join(output_dir, f"FDSS_Acquisition_Analysis_{ts}.pdf")
-    md_path = os.path.join(output_dir, f"FDSS_Acquisition_Analysis_{ts}.md")
+    pdf_path = os.path.join(output_dir, f"{output_basename}_{ts}.pdf")
+    md_path = os.path.join(output_dir, f"{output_basename}_{ts}.md")
 
     # Save markdown
     with open(md_path, "w", encoding="utf-8") as f:
@@ -3504,7 +3693,7 @@ RULES:
     success = _generate_pdf_from_markdown(
         analysis_output,
         pdf_path,
-        "Acquisition Analysis — Focus Digital Security Solutions Ltd",
+        report_title,
     )
 
     # Cleanup temp files
