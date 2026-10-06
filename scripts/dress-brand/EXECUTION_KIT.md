@@ -1,19 +1,21 @@
 # WEEK-1 EXECUTION KIT
 
 ## 1. CONTENT HOOKS — 15 ready to film
-Each hook = on-screen text + what to shoot. **(IH)** = only if beading is done
-in-house and filmable; if not, use the QC variants and never claim
-"hand-beaded by us".
+Each hook = on-screen text + what to shoot. Production is at your partner
+atelier in India: **(AF)** = runs over the atelier's rights-cleared footage of
+YOUR production (and "hand-beaded" needs their written confirmation first).
+Everything else films on the samples you hold in NZ. Never "hand-beaded by
+us", never an NZ-made implication.
 
 ### Process pillar (40% of output)
 | # | Hook (on-screen text) | Shoot |
 |---|---|---|
-| 1 | "3,000 beads. 11 hours. One dress." (use your real numbers) **(IH)** | Macro time-lapse of one panel being beaded, end on the finished dress. |
-| 2 | "POV: you asked how the beads catch the light like that" **(IH)** | Bead tray → needle → fabric, close-up, slow. |
-| 3 | "Which motif makes the drop? You're voting." **(IH)** | 3 motif samples side by side; ask comments to pick — comment bait is reach. |
+| 1 | "3,000 beads. 11 hours. One dress." (use your real numbers) **(AF)** | Atelier time-lapse of a panel being beaded; end on you unboxing the finished dress in NZ. Or: "The hands behind every dress — our partner atelier in India." |
+| 2 | "POV: you asked how the beads catch the light like that" | Macro of the finished beadwork on your sample, moving under light — slow, close. |
+| 3 | "Which motif makes the drop? You're voting." | Your 3 sample motifs side by side; ask comments to pick — comment bait is reach. |
 | 4 | "The sound of a beaded dress" | ASMR: beads brushing, dress lifted, the swish. Works for both scenarios. |
-| 5 | "Every dress gets this check before it ships" *(QC variant)* | Unboxing/inspection macro: bead-pull test, seam check, steam, repack. |
-| 6 | "What's in every order: the spare-bead kit" *(QC variant)* | Packaging story — kit vial, styling card, numbered tag. |
+| 5 | "Every dress gets this check before it ships" | Unboxing/inspection macro: bead-pull test, seam check, steam, repack. |
+| 6 | "What's in every order: the spare-bead kit" | Packaging story — kit vial, styling card, numbered tag. |
 
 ### Try-on / styling pillar (30%)
 | # | Hook | Shoot |
@@ -51,10 +53,10 @@ after results; content rights + disclosure agreed in writing; never supply
 comparison copy.*
 
 ### B. Listicle / affiliate pitch email
-Subject: "NZ-made beaded event dresses — affiliate + reader bonus for your
-roundups"
-"Hi [name] — I'm the founder of [brand], an NZ label doing hand-finished
-beaded occasion dresses in numbered 30-unit drops ([price range]). Readers of
+Subject: "Beaded event dresses from an NZ label — affiliate + reader bonus
+for your roundups"
+"Hi [name] — I'm the founder of [brand], an NZ label doing beaded occasion
+dresses in numbered 30-unit drops ([price range]). Readers of
 your beaded-dress roundups would recognise the look immediately. We run
 [10–15]% affiliate commission, and your readers get a code that adds our
 spare-bead repair kit free (we don't discount — bonuses only). Photos, specs
@@ -72,7 +74,7 @@ partnerships?"
 *Listing copy follows Guardrail 1 — no designer names, no "dupe".*
 
 ### D. Stylist / photographer DM
-"Hi [name] — [brand] here, NZ-made beaded event dresses. We keep a small
+"Hi [name] — [brand] here, an NZ label of beaded event dresses. We keep a small
 sample pool for shoots and editorial loans. If you've got an event, shoot or
 client who needs the beaded look, it's yours for the week — credit/tag is all
 we ask. Lookbook: [link]."
@@ -96,8 +98,9 @@ we ask. Lookbook: [link]."
   Dresses NZ · Race Day Dresses NZ.
 - **Image alt text:** "[colour] beaded mini dress with [motif] motif — NZ".
 - **Hashtags:** #beadeddress #embellisheddress #eventdressnz #balldressnz
-  #racedayoutfit #nzfashion #aucklandfashion (+ #handbeaded only if true).
-  Never: designer names, #dupe, #inspiredby[designer].
+  #racedayoutfit #nzfashion #aucklandfashion (+ #handbeaded only with the
+  atelier's written confirmation). Never: designer names, #dupe,
+  #inspiredby[designer], #nzmade.
 - **Every product page:** garment weight · stretch · height-on-model · real
   dispatch/lead time · exchange policy "in addition to your Consumer
   Guarantees Act rights" · spare-bead kit bonus line.
@@ -105,7 +108,7 @@ we ask. Lookbook: [link]."
 ## 5. WEEK-1 CHECKLIST (Phase 0 of the blueprint, day by day)
 | Day | Do |
 |---|---|
-| Mon | Answer the gate: where/how is beading done — is it filmable? Sets your pillar mix and every claim. Sweep all captions/tags for designer names + "dupe". |
+| Mon | Email the atelier: written confirmation of hand vs machine beading (your FTA s12A file) + rights-cleared footage/photos of your runs. Sweep all captions/tags for designer names + "dupe". |
 | Tue | Shopify: Afterpay and/or Zip + Shop Pay live; AU (+US/UK) shipping zones with real NZ Post rates; email capture on site. |
 | Wed | Google Search Console + free Google Shopping listings; retitle products per the SEO bank; alt text on every image. |
 | Thu | Product pages: weight, stretch, height-on-model, size chart, lead time, CGA line, bead-kit bonus. |
@@ -114,7 +117,7 @@ we ask. Lookbook: [link]."
 | Sun | Edit batch into week 1's floor (5 TikToks, 3 Reels, 5 pins); schedule; send creator DM #1–3. |
 
 **Sat shoot list (one batch feeds 2–3 weeks):** 1 macro beads static ·
-2 macro beads in motion · 3 bead tray / tools (IH) or QC inspection ·
+2 macro beads in motion · 3 QC inspection close-ups (bead-pull, seams) ·
 4 dress backlit on hanger · 5 dress spinning on model · 6 weight-in-hands ·
 7 packaging + bead kit · 8 numbering tags · 9 three styled looks ·
 10 "walking out the door" event exit.

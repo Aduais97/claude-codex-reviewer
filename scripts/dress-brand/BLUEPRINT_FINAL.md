@@ -29,7 +29,7 @@ pay, shipped from NZ.
 |---|---|
 | Dream outcome | "The dress everyone asks about." Shoot on real bodies, at real events, in motion — beads need video light. |
 | Likelihood | Reviews + tagged customer photos on every product page; macro video of the actual beadwork — proof it's not a flat machine-sequin print. |
-| Time delay | If stocked: "Ships from Auckland — X working days NZ-wide" (the real, timed X). If made-to-order: sell the making — "hand-finished to your order" — and publish the true lead time. |
+| Time delay | Land each 30-unit batch in Auckland BEFORE the drop opens — then "Ships from Auckland — X working days NZ-wide" is true (time the real X). Pre-order means publishing the real India lead time; avoid it for drop 1. |
 | Effort & sacrifice | Honest fit: beaded dresses are heavy — publish garment weight, stretch, and height-on-model. Free easy exchanges. |
 
 **Offer stack (first drop):**
@@ -58,13 +58,13 @@ price.
 - **Platforms:** TikTok + IG Reels (same 9:16 asset), Pinterest (dresses are
   Pinterest's home turf; Pinterest is search, not feed — pins keep surfacing
   long after posting).
-- **Pillars:** 40% process (macro beading, bead trays, motif design,
-  time-lapse); 30% try-on/styling (one dress, three events); 20% drop BTS +
-  reveals; 10% screened customer reposts. *(If beading isn't done in-house:
-  swap the process pillar for macro QC, bead-repair and styling content, and
-  claim "hand-beaded" only if substantiated for every unit — never "hand-beaded
-  by us".)* If the gate passes, process video is the one asset drop-ship
-  competitors cannot film.
+- **Pillars:** 40% craft & QC (macro beadwork on the finished dresses,
+  bead-pull and seam checks, steam + pack); 30% try-on/styling (one dress,
+  three events); 20% drop BTS + reveals; 10% screened customer reposts. The
+  making story is still yours to tell: get footage of YOUR production runs
+  from the India atelier — rights-cleared — and tell it plainly ("made by
+  hand by our partner atelier in [city]"). Claim "hand-beaded" only with the
+  atelier's written confirmation — never "hand-beaded by us".
 - **Rule of 100:** 100 minutes/day on content — film in batches, post 1–2×/day
   on TikTok, 4–5 Reels/week, 5–10 pins/week. Floor: 5 TikToks, 3 Reels, 5 pins
   per week — never below, never a zero-week.
@@ -106,8 +106,9 @@ on DW or any third-party platform.
 ## PAGE 3 — 90-DAY ROADMAP, SCOREBOARD, GUARDRAILS
 
 ### Phase 0 — Foundations (weeks 1–2)
-- Confirm the production story (where/how beading happens, is it filmable) —
-  it gates the content pillar and every "hand-beaded" claim.
+- Email the atelier: written confirmation of how the beading is applied (hand
+  vs machine — your FTA s12A substantiation file) plus rights-cleared
+  footage/photos of your production runs.
 - Shoot real-model photo + macro video set (beads in motion, golden light).
 - Product pages: garment weight, stretch, height-on-model, size chart,
   exchange policy. Honest fit copy kills returns and FTA risk in one move.
@@ -155,6 +156,7 @@ algorithm: drops open to the list first.
 3. No AI-generated product video; real beadwork macro only.
 4. Scarcity must be real — retired motifs stay retired; variants are announced
    as variants.
-5. Never state a claim you can't substantiate (FTA s12A) — including
-   "hand-beaded" if any part is machine-made, and any delivery-speed promise
-   you haven't timed.
+5. Never state a claim you can't substantiate (FTA s12A) — "hand-beaded"
+   needs the atelier's written confirmation — and never imply NZ-made: "NZ
+   label" and "Ships from Auckland" are fine; the India atelier story told
+   honestly is a strength, not a secret.
