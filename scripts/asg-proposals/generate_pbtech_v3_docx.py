@@ -102,6 +102,67 @@ def heading(doc, text):
     return p
 
 
+def section_bar(doc, num, title):
+    """Numbered full-width section bar: Signal-Blue number block + Midnight title band."""
+    doc.add_paragraph().paragraph_format.space_after = Pt(2)
+    t = doc.add_table(rows=1, cols=2)
+    t.alignment = WD_TABLE_ALIGNMENT.CENTER
+    t.autofit = False
+    numc, titc = t.cell(0, 0), t.cell(0, 1)
+    numc.width = Mm(14)
+    titc.width = Mm(158)
+    shade(numc, '2563EB')
+    shade(titc, '050A14')
+    set_borders(t, ['top', 'left', 'bottom', 'right'], size=4, color='050A14')
+    pn = numc.paragraphs[0]
+    pn.alignment = WD_ALIGN_PARAGRAPH.CENTER
+    pn.paragraph_format.space_before = Pt(3)
+    pn.paragraph_format.space_after = Pt(3)
+    r = pn.add_run(num)
+    r.bold = True; r.font.name = BODY_FONT; r.font.size = Pt(12); r.font.color.rgb = WHITE
+    pt = titc.paragraphs[0]
+    pt.paragraph_format.space_before = Pt(3)
+    pt.paragraph_format.space_after = Pt(3)
+    r = pt.add_run('  ' + title)
+    r.bold = True; r.font.name = BODY_FONT; r.font.size = Pt(12.5); r.font.color.rgb = WHITE
+    doc.add_paragraph().paragraph_format.space_after = Pt(1)
+
+
+def photo_placeholder(doc, label, h_mm=50, cols=1, labels=None):
+    """Dashed-border photo frame(s): click in, delete the text, Insert > Picture."""
+    t = doc.add_table(rows=1, cols=cols)
+    t.alignment = WD_TABLE_ALIGNMENT.CENTER
+    t.autofit = False
+    tbl_pr = t._tbl.tblPr
+    borders = OxmlElement('w:tblBorders')
+    for edge in ['top', 'left', 'bottom', 'right', 'insideV']:
+        el = OxmlElement(f'w:{edge}')
+        el.set(qn('w:val'), 'dashed')
+        el.set(qn('w:sz'), '6')
+        el.set(qn('w:color'), '94A3B8')
+        borders.append(el)
+    tbl_pr.append(borders)
+    tr = t.rows[0]._tr
+    trPr = tr.get_or_add_trPr()
+    trH = OxmlElement('w:trHeight')
+    trH.set(qn('w:val'), str(int(h_mm * 56.7)))
+    trH.set(qn('w:hRule'), 'atLeast')
+    trPr.append(trH)
+    width = Mm(172 / cols)
+    texts = labels if labels else [label]
+    for i in range(cols):
+        c = t.cell(0, i)
+        c.width = width
+        shade(c, 'F8FAFC')
+        p = c.paragraphs[0]
+        p.alignment = WD_ALIGN_PARAGRAPH.CENTER
+        p.paragraph_format.space_before = Pt(int(h_mm * 1.2))
+        r = p.add_run(texts[i] if i < len(texts) else label)
+        r.font.name = BODY_FONT; r.font.size = Pt(8.5); r.font.color.rgb = GRAY_400
+        r.italic = True
+    doc.add_paragraph().paragraph_format.space_after = Pt(1)
+
+
 def cell_text(cell, runs, align=None):
     p = cell.paragraphs[0]
     if align:
@@ -142,17 +203,16 @@ def dark_block(doc, paras):
 
 def stat_strip(doc):
     stats = [
-        ('350+', 'security professionals group-wide'),
+        ('250+', 'security professionals group-wide'),
         ('$1M+', 'verified recoveries since Jul 2025'),
         ('100+', 'retail sites under covert LP'),
-        ('Since 2006', 'SLS RTC protecting NZ retail'),
     ]
-    t = doc.add_table(rows=2, cols=4)
+    t = doc.add_table(rows=2, cols=3)
     t.alignment = WD_TABLE_ALIGNMENT.CENTER
     t.autofit = False
     for row in t.rows:
         for c in row.cells:
-            c.width = Mm(43)
+            c.width = Mm(57.3)
     set_borders(t, ['top', 'bottom'], size=6, color='E2E8F0')
     for i, (num, label) in enumerate(stats):
         pn = t.cell(0, i).paragraphs[0]
@@ -239,10 +299,19 @@ def main():
     ])
     doc.add_paragraph().paragraph_format.space_after = Pt(1)
     stat_strip(doc)
+    doc.add_paragraph().paragraph_format.space_after = Pt(1)
+    photo_placeholder(doc, '[ HERO PHOTO  ·  full width, approx. 172 x 55 mm  ·  storefront, officers on '
+                           'site or control room  ·  click here, delete this text, then Insert > Pictures ]',
+                      h_mm=55)
+    p = doc.add_paragraph()
+    p.alignment = WD_ALIGN_PARAGRAPH.CENTER
+    p.paragraph_format.space_after = Pt(2)
+    r = p.add_run('1 Partnership   ·   2 Challenge   ·   3 Service lines   ·   4 Vision systems and AI   ·   '
+                  '5 Intelligence   ·   6 Compliance   ·   7 Results   ·   8 The offer   ·   9 People')
+    r.font.name = BODY_FONT; r.font.size = Pt(8); r.font.color.rgb = GRAY_500
 
     # 1 — One partner
-    overline(doc, 'The partnership')
-    heading(doc, 'One partner, every store')
+    section_bar(doc, '1', 'One partner, every store')
     body(doc, 'Security for a nationwide retail network is usually bought as three separate services: '
               'guarding from one vendor, alarm monitoring from another, loss prevention from a third, none '
               'of which share data. The gaps between vendors are where loss happens. ASG Group runs all of '
@@ -252,7 +321,7 @@ def main():
     body(doc, '<b>Who we are.</b> ASG Group is New Zealand-owned. Its covert loss-prevention arm, '
               '<b>SLS Retail Theft Control</b>, has protected NZ retail continuously since 2006 and joined '
               'the group in 2025, alongside <b>Absolute Security Group Ltd</b>, which delivers uniformed '
-              'guarding, precinct patrol, CCTV monitoring and electronic security. 350+ security '
+              'guarding, precinct patrol, CCTV monitoring and electronic security. 250+ security '
               'professionals on active rosters group-wide, with offices in Auckland, Waikato, Wellington '
               'and Christchurch, working every day inside national retail networks across grocery, '
               'hardware and general merchandise, alongside precinct, education, hospitality, property and '
@@ -260,8 +329,7 @@ def main():
               'team with contractual information barriers is part of this offer.')
 
     # 2 — The challenge
-    overline(doc, 'The challenge')
-    heading(doc, 'Technology retail faces unique risks')
+    section_bar(doc, '2', 'Technology retail faces unique risks')
     body(doc, 'Laptops, phones, components and accessories are compact, high-value and quick to resell. '
               'That stock profile shapes four risks every technology retailer manages daily:')
     tile_grid(doc, [
@@ -279,8 +347,7 @@ def main():
               'your own stores.')
 
     # 3 — Service lines
-    overline(doc, 'Our service lines')
-    heading(doc, 'Five capabilities, one provider')
+    section_bar(doc, '3', 'Our service lines: five capabilities, one provider')
     body(doc, 'Covert operatives recover stock before it leaves the store. Uniformed officers hold the '
               'entry and the counter. Electronic systems and monitoring cover the hours nobody is on the '
               'floor. And one weekly dataset decides where all of it sits (Section 6). The companion '
@@ -318,10 +385,11 @@ def main():
               'serialised-stock tracing, refund and warranty fraud, click-and-collect fraud screening) '
               'and Surge and Event Support (launch-day crowd management, promotional peaks, multi-store '
               'simultaneous activation across regions).')
+    photo_placeholder(doc, '[ PHOTO  ·  full width, approx. 172 x 45 mm  ·  uniformed officer at entry / '
+                           'covert team briefing  ·  click, delete text, Insert > Pictures ]', h_mm=45)
 
     # 4 — Vision systems
-    overline(doc, 'Vision systems')
-    heading(doc, 'Facial recognition, licence plate recognition and AI capability')
+    section_bar(doc, '4', 'Facial recognition, licence plate recognition and AI capability')
     body(doc, 'PB Tech already owns most of the hardware this needs: LPR can run on existing cameras '
               'where image quality allows, and facial recognition is lawful in New Zealand retail only '
               'inside the Biometric Processing Privacy Code 2025. Our position on both is the same: '
@@ -372,10 +440,11 @@ def main():
               'misidentified, audit logging, and PB Tech sign-off. Where existing cameras do not meet LPR '
               'image requirements, replacements are specified in the Phase 0 survey and quoted before any '
               'commitment; LPR and FRT licensing appears as its own line on the indicative rate card.')
+    photo_placeholder(doc, '[ PHOTO  ·  full width, approx. 172 x 45 mm  ·  monitoring centre / camera '
+                           'estate  ·  click, delete text, Insert > Pictures ]', h_mm=45)
 
     # 5 — Reporting (merged with data-led coverage)
-    overline(doc, 'Intelligence')
-    heading(doc, 'Intelligence-led reporting and data-led coverage')
+    section_bar(doc, '5', 'Intelligence-led reporting and data-led coverage')
     tile_grid(doc, [
         ('Deployment & Recovery Tracker', 'Hours, recoveries, incidents, offenders, deterrents and '
          'trespasses per store, with cost tracked against budget.'),
@@ -401,8 +470,7 @@ def main():
               're-tiered from the data.')
 
     # 6 — Compliance
-    overline(doc, 'Compliance')
-    heading(doc, 'Licensed, trained and compliant')
+    section_bar(doc, '6', 'Licensed, trained and compliant')
     tile_grid(doc, [
         ('Personnel standards', '✓ Required current licence or Certificate of Approval under the Private '
          'Security Personnel and Private Investigators Act 2010, in the classes each role requires\n'
@@ -421,8 +489,7 @@ def main():
     ])
 
     # 7 — Results
-    overline(doc, 'Proven results')
-    heading(doc, 'Proven in national retail')
+    section_bar(doc, '7', 'Proven in national retail')
     bullet(doc, '<b>Covert loss prevention:</b> more than $1 million in verified recoveries since July '
                 '2025, reported to clients weekly, across 100+ retail sites.')
     bullet(doc, '<b>Precinct and urban security:</b> a flagship multi-year city-centre precinct contract '
@@ -432,8 +499,7 @@ def main():
               'with those clients’ consent.')
 
     # 8 — The offer
-    overline(doc, 'The offer')
-    heading(doc, 'The Peak-Season Start: free audit, guaranteed pilot')
+    section_bar(doc, '8', 'The Peak-Season Start: free audit, guaranteed pilot')
     body(doc, '<b>Start free: the Loss-Map Audit.</b> A walkthrough of three representative sites and a '
               'loss-data workshop under NDA, no cost, no obligation. We are on site within five working '
               'days of your confirmation and NDA execution, and return a store-by-store coverage plan, '
@@ -496,8 +562,7 @@ def main():
             r.font.color.rgb = MIDNIGHT if j == 0 else SLATE
 
     # 9 — People
-    overline(doc, 'Our people')
-    heading(doc, 'Leadership team')
+    section_bar(doc, '9', 'Our people')
     if TEAM_PHOTO.exists():
         doc.add_picture(str(TEAM_PHOTO), width=Mm(120))
         doc.paragraphs[-1].alignment = WD_ALIGN_PARAGRAPH.CENTER
@@ -505,6 +570,10 @@ def main():
               'loss-prevention operation since 2006. The group is led by <b>Ahmad Duais</b> (Chief '
               'Executive), with <b>Mark Clansey</b> (General Manager) and <b>Hasi Nabawi</b> (Operations '
               'Manager) running national operations.')
+    photo_placeholder(doc, '', h_mm=38, cols=3, labels=[
+        '[ HEADSHOT  ·  Ahmad Duais  ·  Chief Executive ]',
+        '[ HEADSHOT  ·  Mark Clansey  ·  General Manager ]',
+        '[ HEADSHOT  ·  Hasi Nabawi  ·  Operations Manager ]'])
     bullet(doc, '<b>Dedicated account manager</b> named at engagement: a single point of contact.')
     bullet(doc, '<b>Regional operations coverage</b> from our Auckland, Waikato, Wellington and '
                 'Christchurch bases.')
