@@ -136,7 +136,7 @@ def draw_footer(cv, doc):
 def stat_strip():
     stats = [
         ('100+', 'retail sites under covert LP'),
-        ('$1M+', 'portfolio recoveries, 12 months'),
+        ('$1M+', 'verified recoveries since Jul 2025'),
         ('48 hr', 'covert mobilisation, base regions'),
         ('2006', 'SLS RTC in retail LP since'),
     ]
@@ -181,7 +181,8 @@ def build_story():
     s.append(B('<b>Who we are.</b> ASG Group is New Zealand-owned. Its covert loss-prevention arm, '
                '<b>SLS RTC Ltd</b>, has protected NZ retail continuously since 2006 and joined the group in '
                '2025, alongside <b>Absolute Security Group Ltd</b> (uniformed guarding, precinct patrol, CCTV '
-               'monitoring and electronic security). 300+ security professionals group-wide; offices in '
+               'monitoring and electronic security). 180+ security professionals on active rosters '
+               'group-wide; offices in '
                'Auckland, Wellington and Christchurch; covert teams based in Auckland, Hamilton, Wellington '
                'and Christchurch, working every week inside national retail networks across grocery, hardware '
                'and general merchandise. Client data is strictly siloed \u2014 never cross-shared \u2014 and a '
@@ -194,8 +195,8 @@ def build_story():
                'and crime-intelligence-platform trained; they engage and recover under a documented '
                'use-of-force and citizen\u2019s-arrest policy, administer trespass warnings as the client\u2019s '
                'authorised agents under the Trespass Act 1980, and build structured evidence packs for '
-               'Police. Recoveries are valued at verified retail value \u2014 more than $1 million recovered '
-               'across the covert portfolio in the last 12 months \u2014 and every incident is graded on our 1\u20135 '
+               'Police. Recoveries are reconciled weekly with each client \u2014 more than $1 million in '
+               'verified recoveries across the covert portfolio since July 2025 \u2014 and every incident is graded on our 1\u20135 '
                'severity scale (1 = compliant through 5 = physical/weapons), so you see the safety picture '
                'your staff face, not just the recovery number.'))
     s.append(B('<b>Guarding, precinct and buildings (ASG).</b> Retail, corporate, venue and precinct work, '
