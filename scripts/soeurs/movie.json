@@ -1,0 +1,57 @@
+{
+  "project": "soeurs-reels",
+  "version": 1,
+  "publish_target": "organic",
+  "composite_claim_review": null,
+  "render": {
+    "fps": 24,
+    "resolution": [1080, 1920],
+    "out_dir": "~/Desktop/Soeurs/output"
+  },
+  "assets": {
+    "styled_still": null,
+    "logo_asset": null,
+    "macro": [],
+    "audio": []
+  },
+  "legal": {
+    "risk_appetite": "low",
+    "safe_line": "audience-comparison",
+    "house_names": [
+      "Chanel", "Dior", "Tom Ford", "YSL", "Yves Saint Laurent", "Creed",
+      "Maison Francis Kurkdjian", "MFK", "Baccarat Rouge", "Le Labo",
+      "Jo Malone", "Viktor & Rolf", "Flowerbomb", "Lancome", "Lancôme",
+      "Armani", "Prada", "Versace", "Kilian", "Parfums de Marly", "Delina",
+      "Santal 33", "La Vie Est Belle", "Black Opium", "Lost Cherry",
+      "Vanille Fatale", "By the Fireplace", "Replica"
+    ]
+  },
+  "gates": {
+    "substantiation_registry": {
+      "alcohol_free":   {"tier": "substantiated", "usable": true},
+      "no_overspray":   {"tier": "substantiated", "usable": true},
+      "goes_anywhere":  {"tier": "substantiated", "usable": true},
+      "layerable":      {"tier": "substantiated", "usable": true},
+      "wear_hours_number": {"tier": "claim", "usable": false,
+        "substantiation_ref": null, "misleading_review": null,
+        "platform_ad_status": "organic_only",
+        "note": "blinded dated wear test required (s12A)"},
+      "lasts_longer_than_edp": {"tier": "claim", "usable": false,
+        "note": "likely FALSE per vapour-pressure physics — never use"}
+    }
+  },
+  "claim_lines": {
+    "alcohol_free": "NO ALCOHOL. NO STING. JUST OIL.",
+    "no_overspray": "NO OVERSPRAY. EVERY DROP LANDS.",
+    "goes_anywhere": "10ML. GOES WHERE YOU GO."
+  },
+  "scents": [
+    {
+      "name": "S'MORES",
+      "price": null,
+      "tm_clearance_ref": null,
+      "notes": ["toasted marshmallow", "dark chocolate", "graham cracker"],
+      "concept": "a campfire s'more"
+    }
+  ]
+}
