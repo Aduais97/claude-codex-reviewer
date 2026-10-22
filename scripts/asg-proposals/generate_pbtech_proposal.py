@@ -35,8 +35,8 @@ OUT = Path.home() / 'Desktop/ASG/Sales & Marketing/Proposals/PBTech_Integrated_S
 
 # ---- Styles ------------------------------------------------------------------
 def st(name, **kw):
-    base = dict(fontName='Helvetica', fontSize=10, leading=14.2, textColor=SLATE,
-                spaceAfter=7)
+    base = dict(fontName='Helvetica', fontSize=10, leading=13.9, textColor=SLATE,
+                spaceAfter=5)
     base.update(kw)
     return ParagraphStyle(name, **base)
 
@@ -44,12 +44,12 @@ S = {
     'body': st('body'),
     'lead': st('lead', fontSize=10.5, leading=15, textColor=NAVY),
     'h2': st('h2', fontName='Helvetica-Bold', fontSize=13.5, leading=16.5,
-             textColor=MIDNIGHT, spaceBefore=13, spaceAfter=5),
+             textColor=MIDNIGHT, spaceBefore=11, spaceAfter=4),
     'h3': st('h3', fontName='Helvetica-Bold', fontSize=10.5, leading=14,
              textColor=MIDNIGHT, spaceBefore=7, spaceAfter=3),
     'overline': st('overline', fontName='Helvetica-Bold', fontSize=8,
                    textColor=SIGNAL, spaceAfter=2, leading=10),
-    'bullet': st('bullet', leftIndent=12, bulletIndent=2, spaceAfter=4),
+    'bullet': st('bullet', leftIndent=12, bulletIndent=2, spaceAfter=3),
     'statnum': st('statnum', fontName='Courier-Bold', fontSize=16, leading=18,
                   textColor=MIDNIGHT, alignment=1, spaceAfter=1),
     'statlab': st('statlab', fontSize=8, leading=10, textColor=GRAY_500,
@@ -135,10 +135,10 @@ def draw_footer(cv, doc):
 # ---- Stat strip --------------------------------------------------------------
 def stat_strip():
     stats = [
-        ('300+', 'security professionals'),
-        ('4', 'regional covert bases'),
-        ('35+', 'retail stores worked weekly'),
-        ('1,200+', 'covert LP hours weekly'),
+        ('100+', 'retail sites under covert LP'),
+        ('$1M+', 'portfolio recoveries, 12 months'),
+        ('48 hr', 'covert mobilisation, base regions'),
+        ('2006', 'SLS RTC in retail LP since'),
     ]
     cells = [[Table([[Paragraph(n, S['statnum'])], [Paragraph(l, S['statlab'])]],
                     colWidths=[(PAGE_W - 2 * M_SIDE) / 4 - 8])
@@ -178,35 +178,48 @@ def build_story():
                  'Code 2025 supports it.'))
     s.append(BUL('<b>Data-led coverage</b> \u2014 guard-hours re-weighted every week from your own incident and '
                  'recovery data, so cover sits where loss is occurring.'))
-    s.append(B('<b>Who we are.</b> ASG Group is New Zealand-owned: <b>Absolute Security Group Ltd</b> '
-               '(uniformed guarding, precinct patrol, CCTV monitoring and electronic security) and '
-               '<b>SLS RTC Ltd</b> (specialist covert retail loss prevention), operating as one group with '
-               'covert teams based in Auckland, Hamilton, Wellington and Christchurch. Our covert operatives '
-               'work every week inside national retail networks across grocery, hardware and general '
-               'merchandise. Client data is strictly siloed \u2014 each client\u2019s incident, offender and loss data '
-               'lives in its own store and is never cross-shared \u2014 and a dedicated PB Tech team with '
-               'contractual information barriers is part of this offer.'))
+    s.append(B('<b>Who we are.</b> ASG Group is New Zealand-owned. Its covert loss-prevention arm, '
+               '<b>SLS RTC Ltd</b>, has protected NZ retail continuously since 2006 and joined the group in '
+               '2025, alongside <b>Absolute Security Group Ltd</b> (uniformed guarding, precinct patrol, CCTV '
+               'monitoring and electronic security). 300+ security professionals group-wide; offices in '
+               'Auckland, Wellington and Christchurch; covert teams based in Auckland, Hamilton, Wellington '
+               'and Christchurch, working every week inside national retail networks across grocery, hardware '
+               'and general merchandise. Client data is strictly siloed \u2014 never cross-shared \u2014 and a '
+               'dedicated PB Tech team with contractual information barriers is part of this offer.'))
     s.append(stat_strip())
 
-    s.append(H2('2', 'Current operations \u2014 what we run today'))
-    s.append(B('<b>Covert retail loss prevention (SLS RTC).</b> Two-operative minimum teams \u2014 we never roster '
-               'solo covert staff \u2014 rotating across client store networks. Operatives engage and recover under '
-               'a documented use-of-force and citizen\u2019s-arrest policy: de-escalate, recover, document, refer. '
-               'Trespass warnings are administered as the client\u2019s authorised agents under the Trespass Act '
-               '1980. Every incident is graded on our 1\u20135 severity scale (1 = compliant through 5 = '
-               'physical/weapons), so you see the safety picture your staff face, not just the recovery number. '
-               'Structured evidence packs support Police decision-making \u2014 individual incidents rarely cross '
-               'the charging threshold, but a documented cross-store pattern gives Police something to assess.'))
-    s.append(B('<b>Static and uniformed guarding (ASG).</b> Retail, corporate, venue and precinct work, '
-               'including a multi-year city-centre precinct safety patrol contract run to contracted '
-               'response-time service levels.'))
-    s.append(B('<b>CCTV, monitoring and electronic security (ASG).</b> We operate on the Nx Witness video '
-               'management platform, run remote CCTV monitoring, and engineer our own alert-triage tooling so '
-               'operators work a ranked, verified queue rather than a raw alarm flood. Camera-health monitoring '
-               'is standing practice \u2014 a dead camera is a blind spot, and we treat it as an incident.'))
-    s.append(B('<b>Systems and integrations.</b> GPS-verified patrols, digital incident reporting from the '
-               'floor, timeclock-verified billing, and \u2014 where authorised by the client and consistent with its '
-               'privacy policy \u2014 integration with retail crime-intelligence platforms such as Auror.'))
+    s.append(H2('2', 'Capability \u2014 what the group runs today'))
+    s.append(B('<b>Covert retail loss prevention (SLS RTC).</b> Two-operative minimum teams as standing '
+               'policy, rotating across national retail networks. Operatives are COA-certified, SOP-trained '
+               'and crime-intelligence-platform trained; they engage and recover under a documented '
+               'use-of-force and citizen\u2019s-arrest policy, administer trespass warnings as the client\u2019s '
+               'authorised agents under the Trespass Act 1980, and build structured evidence packs for '
+               'Police. Recoveries are valued at verified retail value \u2014 more than $1 million recovered '
+               'across the covert portfolio in the last 12 months \u2014 and every incident is graded on our 1\u20135 '
+               'severity scale (1 = compliant through 5 = physical/weapons), so you see the safety picture '
+               'your staff face, not just the recovery number.'))
+    s.append(B('<b>Guarding, precinct and buildings (ASG).</b> Retail, corporate, venue and precinct work, '
+               'including a multi-year city-centre precinct safety patrol contract \u2014 thousands of patrol '
+               'routes and business-assistance calls completed, with zero use of force recorded across every '
+               'aggression incident in the life of the contract. On our longest-running commercial building '
+               'contract, over half of all logged activity is preventative \u2014 issues found and fixed before '
+               'they become incidents. Surge capability is proven: simultaneous crowd-control activation '
+               'across multiple stores in five regions, stood up inside two weeks.'))
+    s.append(B('<b>CCTV, alarm monitoring and electronic security.</b> We operate on the Nx Witness video '
+               'management platform with in-house alert-triage engineering, so operators work a ranked, '
+               'verified queue rather than a raw alarm flood \u2014 and camera-health monitoring is standing '
+               'practice: where a camera sits within our monitored estate, an outage is logged, reported and '
+               'escalated with the discipline of an incident. The hardware side is '
+               'in-house too: EAS gates (RF and AM), display-stock protection for high-value devices, tags, '
+               'labels and detachers \u2014 supplied, installed and serviced nationwide \u2014 plus the Mosquito '
+               'anti-loitering system, alarm response and a mobile patrol fleet.'))
+    s.append(B('<b>People and reporting.</b> Officers are trained through our in-house academy, and '
+               'turnover across our permanent security workforce ran under 10% in the last 12 months. We do '
+               'not subcontract outside the group \u2014 every officer is directly employed by an ASG Group '
+               'company, every hour timeclock-verified; the head-contractor structure is set out in Section '
+               '6. Daily, weekly and monthly reporting is standard on every contract, and \u2014 where authorised '
+               'by the client and consistent with its privacy policy \u2014 we integrate with retail '
+               'crime-intelligence platforms such as Auror.'))
 
     s.append(H2('3', 'Proposed configuration for PB Tech'))
     s.append(B('<b>3.1&nbsp; Static guarding \u2014 risk-tiered, not blanket.</b> We do not propose a guard in '
@@ -237,7 +250,7 @@ def build_story():
                'set per location class in the SLA.'))
     s.append(B('<b>3.4&nbsp; Facial recognition \u2014 staged, honest, gated.</b> FRT in New Zealand retail is '
                'governed by the Biometric Processing Privacy Code 2025; done wrong it is a regulatory and '
-               'reputational liability, and the evidence from New Zealand\u2019s only large retail trial is '
+               'reputational liability, and the evidence from New Zealand\u2019s retail trials to date is '
                'qualified \u2014 which is why we pilot and measure rather than promise. How it works, stated '
                'plainly: every entering face is checked against a watchlist; non-matches are deleted '
                'immediately; only enrolled individuals are retained. Enrolment is limited to serious repeat '
@@ -246,9 +259,10 @@ def build_story():
                'on a set cycle. Every alert is verified by a human operator before any floor response; no '
                'action is ever taken on an automated match alone. Controls include purpose limitation, defined '
                'retention, role-based access with audit logs, accuracy testing before go-live, clear entry '
-               'signage, and incident and breach procedures. PB Tech owns the necessity-and-proportionality '
-               'assessment and the go/no-go decision \u2014 we prepare it with you and supply the operational '
-               'evidence. If the assessment does not support FRT, we do not run it; the rest of this proposal '
+               'signage, and incident and breach procedures. PB Tech retains the go/no-go decision on the '
+               'necessity-and-proportionality assessment \u2014 we prepare it with you and supply the operational '
+               'evidence, with each party responsible for its own obligations under the Privacy Act and the '
+               'Code. If the assessment does not support FRT, we do not run it; the rest of this proposal '
                'stands on its own.'))
 
     s.append(H2('4', 'Data-led coverage \u2014 hours follow the loss'))
@@ -257,12 +271,11 @@ def build_story():
     s.append(B('<b>Baseline and tiering.</b> Weeks 1\u20138 build a per-store baseline: incidents, recoveries, '
                'offender counts, trespass register, alarm activations and severity spread. Stores are tiered '
                'from the data, not by intuition.'))
-    s.append(B('<b>Return-weighted coverage.</b> Covert days and depth per store follow the data. For '
-               'illustration: a store returning around $15k of quarterly recoveries might warrant four covert '
-               'visit-days a week; one returning under $1k, a single day \u2014 with a breadth rule guaranteeing no '
-               'store is ever left uncovered. Recovery value is one input alongside incident severity, loss '
-               'trend and stock profile \u2014 it informs cover, it does not cap it. The weighting is recalculated '
-               'weekly, so when offenders shift to a quieter branch, the hours follow them within a week.'))
+    s.append(B('<b>Return-weighted coverage.</b> Covert days and depth per store are set after the '
+               'baseline, weighing recovery value, incident severity, loss trend, stock profile and safety '
+               'risk \u2014 with a breadth rule guaranteeing no store is ever left uncovered. The weighting is '
+               'recalculated weekly, so when offenders shift to a quieter branch, the hours follow them '
+               'within a week. Proposed hours per store sit in the priced plan, not in this document.'))
     s.append(B('<b>Evidence pipeline.</b> Every documented incident feeds offender profiles and structured '
                'evidence packs for Police \u2014 subject always to Police evidential requirements and discretion. '
                'The trespass register feeds the FRT watchlist only under the enrolment standard in 3.4.'))
@@ -330,18 +343,38 @@ def build_story():
                'and breach notification agreed in the SLA.'))
     s.append(B('<b>Commercial.</b> A single national agreement, one consolidated monthly invoice, and '
                'cost-versus-budget visible in every weekly tracker \u2014 you should never have to ask what you '
-               'spent or what it returned. Rates adjust annually through a transparent mechanism tied to '
-               'published wage movements, not mid-term renegotiation.'))
+               'spent or what it returned. Billing is on timeclock-verified actual hours only. Annual rate '
+               'adjustments are capped at the lower of 2.5% and the annual movement in Stats NZ\u2019s Labour '
+               'Cost Index, with statutory minimum-wage changes passed through at demonstrated cost only \u2014 '
+               'cost certainty for the term, not mid-term renegotiation.'))
 
-    s.append(H2('7', 'Next steps'))
-    s.append(BUL('Mutual NDA, then a 90-minute loss-data workshop and a walkthrough of three representative '
-                 'sites (one superstore, one service centre, one distribution point). We can be on site within '
-                 'five working days of your reply.'))
-    s.append(BUL('We return a priced, store-by-store coverage plan \u2014 with the indicative rate card per '
-                 'service line \u2014 within ten working days of the workshop.'))
-    s.append(Spacer(0, 6))
+    s.append(H2('7', 'The offer \u2014 how we start'))
+    s.append(B('<b>Start free: the Loss-Map Audit.</b> A walkthrough of three representative sites (one '
+               'superstore, one service centre, one distribution point) and a loss-data workshop with your LP '
+               'lead \u2014 no cost, no obligation. We are on site within five working days of your confirmation '
+               'and NDA execution, and return a store-by-store coverage plan, risk tiering and an indicative '
+               'return scenario (assumptions stated) within ten working days of the workshop and receipt of '
+               'your loss data. An indicative rate card per service line is available on request, independent '
+               'of the audit.'))
+    s.append(B('<b>Pilot without risk.</b> A four-week covert LP pilot in your highest-loss stores, live '
+               'within 48 hours of pilot-scope sign-off and store-access confirmation in our four covert base '
+               'regions (other regions within five working days). Our pilot guarantee: if verified recoveries '
+               'and documented interventions across the four weeks don\u2019t exceed the pilot\u2019s invoiced cost \u2014 '
+               'measured against a baseline agreed before day one, on the weekly tracker both parties sign '
+               'off \u2014 you don\u2019t pay. The pilot runs ahead of Phase 2: its stores, data and weeks roll '
+               'straight into the per-store baseline, and pilot teams transition into the national rotation '
+               'without a restart.'))
+    s.append(B('<b>You keep the artefacts.</b> Everything the Loss-Map Audit produces \u2014 the walkthrough '
+               'reports, draft risk tiering and indicative return scenario \u2014 is yours to keep, whatever you '
+               'decide. Phase 0 then validates that tiering with full site surveys and adds the SOPs, '
+               'hardening assessments and privacy pack.'))
+    s.append(B('<b>Timing.</b> On a Phase 0 start by Friday 13 November 2026, guarding and monitoring are '
+               'live at priority stores by early December and run through the peak, covert pilot teams can be '
+               'in stores ahead of Black Friday on a prompt decision, and the full national rotation '
+               'completes by late January. The proposal remains open for 60 days; after mid-November, a '
+               'late-January full start remains available with peak coverage resting on the pilot.'))
     s.append(B('<b>Ahmad Duais</b> \u2014 Chief Executive, Absolute Security Group<br/>'
-               'ahmad@absolutesecuritygroup.co.nz &nbsp;\u00b7&nbsp; absolutesecuritygroup.co.nz'))
+               'ahmad@absolutesecuritygroup.co.nz &nbsp;\u00b7&nbsp; absolutesecuritygroup.co.nz &nbsp;\u00b7&nbsp; slsrtc.co.nz'))
     return s
 
 # ---- Document ----------------------------------------------------------------
