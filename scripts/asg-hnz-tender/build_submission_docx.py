@@ -18,26 +18,25 @@ GREY = RGBColor(0x4A, 0x4A, 0x5A)
 
 
 def add_runs(p, text, size=10.5, italic=False, color=None):
-    # split out [placeholders] and **bold**
-    for seg in re.split(r"(\[[^\]]+\])", text):
-        if not seg:
-            continue
-        if seg.startswith("["):
-            run = p.add_run(seg)
-            run.font.size = Pt(size)
-            run.font.highlight_color = WD_COLOR_INDEX.YELLOW
-            run.bold = True
-            continue
-        for part in re.split(r"(\*\*[^*]+\*\*)", seg):
-            if not part:
-                continue
-            bold = part.startswith("**")
-            run = p.add_run(part.strip("*") if bold else part)
-            run.font.size = Pt(size)
-            run.bold = bold
-            run.italic = italic
-            if color is not None:
-                run.font.color.rgb = color
+    # tokenise by ** toggles FIRST (bold state survives across placeholder
+    # splits), then by [placeholders] within each bold state
+    bold = False
+    for tok in text.split("**"):
+        if tok:
+            for seg in re.split(r"(\[[^\]]+\])", tok):
+                if not seg:
+                    continue
+                run = p.add_run(seg)
+                run.font.size = Pt(size)
+                run.italic = italic
+                if color is not None:
+                    run.font.color.rgb = color
+                if seg.startswith("["):
+                    run.font.highlight_color = WD_COLOR_INDEX.YELLOW
+                    run.bold = True
+                else:
+                    run.bold = bold
+        bold = not bold
 
 
 def build(md_path, out_path):
