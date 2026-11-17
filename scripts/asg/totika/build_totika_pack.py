@@ -172,14 +172,13 @@ ACTION_PLAN = [
      "19 and 26 Nov sessions exist this month, so confirm real inductees or export history from Deputy (MB16). "
      "These cadences also underwrite claims already made in the PC draft answers."),
     ("7. Ahmad confirmations", "Ahmad", "by 21 Nov",
-     "(a) Written HSWA s23-25 notifiability assessment of Reign & Pour — this now protects the PC Q8.5 answer "
-     "(nil WorkSafe notices/prosecutions declared + ongoing-disclosure commitment) as well as Totika MB50-53; an "
-     "unnotified notifiable event is itself a breach; if unresolved, use CRL + a closed HOTC case as the Totika "
-     "investigation examples. (b) Nil WorkSafe/court return for ASG Ltd and directors (assessor runs a court "
-     "search). (c) SafetySeek genuinely in use — the PC Q8.1 answer asserts the SMS 'is administered through the "
-     "SafetySeek platform'; confirm or strip before submission. (d) Deputy training/CoA register real and "
-     "exportable. (e) PSPLA Responsible Employee named + licence certificates downloaded. (f) BizCover schedule "
-     "(due 21 Nov) -> standalone certificates; decide the $3M PI quote."),
+     "R&P notifiability CLEARED 17 Nov: Ahmad confirms the Reign & Pour incident did not meet the HSWA s23 "
+     "notifiable threshold, so the nil WorkSafe declaration in PC Q8.5 stands and R&P can be used as an "
+     "investigation example. Remaining: (a) Nil WorkSafe/court return for ASG Ltd and directors (assessor runs "
+     "a court search). (b) SafetySeek genuinely in use — the PC Q8.1 answer asserts the SMS 'is administered "
+     "through the SafetySeek platform'; confirm or strip before submission. (c) Deputy training/CoA register "
+     "real and exportable. (d) PSPLA Responsible Employee named + licence certificates downloaded. (e) BizCover "
+     "schedule (due 21 Nov) -> standalone certificates; decide the $3M PI quote."),
     ("8. Document build sprint (Claude-buildable)", "Claude + Shannon", "26-28 Nov (after PC submission)",
      "Populated guard-work hazard register + 2 site risk assessments (MB29); HOTC site safety plan with duress, "
      "welfare checks, safe haven (MB10); lone-worker/welfare-check procedure + HOTC log extracts (the most "
@@ -211,7 +210,6 @@ ACTION_PLAN = [
 
 OPEN_QUESTIONS = [
     ("WW contract term", "When Woolworths answers clarification Q1 (initial term from 1 Mar 2027 + renewals): does term x ~$4.5-5M/yr exceed $20M whole-of-term? If yes, Category 3 recategorisation applies within one month of award ($1,459+GST/yr, larger question set)."),
-    ("Reign & Pour notifiability", "Was the Oct 2026 incident (or any 2021-26 incident, incl. HOTC aggression injuries) notifiable under HSWA s23-25, and was WorkSafe notified? Written assessment needed before any nil declaration."),
     ("WorkSafe / court history", "Confirm nil enforcement/prosecution/investigation (5 years) for ASG Ltd, SLS RTC Ltd and all directors — the assessor verifies via court search."),
     ("Policy signatures", "Sign the H&S policy (Ahmad + Hasibullah) — nothing can be submitted until done. First verify Hasibullah's current registered directorship."),
     ("SafetySeek", "Is SafetySeek genuinely in use as the SMS platform? If not, the claim must be dropped before it reaches an assessor."),
@@ -491,11 +489,10 @@ def build_pdf():
     # ---- 9 risks
     E.append(SectionBar(9, 'Risks and Gates'))
     risks = [
-        ('Reign &amp; Pour notifiability (gate)',
-         'The plan initially used the Oct 2026 incident as showcase root-cause evidence while declaring nil '
-         'notifiable events — without assessing whether it WAS notifiable under HSWA s23-25. An unnotified '
-         'notifiable event is itself a breach, and the assessor cross-checks history declarations against court '
-         'records. Written notifiability assessment first; if unresolved, showcase CRL + a closed HOTC case.'),
+        ('Reign &amp; Pour notifiability — CLEARED 17 Nov',
+         'Ahmad confirms the Oct 2026 incident did not meet the HSWA s23 notifiable-event threshold (no injury '
+         'requiring notification), so no WorkSafe notification was required. The nil declaration in PC Q8.5 '
+         'stands on that confirmation and the incident can be used as a root-cause investigation example.'),
         ('Claims hygiene',
          'SafetySeek, the Deputy-linked training register, weekly inspections and monthly toolboxes are tender '
          'claims not yet evidenced on disk. Verify or drop each before it is repeated to an assessor; the 24 '

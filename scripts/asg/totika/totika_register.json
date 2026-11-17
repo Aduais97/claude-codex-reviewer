@@ -194,7 +194,7 @@
   "evidence_needed": "2 investigation reports + closed corrective-action records + comms proof (toolbox)",
   "status": "PARTIAL",
   "existing_source": "Reign & Pour incident pack (Oct 2026, Police-involved) + CRL report \u2014 security-incident format, not root-cause H&S format",
-  "action": "GATE FIRST: written HSWA s23-25 notifiability assessment of Reign & Pour (and the HOTC aggression set) BEFORE showcasing it \u2014 an unnotified notifiable event is itself a breach; if unresolved, use CRL Aug 2026 + a closed HOTC case as the two examples instead. Then: Rewrite both as root-cause investigations (5-why or similar), list corrective actions, close and evidence them, cover learnings at a toolbox with attendance recorded \u2014 single exercise closes MB21 and MB23",
+  "action": "Rewrite both as root-cause investigations (5-why or similar), list corrective actions, close and evidence them, cover learnings at a toolbox with attendance recorded \u2014 single exercise closes MB21 and MB23",
   "priority": "P1-blocker"
  },
  {
@@ -365,7 +365,7 @@
   "evidence_needed": "Confirmed nil returns for BOTH companies and all directors",
   "status": "UNKNOWN",
   "existing_source": "PC tender claims nil WorkSafe notices/prosecutions with an [AHMAD: confirm] placeholder still open",
-  "action": "Ahmad confirms nil return for ASG Ltd, SLS RTC Ltd and both directors before declaring; the assessor will verify against court records, so do not guess Include the written R&P notifiability assessment with the MB22 evidence. Also verify Hasibullah Nabawi is a current registered ASG Ltd director on the Companies Register before any 'all directors' declaration (the Nikki/SLS lag shows register entries can lag reality).",
+  "action": "Ahmad confirms nil return for ASG Ltd and directors before declaring; the assessor will verify against court records, so do not guess. R&P notifiability CLEARED 17 Nov (Ahmad confirms no injury at the HSWA s23 threshold \u2014 incident not notifiable; nil declaration stands). Also verify Hasibullah Nabawi is a current registered ASG Ltd director on the Companies Register before any 'all directors' declaration.",
   "priority": "P2-needed"
  },
  {
@@ -479,10 +479,10 @@
  {
   "section": "D. Incidents NEW-9",
   "requirement": "Standing notifiable-event REGISTER (even if nil)",
-  "evidence_needed": "A register demonstrating MB22 knowledge is operationalised + the written R&P notifiability assessment",
+  "evidence_needed": "A standing register demonstrating MB22 knowledge is operationalised (nil entries fine)",
   "status": "MISSING",
   "existing_source": "-",
-  "action": "Create the register (nil entries fine); file the written notifiability assessments in it.",
+  "action": "Create the register with nil entries to date; add future assessments as they occur.",
   "priority": "P2-needed"
  },
  {
