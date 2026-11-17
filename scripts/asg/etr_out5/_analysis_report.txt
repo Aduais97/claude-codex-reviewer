@@ -1,0 +1,223 @@
+# CONSOLIDATED FINAL PACKAGE REVIEW — NIKKI WAIRAU CHRISTIAN EXIT
+## SPA_DRAFT_V7.md + ADVISORY_AGREEMENT.md — Purchaser-side final gate before transmission to Franklin Law
+
+**Prepared for:** Ahmad Duais (Purchaser) — Absolute Security Group Limited / SLS RTC Limited
+**Date:** 22 July 2026
+**Status:** REVISED FINAL (supersedes the corrupted prior draft; addresses all QA findings of 22 July 2026)
+
+**Controlling framework.** The named framework file `_analysis_framework.txt` is a corrupted
+timeout artifact and contains no framework text. Per the QA direction, `ANALYSIS_FRAMEWORK.md`
+(22 July 2026, revised following methodology review) is expressly designated the controlling
+framework for this report. This report's sections map 1:1 to that framework's Appendix A table
+of contents (sections 1–13 below), and every pass, table, sensitivity, verdict scale and output
+standard required by the framework is executed in full.
+
+---
+
+## 0. FRONT MATTER — SCOPE, TEMPLATE RECONCILIATION, SOURCES
+
+### 0.1 Scope note
+
+This is a consolidated final package review of two legal drafts ahead of transmission to
+Franklin Law: `SPA_DRAFT_V7.md` (three-party share sale agreement: Vendor, Purchaser, Lockhart
+trustee) and `ADVISORY_AGREEMENT.md` (the separate post-settlement advisory engagement). It is
+not a full acquisition analysis. The corpus contains no financial statements, no organisational
+chart, no headcount data, no client revenue data and no standalone valuation inputs; none has
+been invented anywhere in this report. Two things the corpus does support are performed in full:
+derived transaction metrics (every figure traced to a corpus clause, every formula shown — §2.3,
+§2.5) and forensic use of the drafts' own operational content (SPA 3.1, 4.3, 4.5, 9.3, 14.3) to
+build the transition map (§2.4) and the closing-readiness workstream (Pass 6).
+
+### 0.2 Template reconciliation table
+
+| # | Mandated template section | Disposition in this report |
+|---|---|---|
+| 1 | Executive summary | Refitted: strengths vs residual risks; economics dashboard headline; transmission verdict + verdict battery — §1 |
+| 2 | Business overview | Refitted to Transaction & Document Map — §2.1–2.2. No business/market data exists in the corpus; stated, not invented |
+| 3 | Organisational analysis | No headcount/span-of-control data exists — refitted to a forensic transition map: RACI, contact-authority trace, control-of-systems matrix, knowledge-transfer dependencies, SPOF analysis, conflict-of-position register — §2.4 |
+| 4 | Financial analysis | No financial statements exist — refitted to the transaction-economics dashboard with mandated sensitivities — §2.3 |
+| 5 | Valuation analysis | Refitted to a limited valuation sanity check under the mandatory disclaimer — §2.5 |
+| 6 | Strategic fit | Refitted and expanded: sector-specific fit + structured benchmark vs Gwin 2025 / Pro Host 2023 / research-memo practice points — Pass 7 |
+| 7 | Risk assessment | Legal-risk register + dedicated purchaser-recourse review — Passes 1–5; consolidated register §11 |
+| 8 | Deal structure | Deferred consideration + set-off design, retention mechanism, earn-out-adjacent pitfalls, benchmark verdicts — Passes 2, 5, 7B, 8 |
+
+Residual gaps stated deliberately: per-company financials and the SPA 2.1 ASG/SLS price
+apportionment ([●], with the accountant) are open items, not omissions of analysis.
+
+### 0.3 Sources, reading order and style constraint
+
+| Order | Source | Role |
+|---|---|---|
+| 1 | `deal_facts.txt` (v2, 22 Jul 2026) | Controlling statement of the Purchaser's intent — acceptance criteria for Passes 1–2 |
+| 2 | `SPA_DRAFT_V7.md` | Primary instrument under review ("DRAFT FOR LEGAL REVIEW — NOT FOR EXECUTION" banner present) |
+| 3 | `ADVISORY_AGREEMENT.md` | Companion instrument under review (undated draft) |
+| 4 | `research_comparable_exits.txt` | Benchmark/compliance yardstick — research context, never cited as deal fact |
+
+Style constraint honoured throughout: the Vendor is male — "the Vendor" or he/him; no she/her.
+Prior review rounds 1 (25 findings) and 2 (verification + N1–N5) are recorded as applied and are
+not re-opened; every fix proposed here has been checked for regression against their subject
+clauses (§10.5.9 discipline — no fix below renumbers an existing clause; interpolated numbers
+are used to avoid a renumbering cascade like the one that broke Advisory Background B).
+
+---
+
+## 1. EXECUTIVE SUMMARY
+
+### 1.1 Transmission verdict
+
+**TRANSMIT WITH AMENDMENTS.** The package may go to Franklin Law once the two BLOCKER
+amendments below are applied (both have ready-to-paste wording in this report); the 22
+RECOMMENDED findings travel with it as the instruction list. Conditions attached:
+
+1. **F-08 (BLOCKER):** correct Advisory Background B's stale citation of SPA 10.4(c) to
+   10.4(d) before transmission — a one-word fix that redirects the Advisor's core services
+   permission to the right clause. Owner: drafter/Franklin Law.
+2. **F-16 (BLOCKER):** the unresolved Certificate of Approval question (§1.7) — insert the
+   protective condition-precedent wording into the Advisory Agreement (drafted at Pass 4A),
+   put the PSPLA query to Franklin Law with the transmission letter, and do not allow the
+   advisory engagement to commence until the question is resolved. Owners: Franklin Law
+   (query + drafting), Purchaser (commencement gate).
+3. The Pass 6 settlement-blocking checklist (6C) must be agreed with Franklin Law before
+   settlement day. Owner: Purchaser.
+
+This verdict is consistent with the subsidiary verdicts (§1.5): recourse is ADEQUATE WITH
+AMENDMENTS and closing is READY WITH CONDITIONS; no subsidiary verdict is INADEQUATE or NOT
+READY.
+
+### 1.2 Package strengths / residual risks
+
+**Strengths — purchaser intentions v7 provably implements (clause cites at Pass 1–2):**
+- Restraint rescope implemented exactly: operational guarding restrained (SPA 10.1(a)),
+  the Vendor's consulting/advisory future affirmatively permitted (10.4(c)), the current
+  portfolio fully off-limits including for consulting/advisory/training/review (10.1(b),
+  11.1(a), 11.2) — Pass 1 fidelity matrix, all four rows verified.
+- Client-protection layer implemented as instructed: Client Protection Period 1 Aug–1 Oct 2026
+  (11.4), departure trigger feeding set-off (11.6 → 15.1), written-confirmation contact channel
+  (11.5), good-faith duty spanning both Companies with the liaison role correctly ASG-only
+  (4.5, 11.5) — Pass 2 fidelity table, all four rows verified.
+- Company-IP gate (12A) correctly wired into set-off (15.1), survival (16.5), regulator
+  override (14.4) and injunction carve-out (17.1(c)).
+- Regulator-integrity design intact and zero-tolerance test passed: no fetter on regulator
+  communication found in either document (14.4; Advisory 6.1) — Pass 4D.
+- Gwin 2025 defect history excluded in substance: no sole-discretion compensation (Advisory 2.3
+  notice + 10-working-day make-up), no forfeiture (4.4 accrued commission survives) — Pass 7C.
+- Lockhart trustee joined on the Pro Host covenantor model (SPA 1.2(a)–(c)), execution block
+  active.
+
+**Residual risks — every BLOCKER and RECOMMENDED finding, one line each, worst first
+(full detail in the findings index, §12):**
+- F-16 BLOCKER: advisory role may require a PSPLA Certificate of Approval; unresolved, during
+  an open CIPU process.
+- F-08 BLOCKER: Advisory Background B cites SPA 10.4(c) — renumbered to 10.4(d) in v7; the
+  permission is misdirected as drafted.
+- F-20: Advisory 9.1 as drafted could oblige ASG to indemnify the Advisor's own regulatory
+  fines from Services-period conduct.
+- F-21: Advisory 5.4 omits clause 9 from survival — indemnity exposure ambiguous post-term.
+- F-23: SPA 8.1 guarantee indemnity is uncapped, unlisted and unlimited in time; no guarantee
+  inventory exists in the corpus.
+- F-24: set-off security decays $160,000 → $80,000 → $0 by 1 Oct 2026 while 24-month restraints
+  and unlimited-in-time confidentiality/IP obligations run on — commercial choice framed.
+- F-22: warranty set is silent on PSPPI/licence compliance despite the open CIPU process;
+  no related-party or credential-completeness warranty.
+- F-13: Advisory 5.1 (3-month opt-in terms) vs 5.2 (90-day notice) give contradictory answers
+  to "how does this end".
+- F-11: commission lookback (Advisory 4.1(a), rolling) diverges from SPA 11.2 (fixed) — the
+  scheme can reward a restrained solicitation late in the term.
+- F-01: settlement date can move (SPA 1.1) but instalment dates and the Client Protection
+  Period end are fixed calendar dates — slip compresses or inverts the protection window.
+- F-02: 10.4(c)/10.1(a) arguably let the Vendor's consultancy broker/arrange guard supply
+  without "providing" it.
+- F-06: 11.6's contribution threshold makes the Vendor near-insurer of client retention —
+  penalty-doctrine exposure; carve-out strengthens defensibility.
+- F-05: 10.4(d) requires personal services — invoicing via the Vendor's consultancy entity
+  would fall outside the permission; unaddressed in the Advisory Agreement.
+- F-10: Advisory 1.2 ("directed or agreed... by Ahmad Duais") mismatches SPA 11.5 ("requested
+  in writing by a Company") and is the sharpest employment indicator (Pass 4C).
+- F-18: contractor-status protective language absent (fixed hours, retainer, direction, no
+  substitution all point toward employment).
+- F-19: Advisory 5.3/8.1 lack belt-and-braces regulator carve-outs (termination for
+  "detrimental conduct"; Company ownership of compliance work product).
+- F-09: SPA 9.4 contemplates an advisory agreement with "the Companies" (plural); the Advisory
+  Agreement is ASG-only with an unexercised SLS extension (1.3).
+- F-25/F-26/F-27: commission design lacks expert determination, margin/acceptance protection,
+  and an information/audit right (research memo §2 practice points).
+- F-17: SPA 14.3 "promptly" is undated for PSPLA notifications during an open CIPU process.
+- F-03/F-04: 12A response-silence gap; 12A.3 memory carve-out arguably permits substantial
+  reproduction of specific materials.
+- F-28: no client-communication plan or named liaison successor yet (13.2 form not agreed).
+
+### 1.3 Transaction-economics dashboard headline (derivations at §2.3B)
+
+| Metric | Value |
+|---|---|
+| Stake acquired | 1,525 of 10,000 shares = 15.25% of ASG **and** 15.25% of SLS |
+| Total consideration | NZ$260,000 (SPA 2.1) |
+| Cash at close | $100,000 = 38.5% (SPA 2.2(a)) |
+| Deferred consideration | $160,000 = 61.5% — all reachable by cl 15 set-off |
+| Maximum recoverable set-off (decay) | $160,000 until 1 Sep 2026 → $80,000 from 1 Sep → **$0 after 1 Oct 2026** |
+| Advisory fixed-cost run-rate | $1,500 + GST/month; $4,500 + GST/term; $18,000 + GST annualised; payable even in no-work months (Advisory 2.2) |
+| Implied minimum hourly economics | $250/hr effective at minimum utilisation vs $100 + GST/hr marginal rate — availability priced at 2.5× |
+| Commission exposure | 13% × Net Revenue received in each Qualifying New Client's first 3 months; no aggregate cap |
+| Default interest | 12% p.a. (SPA 5.1) |
+
+### 1.4 Key review metrics
+
+- **Findings: 28 total — 2 BLOCKER, 22 RECOMMENDED, 4 OPTIONAL.** By document: SPA 12,
+  Advisory Agreement 14, cross-document 1, operational 1.
+- **Cross-references (Pass 3): 21 checked — 15 RESOLVE, 1 STALE (Advisory Bkgd B), 3 AMBIGUOUS
+  (rows 4, 12, 21), 2 CONFLICT (rows 5, 11).** Every non-resolving row has fix wording.
+- **Compliance verdicts (Pass 4):** PSPLA — REFER TO SOLICITOR (PSPLA query recommended);
+  s149 — COMPLIANT WITH ACTIONS; contractor status — COMPLIANT WITH ACTIONS; regulatory
+  integrity — SPA COMPLIANT / Advisory COMPLIANT WITH ACTIONS; advisory liability (9.1/5.4) —
+  REFER TO SOLICITOR.
+
+### 1.5 Verdict battery
+
+| Verdict | Result |
+|---|---|
+| Compliance (Pass 4, overall) | COMPLIANT WITH ACTIONS, two areas REFER TO SOLICITOR (CoA; Advisory 9.1) |
+| Recourse adequacy (Pass 5) | ADEQUATE WITH AMENDMENTS — every inadequacy has proposed wording or a framed commercial choice |
+| Closing readiness (Pass 6) | READY WITH CONDITIONS — all open items have owners inside the settlement timeline |
+| Strategic fit / benchmark (Pass 7) | Fit confirmed; package tighter than the group's prior exits on client protection and compensation guardrails; unusually exposed on term machinery, commission controls and dispute-cost design (all carried to Pass 8) |
+| Final transmission verdict | TRANSMIT WITH AMENDMENTS (§1.1, §13) |
+
+### 1.6 Recommendation summary (Pass 8; what Franklin Law is asked to do with each)
+
+- R1 (RECOMMENDED): insert expert-determination clause for commission calculation disputes
+  (new Advisory 4.5) — settle drafting.
+- R2 (RECOMMENDED): add acceptance-discretion and standard-rates gates to Qualifying New
+  Client definition (Advisory 4.1) — settle drafting.
+- R3 (RECOMMENDED): add monthly commission statement + verification right (new Advisory 4.6)
+  — settle drafting.
+- R4 (verification, closed): Gwin-defect guardrails confirmed present in substance — no action.
+- R5 (RECOMMENDED, operational): client-communication plan + named liaison successor as
+  settlement deliverables — advise on 13.2 mechanics.
+- R6 (carry-forward, Passes 1–4): F-08 citation repair; F-13 term/notice resolution (Option 3
+  wording supplied); F-05 entity-invoicing clause; F-01 date-coupling choice; F-16 CoA
+  condition; F-18 contractor language; F-04 12A.3 clarifier; F-12 SLS commission pre-wire
+  (optional); F-20/F-21 indemnity carve-outs, insurance alignment and survival fix — settle
+  drafting; advise on CoA.
+- R7 (carry-forward, Passes 5–7): F-22 warranty additions; F-23 guarantee schedule + release
+  backstop; F-24 set-off-decay commercial choice (escrow option vs injunction-plus-damages);
+  F-28 closing items needing drafting support; conflict-allocation drafting from §2.4F —
+  advise and settle drafting.
+
+### 1.7 PROMINENT FLAG — CERTIFICATE OF APPROVAL (Pass 4A)
+
+**The advisory role — QC/compliance checking of a licensed security business's teams plus
+client-facing consultancy (Advisory 1.1(a)–(b)) — may require the Vendor to hold a current
+Certificate of Approval (responsible-employee class) or a licence class under the Private
+Security Personnel and Private Investigators Act 2010, depending on how the role is performed
+(research memo §3). This is UNRESOLVED. With an open PSPLA→CIPU process, commencing the
+advisory engagement without resolving it risks unlicensed activity inside a licensed business
+under active regulator scrutiny. Severity: BLOCKER as a precondition to the advisory
+engagement commencing (not to transmission — protective wording is drafted at Pass 4A/F-16).
+Required actions: (a) PSPLA query via Franklin Law before the Advisory Agreement commences;
+(b) insert the F-16 condition-precedent/suspension-and-abatement wording now.**
+
+*Sixty-second answer for the Purchaser: yes, this package can go to Franklin Law tonight —
+after the one-word Background B repair and with the CoA question and F-16 wording on the
+cover letter. The clauses that hold anything up are Advisory Bkgd B (stale cite), Advisory
+1.1/2 (CoA precondition), and nothing else at BLOCKER level.*
+
+---

@@ -1,0 +1,1196 @@
+{
+ "date_iso": "2026-07-01",
+ "date": "Wednesday, 1 July 2026",
+ "fname": "HOTC Daily Report - Wednesday 1 July 2026.docx",
+ "ops_day": "Wednesday 1st July",
+ "col": "Wed 1st",
+ "month": "July",
+ "week": "Week 1 1st July - 5th July",
+ "coverage": "Morning (Team 1) · Day (Team 2) · Afternoon/Evening · Night",
+ "sections": [
+  {
+   "title": "Morning Shift — Team 1 (06:30 – 14:30)",
+   "items": [
+    [
+     "n",
+     "Equipment received: 4 x Keys, 2 x Swipe Cards, 2 x Vests, 1 x Ops Phone."
+    ],
+    [
+     "e",
+     "06:32",
+     "Charging ops phone, currently at 5%."
+    ],
+    [
+     "e",
+     "07:18",
+     "Ops phone at 40%, good enough to use for patrols."
+    ],
+    [
+     "sub",
+     "Alpha Route"
+    ],
+    [
+     "e",
+     "07:22",
+     "Commencing Alpha Route. Arrived at check-in corner of Victoria St East and Queen Street Headquarters. Welfare check:"
+    ],
+    [
+     "b",
+     [
+      "Starbucks Queen Street",
+      "Lotus Foreign Exchange",
+      "Nike",
+      "Cotton On",
+      "Daily Drip Cafe",
+      "Localito Convenience Store",
+      "Footlocker",
+      "Cosmetic Clinic",
+      "Unichem Pharmacy",
+      "Maccas Queen Street",
+      "Ms Higgins",
+      "Timezone",
+      "ChaPanda",
+      "BBQ Chicken",
+      "Bobao Bar",
+      "Whimsical Blu",
+      "Acceco Supermarket"
+     ]
+    ],
+    [
+     "e",
+     "07:35",
+     "Welfare check:"
+    ],
+    [
+     "b",
+     [
+      "The Civic Theatre",
+      "Starks",
+      "185° Sandwiches",
+      "Yes Convenience Store",
+      "Yogurt Story",
+      "Uncle Tetsus",
+      "Burger Fuel",
+      "Luv Sushi",
+      "Gameon"
+     ]
+    ],
+    [
+     "e",
+     "07:43",
+     "Arrived at check-in Skyworld Entertainment Centre and Aotea Square, full sweep around the area. All clear."
+    ],
+    [
+     "er",
+     "07:45",
+     "During sweep, received a response call from 175 Queen Street QBE requesting assistance to move a vagrant on from the front entrance."
+    ],
+    [
+     "e",
+     "07:48",
+     "While en route to the response call, received a call back to stand down — the individual has left the area."
+    ],
+    [
+     "e",
+     "07:50",
+     "Resuming routes. Cut through and welfare check Elliott Street:"
+    ],
+    [
+     "b",
+     [
+      "Elliott Stables",
+      "Atrium on Elliott",
+      "Elliott Street Apartment",
+      "Elliott Food Court"
+     ]
+    ],
+    [
+     "e",
+     "08:04",
+     "Welfare check:"
+    ],
+    [
+     "b",
+     [
+      "Tank",
+      "Domino's Pizza",
+      "Freshmarket Store",
+      "Tandoor",
+      "Ground Coffee",
+      "Hikoco",
+      "Wilson Carpark Food Stalls",
+      "Pizza Club"
+     ]
+    ],
+    [
+     "e",
+     "08:11",
+     "Welfare check:"
+    ],
+    [
+     "b",
+     [
+      "Woolworths Victoria St West",
+      "Kiwi Gift",
+      "Mr Katsu",
+      "City Liquor",
+      "Cinnamon Squared",
+      "Fern",
+      "Lord Nelson's Steak House",
+      "Scrunchy Miller's"
+     ]
+    ],
+    [
+     "e",
+     "08:17",
+     "Welfare check:"
+    ],
+    [
+     "b",
+     [
+      "Skymart Convenience Store",
+      "Formery",
+      "Little Albert's Coffee",
+      "Barclay's Suites",
+      "Bespoke Coffee",
+      "Good To Go Supermarket",
+      "Natural Health Souvenirs"
+     ]
+    ],
+    [
+     "e",
+     "08:29",
+     "Welfare check:"
+    ],
+    [
+     "b",
+     [
+      "SVS Vape Shop",
+      "SCS Convenience Store",
+      "Taco Infusion Mexican Cuisine",
+      "Galatata Kebab and Grill",
+      "Bistro Saine",
+      "Sumo Sushi",
+      "Shakespeare Tavern"
+     ]
+    ],
+    [
+     "er",
+     "08:36",
+     "Response call from Starbucks Queen St regarding a male who has used their restroom for over an hour but has not come out; assistance requested to move him along."
+    ],
+    [
+     "e",
+     "08:42",
+     "Arrived at the response call and gave the individual a two-knock warning to exit the premises; he complied and left."
+    ],
+    [
+     "e",
+     "08:50",
+     "Stopping by Headquarters to grab a new key swipe from Ravi, Datacentre."
+    ],
+    [
+     "e",
+     "08:57",
+     "Standing by middle of Queen Street to show presence, awaiting Team 2 to be deployed together."
+    ],
+    [
+     "e",
+     "09:00",
+     "Team 2 deployed; they will patrol lower Queen Street while we deploy upper Queen Street."
+    ],
+    [
+     "e",
+     "09:05",
+     "Ending Alpha Route and commencing Delta Route for upper Queen Street."
+    ],
+    [
+     "sub",
+     "Delta Route"
+    ],
+    [
+     "e",
+     "09:08",
+     "Welfare check:"
+    ],
+    [
+     "b",
+     [
+      "Bag Planet",
+      "Mobile Planet",
+      "Ippondo",
+      "Fun Tech",
+      "Sale Shop",
+      "Subway",
+      "Avachi",
+      "Hulucat",
+      "Banh Mi King",
+      "77 Convenience Store",
+      "Sal's Pizza",
+      "NZ Muscles"
+     ]
+    ],
+    [
+     "e",
+     "09:16",
+     "Welfare check:"
+    ],
+    [
+     "b",
+     [
+      "Choice Backpackers",
+      "Sushiya",
+      "Bentto",
+      "Choice Plaza Wellesley Street East"
+     ]
+    ],
+    [
+     "e",
+     "09:23",
+     "Arrived at check-in corner of Wellesley Street East and Lorne St. All clear."
+    ],
+    [
+     "e",
+     "09:27",
+     "Welfare check:"
+    ],
+    [
+     "b",
+     [
+      "Chicken on Queen",
+      "Tang Tea",
+      "Gateau House",
+      "K Save Mart Convenience Store",
+      "Korean Chicken",
+      "Banh Mi 77",
+      "Potato Corner",
+      "BBQ Duck Cafe",
+      "Istanbul Shawarma",
+      "Yangguofu",
+      "Choolaah",
+      "I Love Toro Chorro",
+      "I Am Yogost",
+      "Curry on Queen",
+      "Star Kebab",
+      "No1 Chicken"
+     ]
+    ],
+    [
+     "e",
+     "09:39",
+     "Arrived at check-in Auckland Town Hall. All clear."
+    ],
+    [
+     "e",
+     "09:43",
+     "Welfare check:"
+    ],
+    [
+     "b",
+     [
+      "Airedale Suites Queen Street",
+      "Queens Food Court",
+      "Munster Inn",
+      "Nandos",
+      "Robo Cafe",
+      "Met Tea",
+      "Burger Time",
+      "Gangnam Station",
+      "Tanuki Japanese Sake and Sushi Bar",
+      "Comedy Club",
+      "The Cave",
+      "Q Theatre",
+      "The Vault"
+     ]
+    ],
+    [
+     "e",
+     "09:56",
+     "Arrived at check-in Aotea Square. All clear."
+    ],
+    [
+     "e",
+     "10:01",
+     "Welfare check:"
+    ],
+    [
+     "b",
+     [
+      "Jack's Fried Chicken",
+      "Jack's Cafeteria",
+      "The Terrace",
+      "Aotea Centre"
+     ]
+    ],
+    [
+     "er",
+     "10:12",
+     "Response call from Mobile Planet regarding an individual sitting outside their store; assistance requested to move him along."
+    ],
+    [
+     "e",
+     "10:17",
+     "Arrived at the response call; staff said another female vagrant had come and taken him along with her."
+    ],
+    [
+     "e",
+     "10:23",
+     "Standing by to show presence before moving to the next checkpoint."
+    ],
+    [
+     "e",
+     "10:33",
+     "Ending Delta Route and commencing Echo Route for upper Queen Street."
+    ],
+    [
+     "sub",
+     "Echo Route"
+    ],
+    [
+     "e",
+     "10:36",
+     "Arrived at check-in corner of Darby St and Queen St. All clear."
+    ],
+    [
+     "e",
+     "10:39",
+     "Welfare check:"
+    ],
+    [
+     "b",
+     [
+      "Lumi Cafe",
+      "Celine Mediterranean Cuisine",
+      "Mali Thai",
+      "Recycle Boutique",
+      "Pizza Club"
+     ]
+    ],
+    [
+     "e",
+     "10:52",
+     "Arrived at check-in top of Victoria St and Federal St. All clear."
+    ],
+    [
+     "e",
+     "10:55",
+     "Welfare check:"
+    ],
+    [
+     "b",
+     [
+      "77 Convenience Store",
+      "Coffee Club",
+      "Roma Blooms",
+      "Accord Barbershop",
+      "Subway"
+     ]
+    ],
+    [
+     "e",
+     "11:03",
+     "Welfare check:"
+    ],
+    [
+     "b",
+     [
+      "Kebab Time",
+      "Casa Victoria",
+      "JD Convenience Store",
+      "Dollar Dealers",
+      "Hell's Pizza",
+      "Fiddler",
+      "Mexican Cafe",
+      "Birria Taco",
+      "Yogi's Haircut",
+      "Bagel Love",
+      "Vphix Mobiles"
+     ]
+    ],
+    [
+     "e",
+     "11:14",
+     "Welfare check:"
+    ],
+    [
+     "b",
+     [
+      "Izmir Kebab and Grill",
+      "Little Tiger Dumpling",
+      "Kiwi Souvenirs",
+      "Amelia Cafe",
+      "Printshop"
+     ]
+    ],
+    [
+     "e",
+     "11:21",
+     "Heading down to Queen Street towards Lorne St."
+    ],
+    [
+     "e",
+     "11:27",
+     "Welfare check:"
+    ],
+    [
+     "b",
+     [
+      "Sail Convenience Store",
+      "Puffing Kiwi",
+      "Dumpling House"
+     ]
+    ],
+    [
+     "e",
+     "11:33",
+     "Welfare check:"
+    ],
+    [
+     "b",
+     [
+      "Sierra Cafe",
+      "Paname Social",
+      "Kung-Fu Bakery",
+      "We Sound Cafe",
+      "Meet Fresh",
+      "Wucha",
+      "Forte",
+      "Chill Saigon",
+      "Nene Chicken",
+      "Biang Biang",
+      "Miniso",
+      "Sanuki Udon",
+      "Faro",
+      "Taste of China",
+      "Bao and Noodles",
+      "Cocomo",
+      "Paskatsu",
+      "Kinetic",
+      "Dynasty",
+      "BBQ Duck Cafe",
+      "Plus Chicken",
+      "Sumthin Dumpling",
+      "Chongcha",
+      "Thai Food",
+      "Tsujiri",
+      "Vape2Go",
+      "Uncle Mann",
+      "Red Radisson"
+     ]
+    ],
+    [
+     "e",
+     "11:46",
+     "Swinging back down to Queen Street through Wellesley Street East."
+    ],
+    [
+     "e",
+     "11:51",
+     "Standing by middle of Queen Street while remaining vigilant."
+    ],
+    [
+     "e",
+     "12:00",
+     "Welfare check on stores along Wellesley Street West:"
+    ],
+    [
+     "b",
+     [
+      "Remedy Coffee",
+      "Fathers Ted",
+      "Coffee Corner",
+      "TEM",
+      "Vape Mode",
+      "Burrel and Burger",
+      "The Cozy Kiwi Limited",
+      "Attic Backpackers",
+      "Tony's Original Steakhouse and Seafood"
+     ]
+    ],
+    [
+     "e",
+     "12:14",
+     "Heading back to Headquarters to charge ops phone battery (at 10%)."
+    ],
+    [
+     "e",
+     "12:38",
+     "Call from management to bring up both cameras and chargers."
+    ],
+    [
+     "e",
+     "12:45",
+     "Heading out, back on route."
+    ],
+    [
+     "e",
+     "12:52",
+     "Welfare check on Strand Arcade and all stores within the vicinity. All clear."
+    ],
+    [
+     "e",
+     "13:04",
+     "Welfare check through Midcity Arcade and all stores within the vicinity. All clear."
+    ],
+    [
+     "e",
+     "13:09",
+     "Arrived back at Headquarters to use restroom."
+    ],
+    [
+     "ei",
+     "13:10",
+     "Received a message from Nick, Datacentre, that the Level 1 electrician was assaulted yesterday at midday over a cigarette by Stewart, a known repeat offender. No footage was recovered but the victim has launched a statement through Ross at Datacentre; manager Nicholas will collect it. Afternoon team to be debriefed and to keep a sharp eye out for the individual."
+    ],
+    [
+     "e",
+     "13:18",
+     "Standing by middle of Queen Street while remaining vigilant."
+    ],
+    [
+     "e",
+     "13:30",
+     "Heading into lunch break."
+    ],
+    [
+     "e",
+     "14:00",
+     "Standing by for changeover to afternoon shift."
+    ],
+    [
+     "e",
+     "14:30",
+     "Changeover to afternoon shift."
+    ]
+   ]
+  },
+  {
+   "title": "Day Shift — Team 2 (09:00 – 17:00)",
+   "items": [
+    [
+     "n",
+     "Equipment received: 1 x Camera, 1 x Radio, 2 x Vests. Standing by HQ debriefing with Team 1."
+    ],
+    [
+     "e",
+     "09:30",
+     "Debrief with Team 1 complete over phone call; route patrol confirmed. Heading down Queen St for welfare checks."
+    ],
+    [
+     "e",
+     "10:10",
+     "Welfare check on the first half of lower Queen St complete; continuing patrol for the rest of lower Queen St."
+    ],
+    [
+     "e",
+     "10:32",
+     "Welfare sweep on the rest of lower Queen St complete, no issues on local stores. Full welfare sweep on Commercial Bay, no issues. Heading over to Gore St / Fort St."
+    ],
+    [
+     "ei",
+     "10:42",
+     "Welfare sweep on Gore St / Fort St complete. An aggressive man on Gore St heading into Fort St was causing a disturbance of the peace in public. My partner and I approached and calmly did a welfare check on the vagrant; he was compliant when asked questions but still acting aggressive towards us. We managed to calm him down and move him along. No further issues. Conversation duration approximately 15–20 minutes."
+    ],
+    [
+     "e",
+     "11:02",
+     "Fort St clear, no issues. Heading over to Freyberg via High St."
+    ],
+    [
+     "e",
+     "11:27",
+     "Welfare sweep along High St clear, no issues on local stores."
+    ],
+    [
+     "e",
+     "11:35",
+     "Welfare sweep on Freyberg / Chancery Sq complete, no issues. Standing by Chancery Square."
+    ],
+    [
+     "e",
+     "11:50",
+     "Heading back to HQ for route changeover."
+    ],
+    [
+     "e",
+     "12:00",
+     "Standing by HQ for debrief with Team 1 for route changeover."
+    ],
+    [
+     "e",
+     "12:15",
+     "Welfare checks on stores going up Queen St, clear, no issues. Making our way to Elliott St."
+    ],
+    [
+     "e",
+     "12:36",
+     "Elliott St / Darby sweep complete, welfare check clear, no issues. Continuing patrol to Aotea."
+    ],
+    [
+     "e",
+     "13:00",
+     "Arrived at Aotea Square, starting welfare sweeps."
+    ],
+    [
+     "e",
+     "13:20",
+     "Welfare sweeps complete, no issues. Standing by for response calls from Team 1."
+    ],
+    [
+     "e",
+     "13:44",
+     "Resuming patrol, making our way to Victoria St for welfare checks."
+    ],
+    [
+     "e",
+     "14:17",
+     "Welfare sweeps along Victoria St complete, no issues. Heading to the Cathedral for welfare check, clear."
+    ],
+    [
+     "e",
+     "14:25",
+     "Quick sweep along Federal St complete, no issues."
+    ],
+    [
+     "e",
+     "14:30",
+     "Welfare check on the Cathedral, clear, no issues. Making our way back to HQ for route changeover."
+    ],
+    [
+     "e",
+     "15:00",
+     "Route changeover complete. Heading down Queen St for welfare sweeps."
+    ],
+    [
+     "e",
+     "15:14",
+     "Welfare sweep on local stores down Queen St complete, no issues. Heading to Commercial Bay."
+    ],
+    [
+     "e",
+     "15:20",
+     "Arriving at Commercial Bay, commencing welfare sweep."
+    ],
+    [
+     "e",
+     "15:28",
+     "Welfare sweep complete on Commercial Bay, no issues. Heading to Gore / Fort."
+    ],
+    [
+     "e",
+     "15:37",
+     "Gore and Fort St sweep complete, no issues to report."
+    ],
+    [
+     "e",
+     "15:44",
+     "Welfare sweep along High St complete, no issues from local stores. Heading towards Chancery / Freyberg Sq."
+    ],
+    [
+     "e",
+     "16:00",
+     "Arriving at Freyberg / Chancery Sq."
+    ],
+    [
+     "e",
+     "16:25",
+     "Freyberg / Chancery Sq complete, no issues."
+    ],
+    [
+     "e",
+     "16:30",
+     "Welfare sweep complete, no issues. Continuing foot patrol onto Queen St to maintain security presence."
+    ],
+    [
+     "e",
+     "16:46",
+     "No issues to report on Queen St. Heading back to HQ for our 30 minutes."
+    ],
+    [
+     "e",
+     "17:00",
+     "Team 2 complete, all equipment handed in. Team 1 notified. No further issues to report."
+    ]
+   ]
+  },
+  {
+   "title": "Afternoon/Evening Shift (14:30 – 22:30)",
+   "items": [
+    [
+     "n",
+     "Equipment received: 4 x Keys, 2 x Swipe Cards, 2 x Vests, 1 x Ops Phone."
+    ],
+    [
+     "e",
+     "14:35",
+     "Commencing patrols lower Queen Street."
+    ],
+    [
+     "e",
+     "14:45",
+     "Commencing welfare checks along Queen:"
+    ],
+    [
+     "b",
+     [
+      "Hallensteins",
+      "Kathmandu",
+      "Mountain Warehouse",
+      "Dangerfield",
+      "Lovisa",
+      "Chemist Warehouse",
+      "Mirrou",
+      "24/7 Convenience",
+      "McDonald's Britomart"
+     ]
+    ],
+    [
+     "e",
+     "14:55",
+     "Commencing full sweep of Commercial Bay, maintaining a visible presence to the public."
+    ],
+    [
+     "e",
+     "15:08",
+     "Commencing patrols along Albert Street; all stores all clear, no issues to report."
+    ],
+    [
+     "er",
+     "15:15",
+     "Response call from Lovisa reporting a theft — a suspect who took multiple items from them; they gave us the suspect's location heading up Queen St."
+    ],
+    [
+     "ei",
+     "15:25",
+     "Spotted the male who stole from Lovisa; we got the upper hand and recovered the items. All clear, no further issues."
+    ],
+    [
+     "e",
+     "15:30",
+     "Another item he had stolen was found in his bag but it was unclear which store it was taken from, so the item was returned to HQ."
+    ],
+    [
+     "er",
+     "15:40",
+     "Response call from Starbucks Queen Street reporting a vagrant inside their store."
+    ],
+    [
+     "e",
+     "15:43",
+     "Removed him from the premises; as he had been removed earlier in the day he has left. No further issues. Standing by in case he returns."
+    ],
+    [
+     "e",
+     "15:50",
+     "Arrived at High St; welfare checks on stores along High St."
+    ],
+    [
+     "e",
+     "15:55",
+     "Arrived at Chancery Sq / Freyberg Sq; welfare checks on stores. All clear, no issues to report."
+    ],
+    [
+     "e",
+     "16:00",
+     "Full sweep of Chancery Sq / Freyberg Sq complete, no issues. Standing by for security presence."
+    ],
+    [
+     "e",
+     "16:15",
+     "Arrived at Fort St, commencing a full sweep down to Gore St with welfare checks on stores."
+    ],
+    [
+     "e",
+     "16:25",
+     "Arrived at Gore St; full sweep of Fort St, Commerce St, Pocket Park and Gore St complete. Welfare checks on stores all clear. Standing by."
+    ],
+    [
+     "er",
+     "16:45",
+     "Response call from New World Metro Queen St about 2 vagrants sitting outside their store with a dog; asked for assistance moving them along."
+    ],
+    [
+     "e",
+     "16:46",
+     "Arrived at New World; told the vagrants to move along as they were disrupting business; they complied and left without further issues. (Footage on body cam.)"
+    ],
+    [
+     "er",
+     "16:47",
+     "Response call from Chancery Carpark about a vagrant in the car park making a worker uncomfortable."
+    ],
+    [
+     "e",
+     "16:52",
+     "Arrived at Chancery Carpark; escorted the lady to her car and did a full sweep of the carpark. All clear, no sign of the male vagrant. (Photo on file.)"
+    ],
+    [
+     "e",
+     "17:10",
+     "Returning to HQ to charge the ops phone (at 10%)."
+    ],
+    [
+     "e",
+     "18:00",
+     "Commencing building checks."
+    ],
+    [
+     "e",
+     "18:10",
+     "Building checks and floor checks completed."
+    ],
+    [
+     "e",
+     "18:15",
+     "Commencing Alpha Route. Full sweep around the area, making presence known to members of the public."
+    ],
+    [
+     "ei",
+     "18:30",
+     "While on patrols, spotted the vagrant who assaulted the Datacentre worker in the earlier incident; the male is located on Elliott St. Standing by in case he harms any of the public."
+    ],
+    [
+     "e",
+     "19:00",
+     "Arrived at Aotea Sq check-in; welfare check on stores along Queen St complete. All clear, no issues to report."
+    ],
+    [
+     "e",
+     "19:10",
+     "Aotea Sq sweep complete, all clear. Standing by for response calls, problematic issues or vagrants in the area."
+    ],
+    [
+     "e",
+     "19:30",
+     "Auckland Library full sweep completed, no issues to report."
+    ],
+    [
+     "e",
+     "19:32",
+     "Arrived at Lorne Street, commencing a full sweep down to High St with welfare checks on stores."
+    ],
+    [
+     "e",
+     "19:40",
+     "Arrived at the corner of High St; welfare check on stores along Lorne St. All clear, no issues to report."
+    ],
+    [
+     "e",
+     "19:42",
+     "Arrived at Chancery Sq / Freyberg Sq."
+    ],
+    [
+     "e",
+     "19:47",
+     "Freyberg Sq / Chancery Sq sweep complete, all clear. Standing by for security presence."
+    ],
+    [
+     "e",
+     "20:00",
+     "Fort Street full sweep around the area, no issues to report."
+    ],
+    [
+     "e",
+     "20:10",
+     "Arrived at Gore St; welfare checks on stores and sweep complete, all clear."
+    ],
+    [
+     "e",
+     "20:15",
+     "Arrived at Commercial Bay; welfare check on McDonald's Britomart, all clear."
+    ],
+    [
+     "e",
+     "20:25",
+     "Commercial Bay sweep complete, all clear. Standing by for security presence."
+    ],
+    [
+     "er",
+     "20:27",
+     "Response call from McDonald's Queen St regarding vagrants inside their store; asked for assistance removing them from the premises."
+    ],
+    [
+     "e",
+     "20:34",
+     "Arrived at McDonald's Queen St; manager pointed out the vagrant, we asked them to leave and they complied. All clear. Standing by."
+    ],
+    [
+     "e",
+     "20:39",
+     "While on standby, another vagrant went inside and begged for food; we asked her to leave and she complied. No issues. Standing by."
+    ],
+    [
+     "er",
+     "20:56",
+     "Response call from McDonald's Britomart regarding a male going through their rubbish and refusing to leave; manager asked for assistance removing him."
+    ],
+    [
+     "e",
+     "21:05",
+     "Arrived at McDonald's Britomart; manager pointed out the person, we informed him he had to leave and he complied and left. No issues. Standing by."
+    ],
+    [
+     "e",
+     "21:14",
+     "Arrived back at HQ; charging ops phone due to low percentage."
+    ],
+    [
+     "er",
+     "21:57",
+     "Response call from Right Track about a male who is intoxicated and refusing to leave their premises."
+    ],
+    [
+     "e",
+     "22:05",
+     "Arrived at Right Track; informed the male to leave, he complied but we had to help him as he couldn't walk due to being intoxicated. Standing by."
+    ],
+    [
+     "e",
+     "22:25",
+     "Arrived back at HQ."
+    ],
+    [
+     "e",
+     "22:30",
+     "Afternoon shift complete, handover to night shift."
+    ],
+    [
+     "n",
+     "Equipment handover: 4 x Keys, 2 x Swipe Cards, 2 x Vests, 1 x Ops Phone."
+    ]
+   ]
+  },
+  {
+   "title": "Night Shift (22:30 – 06:30)",
+   "items": [
+    [
+     "n",
+     "Equipment received: 4 x Keys, 2 x Body Cameras, 2 x Swipe Cards, 2 x Vests, 1 x Ops Phone."
+    ],
+    [
+     "sub",
+     "Alpha Route"
+    ],
+    [
+     "e",
+     "22:45",
+     "Check-in Chemist Warehouse / Kathmandu, no issues to report."
+    ],
+    [
+     "e",
+     "22:50",
+     "Check-in Vulcan Lane, all clear, no issues."
+    ],
+    [
+     "e",
+     "23:00",
+     "Check-in Britomart Maccas, no issues."
+    ],
+    [
+     "e",
+     "23:02",
+     "Patrolling Commercial Bay, commencing full sweep."
+    ],
+    [
+     "e",
+     "23:22",
+     "Commercial Bay full sweep complete, all clear, no issues."
+    ],
+    [
+     "e",
+     "23:32",
+     "Welfare check Albert St Convenience Store, no issues."
+    ],
+    [
+     "e",
+     "23:40",
+     "Check-in Ace Karaoke, no issues."
+    ],
+    [
+     "e",
+     "23:45",
+     "Check-in 77 Convenience Store, no issues."
+    ],
+    [
+     "e",
+     "23:55",
+     "Full sweep Victoria St, all clear, no issues. Heading back to HQ."
+    ],
+    [
+     "e",
+     "00:15",
+     "Floor checks complete."
+    ],
+    [
+     "e",
+     "00:20",
+     "On standby outside Bar 101 showing presence."
+    ],
+    [
+     "er",
+     "00:29",
+     "Response call from Munster Inn due to an individual refusing to leave the site."
+    ],
+    [
+     "e",
+     "00:39",
+     "Arrived on site; politely asked the individual to leave, he complied and left the premises. No further issues. On standby until he gains distance; no sign of him nearby."
+    ],
+    [
+     "e",
+     "00:50",
+     "Patrolling Aotea Square, commencing full sweep."
+    ],
+    [
+     "e",
+     "01:10",
+     "Aotea Square full sweep complete, all clear; a few people hanging around the lights but no issues."
+    ],
+    [
+     "e",
+     "01:20",
+     "Full sweep Timezone / Red Radisson entrances; asked one individual to move along from the entrance. No further issues."
+    ],
+    [
+     "e",
+     "01:25",
+     "Check-in Queen St Maccas, no issues."
+    ],
+    [
+     "e",
+     "01:30",
+     "On standby at Bar 101 showing presence."
+    ],
+    [
+     "e",
+     "01:50",
+     "Bar 101 all clear, no issues to report. Alpha Route complete."
+    ],
+    [
+     "e",
+     "02:05",
+     "Full sweep Freyberg / Chancery Square / Kitchener St, all clear, no issues."
+    ],
+    [
+     "e",
+     "02:20",
+     "Full sweep Fort St / Wilson Carpark, all clear, no issues."
+    ],
+    [
+     "e",
+     "02:25",
+     "Check-in Gore St, all clear, no issues."
+    ],
+    [
+     "e",
+     "02:40",
+     "Check-in Aotea Gifts, no issues."
+    ],
+    [
+     "e",
+     "02:55",
+     "Full sweep St Patricks Sq, all clear, no issues."
+    ],
+    [
+     "e",
+     "03:00",
+     "Check-in 77 Convenience Store, no issues."
+    ],
+    [
+     "e",
+     "03:10",
+     "Full sweep Victoria St, all clear, no issues."
+    ],
+    [
+     "e",
+     "03:25",
+     "Check-in corner of Lorne St / Wakefield, all clear, no issues."
+    ],
+    [
+     "e",
+     "03:40",
+     "Check-in Aotea Square, all clear, no issues."
+    ],
+    [
+     "e",
+     "03:55",
+     "Check-in Queen St Maccas; removed vagrants sleeping inside. No further issues."
+    ],
+    [
+     "e",
+     "04:00",
+     "Commencing 30-minute break."
+    ],
+    [
+     "e",
+     "04:30",
+     "Break over, heading back out on patrols."
+    ],
+    [
+     "e",
+     "04:45",
+     "Check-in 77 Convenience Store, no issues."
+    ],
+    [
+     "e",
+     "04:50",
+     "Check-in St Patrick's Cathedral Church, all clear, no issues."
+    ],
+    [
+     "e",
+     "05:00",
+     "Full sweep Wyndham St, all clear, no issues."
+    ],
+    [
+     "e",
+     "05:05",
+     "Check-in Durham St, all clear, no issues."
+    ],
+    [
+     "e",
+     "05:10",
+     "Check-in Vulcan Lane, all clear, no issues."
+    ],
+    [
+     "e",
+     "05:25",
+     "Check-in Britomart Maccas / Commercial Bay, all clear, no issues to report."
+    ],
+    [
+     "e",
+     "05:35",
+     "Check-in Fort St, all clear, no issues."
+    ],
+    [
+     "e",
+     "05:45",
+     "Check-in Chancery Square / Freyberg Square, all clear, no issues. Heading back to HQ to charge ops phone."
+    ],
+    [
+     "e",
+     "05:50",
+     "On standby at HQ charging ops phone and waiting for changeover."
+    ],
+    [
+     "e",
+     "06:30",
+     "Night shift concluded, handover complete."
+    ]
+   ]
+  }
+ ],
+ "metrics": {
+  "calls": 11,
+  "police": 0,
+  "aggressive": 1,
+  "drinking": 0,
+  "assist": 2,
+  "serious": 0,
+  "arrests": 0,
+  "injuries": 0,
+  "vagrants": 13,
+  "theft": 1,
+  "intoxicated": 1,
+  "medical": 0
+ }
+}

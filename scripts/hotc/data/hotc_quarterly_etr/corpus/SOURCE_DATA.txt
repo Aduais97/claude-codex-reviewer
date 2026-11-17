@@ -1,0 +1,42 @@
+SOURCE DATA — HOTC monthly metrics, Mar 2024 - Jul 2026
+==================================================
+
+month  calls  aggressive police drinking assist | vagrants theft serious intox arrests (detail from Mar26)
+Mar 24  calls=127 aggr=48 police=34 drink=52 assist=31 | aggressive=48
+Apr 24  calls=211 aggr=38 police=43 drink=50 assist=46 | aggressive=38
+May 24  calls=396 aggr=70 police=92 drink=54 assist=44 | aggressive=70
+Jun 24  calls=302 aggr=69 police=70 drink=54 assist=37 | aggressive=69
+Jul 24  calls=335 aggr=66 police=64 drink=47 assist=38 | aggressive=66
+Aug 24  calls=246 aggr=40 police=42 drink=35 assist=30 | aggressive=40
+Sep 24  calls=241 aggr=39 police=45 drink=34 assist=28 | aggressive=39
+Oct 24  calls=241 aggr=45 police=32 drink=42 assist=40 | aggressive=45
+Nov 24  calls=234 aggr=41 police=39 drink=31 assist=34 | aggressive=41
+Dec 24  calls=264 aggr=59 police=58 drink=63 assist=40 | aggressive=59
+Jan 25  calls=303 aggr=79 police=48 drink=67 assist=44 | aggressive=79
+Feb 25  calls=213 aggr=43 police=35 drink=42 assist=27 | aggressive=43
+Mar 25  calls=253 aggr=40 police=34 drink=28 assist=35 | aggressive=40
+Apr 25  calls=271 aggr=52 police=50 drink=37 assist=35 | aggressive=52
+May 25  calls=250 aggr=55 police=43 drink=40 assist=36 | aggressive=55
+Jun 25  calls=191 aggr=33 police=27 drink=39 assist=28 | aggressive=33
+Jul 25  calls=190 aggr=19 police=12 drink=19 assist=10 | aggressive=19
+Aug 25  calls=250 aggr=53 police=41 drink=49 assist=24 | aggressive=53
+Sep 25  calls=220 aggr=52 police=24 drink=26 assist=24 | aggressive=52
+Oct 25  calls=302 aggr=50 police=36 drink=38 assist=31 | aggressive=50
+Nov 25  calls=225 aggr=39 police=34 drink=20 assist=36 | aggressive=39
+Dec 25  calls=305 aggr=53 police=62 drink=26 assist=52 | aggressive=53
+Jan 26  calls=203 aggr=55 police=52 drink=19 assist=63 | aggressive=55
+Feb 26  calls=167 aggr=48 police=13 drink=43 assist=14 | aggressive=48
+Mar 26  calls=180 aggr=47 police=20 drink=26 assist=30 | vagrants=58 theft=29 aggressive=47 serious=13 intoxicated=19 arrests=2 injuries=3
+Apr 26  calls=175 aggr=45 police=21 drink=15 assist=30 | vagrants=86 theft=39 aggressive=45 serious=9 intoxicated=18 arrests=2 injuries=4
+May 26  calls=180 aggr=50 police=16 drink=8 assist=31 | vagrants=73 theft=31 aggressive=50 serious=4 intoxicated=2 arrests=8 injuries=1
+Jun 26  calls=265 aggr=95 police=25 drink=6 assist=30 | vagrants=96 theft=58 aggressive=95 serious=10 intoxicated=5 arrests=7 injuries=0
+Jul 26  calls=228 aggr=72 police=20 drink=16 assist=21 | vagrants=91 theft=33 aggressive=72 serious=16 intoxicated=6 arrests=7 injuries=2
+
+QUARTER May-Jul 2026: calls 180/265/228 = 673; incidents(7 detail) 169/271/227 = 667
+Baseline post-cut (Mar-May 26 avg): ~178 calls/mo, ~181 incidents/mo
+Budget: $800k -> $690k, cut Apr/May 2025 (-14%). Post-cut calls/day 6.7 vs pre-cut 8.5 = -21%.
+LCF pilot: 2 Jun-24 Jul 2026, one extra team, cost $41,150. June calls 265 vs baseline 178 = +49%; +52% vs the Jan-May per-day baseline.
+Pilot uplift Jun+Jul vs baseline: +136 calls, +136 incidents. Cost per extra call ~$302; per extra incident ~$303.
+Core value-for-money: ~$690k / ~2,500 calls/yr = ~$276 per business call.
+Detail incident metrics (vagrants,theft,serious,intox,arrests,injuries,medical) only tracked from Mar 2026.
+July 2025 calls = ~190 (estimate: 2 weeks recorded=86 + 3 weeks estimated from daily logs).

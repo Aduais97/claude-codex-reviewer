@@ -1,0 +1,81 @@
+RESEARCH MEMO — COMPARABLE FOUNDER/SHAREHOLDER EXITS, RESTRAINTS AND ADVISORY STRUCTURES
+Compiled 22 Jul 2026 from public NZ legal commentary + M&A practice literature (sources listed at end)
+Purpose: inform the final compliance review of the Nikki Christian exit package (SPA + Advisory Agreement)
+and generate recommendations. This is research context, NOT corpus fact about the deal.
+
+1. RESTRAINTS IN NZ EXITS (kindrik / Hobec / Cooney Lees Morgan / EMA commentary)
+- Vendor (business-sale) restraints attract far more judicial latitude than employee restraints — courts
+  protect purchased goodwill. The package's design (restraint anchored to the share sale, cascading
+  periods/areas, reasonableness acknowledgement) matches recommended NZ practice.
+- Enforceability turns on legitimate protectable interest + reasonableness of scope/period/area. NZ
+  commentary: 6-12 months is the commonly defended employee range; vendor restraints of 2-3 years over
+  NZ have been upheld where goodwill was genuinely bought. The 24-month cascade with fallbacks is the
+  orthodox way to reach high while keeping a defensible floor.
+- Case-law warning (vendor restraint construction): restraints are read narrowly against the drafter —
+  a restraint naming specific activities does not reach "similar" activities not named (CA authority on
+  complete-systems vs components). LESSON: the SPA's expanded activity list in cl 10.1(a) (added labour
+  hire, monitoring, training etc.) is the right call; keep the list exhaustive rather than relying on
+  "similar services".
+- Dual-status sellers (shareholder + employee) invite recharacterisation of a vendor restraint as an
+  employment restraint. The SPA's cl 10.5 capacity anchor and keeping restraints OUT of the s149 record
+  match best practice exactly.
+
+2. EARN-OUT / DEFERRED-CONSIDERATION PITFALLS (IBA / TLT / Axial / ABA / dispute-practice commentary)
+- The #1 source of post-completion disputes is AMBIGUOUS METRICS: revenue vs net revenue, received vs
+  invoiced, overhead allocation. Any revenue-linked payment must define the base measurably and tie it
+  to records the paying party controls with an information/audit right for the receiving party.
+- Revenue-based incentives create margin-compression risk: a person paid on revenue may chase top-line
+  (discounted or unprofitable clients) to trigger payment. Mitigants used in practice: minimum-margin or
+  "standard rates" qualifiers, purchaser discretion over accepting the client, minimum-term clauses,
+  clawback if the client defaults/terminates early.
+- Deferred consideration + ongoing seller involvement is the classic flashpoint: the seller-turned-
+  consultant has both knowledge and (if relations sour) incentive to disrupt. Practice mitigants: set-off
+  rights (present in SPA cl 15), good-faith covenants (SPA cl 4.5/11.5), fixed short review cycles
+  (the quarterly renewal), and clean termination mechanics.
+- Expert-determination clauses (independent accountant) are standard for earn-out calculation disputes —
+  cheaper and faster than arbitration for pure calculation fights.
+
+3. PSPLA / REGULATORY (PSPPI Act 2010, ss re company licensees; MoJ/PSPLA guidance)
+- COMPANY OFFICERS: under the Act, a person who was not an officer of the company licensee when the
+  licence was granted may NOT subsequently act as an officer without the Authority's PRIOR APPROVAL;
+  licensees must notify the PSPLA to add/remove an officer of the company. CONSEQUENCE FOR THIS DEAL:
+  (a) Nikki ceasing as officer/shareholder = notifiable change (SPA cl 14.3 covers the obligation);
+  (b) any NEW officer appointment triggers the prior-approval regime; (c) do the notifications promptly
+  — an open CIPU process makes late/inaccurate licence records read as concealment.
+- The advisory role: QC/compliance checking and client-facing consultancy within a licensed security
+  business may itself require Nikki to hold a current Certificate of Approval (responsible-employee
+  class) or licence class depending on how the role is performed. UNRESOLVED — flagged for Franklin Law
+  and possibly a PSPLA query BEFORE the advisory agreement starts.
+- Licensees must notify the PSPLA of changes in business structure.
+
+4. s149 EMPLOYMENT SETTLEMENTS (Employment NZ / Lane Neave / Anderson Law commentary)
+- s149-certified records are full and final on employment matters, cannot be cancelled, and bar later
+  personal grievances; only narrow capacity-type grounds unwind them. Confirms the SPA's design (signed
+  record as a settlement deliverable + certification best-endeavours) is the correct protection.
+- Practice point: the mediator explains finality before signing — book MBIE early; certification slots
+  can lag. The SPA's structure (sign at settlement, certify promptly after) matches recommended handling.
+
+5. COMPARABLE-EXIT PATTERNS RELEVANT TO THIS GROUP'S OWN HISTORY (from the deal corpus)
+- Gwin 2025 exit: paid advisory (Appendix 1, $1,500/wk, defined availability windows) — precedent that
+  this group retains exiting principals as advisors; the defect history (sole-discretion compensation,
+  forfeiture clause) is documented and excluded.
+- Pro Host 2023 acquisition: client-consent conditions and covenantor joinder — the covenantor model was
+  reused for the Lockhart trustee joinder.
+- Pattern note: in BOTH prior deals the departing principal stayed involved during transition, and in
+  both the client relationships were the fought-over asset. The Nikki package is the first with a
+  client-retention trigger tied to the instalment window — a direct response to that history.
+
+SOURCES
+- kindrik.co.nz — Restraints of trade in New Zealand in the corporate context
+- hobec.co.nz — Restraint of trade clauses when selling a business in NZ
+- cooneyleesmorgan.co.nz — Restraint of trade in a commercial context
+- ema.co.nz — How enforceable are restraints of trade?
+- ibanet.org — Understanding purchase price mechanisms: earn-outs and deferred consideration
+- tlt.com — M&A fundamentals: earn-outs in M&A transactions
+- axial.net — Earnout agreements and structures
+- americanbar.org — The ins and outs of earn-outs
+- legislation.govt.nz — Private Security Personnel and Private Investigators Act 2010
+- justice.govt.nz — PSPLA (about, apply, forms)
+- employment.govt.nz — Records of settlement (+ s149 ERA, legislation.govt.nz)
+- laneneave.co.nz — Records of settlement and capacity
+- andersonlaw.nz — s149 settlement practice

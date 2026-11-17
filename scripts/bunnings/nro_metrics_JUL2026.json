@@ -1,0 +1,215 @@
+{
+ "tag": "JUL2026",
+ "kicker": "MONTH IN REVIEW",
+ "period_label": "1 \u2013 31 July 2026",
+ "phrase": "July 2026",
+ "foot": "Jul2026",
+ "date_lo": "2026-07-01",
+ "date_hi": "2026-07-31",
+ "incidents": 99,
+ "sites": 10,
+ "regions": 3,
+ "recovered": 12184.85,
+ "stolen": 624.34,
+ "identified": 12809.19,
+ "recovery_pct": 95.1,
+ "auror_pct": 100.0,
+ "severity": {
+  "1": 78,
+  "2": 11,
+  "3": 10,
+  "4": 0,
+  "5": 0
+ },
+ "sev3plus": 10,
+ "sev45": 0,
+ "risk_window_pct": 72.7,
+ "peak_day": [
+  "Friday",
+  32
+ ],
+ "hottest_cell": {
+  "day": "Friday",
+  "hour": 15,
+  "count": 8
+ },
+ "heat": {
+  "2_9": 1,
+  "2_14": 3,
+  "3_18": 1,
+  "4_9": 1,
+  "4_13": 4,
+  "4_15": 8,
+  "4_16": 4,
+  "6_10": 2,
+  "6_11": 1,
+  "6_12": 1,
+  "6_15": 4,
+  "6_18": 2,
+  "0_12": 2,
+  "1_17": 1,
+  "2_11": 1,
+  "2_12": 1,
+  "2_15": 2,
+  "2_16": 3,
+  "2_18": 4,
+  "3_15": 2,
+  "3_16": 4,
+  "0_10": 3,
+  "0_15": 1,
+  "1_12": 2,
+  "2_13": 1,
+  "4_12": 5,
+  "4_14": 2,
+  "4_17": 3,
+  "6_16": 1,
+  "6_17": 2,
+  "0_9": 1,
+  "0_11": 1,
+  "0_16": 1,
+  "0_17": 1,
+  "0_18": 1,
+  "1_9": 1,
+  "1_13": 4,
+  "1_14": 2,
+  "2_10": 1,
+  "3_11": 1,
+  "3_12": 1,
+  "3_14": 1,
+  "3_17": 2,
+  "4_0": 1,
+  "4_18": 1,
+  "0_13": 1,
+  "0_14": 2,
+  "2_17": 1,
+  "4_10": 2,
+  "4_11": 1
+ },
+ "top6": [
+  {
+   "store": "Bunnings Mt Roskill",
+   "recovered": 3733.14,
+   "share": 30.6,
+   "incidents": 25,
+   "sev3": 3
+  },
+  {
+   "store": "Bunnings Manukau",
+   "recovered": 3306.47,
+   "share": 27.1,
+   "incidents": 23,
+   "sev3": 0
+  },
+  {
+   "store": "Bunnings Botany",
+   "recovered": 1513.25,
+   "share": 12.4,
+   "incidents": 7,
+   "sev3": 1
+  },
+  {
+   "store": "Bunnings Takanini",
+   "recovered": 1007.37,
+   "share": 8.3,
+   "incidents": 8,
+   "sev3": 1
+  },
+  {
+   "store": "Bunnings Shirley",
+   "recovered": 820.24,
+   "share": 6.7,
+   "incidents": 7,
+   "sev3": 0
+  },
+  {
+   "store": "Bunnings Riccarton",
+   "recovered": 627.98,
+   "share": 5.2,
+   "incidents": 7,
+   "sev3": 1
+  }
+ ],
+ "top6_share": 90.3,
+ "regional": [
+  {
+   "region": "Auckland - T\u0101maki Makaurau",
+   "recovered": 10287.03,
+   "incidents": 83
+  },
+  {
+   "region": "Canterbury - Waitaha",
+   "recovered": 1867.22,
+   "incidents": 15
+  },
+  {
+   "region": "Wellington - Te Whanganui-a-Tara",
+   "recovered": 30.6,
+   "incidents": 1
+  }
+ ],
+ "signoff": {
+  "Guard": 100.0,
+  "Duty Manager": 13.1,
+  "Checkout Operator": 9.1,
+  "Supervisor": 0.0,
+  "Store Manager": 1.0
+ },
+ "serious_hotspots": [
+  {
+   "store": "Bunnings Mt Roskill",
+   "sev3": 3
+  },
+  {
+   "store": "Bunnings Mt Wellington",
+   "sev3": 2
+  },
+  {
+   "store": "Bunnings New Lynn",
+   "sev3": 2
+  },
+  {
+   "store": "Bunnings Takanini",
+   "sev3": 1
+  },
+  {
+   "store": "Bunnings Riccarton",
+   "sev3": 1
+  }
+ ],
+ "trend": [
+  {
+   "key": "2026-06-29",
+   "label": "29 Jun",
+   "incidents": 16,
+   "recovered": 2103.36
+  },
+  {
+   "key": "2026-07-06",
+   "label": "06 Jul",
+   "incidents": 11,
+   "recovered": 2710.78
+  },
+  {
+   "key": "2026-07-13",
+   "label": "13 Jul",
+   "incidents": 23,
+   "recovered": 2083.42
+  },
+  {
+   "key": "2026-07-20",
+   "label": "20 Jul",
+   "incidents": 27,
+   "recovered": 2360.01
+  },
+  {
+   "key": "2026-07-27",
+   "label": "27 Jul",
+   "incidents": 22,
+   "recovered": 2927.28
+  }
+ ],
+ "trend_unit": "week",
+ "hours_window": 1049.8,
+ "inc_per_100h": 9.43,
+ "hours_per_inc": 10.6
+}

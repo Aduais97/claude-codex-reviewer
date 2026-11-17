@@ -1,0 +1,79 @@
+{
+ "baseline_weeks": 10,
+ "window": "9 Mar \u2013 31 May 2026 (10 full Mon\u2013Sun weeks)",
+ "stats": {
+  "Calls Made From Businesses": {
+   "weekly_avg": 40.7,
+   "weekly_min": 29,
+   "weekly_max": 58,
+   "total_10wk": 407
+  },
+  "Vagrants Moved On": {
+   "weekly_avg": 17.9,
+   "weekly_min": 13,
+   "weekly_max": 27,
+   "total_10wk": 179
+  },
+  "Aggressive Behaviour": {
+   "weekly_avg": 10.8,
+   "weekly_min": 6,
+   "weekly_max": 15,
+   "total_10wk": 108
+  },
+  "Shoplifting/Theft": {
+   "weekly_avg": 8.3,
+   "weekly_min": 5,
+   "weekly_max": 13,
+   "total_10wk": 83
+  },
+  "Police Calls": {
+   "weekly_avg": 4.4,
+   "weekly_min": 2,
+   "weekly_max": 10,
+   "total_10wk": 44
+  },
+  "Arrests": {
+   "weekly_avg": 1.2,
+   "weekly_min": 0,
+   "weekly_max": 3,
+   "total_10wk": 12
+  },
+  "Assistance Provided": {
+   "weekly_avg": 7.0,
+   "weekly_min": 7,
+   "weekly_max": 7,
+   "total_10wk": 70
+  },
+  "Public Drinking/Cannabis": {
+   "weekly_avg": 3.5,
+   "weekly_min": 0,
+   "weekly_max": 15,
+   "total_10wk": 35
+  },
+  "Intoxicated Persons": {
+   "weekly_avg": 3.5,
+   "weekly_min": 0,
+   "weekly_max": 10,
+   "total_10wk": 35
+  },
+  "Serious Incidents": {
+   "weekly_avg": 2.4,
+   "weekly_min": 0,
+   "weekly_max": 6,
+   "total_10wk": 24
+  },
+  "Injuries Reported": {
+   "weekly_avg": 0.7,
+   "weekly_min": 0,
+   "weekly_max": 2,
+   "total_10wk": 7
+  },
+  "Medical Responses": {
+   "weekly_avg": 0.5,
+   "weekly_min": 0,
+   "weekly_max": 3,
+   "total_10wk": 5
+  }
+ },
+ "fri_sat_call_share_pct": 35
+}

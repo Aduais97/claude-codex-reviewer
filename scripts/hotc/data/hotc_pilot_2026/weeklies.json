@@ -1,0 +1,2812 @@
+[
+ {
+  "month": "January",
+  "week": "Week 1 1st January - 4th January",
+  "mo": 1,
+  "format": "old-5metric",
+  "metrics": {
+   "Calls Made From Businesses": 49.0,
+   "Police Calls": 3.0,
+   "Aggressive Behaviour": 9.0,
+   "Public Drinking/Cannabis": 1.0,
+   "Assistance Provided": 14.0
+  },
+  "per_day": {
+   "Calls Made From Businesses": [
+    9.0,
+    11.0,
+    5.0,
+    4.0,
+    7.0,
+    8.0,
+    5.0
+   ],
+   "Police Calls": [
+    0.0,
+    2.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "Aggressive Behaviour": [
+    0.0,
+    7.0,
+    0.0,
+    1.0,
+    1.0,
+    0.0,
+    0.0
+   ],
+   "Public Drinking/Cannabis": [
+    0.0,
+    1.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0
+   ],
+   "Assistance Provided": [
+    1.0,
+    8.0,
+    2.0,
+    1.0,
+    0.0,
+    2.0,
+    0.0
+   ]
+  }
+ },
+ {
+  "month": "January",
+  "week": "Week 2 5th January - 11th January",
+  "mo": 1,
+  "format": "old-5metric",
+  "metrics": {
+   "Calls Made From Businesses": 58.0,
+   "Police Calls": 16.0,
+   "Aggressive Behaviour": 11.0,
+   "Public Drinking/Cannabis": 7.0,
+   "Assistance Provided": 14.0
+  },
+  "per_day": {
+   "Calls Made From Businesses": [
+    8.0,
+    20.0,
+    4.0,
+    10.0,
+    7.0,
+    2.0,
+    7.0
+   ],
+   "Police Calls": [
+    0.0,
+    3.0,
+    2.0,
+    7.0,
+    1.0,
+    1.0,
+    2.0
+   ],
+   "Aggressive Behaviour": [
+    0.0,
+    5.0,
+    1.0,
+    0.0,
+    4.0,
+    0.0,
+    1.0
+   ],
+   "Public Drinking/Cannabis": [
+    0.0,
+    1.0,
+    0.0,
+    3.0,
+    1.0,
+    2.0,
+    0.0
+   ],
+   "Assistance Provided": [
+    1.0,
+    5.0,
+    2.0,
+    4.0,
+    1.0,
+    1.0,
+    0.0
+   ]
+  }
+ },
+ {
+  "month": "January",
+  "week": "Week 3 12th January - 18th January",
+  "mo": 1,
+  "format": "old-5metric",
+  "metrics": {
+   "Calls Made From Businesses": 44.0,
+   "Police Calls": 12.0,
+   "Aggressive Behaviour": 10.0,
+   "Public Drinking/Cannabis": 0.0,
+   "Assistance Provided": 14.0
+  },
+  "per_day": {
+   "Calls Made From Businesses": [
+    6.0,
+    3.0,
+    5.0,
+    7.0,
+    8.0,
+    8.0,
+    7.0
+   ],
+   "Police Calls": [
+    1.0,
+    0.0,
+    2.0,
+    4.0,
+    3.0,
+    1.0,
+    1.0
+   ],
+   "Aggressive Behaviour": [
+    1.0,
+    0.0,
+    3.0,
+    0.0,
+    1.0,
+    2.0,
+    3.0
+   ],
+   "Public Drinking/Cannabis": [
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0
+   ],
+   "Assistance Provided": [
+    1.0,
+    1.0,
+    2.0,
+    3.0,
+    2.0,
+    3.0,
+    2.0
+   ]
+  }
+ },
+ {
+  "month": "January",
+  "week": "Week 4 19th January - 25th January",
+  "mo": 1,
+  "format": "old-5metric",
+  "metrics": {
+   "Calls Made From Businesses": 57.0,
+   "Police Calls": 13.0,
+   "Aggressive Behaviour": 13.0,
+   "Public Drinking/Cannabis": 4.0,
+   "Assistance Provided": 12.0
+  },
+  "per_day": {
+   "Calls Made From Businesses": [
+    6.0,
+    6.0,
+    10.0,
+    10.0,
+    6.0,
+    10.0,
+    9.0
+   ],
+   "Police Calls": [
+    3.0,
+    1.0,
+    1.0,
+    2.0,
+    1.0,
+    3.0,
+    2.0
+   ],
+   "Aggressive Behaviour": [
+    3.0,
+    0.0,
+    2.0,
+    3.0,
+    1.0,
+    2.0,
+    2.0
+   ],
+   "Public Drinking/Cannabis": [
+    0.0,
+    0.0,
+    0.0,
+    1.0,
+    2.0,
+    1.0,
+    0.0
+   ],
+   "Assistance Provided": [
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    3.0,
+    3.0,
+    2.0
+   ]
+  }
+ },
+ {
+  "month": "January",
+  "week": "Week 5 26th January - 1st February",
+  "mo": 1,
+  "format": "old-5metric",
+  "metrics": {
+   "Calls Made From Businesses": 46.0,
+   "Police Calls": 8.0,
+   "Aggressive Behaviour": 12.0,
+   "Public Drinking/Cannabis": 7.0,
+   "Assistance Provided": 9.0
+  },
+  "per_day": {
+   "Calls Made From Businesses": [
+    5.0,
+    9.0,
+    5.0,
+    6.0,
+    5.0,
+    10.0,
+    6.0
+   ],
+   "Police Calls": [
+    0.0,
+    2.0,
+    2.0,
+    2.0,
+    0.0,
+    1.0,
+    1.0
+   ],
+   "Aggressive Behaviour": [
+    0.0,
+    1.0,
+    3.0,
+    2.0,
+    2.0,
+    2.0,
+    2.0
+   ],
+   "Public Drinking/Cannabis": [
+    0.0,
+    3.0,
+    0.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0
+   ],
+   "Assistance Provided": [
+    2.0,
+    1.0,
+    1.0,
+    2.0,
+    1.0,
+    1.0,
+    1.0
+   ]
+  }
+ },
+ {
+  "month": "February",
+  "week": "Week 1 2nd Feb - 8th Feb",
+  "mo": 2,
+  "format": "old-5metric",
+  "metrics": {
+   "Calls Made From Businesses": 47,
+   "Police Calls": 5,
+   "Aggressive Behaviour": 11,
+   "Public Drinking/Cannabis": 9,
+   "Assistance Provided": 6
+  },
+  "per_day": {
+   "Calls Made From Businesses": [
+    10,
+    15,
+    4,
+    3,
+    2,
+    6,
+    7
+   ],
+   "Police Calls": [
+    1,
+    1,
+    1,
+    0,
+    0,
+    0,
+    2
+   ],
+   "Aggressive Behaviour": [
+    3,
+    1,
+    3,
+    1,
+    0,
+    1,
+    2
+   ],
+   "Public Drinking/Cannabis": [
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    3
+   ],
+   "Assistance Provided": [
+    1,
+    0,
+    1,
+    2,
+    0,
+    1,
+    1
+   ]
+  }
+ },
+ {
+  "month": "February",
+  "week": "Week 2 9th Feb - 15th Feb",
+  "mo": 2,
+  "format": "old-5metric",
+  "metrics": {
+   "Calls Made From Businesses": 40,
+   "Police Calls": 6,
+   "Aggressive Behaviour": 15,
+   "Public Drinking/Cannabis": 12,
+   "Assistance Provided": 5
+  },
+  "per_day": {
+   "Calls Made From Businesses": [
+    4,
+    6,
+    7,
+    6,
+    4,
+    8,
+    5
+   ],
+   "Police Calls": [
+    0,
+    0,
+    1,
+    2,
+    1,
+    0,
+    2
+   ],
+   "Aggressive Behaviour": [
+    2,
+    1,
+    3,
+    2,
+    3,
+    0,
+    4
+   ],
+   "Public Drinking/Cannabis": [
+    1,
+    1,
+    1,
+    1,
+    2,
+    3,
+    3
+   ],
+   "Assistance Provided": [
+    1,
+    1,
+    1,
+    1,
+    1,
+    0,
+    0
+   ]
+  }
+ },
+ {
+  "month": "February",
+  "week": "Week 3 16th Feb - 22nd Feb",
+  "mo": 2,
+  "format": "old-5metric",
+  "metrics": {
+   "Calls Made From Businesses": 49,
+   "Police Calls": 2,
+   "Aggressive Behaviour": 15,
+   "Public Drinking/Cannabis": 12,
+   "Assistance Provided": 6
+  },
+  "per_day": {
+   "Calls Made From Businesses": [
+    3,
+    3,
+    4,
+    12,
+    13,
+    8,
+    6
+   ],
+   "Police Calls": [
+    0,
+    0,
+    0,
+    0,
+    1,
+    1,
+    0
+   ],
+   "Aggressive Behaviour": [
+    1,
+    1,
+    2,
+    5,
+    4,
+    2,
+    0
+   ],
+   "Public Drinking/Cannabis": [
+    1,
+    1,
+    1,
+    3,
+    1,
+    2,
+    3
+   ],
+   "Assistance Provided": [
+    1,
+    0,
+    1,
+    1,
+    1,
+    1,
+    1
+   ]
+  }
+ },
+ {
+  "month": "February",
+  "week": "Week 4 23rd February - 28th February",
+  "mo": 2,
+  "format": "old-5metric",
+  "metrics": {
+   "Calls Made From Businesses": 31,
+   "Police Calls": 0,
+   "Aggressive Behaviour": 8,
+   "Public Drinking/Cannabis": 10,
+   "Assistance Provided": 1
+  },
+  "per_day": {
+   "Calls Made From Businesses": [
+    2,
+    2,
+    3,
+    7,
+    11,
+    6,
+    0
+   ],
+   "Police Calls": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "Aggressive Behaviour": [
+    0,
+    0,
+    0,
+    1,
+    4,
+    3,
+    0
+   ],
+   "Public Drinking/Cannabis": [
+    2,
+    1,
+    0,
+    1,
+    5,
+    1,
+    0
+   ],
+   "Assistance Provided": [
+    0,
+    0,
+    0,
+    0,
+    1,
+    0,
+    0
+   ]
+  }
+ },
+ {
+  "month": "March",
+  "week": "30 - 31st March ",
+  "mo": 3,
+  "format": "new",
+  "metrics": {
+   "Calls Made From Businesses": 16,
+   "Police Calls": 2,
+   "Aggressive Behaviour": 4,
+   "Public Drinking/Cannabis": 2,
+   "Assistance Provided": 4,
+   "Serious Incidents": 2,
+   "Arrests": 0,
+   "Injuries Reported": 0,
+   "Vagrants Moved On": 12,
+   "Shoplifting/Theft": 4,
+   "Intoxicated Persons": 2,
+   "Medical Responses": 0
+  },
+  "per_day": {
+   "Calls Made From Businesses": [
+    3,
+    5,
+    8,
+    0,
+    0,
+    0,
+    0
+   ],
+   "Police Calls": [
+    1,
+    0,
+    1,
+    0,
+    0,
+    0,
+    0
+   ],
+   "Aggressive Behaviour": [
+    2,
+    0,
+    2,
+    0,
+    0,
+    0,
+    0
+   ],
+   "Public Drinking/Cannabis": [
+    1,
+    0,
+    1,
+    0,
+    0,
+    0,
+    0
+   ],
+   "Assistance Provided": [
+    1,
+    1,
+    2,
+    0,
+    0,
+    0,
+    0
+   ],
+   "Serious Incidents": [
+    1,
+    0,
+    1,
+    0,
+    0,
+    0,
+    0
+   ],
+   "Arrests": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "Injuries Reported": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "Vagrants Moved On": [
+    2,
+    4,
+    6,
+    0,
+    0,
+    0,
+    0
+   ],
+   "Shoplifting/Theft": [
+    0,
+    2,
+    2,
+    0,
+    0,
+    0,
+    0
+   ],
+   "Intoxicated Persons": [
+    1,
+    0,
+    1,
+    0,
+    0,
+    0,
+    0
+   ],
+   "Medical Responses": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ]
+  }
+ },
+ {
+  "month": "March",
+  "week": "Week 1 2nd March - 8th March",
+  "mo": 3,
+  "format": "old-5metric",
+  "metrics": {
+   "Calls Made From Businesses": 50,
+   "Police Calls": 4,
+   "Aggressive Behaviour": 12,
+   "Public Drinking/Cannabis": 6,
+   "Assistance Provided": 7
+  },
+  "per_day": {
+   "Calls Made From Businesses": [
+    8,
+    6,
+    4,
+    11,
+    11,
+    4,
+    6
+   ],
+   "Police Calls": [
+    1,
+    0,
+    0,
+    1,
+    1,
+    1,
+    0
+   ],
+   "Aggressive Behaviour": [
+    2,
+    2,
+    1,
+    3,
+    1,
+    2,
+    1
+   ],
+   "Public Drinking/Cannabis": [
+    0,
+    1,
+    0,
+    1,
+    3,
+    0,
+    1
+   ],
+   "Assistance Provided": [
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1
+   ]
+  }
+ },
+ {
+  "month": "March",
+  "week": "Week 2 9th March - 15th March",
+  "mo": 3,
+  "format": "new",
+  "metrics": {
+   "Calls Made From Businesses": 35,
+   "Police Calls": 6,
+   "Aggressive Behaviour": 6,
+   "Public Drinking/Cannabis": 4,
+   "Assistance Provided": 7,
+   "Serious Incidents": 4,
+   "Arrests": 1,
+   "Injuries Reported": 2,
+   "Vagrants Moved On": 13,
+   "Shoplifting/Theft": 10,
+   "Intoxicated Persons": 6,
+   "Medical Responses": 1
+  },
+  "per_day": {
+   "Calls Made From Businesses": [
+    3,
+    4,
+    4,
+    5,
+    10,
+    6,
+    3
+   ],
+   "Police Calls": [
+    2,
+    2,
+    1,
+    1,
+    0,
+    0,
+    0
+   ],
+   "Aggressive Behaviour": [
+    1,
+    1,
+    1,
+    0,
+    2,
+    0,
+    1
+   ],
+   "Public Drinking/Cannabis": [
+    0,
+    0,
+    0,
+    0,
+    2,
+    2,
+    0
+   ],
+   "Assistance Provided": [
+    1,
+    1,
+    1,
+    2,
+    1,
+    1,
+    0
+   ],
+   "Serious Incidents": [
+    0,
+    1,
+    1,
+    1,
+    1,
+    0,
+    0
+   ],
+   "Arrests": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    1
+   ],
+   "Injuries Reported": [
+    0,
+    1,
+    0,
+    0,
+    1,
+    0,
+    0
+   ],
+   "Vagrants Moved On": [
+    0,
+    1,
+    2,
+    0,
+    3,
+    5,
+    2
+   ],
+   "Shoplifting/Theft": [
+    1,
+    2,
+    1,
+    1,
+    3,
+    2,
+    0
+   ],
+   "Intoxicated Persons": [
+    0,
+    0,
+    0,
+    1,
+    2,
+    3,
+    0
+   ],
+   "Medical Responses": [
+    0,
+    0,
+    0,
+    1,
+    0,
+    0,
+    0
+   ]
+  }
+ },
+ {
+  "month": "March",
+  "week": "Week 3 16th - 22nd March ",
+  "mo": 3,
+  "format": "new",
+  "metrics": {
+   "Calls Made From Businesses": 45,
+   "Police Calls": 7,
+   "Aggressive Behaviour": 12,
+   "Public Drinking/Cannabis": 0,
+   "Assistance Provided": 7,
+   "Serious Incidents": 6,
+   "Arrests": 1,
+   "Injuries Reported": 1,
+   "Vagrants Moved On": 22,
+   "Shoplifting/Theft": 7,
+   "Intoxicated Persons": 2,
+   "Medical Responses": 0
+  },
+  "per_day": {
+   "Calls Made From Businesses": [
+    6,
+    7,
+    7,
+    9,
+    6,
+    4,
+    6
+   ],
+   "Police Calls": [
+    2,
+    1,
+    1,
+    1,
+    0,
+    1,
+    1
+   ],
+   "Aggressive Behaviour": [
+    2,
+    1,
+    1,
+    1,
+    5,
+    1,
+    1
+   ],
+   "Public Drinking/Cannabis": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "Assistance Provided": [
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1
+   ],
+   "Serious Incidents": [
+    2,
+    1,
+    1,
+    1,
+    0,
+    1,
+    0
+   ],
+   "Arrests": [
+    1,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "Injuries Reported": [
+    1,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "Vagrants Moved On": [
+    2,
+    2,
+    5,
+    3,
+    4,
+    2,
+    4
+   ],
+   "Shoplifting/Theft": [
+    1,
+    0,
+    1,
+    2,
+    1,
+    1,
+    1
+   ],
+   "Intoxicated Persons": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    1,
+    1
+   ],
+   "Medical Responses": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ]
+  }
+ },
+ {
+  "month": "March",
+  "week": "Week 4 23rd - 29th March",
+  "mo": 3,
+  "format": "new",
+  "metrics": {
+   "Calls Made From Businesses": 42,
+   "Police Calls": 2,
+   "Aggressive Behaviour": 15,
+   "Public Drinking/Cannabis": 15,
+   "Assistance Provided": 7,
+   "Serious Incidents": 2,
+   "Arrests": 0,
+   "Injuries Reported": 0,
+   "Vagrants Moved On": 17,
+   "Shoplifting/Theft": 10,
+   "Intoxicated Persons": 10,
+   "Medical Responses": 1
+  },
+  "per_day": {
+   "Calls Made From Businesses": [
+    5,
+    5,
+    4,
+    6,
+    5,
+    8,
+    9
+   ],
+   "Police Calls": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    1,
+    1
+   ],
+   "Aggressive Behaviour": [
+    2,
+    2,
+    1,
+    2,
+    2,
+    3,
+    3
+   ],
+   "Public Drinking/Cannabis": [
+    0,
+    4,
+    3,
+    3,
+    2,
+    1,
+    2
+   ],
+   "Assistance Provided": [
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1
+   ],
+   "Serious Incidents": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    1,
+    1
+   ],
+   "Arrests": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "Injuries Reported": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "Vagrants Moved On": [
+    1,
+    2,
+    1,
+    2,
+    3,
+    3,
+    5
+   ],
+   "Shoplifting/Theft": [
+    2,
+    0,
+    1,
+    1,
+    0,
+    4,
+    2
+   ],
+   "Intoxicated Persons": [
+    0,
+    2,
+    1,
+    2,
+    2,
+    1,
+    2
+   ],
+   "Medical Responses": [
+    0,
+    0,
+    0,
+    1,
+    0,
+    0,
+    0
+   ]
+  }
+ },
+ {
+  "month": "April",
+  "week": "27th - 30th April",
+  "mo": 4,
+  "format": "new",
+  "metrics": {
+   "Calls Made From Businesses": 48,
+   "Police Calls": 2,
+   "Aggressive Behaviour": 12,
+   "Public Drinking/Cannabis": 6,
+   "Assistance Provided": 8,
+   "Serious Incidents": 0,
+   "Arrests": 0,
+   "Injuries Reported": 0,
+   "Vagrants Moved On": 28,
+   "Shoplifting/Theft": 6,
+   "Intoxicated Persons": 0,
+   "Medical Responses": 2
+  },
+  "per_day": {
+   "Calls Made From Businesses": [
+    9,
+    6,
+    2,
+    7,
+    24,
+    0,
+    0
+   ],
+   "Police Calls": [
+    0,
+    0,
+    0,
+    1,
+    1,
+    0,
+    0
+   ],
+   "Aggressive Behaviour": [
+    1,
+    2,
+    1,
+    2,
+    6,
+    0,
+    0
+   ],
+   "Public Drinking/Cannabis": [
+    1,
+    1,
+    1,
+    0,
+    3,
+    0,
+    0
+   ],
+   "Assistance Provided": [
+    1,
+    1,
+    1,
+    1,
+    4,
+    0,
+    0
+   ],
+   "Serious Incidents": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "Arrests": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "Injuries Reported": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "Vagrants Moved On": [
+    4,
+    4,
+    2,
+    4,
+    14,
+    0,
+    0
+   ],
+   "Shoplifting/Theft": [
+    2,
+    1,
+    0,
+    0,
+    3,
+    0,
+    0
+   ],
+   "Intoxicated Persons": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "Medical Responses": [
+    0,
+    0,
+    0,
+    1,
+    1,
+    0,
+    0
+   ]
+  }
+ },
+ {
+  "month": "April",
+  "week": "Week 1 2nd - 5th April",
+  "mo": 4,
+  "format": "new",
+  "metrics": {
+   "Calls Made From Businesses": 54,
+   "Police Calls": 10,
+   "Aggressive Behaviour": 16,
+   "Public Drinking/Cannabis": 4,
+   "Assistance Provided": 10,
+   "Serious Incidents": 2,
+   "Arrests": 0,
+   "Injuries Reported": 2,
+   "Vagrants Moved On": 22,
+   "Shoplifting/Theft": 14,
+   "Intoxicated Persons": 6,
+   "Medical Responses": 0
+  },
+  "per_day": {
+   "Calls Made From Businesses": [
+    3,
+    4,
+    7,
+    8,
+    5,
+    27,
+    0
+   ],
+   "Police Calls": [
+    1,
+    0,
+    1,
+    2,
+    1,
+    5,
+    0
+   ],
+   "Aggressive Behaviour": [
+    1,
+    0,
+    2,
+    3,
+    2,
+    8,
+    0
+   ],
+   "Public Drinking/Cannabis": [
+    0,
+    1,
+    1,
+    0,
+    0,
+    2,
+    0
+   ],
+   "Assistance Provided": [
+    1,
+    1,
+    1,
+    1,
+    1,
+    5,
+    0
+   ],
+   "Serious Incidents": [
+    0,
+    0,
+    0,
+    1,
+    0,
+    1,
+    0
+   ],
+   "Arrests": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "Injuries Reported": [
+    0,
+    0,
+    0,
+    1,
+    0,
+    1,
+    0
+   ],
+   "Vagrants Moved On": [
+    1,
+    1,
+    4,
+    2,
+    3,
+    11,
+    0
+   ],
+   "Shoplifting/Theft": [
+    1,
+    0,
+    1,
+    3,
+    2,
+    7,
+    0
+   ],
+   "Intoxicated Persons": [
+    0,
+    1,
+    0,
+    2,
+    0,
+    3,
+    0
+   ],
+   "Medical Responses": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ]
+  }
+ },
+ {
+  "month": "April",
+  "week": "Week 2 6th - 12th April",
+  "mo": 4,
+  "format": "new",
+  "metrics": {
+   "Calls Made From Businesses": 36,
+   "Police Calls": 10,
+   "Aggressive Behaviour": 13,
+   "Public Drinking/Cannabis": 3,
+   "Assistance Provided": 7,
+   "Serious Incidents": 4,
+   "Arrests": 0,
+   "Injuries Reported": 1,
+   "Vagrants Moved On": 16,
+   "Shoplifting/Theft": 8,
+   "Intoxicated Persons": 8,
+   "Medical Responses": 3
+  },
+  "per_day": {
+   "Calls Made From Businesses": [
+    8,
+    3,
+    3,
+    4,
+    9,
+    7,
+    2
+   ],
+   "Police Calls": [
+    3,
+    3,
+    0,
+    1,
+    2,
+    1,
+    0
+   ],
+   "Aggressive Behaviour": [
+    1,
+    2,
+    1,
+    1,
+    4,
+    4,
+    0
+   ],
+   "Public Drinking/Cannabis": [
+    0,
+    0,
+    1,
+    0,
+    1,
+    1,
+    0
+   ],
+   "Assistance Provided": [
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1
+   ],
+   "Serious Incidents": [
+    1,
+    1,
+    0,
+    1,
+    1,
+    0,
+    0
+   ],
+   "Arrests": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "Injuries Reported": [
+    0,
+    0,
+    0,
+    0,
+    1,
+    0,
+    0
+   ],
+   "Vagrants Moved On": [
+    2,
+    1,
+    2,
+    0,
+    3,
+    6,
+    2
+   ],
+   "Shoplifting/Theft": [
+    2,
+    0,
+    0,
+    2,
+    3,
+    1,
+    0
+   ],
+   "Intoxicated Persons": [
+    0,
+    1,
+    2,
+    0,
+    2,
+    2,
+    1
+   ],
+   "Medical Responses": [
+    0,
+    1,
+    0,
+    1,
+    1,
+    0,
+    0
+   ]
+  }
+ },
+ {
+  "month": "April",
+  "week": "Week 3 13th - 19th April",
+  "mo": 4,
+  "format": "new",
+  "metrics": {
+   "Calls Made From Businesses": 35,
+   "Police Calls": 3,
+   "Aggressive Behaviour": 6,
+   "Public Drinking/Cannabis": 6,
+   "Assistance Provided": 7,
+   "Serious Incidents": 2,
+   "Arrests": 1,
+   "Injuries Reported": 1,
+   "Vagrants Moved On": 18,
+   "Shoplifting/Theft": 8,
+   "Intoxicated Persons": 3,
+   "Medical Responses": 0
+  },
+  "per_day": {
+   "Calls Made From Businesses": [
+    4,
+    11,
+    3,
+    4,
+    4,
+    3,
+    6
+   ],
+   "Police Calls": [
+    0,
+    0,
+    1,
+    1,
+    1,
+    0,
+    0
+   ],
+   "Aggressive Behaviour": [
+    0,
+    2,
+    0,
+    0,
+    3,
+    1,
+    0
+   ],
+   "Public Drinking/Cannabis": [
+    2,
+    1,
+    0,
+    0,
+    3,
+    0,
+    0
+   ],
+   "Assistance Provided": [
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1
+   ],
+   "Serious Incidents": [
+    0,
+    0,
+    0,
+    1,
+    1,
+    0,
+    0
+   ],
+   "Arrests": [
+    0,
+    0,
+    0,
+    1,
+    0,
+    0,
+    0
+   ],
+   "Injuries Reported": [
+    0,
+    0,
+    0,
+    0,
+    1,
+    0,
+    0
+   ],
+   "Vagrants Moved On": [
+    3,
+    5,
+    2,
+    2,
+    0,
+    3,
+    3
+   ],
+   "Shoplifting/Theft": [
+    0,
+    3,
+    0,
+    0,
+    3,
+    0,
+    2
+   ],
+   "Intoxicated Persons": [
+    0,
+    0,
+    0,
+    0,
+    2,
+    1,
+    0
+   ],
+   "Medical Responses": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ]
+  }
+ },
+ {
+  "month": "April",
+  "week": "Week 4 20th - 26th April",
+  "mo": 4,
+  "format": "new",
+  "metrics": {
+   "Calls Made From Businesses": 53,
+   "Police Calls": 2,
+   "Aggressive Behaviour": 12,
+   "Public Drinking/Cannabis": 1,
+   "Assistance Provided": 7,
+   "Serious Incidents": 2,
+   "Arrests": 1,
+   "Injuries Reported": 1,
+   "Vagrants Moved On": 27,
+   "Shoplifting/Theft": 13,
+   "Intoxicated Persons": 4,
+   "Medical Responses": 0
+  },
+  "per_day": {
+   "Calls Made From Businesses": [
+    5,
+    7,
+    9,
+    5,
+    13,
+    6,
+    8
+   ],
+   "Police Calls": [
+    0,
+    0,
+    0,
+    0,
+    1,
+    1,
+    0
+   ],
+   "Aggressive Behaviour": [
+    1,
+    1,
+    3,
+    0,
+    3,
+    3,
+    1
+   ],
+   "Public Drinking/Cannabis": [
+    0,
+    1,
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "Assistance Provided": [
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1
+   ],
+   "Serious Incidents": [
+    0,
+    0,
+    0,
+    0,
+    1,
+    1,
+    0
+   ],
+   "Arrests": [
+    0,
+    0,
+    0,
+    0,
+    1,
+    0,
+    0
+   ],
+   "Injuries Reported": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    1,
+    0
+   ],
+   "Vagrants Moved On": [
+    2,
+    6,
+    5,
+    4,
+    5,
+    2,
+    3
+   ],
+   "Shoplifting/Theft": [
+    2,
+    1,
+    4,
+    1,
+    1,
+    1,
+    3
+   ],
+   "Intoxicated Persons": [
+    0,
+    1,
+    0,
+    0,
+    1,
+    2,
+    0
+   ],
+   "Medical Responses": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ]
+  }
+ },
+ {
+  "month": "May",
+  "week": "1st - 3rd May",
+  "mo": 5,
+  "format": "new",
+  "metrics": {
+   "Calls Made From Businesses": 38,
+   "Police Calls": 4,
+   "Aggressive Behaviour": 12,
+   "Public Drinking/Cannabis": 4,
+   "Assistance Provided": 6,
+   "Serious Incidents": 0,
+   "Arrests": 0,
+   "Injuries Reported": 0,
+   "Vagrants Moved On": 14,
+   "Shoplifting/Theft": 8,
+   "Intoxicated Persons": 0,
+   "Medical Responses": 0
+  },
+  "per_day": {
+   "Calls Made From Businesses": [
+    8,
+    9,
+    2,
+    19,
+    0,
+    0,
+    0
+   ],
+   "Police Calls": [
+    1,
+    1,
+    0,
+    2,
+    0,
+    0,
+    0
+   ],
+   "Aggressive Behaviour": [
+    2,
+    3,
+    1,
+    6,
+    0,
+    0,
+    0
+   ],
+   "Public Drinking/Cannabis": [
+    0,
+    2,
+    0,
+    2,
+    0,
+    0,
+    0
+   ],
+   "Assistance Provided": [
+    1,
+    1,
+    1,
+    3,
+    0,
+    0,
+    0
+   ],
+   "Serious Incidents": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "Arrests": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "Injuries Reported": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "Vagrants Moved On": [
+    3,
+    3,
+    1,
+    7,
+    0,
+    0,
+    0
+   ],
+   "Shoplifting/Theft": [
+    1,
+    2,
+    1,
+    4,
+    0,
+    0,
+    0
+   ],
+   "Intoxicated Persons": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "Medical Responses": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ]
+  }
+ },
+ {
+  "month": "May",
+  "week": "Week 1 4th - 10th May",
+  "mo": 5,
+  "format": "new",
+  "metrics": {
+   "Calls Made From Businesses": 34,
+   "Police Calls": 2,
+   "Aggressive Behaviour": 11,
+   "Public Drinking/Cannabis": 2,
+   "Assistance Provided": 7,
+   "Serious Incidents": 0,
+   "Arrests": 1,
+   "Injuries Reported": 0,
+   "Vagrants Moved On": 16,
+   "Shoplifting/Theft": 6,
+   "Intoxicated Persons": 0,
+   "Medical Responses": 0
+  },
+  "per_day": {
+   "Calls Made From Businesses": [
+    5,
+    4,
+    4,
+    6,
+    8,
+    4,
+    3
+   ],
+   "Police Calls": [
+    0,
+    0,
+    0,
+    0,
+    1,
+    1,
+    0
+   ],
+   "Aggressive Behaviour": [
+    1,
+    2,
+    1,
+    2,
+    2,
+    2,
+    1
+   ],
+   "Public Drinking/Cannabis": [
+    1,
+    0,
+    0,
+    0,
+    0,
+    1,
+    0
+   ],
+   "Assistance Provided": [
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1
+   ],
+   "Serious Incidents": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "Arrests": [
+    0,
+    0,
+    0,
+    0,
+    1,
+    0,
+    0
+   ],
+   "Injuries Reported": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "Vagrants Moved On": [
+    2,
+    2,
+    1,
+    4,
+    4,
+    2,
+    1
+   ],
+   "Shoplifting/Theft": [
+    1,
+    1,
+    2,
+    0,
+    1,
+    0,
+    1
+   ],
+   "Intoxicated Persons": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "Medical Responses": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ]
+  }
+ },
+ {
+  "month": "May",
+  "week": "Week 2 11th - 17th May",
+  "mo": 5,
+  "format": "new",
+  "metrics": {
+   "Calls Made From Businesses": 40,
+   "Police Calls": 5,
+   "Aggressive Behaviour": 11,
+   "Public Drinking/Cannabis": 2,
+   "Assistance Provided": 7,
+   "Serious Incidents": 0,
+   "Arrests": 1,
+   "Injuries Reported": 0,
+   "Vagrants Moved On": 19,
+   "Shoplifting/Theft": 9,
+   "Intoxicated Persons": 2,
+   "Medical Responses": 0
+  },
+  "per_day": {
+   "Calls Made From Businesses": [
+    5,
+    4,
+    2,
+    8,
+    10,
+    6,
+    5
+   ],
+   "Police Calls": [
+    1,
+    0,
+    0,
+    1,
+    1,
+    1,
+    1
+   ],
+   "Aggressive Behaviour": [
+    2,
+    0,
+    1,
+    1,
+    3,
+    2,
+    2
+   ],
+   "Public Drinking/Cannabis": [
+    0,
+    0,
+    0,
+    0,
+    1,
+    0,
+    1
+   ],
+   "Assistance Provided": [
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1
+   ],
+   "Serious Incidents": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "Arrests": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    1
+   ],
+   "Injuries Reported": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "Vagrants Moved On": [
+    1,
+    4,
+    1,
+    3,
+    5,
+    3,
+    2
+   ],
+   "Shoplifting/Theft": [
+    1,
+    0,
+    0,
+    4,
+    2,
+    1,
+    1
+   ],
+   "Intoxicated Persons": [
+    1,
+    0,
+    0,
+    0,
+    0,
+    0,
+    1
+   ],
+   "Medical Responses": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ]
+  }
+ },
+ {
+  "month": "May",
+  "week": "Week 3 18th - 24th May",
+  "mo": 5,
+  "format": "new",
+  "metrics": {
+   "Calls Made From Businesses": 29,
+   "Police Calls": 3,
+   "Aggressive Behaviour": 9,
+   "Public Drinking/Cannabis": 1,
+   "Assistance Provided": 7,
+   "Serious Incidents": 0,
+   "Arrests": 3,
+   "Injuries Reported": 0,
+   "Vagrants Moved On": 13,
+   "Shoplifting/Theft": 5,
+   "Intoxicated Persons": 0,
+   "Medical Responses": 0
+  },
+  "per_day": {
+   "Calls Made From Businesses": [
+    3,
+    5,
+    4,
+    3,
+    5,
+    5,
+    4
+   ],
+   "Police Calls": [
+    0,
+    0,
+    1,
+    0,
+    1,
+    1,
+    0
+   ],
+   "Aggressive Behaviour": [
+    0,
+    1,
+    0,
+    2,
+    2,
+    2,
+    2
+   ],
+   "Public Drinking/Cannabis": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    1
+   ],
+   "Assistance Provided": [
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1
+   ],
+   "Serious Incidents": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "Arrests": [
+    0,
+    0,
+    0,
+    0,
+    1,
+    2,
+    0
+   ],
+   "Injuries Reported": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "Vagrants Moved On": [
+    1,
+    2,
+    1,
+    2,
+    3,
+    2,
+    2
+   ],
+   "Shoplifting/Theft": [
+    0,
+    2,
+    0,
+    1,
+    0,
+    1,
+    1
+   ],
+   "Intoxicated Persons": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "Medical Responses": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ]
+  }
+ },
+ {
+  "month": "May",
+  "week": "Week 4 25th - 31st May",
+  "mo": 5,
+  "format": "new",
+  "metrics": {
+   "Calls Made From Businesses": 58,
+   "Police Calls": 4,
+   "Aggressive Behaviour": 13,
+   "Public Drinking/Cannabis": 1,
+   "Assistance Provided": 7,
+   "Serious Incidents": 4,
+   "Arrests": 3,
+   "Injuries Reported": 1,
+   "Vagrants Moved On": 18,
+   "Shoplifting/Theft": 7,
+   "Intoxicated Persons": 0,
+   "Medical Responses": 0
+  },
+  "per_day": {
+   "Calls Made From Businesses": [
+    8,
+    4,
+    9,
+    4,
+    11,
+    14,
+    8
+   ],
+   "Police Calls": [
+    1,
+    0,
+    0,
+    1,
+    1,
+    1,
+    0
+   ],
+   "Aggressive Behaviour": [
+    1,
+    0,
+    3,
+    0,
+    3,
+    4,
+    2
+   ],
+   "Public Drinking/Cannabis": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    1,
+    0
+   ],
+   "Assistance Provided": [
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1
+   ],
+   "Serious Incidents": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    1,
+    3
+   ],
+   "Arrests": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    3,
+    0
+   ],
+   "Injuries Reported": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    1,
+    0
+   ],
+   "Vagrants Moved On": [
+    4,
+    1,
+    3,
+    1,
+    3,
+    4,
+    2
+   ],
+   "Shoplifting/Theft": [
+    3,
+    2,
+    0,
+    0,
+    0,
+    2,
+    0
+   ],
+   "Intoxicated Persons": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "Medical Responses": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ]
+  }
+ },
+ {
+  "month": "June",
+  "week": "Week 1 1st June - 7th June",
+  "mo": 6,
+  "format": "new",
+  "metrics": {
+   "Calls Made From Businesses": 46,
+   "Police Calls": 1,
+   "Aggressive Behaviour": 11,
+   "Public Drinking/Cannabis": 3,
+   "Assistance Provided": 6,
+   "Serious Incidents": 2,
+   "Arrests": 0,
+   "Injuries Reported": 0,
+   "Vagrants Moved On": 13,
+   "Shoplifting/Theft": 11,
+   "Intoxicated Persons": 0,
+   "Medical Responses": 0
+  },
+  "per_day": {
+   "Calls Made From Businesses": [
+    5,
+    5,
+    9,
+    5,
+    8,
+    14,
+    0
+   ],
+   "Police Calls": [
+    1,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "Aggressive Behaviour": [
+    1,
+    0,
+    2,
+    2,
+    2,
+    4,
+    0
+   ],
+   "Public Drinking/Cannabis": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    2,
+    1
+   ],
+   "Assistance Provided": [
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    0
+   ],
+   "Serious Incidents": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    2,
+    0
+   ],
+   "Arrests": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "Injuries Reported": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "Vagrants Moved On": [
+    4,
+    1,
+    1,
+    2,
+    2,
+    3,
+    0
+   ],
+   "Shoplifting/Theft": [
+    0,
+    3,
+    4,
+    1,
+    2,
+    1,
+    0
+   ],
+   "Intoxicated Persons": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "Medical Responses": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ]
+  }
+ },
+ {
+  "month": "June",
+  "week": "Week 2 8th June - 14th June",
+  "mo": 6,
+  "format": "new",
+  "metrics": {
+   "Calls Made From Businesses": 54,
+   "Police Calls": 8,
+   "Aggressive Behaviour": 16,
+   "Public Drinking/Cannabis": 3,
+   "Assistance Provided": 7,
+   "Serious Incidents": 5,
+   "Arrests": 2,
+   "Injuries Reported": 0,
+   "Vagrants Moved On": 24,
+   "Shoplifting/Theft": 7,
+   "Intoxicated Persons": 5,
+   "Medical Responses": 1
+  },
+  "per_day": {
+   "Calls Made From Businesses": [
+    10,
+    8,
+    7,
+    8,
+    12,
+    5,
+    4
+   ],
+   "Police Calls": [
+    1,
+    2,
+    0,
+    2,
+    1,
+    1,
+    1
+   ],
+   "Aggressive Behaviour": [
+    4,
+    2,
+    1,
+    2,
+    2,
+    3,
+    2
+   ],
+   "Public Drinking/Cannabis": [
+    1,
+    0,
+    1,
+    0,
+    1,
+    0,
+    0
+   ],
+   "Assistance Provided": [
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1
+   ],
+   "Serious Incidents": [
+    1,
+    2,
+    0,
+    0,
+    1,
+    1,
+    0
+   ],
+   "Arrests": [
+    0,
+    1,
+    0,
+    1,
+    0,
+    0,
+    0
+   ],
+   "Injuries Reported": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "Vagrants Moved On": [
+    3,
+    5,
+    4,
+    4,
+    6,
+    1,
+    1
+   ],
+   "Shoplifting/Theft": [
+    0,
+    0,
+    1,
+    2,
+    2,
+    0,
+    2
+   ],
+   "Intoxicated Persons": [
+    1,
+    0,
+    0,
+    2,
+    1,
+    1,
+    0
+   ],
+   "Medical Responses": [
+    0,
+    0,
+    0,
+    0,
+    1,
+    0,
+    0
+   ]
+  }
+ },
+ {
+  "month": "June",
+  "week": "Week 3 15th June - 21st June",
+  "mo": 6,
+  "format": "new",
+  "metrics": {
+   "Calls Made From Businesses": 98,
+   "Police Calls": 8,
+   "Aggressive Behaviour": 28,
+   "Public Drinking/Cannabis": 2,
+   "Assistance Provided": 12,
+   "Serious Incidents": 4,
+   "Arrests": 0,
+   "Injuries Reported": 0,
+   "Vagrants Moved On": 30,
+   "Shoplifting/Theft": 28,
+   "Intoxicated Persons": 8,
+   "Medical Responses": 0
+  },
+  "per_day": {
+   "Calls Made From Businesses": [
+    12,
+    8,
+    8,
+    12,
+    4,
+    5,
+    49
+   ],
+   "Police Calls": [
+    1,
+    1,
+    1,
+    1,
+    0,
+    0,
+    4
+   ],
+   "Aggressive Behaviour": [
+    3,
+    2,
+    3,
+    3,
+    1,
+    2,
+    14
+   ],
+   "Public Drinking/Cannabis": [
+    0,
+    0,
+    1,
+    0,
+    0,
+    0,
+    1
+   ],
+   "Assistance Provided": [
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    6
+   ],
+   "Serious Incidents": [
+    0,
+    1,
+    1,
+    0,
+    0,
+    0,
+    2
+   ],
+   "Arrests": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "Injuries Reported": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "Vagrants Moved On": [
+    6,
+    1,
+    3,
+    3,
+    1,
+    1,
+    15
+   ],
+   "Shoplifting/Theft": [
+    4,
+    5,
+    0,
+    3,
+    1,
+    1,
+    14
+   ],
+   "Intoxicated Persons": [
+    0,
+    0,
+    2,
+    0,
+    0,
+    2,
+    4
+   ],
+   "Medical Responses": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ]
+  }
+ }
+]

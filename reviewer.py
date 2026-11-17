@@ -3592,7 +3592,7 @@ RULES:
         user_requirements=user_requirements,
     )
 
-    write_timeout = scaled_timeout(900, len(corpus), max_timeout=2400)
+    write_timeout = scaled_timeout(1800, len(corpus), max_timeout=3000)
     analysis_output = run_claude(
         write_prompt,
         work_dir,

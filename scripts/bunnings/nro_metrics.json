@@ -1,0 +1,251 @@
+{
+ "as_at": "2026-08-04",
+ "generated_note": "data 30 Apr 2025 \u2013 04 Aug 2026",
+ "incidents": 1435,
+ "sites": 26,
+ "regions": 7,
+ "date_lo": "2025-04-30",
+ "date_hi": "2026-08-04",
+ "recovered": 269814.13,
+ "stolen": 16023.93,
+ "identified": 285838.06,
+ "recovery_pct": 94.4,
+ "auror_pct": 100.0,
+ "severity": {
+  "1": 1182,
+  "2": 153,
+  "3": 69,
+  "4": 27,
+  "5": 4
+ },
+ "sev3plus": 100,
+ "sev45": 31,
+ "risk_window_pct": 69.5,
+ "timed": 1435,
+ "peak_day": [
+  "Monday",
+  284
+ ],
+ "hottest_cell": {
+  "day": "Monday",
+  "hour": 16,
+  "count": 43
+ },
+ "top6": [
+  {
+   "store": "Bunnings Mt Roskill",
+   "recovered": 54114.23,
+   "share": 20.1,
+   "incidents": 221,
+   "sev3": 14
+  },
+  {
+   "store": "Bunnings Mt Wellington",
+   "recovered": 48216.49,
+   "share": 17.9,
+   "incidents": 229,
+   "sev3": 20
+  },
+  {
+   "store": "Bunnings Manukau",
+   "recovered": 43042.96,
+   "share": 16.0,
+   "incidents": 218,
+   "sev3": 12
+  },
+  {
+   "store": "Bunnings Botany",
+   "recovered": 26321.07,
+   "share": 9.8,
+   "incidents": 123,
+   "sev3": 15
+  },
+  {
+   "store": "Bunnings Takanini",
+   "recovered": 25032.08,
+   "share": 9.3,
+   "incidents": 116,
+   "sev3": 4
+  },
+  {
+   "store": "Bunnings Riccarton",
+   "recovered": 22591.2,
+   "share": 8.4,
+   "incidents": 126,
+   "sev3": 10
+  }
+ ],
+ "top6_share": 81.3,
+ "regional": [
+  {
+   "region": "Auckland - T\u0101maki Makaurau",
+   "recovered": 216004.29,
+   "incidents": 1007
+  },
+  {
+   "region": "Canterbury - Waitaha",
+   "recovered": 40414.73,
+   "incidents": 228
+  },
+  {
+   "region": "Waikato",
+   "recovered": 7956.51,
+   "incidents": 67
+  },
+  {
+   "region": "Wellington - Te Whanganui-a-Tara",
+   "recovered": 4290.8,
+   "incidents": 125
+  },
+  {
+   "region": "Northland - Te Tai Tokerau",
+   "recovered": 985.25,
+   "incidents": 6
+  },
+  {
+   "region": "Otago - \u014ct\u0101kou",
+   "recovered": 110.6,
+   "incidents": 1
+  },
+  {
+   "region": "Nelson - Whakat\u016b",
+   "recovered": 51.95,
+   "incidents": 1
+  }
+ ],
+ "signoff": {
+  "Guard": 100.0,
+  "Duty Manager": 12.6,
+  "Checkout Operator": 4.4,
+  "Supervisor": 2.9,
+  "Store Manager": 2.2
+ },
+ "serious_hotspots": [
+  {
+   "store": "Bunnings Mt Wellington",
+   "sev3": 20
+  },
+  {
+   "store": "Bunnings Botany",
+   "sev3": 15
+  },
+  {
+   "store": "Bunnings Mt Roskill",
+   "sev3": 14
+  },
+  {
+   "store": "Bunnings Manukau",
+   "sev3": 12
+  },
+  {
+   "store": "Bunnings Riccarton",
+   "sev3": 10
+  }
+ ],
+ "monthly": [
+  {
+   "month": "2025-04",
+   "incidents": 1,
+   "recovered": 113.44
+  },
+  {
+   "month": "2025-07",
+   "incidents": 97,
+   "recovered": 17431.08
+  },
+  {
+   "month": "2025-08",
+   "incidents": 90,
+   "recovered": 24916.09
+  },
+  {
+   "month": "2025-09",
+   "incidents": 117,
+   "recovered": 23686.75
+  },
+  {
+   "month": "2025-10",
+   "incidents": 124,
+   "recovered": 26516.92
+  },
+  {
+   "month": "2025-11",
+   "incidents": 125,
+   "recovered": 27802.2
+  },
+  {
+   "month": "2025-12",
+   "incidents": 120,
+   "recovered": 26476.69
+  },
+  {
+   "month": "2026-01",
+   "incidents": 109,
+   "recovered": 26006.99
+  },
+  {
+   "month": "2026-02",
+   "incidents": 97,
+   "recovered": 12669.39
+  },
+  {
+   "month": "2026-03",
+   "incidents": 117,
+   "recovered": 21305.4
+  },
+  {
+   "month": "2026-04",
+   "incidents": 127,
+   "recovered": 21461.17
+  },
+  {
+   "month": "2026-05",
+   "incidents": 95,
+   "recovered": 12872.3
+  },
+  {
+   "month": "2026-06",
+   "incidents": 97,
+   "recovered": 13398.97
+  },
+  {
+   "month": "2026-07",
+   "incidents": 99,
+   "recovered": 12184.85
+  },
+  {
+   "month": "2026-08",
+   "incidents": 20,
+   "recovered": 2971.89
+  }
+ ],
+ "hours": {
+  "fy26": 14052.0,
+  "payrun_recent": 1429.5,
+  "payrun_weeks": {
+   "2026-07-01_2026-07-07": 245.75,
+   "2026-06-24_2026-06-30": 231.25,
+   "2026-07-29_2026-08-04": 249.0,
+   "2026-07-22_2026-07-28": 265.25,
+   "2026-07-08_2026-07-14": 196.75,
+   "2026-07-15_2026-07-21": 241.5
+  },
+  "payrun_by_store": {
+   "Bunnings Manukau": 285.25,
+   "Bunnings Mt Roskill": 266.0,
+   "Bunnings Riccarton": 214.25,
+   "Bunnings Shirley": 127.5,
+   "Bunnings Mt Wellington": 122.0,
+   "Bunnings New Lynn": 114.0,
+   "Bunnings Botany": 76.0,
+   "Bunnings Petone": 66.0,
+   "Bunnings Takanini": 66.0,
+   "Bunnings Wellington Central": 28.5,
+   "Bunnings Christchurch Airport": 28.25,
+   "Bunnings Lyall Bay": 18.0,
+   "Bunnings Te Rapa": 10.25,
+   "Bunnings Hamilton South": 7.5
+  },
+  "inc_per_100h_fy26": 9.17
+ }
+}

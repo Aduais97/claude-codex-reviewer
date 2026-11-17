@@ -1,0 +1,70 @@
+{
+  "verdict": "needs_revision",
+  "quality_score": 5,
+  "issues": [
+    {
+      "severity": "critical",
+      "section": "Overall / Draft Report",
+      "description": "`_analysis_report.txt` does not contain a draft acquisition analysis report. Its entire contents are a timeout message: `Timed out after 1264s (base=1264s, extended=1264s, fs_extensions=0)`.",
+      "suggestion": "Replace `_analysis_report.txt` with the actual acquisition analysis report, then rerun QA on the substantive draft."
+    },
+    {
+      "severity": "critical",
+      "section": "Framework / Completeness",
+      "description": "`_analysis_framework.txt` does not contain the approved framework. Its entire contents are a timeout message: `Timed out after 344s (base=344s, extended=344s, fs_extensions=0)`.",
+      "suggestion": "Restore the approved framework file so section-by-section completeness can be tested."
+    },
+    {
+      "severity": "critical",
+      "section": "Scope / Evidence Base",
+      "description": "The available corpus is not an acquisition-analysis evidence pack. `_analysis_corpus.txt` explicitly states this is a legal-draft verification corpus and that there is 'no financial, organisational or market data of any kind.' The corpus documents are `PRECEDENT_ProHost_2023.pdf`, `ROUND2_VERIFICATION.md`, `SPA_DRAFT_V4.md`, and `deal_facts.txt`.",
+      "suggestion": "Provide the actual M&A source set: financial statements, management/organisation data, customer mix, KPIs, forecast assumptions, debt/cash/working-capital data, and valuation/comparable-company support."
+    },
+    {
+      "severity": "critical",
+      "section": "Valuation Rigour",
+      "description": "No valuation work can be supported from the supplied materials. There is no EBITDA bridge, no normalisation analysis, no comparable multiples set, no transaction comps, and no defensible valuation range in the named report file.",
+      "suggestion": "Add a source-backed valuation section with normalised earnings, methodology, selected multiples, range construction, and sensitivity analysis."
+    },
+    {
+      "severity": "major",
+      "section": "Factual Accuracy",
+      "description": "Because the draft report is absent, there are no substantive figures to reconcile line-by-line to the source documents. The only numeric content in the named report/framework files is timeout metadata, not acquisition-analysis data.",
+      "suggestion": "Once the real report is supplied, reperform a figure-by-figure tie-out to source documents and show support for each number used."
+    },
+    {
+      "severity": "major",
+      "section": "Analytical Depth / Organisational Analysis",
+      "description": "There is no forensic organisational analysis in the named draft report. The only substantive narrative in the directory is `ROUND3_FINAL_READTHROUGH.md`, which is a legal SPA read-through and explicitly says acquisition-analysis requirements are out of scope.",
+      "suggestion": "Add management assessment, decision-rights analysis, dependency mapping, customer/service delivery review, and operational red-flag analysis tied to evidence."
+    },
+    {
+      "severity": "major",
+      "section": "Risk Completeness",
+      "description": "Material M&A risks are not assessed in the named report: earnings quality, customer concentration, staff dependency, compliance exposure, integration/separation risk, working-capital risk, and downside-case valuation risk are all missing.",
+      "suggestion": "Build a source-backed risk register with impact, likelihood, mitigation, and valuation implications."
+    },
+    {
+      "severity": "major",
+      "section": "Recommendation Clarity",
+      "description": "There is no clear acquisition recommendation in `_analysis_report.txt`. The existing substantive memo in the folder concludes on legal draft transmission, not whether to acquire, at what value, or under what conditions.",
+      "suggestion": "State a clear recommendation such as proceed / proceed with conditions / renegotiate / do not proceed, and tie it to valuation, risks, and required mitigants."
+    }
+  ],
+  "factual_errors": [
+    "`_analysis_report.txt` contains no acquisition-analysis figures; it contains only `Timed out after 1264s (base=1264s, extended=1264s, fs_extensions=0)`.",
+    "`_analysis_framework.txt` contains no approved framework sections; it contains only `Timed out after 344s (base=344s, extended=344s, fs_extensions=0)`.",
+    "`_analysis_corpus.txt` states the corpus is 'not an acquisition analysis' and contains 'no financial, organisational or market data of any kind,' so valuation and organisational conclusions cannot be supported from the supplied sources."
+  ],
+  "missing_analysis": [
+    "Framework coverage cannot be tested because the approved framework file is missing.",
+    "No substantive acquisition-analysis report content is present in `_analysis_report.txt`.",
+    "No organisational or management analysis.",
+    "No financial performance or quality-of-earnings analysis.",
+    "No valuation methodology, comparable multiples, or supported valuation range.",
+    "No internal-consistency bridge from evidence to conclusions.",
+    "No M&A risk register with quantified impact.",
+    "No clear acquisition recommendation with decision criteria."
+  ],
+  "summary": "This submission fails QA at the file-integrity and evidence-base level. The named draft report and framework files are not substantive documents, and the corpus is a legal SPA review pack rather than an M&A diligence and valuation dataset. As provided, factual accuracy, completeness against framework, analytical depth, valuation rigour, internal consistency, risk coverage, and recommendation quality cannot be signed off."
+}

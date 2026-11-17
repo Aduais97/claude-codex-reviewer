@@ -1,0 +1,59 @@
+{
+  "verdict": "needs_revision",
+  "quality_score": 3,
+  "issues": [
+    {
+      "severity": "critical",
+      "section": "Entire report",
+      "description": "_analysis_report.txt does not contain a draft analysis report. Its full contents are only an API error message, so there is no analysis, no figures, no conclusion, and no recommendation to review.",
+      "suggestion": "Regenerate or restore the actual draft report file, then rerun QA against the substantive text."
+    },
+    {
+      "severity": "critical",
+      "section": "Framework coverage",
+      "description": "_analysis_framework.txt does not contain the approved framework. Its contents are only an API error message indicating an incomplete response. Framework completeness therefore cannot be tested.",
+      "suggestion": "Restore the approved framework text so section-by-section coverage can be validated."
+    },
+    {
+      "severity": "critical",
+      "section": "Source alignment",
+      "description": "_analysis_corpus.txt is not an acquisition/M&A source set. It is an employment-law dossier relating to Ryan Webby and SLS RTC Limited, including pay of $26.50/hour, commencement around 12 March 2025, a complaint dated 14 June 2026, and conduct issues dated 13 July 2026 and 4 August 2026. It contains no target-company financials, transaction structure, industry comps, or valuation evidence.",
+      "suggestion": "Confirm the correct engagement folder. If this is meant to be an M&A analysis, replace the corpus with transaction documents; if it is meant to be an employment-risk memo, replace the task framing and framework accordingly."
+    },
+    {
+      "severity": "major",
+      "section": "Factual accuracy",
+      "description": "Because the report file contains no substantive content, no numbers can be reconciled to source documents. The instruction to check every number cannot be completed on the current draft.",
+      "suggestion": "Provide the actual report text with all numeric claims so each figure can be tied back to the corpus."
+    },
+    {
+      "severity": "major",
+      "section": "Valuation rigour",
+      "description": "There is no valuation section, no EBITDA or revenue basis, no public comps, no precedent transactions, no multiple bridge, and no range support. The corpus itself also provides no valuation inputs.",
+      "suggestion": "Add a valuation section only after supplying transaction and financial source data; support every range with named methodologies and source-backed assumptions."
+    },
+    {
+      "severity": "major",
+      "section": "Recommendation clarity",
+      "description": "No recommendation is present in the report file, so there is no actionable conclusion to assess for clarity or defensibility.",
+      "suggestion": "Include an explicit recommendation, the rationale supporting it, and the key risks or conditions precedent."
+    },
+    {
+      "severity": "major",
+      "section": "Risk completeness",
+      "description": "No risk analysis is presented in the draft. If the employment-law corpus is actually the intended source set, material risks omitted from any recommendation would include retaliation or personal grievance exposure, Privacy Act response timing, manager recusal conflict, wage-deduction risk, and client data-integrity exposure.",
+      "suggestion": "Either replace the corpus with M&A risks or, if this is the intended matter, add a full risk matrix covering legal, process, reputational, and client exposure."
+    }
+  ],
+  "factual_errors": [
+    "No report figures were available to verify because _analysis_report.txt contains only an API error message.",
+    "No framework section references were available to test because _analysis_framework.txt contains only an API error message."
+  ],
+  "missing_analysis": [
+    "All approved-framework sections are effectively missing because the framework file is unavailable.",
+    "All report sections are missing: executive summary, source-backed analysis, valuation, risks, and recommendation.",
+    "If the corpus is the intended source set, the draft omits the central chronology and causation point that Ryan's formal complaint on 14 June 2026 predates the conduct triggers raised later on 13 July 2026 and 4 August 2026.",
+    "If the corpus is the intended source set, the draft omits the strongest evidenced issue: the alleged competing security business and divided-loyalty concerns, alongside the evidentiary gaps still requiring confirmation."
+  ],
+  "summary": "This submission fails QA. The draft report and approved framework files are corrupted or placeholder API error messages rather than substantive documents, and the source corpus is an employment dispute file rather than an acquisition dataset. On the current evidence set, factual accuracy, completeness, valuation support, internal consistency, and recommendation quality cannot be validated. The correct report, framework, and corpus must be restored before a meaningful quality review is possible."
+}

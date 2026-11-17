@@ -487,11 +487,11 @@
  },
  {
   "section": "GATE NEW-10",
-  "requirement": "Does PC 523941 actually require Totika (vs Woolworths Site360/WOW Contractor)? Does HNZ RFP 0018709 require a listing by award (~Feb 27)?",
+  "requirement": "RESOLVED 17 Nov: Totika IS required/relevant in BOTH tenders (verified from the tender documents)",
   "evidence_needed": "Answer from the tender documents Ahmad holds, in writing",
-  "status": "UNKNOWN",
-  "existing_source": "Primary Connect is NOT on the Totika buyer list; Te Whatu Ora IS a displayed buyer",
-  "action": "Ahmad + Claude check both tender document sets BY 20 NOV \u2014 this gates the urgent fee, the tender wording, and defines the real deadline for the whole exercise.",
+  "status": "HAVE",
+  "existing_source": "PC 523941 compliance matrix RFX-22: 'Maintain an OHS management system certified to ISO 45001:2018 or recognised under Totika / ACC WSMP; attach certificate' \u2014 Totika named in the tender itself as the accepted route. HNZ RFP: submitted response commits twice to 'complete SiteWise or Totika health and safety prequalification before service commencement'. Note: Site 360 in the PC docs is the DC visitor sign-in kiosk guards operate, not a supplier prequal portal.",
+  "action": "Pay/start RapidCert BEFORE 25 Nov so the PC Q8.1 answer can truthfully say 'Totika Category 2 assessment in progress with SHE Prequal, listing expected Dec 2026' (far stronger than a bare commitment); resolve the [VERIFY: Totika status] placeholder in PC_523941_Draft_Answers_v1.docx accordingly. HNZ: listing must exist before SERVICE COMMENCEMENT if awarded (~post-Feb 27) \u2014 already achievable on the planned track. NB Totika does NOT cover the separate ISO 9001/QMS asks (PC Q4.5, HNZ cl 23.1(d)) \u2014 the drafted aligned-QMS + 12-month runway handles those.",
   "priority": "P1-blocker"
  }
 ]

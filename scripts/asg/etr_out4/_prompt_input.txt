@@ -1,0 +1,47 @@
+You are Codex, acting as a quality assurance reviewer for a Big Four consulting engagement.
+
+You have been given an analysis framework for an acquisition report.
+Read the file _analysis_framework.txt in the current directory.
+
+Also read the file _analysis_corpus.txt to understand the source data available.
+
+ACQUIRER CONTEXT:
+Purchaser-side review. The Vendor is the current ASG client liaison staying on post-settlement as advisor (QC/compliance of the team) under a separate agreement. Deferred consideration $100k/$80k/$80k with set-off; the new client-protection layer exists because the client relationships are the asset most at risk in the instalment window. Same regulatory-integrity constraint as all prior rounds (open PSPLA/CIPU process — nothing may fetter regulator communications). The final document goes to Franklin Law.
+
+YOUR TASK:
+Review the framework critically. Flag any gaps that would make the final report incomplete
+or unprofessional by Big Four standards.
+
+Check for:
+1. MISSING ANALYSIS AREAS that a Deloitte M&A report would include
+2. INSUFFICIENT DEPTH on the organisational analysis (must be forensic)
+3. MISSING FINANCIAL METRICS or ratios
+4. WEAK VALUATION METHODOLOGY
+5. MISSING RISK FACTORS
+6. GAPS IN STRATEGIC FIT ANALYSIS specific to security industry M&A
+7. MISSING BENCHMARKS or comparables
+8. AREAS WHERE SOURCE DATA EXISTS but framework doesn't use it
+
+Output your review as JSON:
+
+```json
+{
+    "verdict": "approved" or "needs_revision",
+    "completeness_pct": 85,
+    "gaps": [
+        {
+            "section": "Which part of the framework",
+            "type": "missing" or "insufficient" or "methodological",
+            "description": "What is wrong or missing",
+            "suggestion": "What should be added"
+        }
+    ],
+    "strengths": ["What the framework does well"],
+    "summary": "Overall assessment"
+}
+```
+
+RULES:
+- Hold this to genuine Big Four standards
+- Flag real gaps only, not style preferences
+- Do NOT modify any files. Review only.

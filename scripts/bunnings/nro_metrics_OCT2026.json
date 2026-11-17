@@ -1,0 +1,369 @@
+{
+ "tag": "OCT2026",
+ "kicker": "MONTH IN REVIEW",
+ "period_label": "October 2026",
+ "phrase": "the month of October 2026",
+ "foot": "OCT2026",
+ "recon": {
+  "captured": 97,
+  "reconciled": 97,
+  "reconciled_pct": 100.0,
+  "bad": 0
+ },
+ "date_lo": "2026-10-01",
+ "date_hi": "2026-10-31",
+ "incidents": 97,
+ "sites": 13,
+ "regions": 4,
+ "recovered": 12583.58,
+ "stolen": 274.05,
+ "identified": 12857.63,
+ "recovery_pct": 97.9,
+ "auror_pct": 100.0,
+ "severity": {
+  "1": 82,
+  "2": 10,
+  "3": 3,
+  "4": 1,
+  "5": 0
+ },
+ "sev3plus": 4,
+ "sev45": 1,
+ "risk_window_pct": 59.4,
+ "peak_day": [
+  "Thursday",
+  36
+ ],
+ "hottest_cell": {
+  "day": "Thursday",
+  "hour": 10,
+  "count": 6
+ },
+ "heat": {
+  "5_18": 1,
+  "5_15": 1,
+  "5_13": 1,
+  "5_10": 2,
+  "4_16": 2,
+  "4_13": 1,
+  "3_17": 3,
+  "3_15": 5,
+  "3_11": 4,
+  "3_10": 6,
+  "3_9": 2,
+  "2_14": 1,
+  "2_16": 2,
+  "2_10": 2,
+  "1_14": 3,
+  "1_16": 2,
+  "1_12": 4,
+  "1_10": 5,
+  "3_18": 4,
+  "3_16": 2,
+  "3_14": 4,
+  "3_13": 3,
+  "2_17": 3,
+  "2_15": 2,
+  "2_13": 4,
+  "2_11": 1,
+  "1_17": 1,
+  "1_9": 1,
+  "0_9": 1,
+  "4_17": 1,
+  "4_14": 2,
+  "2_18": 1,
+  "1_18": 1,
+  "1_13": 2,
+  "1_11": 1,
+  "0_18": 2,
+  "0_14": 1,
+  "0_10": 2,
+  "5_14": 1,
+  "4_9": 2,
+  "3_12": 3,
+  "1_15": 2,
+  "0_16": 1,
+  "4_18": 1
+ },
+ "top6": [
+  {
+   "store": "Bunnings Riccarton",
+   "recovered": 3005.75,
+   "share": 23.9,
+   "incidents": 7,
+   "sev3": 0
+  },
+  {
+   "store": "Bunnings Manukau",
+   "recovered": 2486.5,
+   "share": 19.8,
+   "incidents": 19,
+   "sev3": 1
+  },
+  {
+   "store": "Bunnings Takanini",
+   "recovered": 1762.55,
+   "share": 14.0,
+   "incidents": 8,
+   "sev3": 1
+  },
+  {
+   "store": "Bunnings Mt Wellington",
+   "recovered": 1214.01,
+   "share": 9.6,
+   "incidents": 13,
+   "sev3": 2
+  },
+  {
+   "store": "Bunnings Mt Roskill",
+   "recovered": 1095.23,
+   "share": 8.7,
+   "incidents": 14,
+   "sev3": 0
+  },
+  {
+   "store": "Bunnings Westgate",
+   "recovered": 806.95,
+   "share": 6.4,
+   "incidents": 3,
+   "sev3": 0
+  }
+ ],
+ "top6_share": 82.4,
+ "regional": [
+  {
+   "region": "Auckland - T\u0101maki Makaurau",
+   "recovered": 8568.56,
+   "incidents": 71
+  },
+  {
+   "region": "Canterbury - Waitaha",
+   "recovered": 3444.41,
+   "incidents": 14
+  },
+  {
+   "region": "Waikato",
+   "recovered": 458.35,
+   "incidents": 8
+  },
+  {
+   "region": "Wellington - Te Whanganui-a-Tara",
+   "recovered": 112.26,
+   "incidents": 4
+  }
+ ],
+ "signoff": {
+  "Guard": 99.0,
+  "Duty Manager": 7.2,
+  "Checkout Operator": 1.0,
+  "Supervisor": 0.0,
+  "Store Manager": 6.2
+ },
+ "serious_hotspots": [
+  {
+   "store": "Bunnings Mt Wellington",
+   "sev3": 2
+  },
+  {
+   "store": "Bunnings Manukau",
+   "sev3": 1
+  },
+  {
+   "store": "Bunnings Takanini",
+   "sev3": 1
+  }
+ ],
+ "trend": [
+  {
+   "key": "2026-09-28",
+   "label": "28 Sep",
+   "incidents": 11,
+   "recovered": 1279.67
+  },
+  {
+   "key": "2026-10-05",
+   "label": "05 Oct",
+   "incidents": 23,
+   "recovered": 2251.31
+  },
+  {
+   "key": "2026-10-12",
+   "label": "12 Oct",
+   "incidents": 19,
+   "recovered": 2183.91
+  },
+  {
+   "key": "2026-10-19",
+   "label": "19 Oct",
+   "incidents": 22,
+   "recovered": 1702.16
+  },
+  {
+   "key": "2026-10-26",
+   "label": "26 Oct",
+   "incidents": 22,
+   "recovered": 5166.53
+  }
+ ],
+ "trend_unit": "week",
+ "operatives": [
+  {
+   "name": "Ben Conner",
+   "incidents": 7,
+   "recovered": 447.23,
+   "hours": 26.5,
+   "rec_per_hr": 16.88,
+   "inc_per_100h": 26.4
+  },
+  {
+   "name": "NirajKumar Katwala",
+   "incidents": 39,
+   "recovered": 4595.83,
+   "hours": 177.8,
+   "rec_per_hr": 25.86,
+   "inc_per_100h": 21.9
+  },
+  {
+   "name": "Ghulam Muheodin",
+   "incidents": 10,
+   "recovered": 213.04,
+   "hours": 47.5,
+   "rec_per_hr": 4.49,
+   "inc_per_100h": 21.1
+  },
+  {
+   "name": "James Sison",
+   "incidents": 9,
+   "recovered": 1385.51,
+   "hours": 47.5,
+   "rec_per_hr": 29.17,
+   "inc_per_100h": 18.9
+  },
+  {
+   "name": "Tavita Tagaloa",
+   "incidents": 5,
+   "recovered": 249.23,
+   "hours": 27.0,
+   "rec_per_hr": 9.23,
+   "inc_per_100h": 18.5
+  },
+  {
+   "name": "Patrick Manu",
+   "incidents": 8,
+   "recovered": 1947.18,
+   "hours": 47.0,
+   "rec_per_hr": 41.43,
+   "inc_per_100h": 17.0
+  },
+  {
+   "name": "Farshid Hakimi",
+   "incidents": 11,
+   "recovered": 3345.95,
+   "hours": 69.2,
+   "rec_per_hr": 48.32,
+   "inc_per_100h": 15.9
+  },
+  {
+   "name": "Hardik Patel",
+   "incidents": 12,
+   "recovered": 1444.98,
+   "hours": 85.5,
+   "rec_per_hr": 16.9,
+   "inc_per_100h": 14.0
+  },
+  {
+   "name": "Jordan Martin",
+   "incidents": 11,
+   "recovered": 3405.41,
+   "hours": 95.0,
+   "rec_per_hr": 35.85,
+   "inc_per_100h": 11.6
+  },
+  {
+   "name": "Simmerjit Singh Brar",
+   "incidents": 22,
+   "recovered": 1951.77,
+   "hours": 199.0,
+   "rec_per_hr": 9.81,
+   "inc_per_100h": 11.1
+  }
+ ],
+ "teams": [
+  {
+   "a": "Ghulam Muheodin",
+   "b": "Simmerjit Singh Brar",
+   "incidents": 10,
+   "recovered": 213.04,
+   "cohours": 47.5,
+   "rec_per_hr": 4.49,
+   "inc_per_100cohr": 21.1
+  },
+  {
+   "a": "Hardik Patel",
+   "b": "James Sison",
+   "incidents": 9,
+   "recovered": 1385.51,
+   "cohours": 47.5,
+   "rec_per_hr": 29.17,
+   "inc_per_100cohr": 18.9
+  },
+  {
+   "a": "Farshid Hakimi",
+   "b": "Jordan Martin",
+   "incidents": 9,
+   "recovered": 3306.95,
+   "cohours": 49.2,
+   "rec_per_hr": 67.15,
+   "inc_per_100cohr": 18.3
+  },
+  {
+   "a": "Farshid Hakimi",
+   "b": "Jake Webby",
+   "incidents": 3,
+   "recovered": 158.17,
+   "cohours": 16.8,
+   "rec_per_hr": 9.44,
+   "inc_per_100cohr": 17.9
+  },
+  {
+   "a": "NirajKumar Katwala",
+   "b": "Patrick Manu",
+   "incidents": 4,
+   "recovered": 319.44,
+   "cohours": 23.5,
+   "rec_per_hr": 13.59,
+   "inc_per_100cohr": 17.0
+  },
+  {
+   "a": "Patrick Manu",
+   "b": "Simmerjit Singh Brar",
+   "incidents": 3,
+   "recovered": 992.29,
+   "cohours": 19.0,
+   "rec_per_hr": 52.23,
+   "inc_per_100cohr": 15.8
+  },
+  {
+   "a": "Charlie Maka",
+   "b": "Simmerjit Singh Brar",
+   "incidents": 4,
+   "recovered": 191.97,
+   "cohours": 36.5,
+   "rec_per_hr": 5.26,
+   "inc_per_100cohr": 11.0
+  },
+  {
+   "a": "NirajKumar Katwala",
+   "b": "Viliami Fangaiuiha",
+   "incidents": 3,
+   "recovered": 806.79,
+   "cohours": 28.5,
+   "rec_per_hr": 28.31,
+   "inc_per_100cohr": 10.5
+  }
+ ],
+ "operatives_active": 20,
+ "hours_window": 1273.0,
+ "inc_per_100h": 7.62,
+ "hours_per_inc": 13.1
+}
