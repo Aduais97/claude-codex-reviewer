@@ -179,15 +179,18 @@ ACTION_PLAN = [
      "through the SafetySeek platform'; confirm or strip before submission. (c) Deputy training/CoA register "
      "real and exportable. (d) PSPLA Responsible Employee named + licence certificates downloaded. (e) BizCover "
      "schedule (due 21 Nov) -> standalone certificates; decide the $3M PI quote."),
-    ("8. Document build sprint (Claude-buildable)", "Claude + Shannon", "26-28 Nov (after PC submission)",
-     "Populated guard-work hazard register + 2 site risk assessments (MB29); HOTC site safety plan with duress, "
-     "welfare checks, safe haven (MB10); lone-worker/welfare-check procedure + HOTC log extracts (the most "
-     "predictable assessor probe); Oct + Nov internal H&S performance reports (MB13); 2 root-cause investigations "
-     "subject to step 7(a) gate (MB20/21/23); internal HSMS self-audit (MB14); no-subcontracting policy (MB39-42); "
-     "PPE register building on PPE.docx; vehicle/journey-management policy; BWC/CCTV privacy & retention one-pager; "
-     "document-control procedure + SOP dedupe; officer due-diligence plan (s44); injury management/RTW; HSR "
-     "statement; notifiable-event register; fatigue numeric-limit reconciliation (MB36); emergency assault "
-     "procedure (MB24); 2 improvement write-ups; H&S budget statement."),
+    ("8. Build/collate sprint (Claude-buildable; post-sweep this is mostly COLLATION)", "Claude + Shannon", "26-28 Nov (after PC submission)",
+     "TOP ACTION: export Connecteam 'H&S Toolbox Meeting' form submissions + any digital policy acknowledgements "
+     "(may close MB28/MB2 outright). Then: re-date and restructure the EXISTING hazard register so "
+     "violence/aggression leads + 2 site risk assessments (MB29); complete the EXISTING Onboarding pack.xlsx into "
+     "the training matrix (MB15); lone-worker procedure wrapped around the 980-log welfare-check record + staged "
+     "extracts; HOTC site safety plan (MB10); finish/sign the WW ethical self-audit then run the internal HSMS "
+     "self-audit (MB14); locate or write the completed Reign & Pour investigation report; redact + stage the "
+     "Cotton On and 19 Mar 26 investigations; RTW procedure around Torrin's live plan; no-subcontracting policy "
+     "(MB39-42); PPE register from the daily-log equipment blocks + PPE.docx; vehicle/journey policy (true gap); "
+     "BWC/CCTV privacy one-pager; doc-control + SOP dedupe (library in 10+ locations); officer due-diligence plan; "
+     "HSR statement; notifiable-event register; fatigue limit reconciliation (MB36); emergency assault procedure "
+     "(MB24); improvement write-ups; budget statement."),
     ("9. Resolve the PC tender placeholders", "Claude drafts, Ahmad approves", "before 25 Nov 4pm",
      "Swap the two Totika placeholders in PC_523941_Draft_Answers_v1.docx (Q8.1 '[VERIFY: current Totika "
      "registration status]' + '[AHMAD: confirm target Totika tier]'; Q4.5 '[VERIFY: Totika status]') for the "
@@ -321,18 +324,20 @@ def build_pdf():
                        '179 staff, Category 2 "Security Services", Performing at 81% — is the template outcome. '
                        'Cost is modest ($949 + GST per year) and Te Whatu Ora, a live ASG bid target, is a '
                        'displayed Totika buyer.', S['body']))
-    E.append(Paragraph('The real finding is about readiness: ASG\'s documentation layer is strong (a '
-                       'comprehensive Nov 2026 SMS, SOP library, field manual, real insurance) but the '
-                       'operating-records layer is nearly empty on disk — no populated hazard register, no '
-                       'minutes, no toolbox attendance, no training register export, no inspections, no internal '
-                       'audit. Totika assessors score evidence of systems in use. The plan therefore splits into '
-                       'live records that must actually happen (about 3 hours, before PC submission week) and '
-                       'documents that can be built (26-28 Nov). Two findings change the original strategy: '
-                       'Woolworths/Primary Connect is not a Totika buyer (they run Site360), so the 25 Nov tender '
-                       'deadline probably does not force urgency; and a first pass submitted in early December '
-                       'would likely grade "Developing" because the records will be visibly days old — if '
-                       '"Performing" matters for the HNZ award (~Feb 2027), submit after 4+ weeks of cadence.',
-                       S['body']))
+    E.append(Paragraph('The readiness picture (revised after the 17 Nov full-filesystem sweep, 8 agents, '
+                       '2 adversarial verifiers): ASG is far better evidenced than first believed, but lopsidedly. '
+                       'The OPERATING layer is deep — ~980 dated daily patrol logs with timestamped welfare checks '
+                       '(Mar 2024 to 15 Nov 2026), incident registers at scale (1,740 Bunnings + 4,971 Woolworths '
+                       'entries), two complete investigations with corrective actions, a filled hazard register, '
+                       'DocuSign-executed induction packs, current COA registers and a live graduated '
+                       'return-to-work plan. The GOVERNANCE layer is what is absent: zero management or committee '
+                       'minutes, zero toolbox delivery/attendance records, zero completed H&amp;S inspections, '
+                       'zero drills, zero vehicle records, no completed internal audit. The single biggest unlock '
+                       'is not on the filesystem: Connecteam makes a "Health &amp; Safety Toolbox Meeting (APP '
+                       'FORM)" a mandatory task on every rostered shift — exporting those form submissions may '
+                       'flip toolbox evidence to HAVE in one move. The plan splits into live records that must '
+                       'actually happen (about 3 hours, before PC submission week) and build/collation work '
+                       '(26-28 Nov).', S['body']))
     E.append(Spacer(1, 4))
     counts = {}
     for r in REGISTER:
@@ -449,25 +454,32 @@ def build_pdf():
     E.append(PageBreak())
 
     # ---- 6 readiness
-    E.append(SectionBar(6, 'Where ASG Stands — Readiness'))
-    E.append(Paragraph('Strengths (ready or near-ready to upload)', S['h3']))
-    for s in ['Comprehensive H&amp;S Policy / SMS dated Nov 2026 — needs only signatures (MB1)',
-              'SOP library: Body-Worn Camera, Alcohol &amp; Drug Enforcement, Business Call Response, Day Guard (MB32)',
-              'Guard Field Manual July 2026 — 15 modules with assessment sign-off structure (MB15 curriculum)',
-              'Real incident material: CRL Aug 2026 report, HOTC daily logs 2024-26, action register (MB4, MB20)',
-              'Insurance: PL $10M + Statutory Liability $1M current to Jul 2027 (embedded in the HNZ submission pp.83-84)',
-              'D&amp;A policy with testing regime (MB35); fatigue policy exists (MB36); NZSA structure doc with PSPLA licences',
-              'Genuine operational practice — HOTC coordination, welfare checks, BWC — that is simply unwritten as H&amp;S records']:
+    E.append(SectionBar(6, 'Where ASG Stands — Readiness (post-sweep, 17 Nov)'))
+    E.append(Paragraph('Operating layer — deep, verified by adversarial re-read', S['h3']))
+    for s in ['~980 dated HOTC daily patrol logs Mar 2024 - 15 Nov 2026: timestamped welfare checks + an equipment-issue block every shift (lone-worker + PPE evidence; typed, unsigned)',
+              'Incident registers at scale: Bunnings GIR 1,740 named dual-timestamped entries (signature images live in the form platform, not the xlsx) + Woolworths GIR 4,971 FY26 entries + 151 severe-incident entries',
+              'Two complete investigations: Cotton On (incident 6 Sep 26 -> statement -> video review -> substantiated finding -> corrective actions) + Investigation Summary 19 Mar 26 (minuted disciplinary process, legal review)',
+              'CRL First Looks incident report (issued 25 Aug 26) with explicit HSWA s23-25 notifiable-event determinations',
+              'Filled company Hazard &amp; Risk Register (needs re-dating: two lapsed review dates; restructure so violence/aggression leads)',
+              'Training/competency: 31-name PSPLA-verified COA register (10 Nov 26) + 22-name CoA return + 29 ServeWise certs + Onboarding pack.xlsx (39 officers x 9 document types, partially populated — the matrix to complete, not build)',
+              'Induction: 5 DocuSign-executed witnessed Mitre 10 packs + ~24 onboarding packs + 65 CRL induction attendance entries',
+              'Live graduated return-to-work plan (occupational therapist, 9 Nov - 21 Dec 2026) — injury-management evidence',
+              'Performance reporting: quarterly value reviews 2024-26 + 28 consecutive weekly WW LP &amp; Safety reports + LCF accountability report',
+              'Signed policy-acknowledgement mechanism proven (James Olsen WW SOP ack; witness block incomplete)']:
         E.append(Paragraph(f'<bullet>&bull;</bullet>{s}', S['bullet']))
-    E.append(Paragraph('The gap: records, not policies', S['h3']))
-    E.append(Paragraph('Almost no operating records exist on disk: no populated hazard register, no management or '
-                       'committee minutes, no toolbox attendance, no training/CoA register export, no induction '
-                       'sign-offs, no completed inspections, no internal HSMS audit. Both tenders assert these '
-                       'systems exist — those assertions are now auditable commitments, which makes claims hygiene '
-                       'its own P1 line: nothing goes to an assessor that cannot be evidenced on request. '
-                       'Assessors want to see systems in use over the last 3-6 months; records stood up in a '
-                       'single fortnight will read as exactly that, which drives the submission-timing decision '
-                       'in section 8.', S['body']))
+    E.append(Paragraph('Governance layer — the true gap (sweep-confirmed absent everywhere)', S['h3']))
+    E.append(Paragraph('Zero across all slices: management meeting minutes + KPI setting (MB5); H&amp;S committee '
+                       'minutes (MB27); toolbox DELIVERY/attendance records (MB28 — content library exists in 10+ '
+                       'locations; Connecteam export is the unlock); completed H&amp;S inspections (MB37-38); '
+                       'completed internal audit (MB14 — the WW ethical self-audit is 30 minutes from usable); '
+                       'drills; vehicle records; sign-offs against ASG\'s OWN policy/induction (client-doc '
+                       'acknowledgements exist instead). The completed Reign &amp; Pour investigation report '
+                       'promised to the client by 27 Oct is also not on disk — locate or write it. Tender texts '
+                       'commit to several of these as recurring cadences (weekly inspections, monthly toolbox with '
+                       'recorded attendance, monthly hazard-register reviews), so claims hygiene remains a P1 '
+                       'line: stand the cadences up or soften the wording. Assessors want systems in use over 3-6 '
+                       'months; the operating layer proves that richly — the governance layer must start now so '
+                       'at least a few weeks of cadence exist by submission.', S['body']))
     E.append(PageBreak())
 
     # ---- 7 P1 table
