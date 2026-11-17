@@ -139,45 +139,47 @@ def datatable(headers, rows, widths, bold_rows=(), status_col=None):
 
 # ---------------------------------------------------------------- content data
 ACTION_PLAN = [
-    ("1. Gate check: who actually requires this, and by when", "Ahmad + Claude", "BY 20 NOV",
-     "Check the PC 523941 tender documents: do they require Totika, or Woolworths' own Site360/WOW Contractor "
-     "portal? Primary Connect is NOT on the Totika buyer list, so Site360 is the likely answer. Also confirm "
-     "whether HNZ RFP 0018709 requires a live listing by award (~Feb 2027). This gates the urgent fee, the "
-     "tender wording and the real deadline for the whole exercise."),
-    ("2. Entity decision", "Ahmad", "17-18 Nov",
-     "Confirm which NZBN is named as bidder in PC 523941 — the Woolworths relationship sits with SLS RTC Ltd. "
-     "Recommend: register ASG Ltd (NZBN 9429050952960) now; add SLS RTC in parallel only if it is the bidder or "
-     "a buyer demands it (second NZBN = second $949+GST assessment; resolve its Companies Register directorship "
-     "first — Nikki still recorded as director at 22 Oct). Listings are per legal entity; no group cover."),
+    ("1. [RESOLVED 17 Nov] Gate check: Totika IS required in the PC tender", "Done (verified from tender docs)", "-",
+     "PC 523941 question 8.1 / RFX-22 literally asks: 'Do you maintain an OHS Management System certified to "
+     "ISO 45001:2018 or recognized under Totika / ACC WSMP? Please attach certificate.' Totika is the accepted "
+     "route (ACC WSMP is retired; ISO 45001 not held). Site 360 in the PC docs is the DC visitor sign-in kiosk "
+     "guards operate, not a supplier prequal portal. HNZ is PARKED per Ahmad 17 Nov — Woolworths drives timing."),
+    ("2. [RESOLVED 17 Nov] Entity: ASG Limited", "Done (verified from tender docs)", "-",
+     "The group structure statement names ASG Limited as 'the contracting entity for new business, including the "
+     "distribution centre tender currently in progress', and the drafted PSPLA answer bids as ASG Limited (NZBN "
+     "9429050952960). Register ASG Ltd only; SLS RTC is not needed for this tender."),
     ("3. Sign the H&S policy", "Ahmad + Hasibullah", "TODAY",
      "Verify Hasibullah is a current registered ASG Ltd director, then both sign and date "
-     "ASG_Health_and_Safety_Policy_SMS_Nov2026 and regenerate the PDF. Five-minute fix; currently a P1 blocker, "
-     "and the PC tender already claims the policy is signed."),
-    ("4. Free Totika supplier registration", "Shannon or Ahmad", "18 Nov",
-     "Register ASG at app.totika.org (free, separate from SHE Prequal). Registered-but-unassessed suppliers are "
-     "not visible to buyers. Tender wording must stay truthful: either purchase the RapidCert assessment BEFORE "
-     "25 Nov so 'assessment in progress' is true, or write 'Totika supplier registration completed; Category 2 "
-     "assessment commencing [date] with SHE Prequal'. Decide by 21 Nov."),
+     "ASG_Health_and_Safety_Policy_SMS_Nov2026 and regenerate the PDF. P1: the drafted PC Q8.1 answer claims the "
+     "SMS is 'issued and signed November 2026' and uploads it in place of a certificate — it must actually be "
+     "signed before submission."),
+    ("4. Free Totika supplier registration + PAY RapidCert", "Shannon or Ahmad", "by 21 Nov (before PC submission)",
+     "Register ASG at app.totika.org (free), then purchase the TOTIKA Category 2 assessment at "
+     "app.rapidcert.co.nz/signup/totika ($949+GST = $1,091.35). Paying BEFORE 25 Nov makes 'Category 2 assessment "
+     "in progress with SHE Pre-Qual' literally true in the Q8.1/Q4.5 answers — far stronger than a bare "
+     "commitment. Urgent fee (+$250) NOT needed: no track delivers a certificate by 25 Nov, and the real deadline "
+     "is mobilisation (1 Mar 2027)."),
     ("5. Pre-payment email to SHE Prequal", "Claude drafts, Ahmad sends", "17-18 Nov",
-     "One email to support@sheprequal.co.nz (06 833 7227) before paying: (a) is the $20M Category 2 contract cap "
-     "per annum or whole-of-term (a 5-yr PC award at $4.5-5M/yr exceeds $20M whole-of-term — the rules' natural "
-     "reading); (b) are clarification rounds included in the fee (unverified; fees are non-refundable); "
-     "(c) Christmas assessor cutoff date; (d) second-entity treatment for SLS RTC; (e) current member-scheme "
-     "roster (totika.org now says 'three member schemes'; Avetta's status is unclear)."),
+     "One email to support@sheprequal.co.nz (06 833 7227): (a) is the $20M Category 2 contract cap per annum or "
+     "whole-of-term — the PC contract term is stated nowhere in the RFx (clarification Q1 lodged); if WW answers "
+     "5 years at $4.5-5M/yr, whole-of-term exceeds $20M and Category 3 recategorisation applies within one month "
+     "of award; (b) are clarification rounds included in the fee (unverified; fees non-refundable); "
+     "(c) Christmas assessor cutoff date; (d) current member-scheme roster."),
     ("6. Live records that cannot be backfilled", "Ahmad / Shannon / ops", "BEFORE 24 Nov (~3 hrs total)",
      "Do these before PC submission week swallows the calendar: management meeting with H&S as agenda item 1 + "
      "3-5 FY27 H&S KPIs, minuted (MB5/12); first recorded H&S committee meeting (MB27); toolbox talk covering the "
      "signed policy with signed attendance (MB2/28); induction sign-offs at the 19 Nov Thursday session — only "
      "19 and 26 Nov sessions exist this month, so confirm real inductees or export history from Deputy (MB16). "
-     "The HNZ tender already commits to all of these cadences, so they are overdue regardless of Totika."),
+     "These cadences also underwrite claims already made in the PC draft answers."),
     ("7. Ahmad confirmations", "Ahmad", "by 21 Nov",
-     "(a) Written HSWA s23-25 notifiability assessment of Reign & Pour BEFORE it is used as showcase evidence or "
-     "a nil declaration is made — an unnotified notifiable event is itself a breach; if unresolved, use CRL + a "
-     "closed HOTC case as the two investigations instead. (b) Nil WorkSafe/court return for both companies and "
-     "all directors (assessor runs a court search). (c) SafetySeek genuinely in use, or drop the claim. "
-     "(d) Deputy training/CoA register real and exportable. (e) PSPLA Responsible Employee named + licence "
-     "certificates downloaded. (f) BizCover schedule (due 21 Nov) -> standalone certificates; decide the $3M PI "
-     "quote (Simply Security benchmark holds PL $10M / PI $1M / MV $10M)."),
+     "(a) Written HSWA s23-25 notifiability assessment of Reign & Pour — this now protects the PC Q8.5 answer "
+     "(nil WorkSafe notices/prosecutions declared + ongoing-disclosure commitment) as well as Totika MB50-53; an "
+     "unnotified notifiable event is itself a breach; if unresolved, use CRL + a closed HOTC case as the Totika "
+     "investigation examples. (b) Nil WorkSafe/court return for ASG Ltd and directors (assessor runs a court "
+     "search). (c) SafetySeek genuinely in use — the PC Q8.1 answer asserts the SMS 'is administered through the "
+     "SafetySeek platform'; confirm or strip before submission. (d) Deputy training/CoA register real and "
+     "exportable. (e) PSPLA Responsible Employee named + licence certificates downloaded. (f) BizCover schedule "
+     "(due 21 Nov) -> standalone certificates; decide the $3M PI quote."),
     ("8. Document build sprint (Claude-buildable)", "Claude + Shannon", "26-28 Nov (after PC submission)",
      "Populated guard-work hazard register + 2 site risk assessments (MB29); HOTC site safety plan with duress, "
      "welfare checks, safe haven (MB10); lone-worker/welfare-check procedure + HOTC log extracts (the most "
@@ -187,16 +189,18 @@ ACTION_PLAN = [
      "document-control procedure + SOP dedupe; officer due-diligence plan (s44); injury management/RTW; HSR "
      "statement; notifiable-event register; fatigue numeric-limit reconciliation (MB36); emergency assault "
      "procedure (MB24); 2 improvement write-ups; H&S budget statement."),
-    ("9. RapidCert purchase", "Shannon (employee submission satisfies the rule)", "timed by step 1",
-     "Sign up at app.rapidcert.co.nz/signup/totika, buy the TOTIKA Category 2 assessment (not SHE's generic "
-     "prequal): $949+GST = $1,091.35. Urgent (+$250+GST, first decision ~1 working day) only if the gate check "
-     "shows a buyer actually needs it early."),
-    ("10. Submission timing: Developing vs Performing", "Ahmad decides", "early Dec vs mid-Dec/Jan",
-     "Scoring is 0-4 per question; 'Performing' requires 3 on EVERY applicable question — one miss grades "
-     "'Developing' (still listed, lower standing). Records stood up in a fortnight will be visibly 1-2 weeks old, "
-     "so an early-Dec submission likely first-passes as Developing. If Performing matters for HNZ award (~Feb 27), "
-     "submit mid-Dec or early Jan after 4+ weeks of cadence records. Realistic listing: standard track with one "
-     "clarification round = late Dec 2026, or mid-Jan 2027 if it straddles the Christmas shutdown."),
+    ("9. Resolve the PC tender placeholders", "Claude drafts, Ahmad approves", "before 25 Nov 4pm",
+     "Swap the two Totika placeholders in PC_523941_Draft_Answers_v1.docx (Q8.1 '[VERIFY: current Totika "
+     "registration status]' + '[AHMAD: confirm target Totika tier]'; Q4.5 '[VERIFY: Totika status]') for the "
+     "live position: supplier registration completed, Category 2 assessment in progress with SHE Pre-Qual, "
+     "listing expected December 2026, ahead of the 1 March 2027 commencement. Only submit this wording if "
+     "payment (step 4) actually happened."),
+    ("10. Evidence upload and submission timing", "Shannon (employee submission satisfies the rule)", "early Dec",
+     "With HNZ parked, 'Performing' pressure is off: RFX-22 asks for recognition under Totika, and a listed "
+     "supplier is recognised whether graded Performing or Developing. So submit as soon as the evidence set is "
+     "coherent (early Dec after the 26-28 Nov build sprint), accept a Developing first pass if that is the "
+     "outcome, and re-mark at a later review once 3-6 months of cadence records exist. Realistic listing: late "
+     "Dec 2026 (or mid-Jan 2027 across the Christmas shutdown) — months ahead of 1 Mar 2027 mobilisation."),
     ("11. After approval", "Shannon", "on listing",
      "Download certificate (category, score %, Performing/Developing, valid-until) + full report; upload proof to "
      "the Totika dashboard at app.totika.org so buyers can see the listing. Diarise annual renewal AND the "
@@ -206,9 +210,7 @@ ACTION_PLAN = [
 ]
 
 OPEN_QUESTIONS = [
-    ("Bidding entity", "Which NZBN is named as the contracting party in PC 523941 and in the HNZ RFP — ASG Ltd or SLS RTC Ltd? Decides entity scope (step 2)."),
-    ("Totika vs Site360", "Do the PC 523941 documents require Totika at all, or Woolworths' Site360/WOW Contractor registration? By 20 Nov — gates the urgent fee."),
-    ("HNZ requirement", "Does RFP 0018709 require a live Totika listing by award (~Feb 27)? Check the contractor-assurance wording — buyers cannot override category inside the scheme, but can contract outside it."),
+    ("WW contract term", "When Woolworths answers clarification Q1 (initial term from 1 Mar 2027 + renewals): does term x ~$4.5-5M/yr exceed $20M whole-of-term? If yes, Category 3 recategorisation applies within one month of award ($1,459+GST/yr, larger question set)."),
     ("Reign & Pour notifiability", "Was the Oct 2026 incident (or any 2021-26 incident, incl. HOTC aggression injuries) notifiable under HSWA s23-25, and was WorkSafe notified? Written assessment needed before any nil declaration."),
     ("WorkSafe / court history", "Confirm nil enforcement/prosecution/investigation (5 years) for ASG Ltd, SLS RTC Ltd and all directors — the assessor verifies via court search."),
     ("Policy signatures", "Sign the H&S policy (Ahmad + Hasibullah) — nothing can be submitted until done. First verify Hasibullah's current registered directorship."),
