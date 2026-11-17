@@ -1,0 +1,497 @@
+[
+ {
+  "section": "Entity/registration",
+  "requirement": "NZBN, correct legal entity, Totika portal registration, category selection",
+  "evidence_needed": "ASG Ltd NZBN 9429050952960; free registration at app.totika.org; Category 2 selected via totika.org/cat; primary activity declared as 'Security Services' (NOT Labour Hire or Facilities Management)",
+  "status": "PARTIAL",
+  "existing_source": "/Users/ahmadduais/Desktop/ASG/Corporate/ASG Group - Company Structure (NZSA).docx (NZBNs, directors, PSPLA licences verified 5 Nov 2026)",
+  "action": "Ahmad decides entity scope (recommend ASG Ltd now, SLS RTC only if a buyer demands it); register free on app.totika.org; email support@sheprequal.co.nz the $20M whole-of-term question before paying. FIRST confirm which NZBN is named as bidder in PC 523941 \u2014 the WW relationship sits with SLS RTC Ltd; if SLS RTC is the bidder, register it in parallel (resolve its Companies Register directorship first \u2014 Nikki still recorded as director 22 Oct).",
+  "priority": "P1-blocker"
+ },
+ {
+  "section": "A. Leadership MB1",
+  "requirement": "H&S policy reviewed within 2 years, SIGNED and dated by top management",
+  "evidence_needed": "Signed policy with commitment to legal compliance, good practice, worker consultation, continuous improvement",
+  "status": "PARTIAL",
+  "existing_source": "/Users/ahmadduais/Desktop/ASG/Tenders/HNZ Security Officer Services 0018709/ASG_Health_and_Safety_Policy_SMS_Nov2026.docx \u2014 comprehensive but signature lines BLANK everywhere, while the PC tender claims it is 'signed'",
+  "action": "Both directors (Ahmad Duais, Hasibullah Nabawi) sign and date TODAY; regenerate the PDF; this also closes the consistency risk with the tender claim",
+  "priority": "P1-blocker"
+ },
+ {
+  "section": "A. Leadership MB2",
+  "requirement": "Policy communicated to workers with sign-off confirming understanding",
+  "evidence_needed": "Induction/briefing records with worker signatures acknowledging the policy",
+  "status": "MISSING",
+  "existing_source": "Process described in SMS; weekly Thursday induction cadence asserted in field manual \u2014 no records on disk",
+  "action": "Cover the signed policy at this week's Thursday induction/toolbox; collect signed acknowledgements (paper or Deputy); retain 3+",
+  "priority": "P1-blocker"
+ },
+ {
+  "section": "A. Leadership MB3",
+  "requirement": "H&S accountabilities per management role + TWO job descriptions with specific H&S duties; most senior accountable manager identified",
+  "evidence_needed": "Accountability map naming Ahmad as most senior accountable + 2 JDs with H&S clauses",
+  "status": "PARTIAL",
+  "existing_source": "/Users/ahmadduais/Desktop/ASG/HR/ASG - Hospitality Operations Manager - Roles & Responsibilities (v3).docx + SMS role sections",
+  "action": "Add explicit H&S duty sections to the Ops Manager JD and a Guard/Supervisor JD; one-page accountability matrix extracted from the SMS",
+  "priority": "P2-needed"
+ },
+ {
+  "section": "A. Leadership MB4",
+  "requirement": "Process for dealing with H&S issues, actions tracked to completion (or one worked example)",
+  "evidence_needed": "Procedure or a worked example: issue, who affected, management, actions, tracking, outcome",
+  "status": "PARTIAL",
+  "existing_source": "/Users/ahmadduais/Desktop/ASG/Operations/Clients/HOTC/2024/March/HOTC Action Register/Action Register.xlsx + SMS process",
+  "action": "Write up one closed HOTC action-register item as the worked example",
+  "priority": "P2-needed"
+ },
+ {
+  "section": "A. Leadership MB5",
+  "requirement": "Senior leaders actively demonstrate commitment: H&S on management agenda, field engagement, committee involvement, KPI setting/monitoring",
+  "evidence_needed": "Recent minutes with H&S agenda item, evidence of director site visits, KPIs set and monitored",
+  "status": "MISSING",
+  "existing_source": "None on disk",
+  "action": "Hold a management meeting this week with H&S as agenda item 1; set 3-5 FY27 H&S KPIs; minute it; photo/record Ahmad on an HOTC/venue walk; start a standing cadence",
+  "priority": "P1-blocker"
+ },
+ {
+  "section": "A. Leadership MB6",
+  "requirement": "H&S considered in business decisions (one worked example)",
+  "evidence_needed": "Decision, H&S impacts considered, controls decided, outcome",
+  "status": "MISSING",
+  "existing_source": "Raw material: BWC rollout, stab-vest procurement, HOTC Reporting App decision",
+  "action": "Write up the body-worn-camera/stab-vest investment as the worked example (guard assault risk drove capex)",
+  "priority": "P2-needed"
+ },
+ {
+  "section": "B. System MB7",
+  "requirement": "Documented HSMS + list of all procedures/processes comprising it",
+  "evidence_needed": "SMS + one-page document index",
+  "status": "PARTIAL",
+  "existing_source": "SMS Nov 2026 + /Users/ahmadduais/Desktop/ASG/Operations/SOPs/ (6 SOPs + 12 toolbox docs)",
+  "action": "Compile a one-page HSMS document register (title, version, review date) \u2014 also fixes the missing version control on individual SOPs",
+  "priority": "P2-needed"
+ },
+ {
+  "section": "B. System MB8",
+  "requirement": "Access to competent H&S advice (who, qualifications, recent example)",
+  "evidence_needed": "Advisor name, internal/external, qualifications, example of advice used",
+  "status": "PARTIAL",
+  "existing_source": "Shannon Gwin named as H&S Administrator in SMS; qualifications not documented",
+  "action": "Half-page statement: Shannon's role + quals; name external advisor if any (HASANZ-member advisor scores 4); one recent example",
+  "priority": "P2-needed"
+ },
+ {
+  "section": "B. System MB9",
+  "requirement": "H&S planning, budget and worker time for H&S",
+  "evidence_needed": "Who sets/approves the budget, what it covers (PPE, training, BWC), how guard time is allocated for training/inspections",
+  "status": "MISSING",
+  "existing_source": "None",
+  "action": "Half-page statement from Ahmad: FY27 H&S budget lines (PPE/vests/BWC, training, D&A testing) + paid training time policy",
+  "priority": "P2-needed"
+ },
+ {
+  "section": "B. System MB10",
+  "requirement": "A real, recent site/SERVICE-specific safety plan (SSSP) for a client site",
+  "evidence_needed": "One genuine client-site plan: scope, accountabilities, hazards, training, incident reporting, PCBU engagement, emergency response, inspection",
+  "status": "MISSING",
+  "existing_source": "Raw material: HOTC deployment docs, field manual, /Users/ahmadduais/Desktop/ASG/Legal/HOTC/HOTC agreement/Independent Supplier Agreement (HOTC) - for safety services ASG 1 July 2025.pdf",
+  "action": "Build ONE HOTC site safety plan to the NZSA template: site classification, hazards (aggression, lone work, night), duress/comms equipment, welfare-check cadence, safe haven, escape plan, escalation \u2014 the single highest-value artefact (also reusable in tenders)",
+  "priority": "P1-blocker"
+ },
+ {
+  "section": "B. System MB11",
+  "requirement": "Continuous improvement: TWO improvements made within last 2 years",
+  "evidence_needed": "What, how initiated, when, benefit \u2014 for each",
+  "status": "MISSING",
+  "existing_source": "Real improvements exist: BWC SOP rollout (2026), HOTC Reporting App, Reign & Pour-driven changes",
+  "action": "One-pager documenting two of these as before/after improvement cases",
+  "priority": "P2-needed"
+ },
+ {
+  "section": "B. System MB12",
+  "requirement": "H&S goals/objectives set and tracked",
+  "evidence_needed": "Current goals + tracking proof (minutes/plans)",
+  "status": "MISSING",
+  "existing_source": "None",
+  "action": "Set with MB5 meeting: e.g. 100% CoA currency, zero overdue incident investigations, monthly toolbox completion, welfare-check compliance %",
+  "priority": "P2-needed"
+ },
+ {
+  "section": "B. System MB13",
+  "requirement": "TWO most recent H&S performance reports (lead + lag indicators)",
+  "evidence_needed": "Internal reports: incidents, near misses, assaults, training currency, inspections, welfare checks",
+  "status": "MISSING",
+  "existing_source": "Client-facing analogues exist: /Users/ahmadduais/Desktop/ASG/HOTC/2026/HOTC_Safety_Team_Quarterly_Value_Review_Sep2026.pdf + monthly summaries + incident datasets (195 aggressive-behaviour incidents stat)",
+  "action": "Produce Oct + Nov 2026 internal H&S performance reports from HOTC logs/Deputy data (incidents/hr, assaults, training %, corrective actions open/closed)",
+  "priority": "P1-blocker"
+ },
+ {
+  "section": "B. System MB14",
+  "requirement": "HSMS audit process + an audit completed within last 2 years",
+  "evidence_needed": "Audit procedure + a completed internal audit with findings and corrective actions",
+  "status": "MISSING",
+  "existing_source": "WW Ethical Self Audit (DRAFT, undated) is ethical-sourcing, not an HSMS audit",
+  "action": "Run a documented internal self-audit of the SMS (Shannon, half-day, checklist from the SMS appendices), record findings + corrective actions; also finalise/date the WW Ethical Self Audit separately",
+  "priority": "P1-blocker"
+ },
+ {
+  "section": "C. Training MB15",
+  "requirement": "Documented training/competency process + training MATRIX by role + per-worker REGISTER with refresher dates",
+  "evidence_needed": "Matrix (CoA, first aid, de-escalation, BWC, host responsibility per role) + register export showing dates/expiries",
+  "status": "PARTIAL",
+  "existing_source": "Curriculum strong: /Users/ahmadduais/Desktop/ASG/Operations/Training/ASG Bars & Events Security - Guard Field Manual (July 2026).pdf (15 modules, assessment sign-off) + HOTC curriculum; NO register/matrix export on disk \u2014 tenders claim a Deputy-linked register exists",
+  "action": "Ahmad/Shannon: export the Deputy training & CoA register (or build it now in a spreadsheet from PSPLA + first-aid certs); build the role-based matrix; this is the guarding equivalent of trade certs and a certain assessor ask",
+  "priority": "P1-blocker"
+ },
+ {
+  "section": "C. Training MB16",
+  "requirement": "Induction programme + records of THREE recently completed inductions",
+  "evidence_needed": "3 signed induction sign-offs appearing on the training register",
+  "status": "MISSING",
+  "existing_source": "Process documented (field manual Part 6 sign-off structure, SMS mandate); zero completed records on disk",
+  "action": "Collect 3 signed induction/competency sign-offs at the next Thursday sessions (or export from Deputy if genuinely held there)",
+  "priority": "P1-blocker"
+ },
+ {
+  "section": "C. Training MB17",
+  "requirement": "Foundation H&S training completed (NA possible; independent assessment is construction-only)",
+  "evidence_needed": "Foundation-level training shown on register",
+  "status": "PARTIAL",
+  "existing_source": "Field manual modules + toolbox library qualify as in-house foundation training",
+  "action": "Show field-manual module completion on the training register; Simply Security had this N/A'd as construction-framed \u2014 either route works",
+  "priority": "P3-polish"
+ },
+ {
+  "section": "C. Training MB18",
+  "requirement": "Hazardous-work licences/certs (NA possible)",
+  "evidence_needed": "NA justification, or CoA/PSPLA framed as the licensing regime",
+  "status": "HAVE",
+  "existing_source": "PSPLA company licences 22-100195 (ASG) + 26-137662 (SLS) with expiries in the NZSA structure doc; Simply Security answered this N/A",
+  "action": "Answer NA (no hazardous work per Totika definitions) but volunteer the PSPLA/CoA licensing regime as context; obtain PSPLA certificate copies",
+  "priority": "P3-polish"
+ },
+ {
+  "section": "C. Training MB19",
+  "requirement": "Supervision of young/new/vulnerable workers until competent",
+  "evidence_needed": "Buddy/supervised-shift process + records",
+  "status": "PARTIAL",
+  "existing_source": "Process in field manual and PC tender answers (3-phase induction, countersigned checklists)",
+  "action": "Document the buddy-shift rule formally; keep 2 examples of new-guard supervised rosters from Deputy",
+  "priority": "P2-needed"
+ },
+ {
+  "section": "D. Incidents MB20",
+  "requirement": "Documented event recording/reporting procedure + TWO recent incident report examples",
+  "evidence_needed": "Procedure + 2 reports, personal details REDACTED",
+  "status": "PARTIAL",
+  "existing_source": "SMS procedure + /Users/ahmadduais/Desktop/ASG/Operations/Clients/CRL/First-Looks-Incident-Report/ASG_CRL_First_Looks_Incident_Report_Aug2026.pdf + HOTC daily logs 2024-26 + Reign & Pour pack",
+  "action": "Select 2 (CRL Aug 2026 + one HOTC assault/aggression report), convert to H&S incident format, redact all names",
+  "priority": "P1-blocker"
+ },
+ {
+  "section": "D. Incidents MB21+MB23",
+  "requirement": "TWO completed investigations showing ROOT CAUSE (not blame) + corrective actions tracked to completion and communicated to workers",
+  "evidence_needed": "2 investigation reports + closed corrective-action records + comms proof (toolbox)",
+  "status": "PARTIAL",
+  "existing_source": "Reign & Pour incident pack (Oct 2026, Police-involved) + CRL report \u2014 security-incident format, not root-cause H&S format",
+  "action": "GATE FIRST: written HSWA s23-25 notifiability assessment of Reign & Pour (and the HOTC aggression set) BEFORE showcasing it \u2014 an unnotified notifiable event is itself a breach; if unresolved, use CRL Aug 2026 + a closed HOTC case as the two examples instead. Then: Rewrite both as root-cause investigations (5-why or similar), list corrective actions, close and evidence them, cover learnings at a toolbox with attendance recorded \u2014 single exercise closes MB21 and MB23",
+  "priority": "P1-blocker"
+ },
+ {
+  "section": "D. Incidents MB22",
+  "requirement": "Knowledge of when WorkSafe notification is required (scored 0 or 3 only)",
+  "evidence_needed": "Covered in procedure",
+  "status": "HAVE",
+  "existing_source": "SMS notifiable-event section + 'Dangerous occurrences notifiable events' toolbox doc",
+  "action": "None \u2014 cite the SMS section",
+  "priority": "P3-polish"
+ },
+ {
+  "section": "E. Emergency MB24",
+  "requirement": "Documented emergency procedures incl. fire, earthquake, medical AND verbal/physical ASSAULT (directly relevant to guarding); drills score 4",
+  "evidence_needed": "Procedures + ideally drill records",
+  "status": "PARTIAL",
+  "existing_source": "SMS has fire/medical/earthquake/storm/serious-injury flows; assault response lives in the field manual (MOVE-HOLD-TELL, use-of-force ladder), not in the emergency section",
+  "action": "Add an explicit assault/duress response procedure to the emergency section (lift from field manual); schedule and record one drill (critical-incident tabletop counts) for the score-4 path",
+  "priority": "P2-needed"
+ },
+ {
+  "section": "E. Emergency MB25",
+  "requirement": "Site/project emergency plans for client sites (NA possible if always under client's plan)",
+  "evidence_needed": "Plan copy or NA justification",
+  "status": "PARTIAL",
+  "existing_source": "Simply Security answered NA; ASG's HOTC SSSP (MB10 action) will contain emergency/safe-haven content",
+  "action": "Fold emergency response into the HOTC SSSP and cite it; otherwise justified NA (work under client emergency plans)",
+  "priority": "P3-polish"
+ },
+ {
+  "section": "F. Engagement MB26",
+  "requirement": "Open-communication environment + TWO examples within 2 years",
+  "evidence_needed": "Promotion methods + 2 documented instances (time, place, participants, outcome)",
+  "status": "MISSING",
+  "existing_source": "Guard-raised issues exist in HOTC daily logs but are not written up",
+  "action": "Document 2 real guard-raised issues from HOTC logs (issue raised, response, outcome)",
+  "priority": "P2-needed"
+ },
+ {
+  "section": "F. Engagement MB27",
+  "requirement": "Worker engagement/participation procedure + proof (e.g. H&S committee minutes)",
+  "evidence_needed": "Procedure + minutes",
+  "status": "MISSING",
+  "existing_source": "SMS documents an open H&S committee with self-nomination; no minutes ever recorded on disk",
+  "action": "Hold the first recorded H&S committee/all-guards meeting, take minutes, set the cadence \u2014 pairs with MB5/MB28",
+  "priority": "P1-blocker"
+ },
+ {
+  "section": "F. Engagement MB28",
+  "requirement": "Regular worker meetings where H&S is discussed, with frequency rationale",
+  "evidence_needed": "Meeting types, frequency, reasoning + records",
+  "status": "PARTIAL",
+  "existing_source": "Weekly Thursday induction/refresher cadence asserted in field manual; 12-topic toolbox library at /Users/ahmadduais/Desktop/ASG/Operations/SOPs/SECONDARY DOCUMENTATION/; zero attendance records",
+  "action": "Start recording toolbox attendance NOW (the HNZ tender already commits to monthly toolbox with recorded attendance); retain 2-3 signed sheets before submission",
+  "priority": "P1-blocker"
+ },
+ {
+  "section": "G. Hazards MB29",
+  "requirement": "Documented hazard/risk procedure + CURRENT POPULATED hazard/risk register + TWO worked risk assessments within 2 years (safety AND occupational health)",
+  "evidence_needed": "Register + 2 completed site/activity risk assessments",
+  "status": "PARTIAL",
+  "existing_source": "Process fully documented in SMS (5x5 matrix, hierarchy, notification workflow); NO populated register anywhere on disk despite both tenders asserting one exists",
+  "action": "Build the guard-work hazard register now (aggression/assault, lone working, fatigue/night work, intox patrons, manual handling, driving, weather) from the SOPs + NZSA hazard profile; complete 2 site risk assessments (HOTC + one venue) on the SMS forms",
+  "priority": "P1-blocker"
+ },
+ {
+  "section": "G. Hazards MB30-31",
+  "requirement": "Controls communicated to workers (with records) and monitored/reviewed for effectiveness",
+  "evidence_needed": "Comms records + monitoring description (inspections, post-incident review, register review)",
+  "status": "MISSING",
+  "existing_source": "Toolbox library covers the topics; no delivery records",
+  "action": "Covered by MB28 attendance records + a monitoring paragraph in the hazard procedure (monthly register review \u2014 already committed in the HNZ tender, so make it real)",
+  "priority": "P2-needed"
+ },
+ {
+  "section": "G. Hazards MB32",
+  "requirement": "TWO written safe work instructions/SOPs/JSAs",
+  "evidence_needed": "2 copies",
+  "status": "HAVE",
+  "existing_source": "/Users/ahmadduais/Desktop/ASG/Operations/SOPs/Safety_Team_Body_Worn_Camera_SOP.docx + Alcohol_Drug_Enforcement_SOP + Business_Call_Response_SOP + Day Guard SOP in SMS",
+  "action": "Pick BWC SOP + Day Guard SOP; add version/review date headers",
+  "priority": "P3-polish"
+ },
+ {
+  "section": "G. Hazards MB33",
+  "requirement": "PPE provided FREE, checked/maintained, training; full PPE list + detail on TWO items",
+  "evidence_needed": "PPE list + selection/training/storage/checks for 2 items + records",
+  "status": "PARTIAL",
+  "existing_source": "BWC SOP covers one item well; no PPE list or issue/check records; VERIFIER CATCH: PPE.docx exists at ~/Desktop/ASG/Operations/SOPs/SECONDARY DOCUMENTATION/PPE.docx \u2014 build on it; real gap = issue/check LOG + free-of-charge statement",
+  "action": "One-page PPE register (stab vests, hi-vis, BWC, torches, radios) + free-of-charge statement + detail stab vests and BWC as the two items; start an issue/check log",
+  "priority": "P2-needed"
+ },
+ {
+  "section": "H. Health MB34",
+  "requirement": "Occupational health monitoring (NA possible if no exposures)",
+  "evidence_needed": "Identified health risks + monitoring, or justified NA",
+  "status": "PARTIAL",
+  "existing_source": "Simply Security answered NA; SMS covers fatigue/stress/OOS",
+  "action": "Justified NA for surveillance-type monitoring, with a note that fatigue/psychosocial risks are managed under MB36",
+  "priority": "P3-polish"
+ },
+ {
+  "section": "H. Health MB35",
+  "requirement": "Workplace drug & alcohol policy (testing types, post-incident, random)",
+  "evidence_needed": "Policy + testing regime detail",
+  "status": "HAVE",
+  "existing_source": "SMS Fit-for-Work/D&A section (incl. testing, applies to subcontractors) + Drugs at work.docx + Alcohol_Drug_Enforcement_SOP",
+  "action": "Add a rehabilitation pathway clause (Simply Security scored 4 for exactly this); confirm random + post-incident testing wording matches actual practice",
+  "priority": "P2-needed"
+ },
+ {
+  "section": "H. Health MB36",
+  "requirement": "Stress, fatigue and mental wellbeing management \u2014 incl. fatigue in rostering (hours between shifts), leader awareness; a differentiator for a night-shift guarding firm",
+  "evidence_needed": "Fatigue policy with numeric limits applied in rostering + wellbeing approach",
+  "status": "PARTIAL",
+  "existing_source": "/Users/ahmadduais/Desktop/ASG/Operations/SOPs/SECONDARY DOCUMENTATION/Fatigue Policy.docx + SMS fatigue/stress sections; tender text asserts 12h max shift / 10h rest / 60h per 7 days with a [VERIFY] flag",
+  "action": "Reconcile the numeric limits with the issued Fatigue Policy (update the policy to state them), show a Deputy roster extract demonstrating compliance, add EAP/wellbeing line \u2014 score-4 opportunity",
+  "priority": "P1-blocker"
+ },
+ {
+  "section": "I. Inspections MB37-38",
+  "requirement": "Documented worksite inspection procedure + TWO recent completed inspections with corrective-action status + frequency rationale",
+  "evidence_needed": "Procedure + 2 completed inspection records",
+  "status": "MISSING",
+  "existing_source": "Weekly supervisor inspections and twice-monthly unannounced field audits are tender COMMITMENTS, not evidenced practice; HOTC daily logs are operational, not H&S inspections",
+  "action": "Create a one-page site H&S inspection checklist (guard welfare, duress equipment, environment, PPE); complete 2 real inspections this week (HOTC + one venue) with any corrective actions recorded",
+  "priority": "P1-blocker"
+ },
+ {
+  "section": "J. Subcontractors MB39-42",
+  "requirement": "Subcontractor H&S management procedure, prequalification, monitoring (ALL NA possible if no subcontractors)",
+  "evidence_needed": "Either NA with justification, or procedure + 2 prequal examples",
+  "status": "MISSING",
+  "existing_source": "No procedure; defensible position = 100% directly-employed workforce, zero subcontracted shifts in 12 months (payroll-verifiable, stated in PC tender); per-person vetting checklist exists only inside tender answer text",
+  "action": "Write a one-page 'direct employment / no subcontracting' policy with the force-majeure vetting checklist (CoA vs PSPLA register, ID, right-to-work, identical induction) and answer NA; WARNING: if the Fernando+Jason/Liberty B2B restructure proceeds, this flips LIVE and a real procedure + 2 prequal examples become mandatory before renewal",
+  "priority": "P2-needed"
+ },
+ {
+  "section": "J. PCBUs MB43",
+  "requirement": "Coordination with other PCBUs / overlapping duties (venues, Council, CRL contractors, landlords)",
+  "evidence_needed": "How duties are coordinated: planning, information exchange, shared emergency procedures",
+  "status": "PARTIAL",
+  "existing_source": "Real practice exists (HOTC/Council coordination, CRL contractor interface, venue operators) but is undocumented as an H&S process",
+  "action": "One-page overlapping-duties statement citing HOTC and CRL as live examples \u2014 a natural strength for ASG",
+  "priority": "P2-needed"
+ },
+ {
+  "section": "K. Plant MB44-45",
+  "requirement": "Plant/equipment (incl. VEHICLES) maintenance registers and operation management (NA possible but vehicles make it live for ASG)",
+  "evidence_needed": "Maintenance register for patrol vehicles + equipment (radios, BWC chargers); authorised-operator control",
+  "status": "MISSING",
+  "existing_source": "No vehicle maintenance records on disk",
+  "action": "Build a simple vehicle register (rego, WOF, service dates from the service provider) + equipment check log; licence check = CoA/driver licence on the training register",
+  "priority": "P2-needed"
+ },
+ {
+  "section": "L. Hazardous substances MB46-49",
+  "requirement": "Hazardous substance management (NA possible if household quantities only)",
+  "evidence_needed": "Justified NA",
+  "status": "HAVE",
+  "existing_source": "Simply Security had all four N/A'd; ASG holds no hazardous substances beyond household quantities",
+  "action": "Answer NA with justification",
+  "priority": "P3-polish"
+ },
+ {
+  "section": "M. History MB50-53",
+  "requirement": "5-year declarations: H&S convictions, enforcement actions, regulator investigations, environmental convictions (information-only, unscored; assessor runs a court search)",
+  "evidence_needed": "Confirmed nil returns for BOTH companies and all directors",
+  "status": "UNKNOWN",
+  "existing_source": "PC tender claims nil WorkSafe notices/prosecutions with an [AHMAD: confirm] placeholder still open",
+  "action": "Ahmad confirms nil return for ASG Ltd, SLS RTC Ltd and both directors before declaring; the assessor will verify against court records, so do not guess Include the written R&P notifiability assessment with the MB22 evidence. Also verify Hasibullah Nabawi is a current registered ASG Ltd director on the Companies Register before any 'all directors' declaration (the Nikki/SLS lag shows register entries can lag reality).",
+  "priority": "P2-needed"
+ },
+ {
+  "section": "M. History MB54",
+  "requirement": "H&S awards/recognition (optional, positive)",
+  "evidence_needed": "Any recognition",
+  "status": "PARTIAL",
+  "existing_source": "NZSA membership; HOTC contract renewals; LCF accountability report",
+  "action": "List NZSA membership + HOTC quarterly value reviews as client recognition",
+  "priority": "P3-polish"
+ },
+ {
+  "section": "Profile: insurance",
+  "requirement": "Insurance details/licences for the RapidCert supplier profile (NOT a Totika core criterion \u2014 explicitly out of scope in Scheme Rules \u2014 but collected, and buyers viewing the profile expect it; Simply Security benchmark: PL $10M, PI $1M, MV $10M)",
+  "evidence_needed": "Standalone certificates of currency",
+  "status": "PARTIAL",
+  "existing_source": "PL $10M (AIG BIZ 117567, to 4 Jul 2027) + Statutory Liability $1M (BIZ 17786) exist only embedded at pp.83-84 of ASG_RFP_0018709_SUBMISSION_FULL.pdf; insured = ASG Ltd only; NO Professional Indemnity, NO Employers' Liability, NO SLS RTC cover sighted; broker schedule due 21 Nov",
+  "action": "Get standalone certificate PDFs from BizCover (schedule due 21 Nov); decide on the $3M PI quote (ASG already matches the Simply Security PL benchmark; PI closes the gap); do NOT use the expired $5M policy in the Metropolis zip",
+  "priority": "P2-needed"
+ },
+ {
+  "section": "Profile: company",
+  "requirement": "Business details: NZBN, structure, contacts, PSPLA licences, Responsible Employee",
+  "evidence_needed": "Structure doc + PSPLA certificate copies + Responsible Employee named",
+  "status": "PARTIAL",
+  "existing_source": "/Users/ahmadduais/Desktop/ASG/Corporate/ASG Group - Company Structure (NZSA).docx (current 5 Nov 2026) \u2014 Responsible Employee '[to confirm]', no PSPLA certificate copies on disk",
+  "action": "Ahmad confirms the PSPLA Responsible Employee and downloads both licence certificates",
+  "priority": "P3-polish"
+ },
+ {
+  "section": "Claims hygiene",
+  "requirement": "Every claim made to the assessor must be real (SafetySeek platform, Deputy-linked registers, drill commitments) \u2014 tender texts are now auditable commitments",
+  "evidence_needed": "Verification or removal of each unverified claim before it is repeated to Totika",
+  "status": "UNKNOWN",
+  "existing_source": "/Users/ahmadduais/Desktop/ASG/Tenders/NZ Primary Connect Security Services 523941/PC_523941_Draft_Answers_v1.docx (24 bracketed placeholders = the not-yet-real list)",
+  "action": "Ahmad confirms: is SafetySeek actually in use? Is the Deputy training register real and exportable? Only assert to SHE Prequal what can be evidenced on request",
+  "priority": "P1-blocker"
+ },
+ {
+  "section": "G. Hazards NEW-1",
+  "requirement": "Lone-worker / welfare-check procedure + historical check-in records",
+  "evidence_needed": "Standalone procedure (check cadence e.g. hourly calls, comms protocol, escalation on missed check) + log extracts proving it happens",
+  "status": "MISSING",
+  "existing_source": "Practice exists in HOTC ops; 2024-26 HOTC daily logs almost certainly evidence welfare checks \u2014 never extracted",
+  "action": "Write the standalone procedure; extract 2-4 weeks of welfare-check/comms entries from HOTC daily logs as records. The single most predictable assessor probe for a solo night-patrol guarding firm.",
+  "priority": "P1-blocker"
+ },
+ {
+  "section": "A. Leadership NEW-2",
+  "requirement": "Officer due-diligence records (HSWA 2015 s44)",
+  "evidence_needed": "One-page due-diligence framework for both directors (resourcing, process verification, incident review) + evidence via MB5 minutes",
+  "status": "MISSING",
+  "existing_source": "MB5 minutes (once held) partially overlap",
+  "action": "Draft one-page officer due-diligence plan naming Ahmad + Hasibullah; file with MB5 minutes. HNZ specifically asks for this.",
+  "priority": "P2-needed"
+ },
+ {
+  "section": "H. Health NEW-3",
+  "requirement": "Injury management / return-to-work (ACC) process",
+  "evidence_needed": "ACC claim handling, alternative duties, graduated RTW process",
+  "status": "MISSING",
+  "existing_source": "-",
+  "action": "One-page injury management & RTW procedure \u2014 live risk given guard assaults are the top hazard.",
+  "priority": "P2-needed"
+ },
+ {
+  "section": "K. Plant NEW-4",
+  "requirement": "Vehicle SAFETY / journey management (beyond maintenance)",
+  "evidence_needed": "Driving policy: pre-start checks, phone-use rule, fatigue-and-driving interaction, vehicle incident procedure",
+  "status": "MISSING",
+  "existing_source": "Zero driving documents on disk (search confirmed); eco-patrol vehicles + mobile patrol make it live",
+  "action": "Write the driving/journey-management policy and a pre-start check sheet; driving is the other killer risk alongside assault.",
+  "priority": "P2-needed"
+ },
+ {
+  "section": "G. Hazards NEW-5",
+  "requirement": "BWC/CCTV footage privacy, retention and access control (Privacy Act 2020)",
+  "evidence_needed": "One-page retention/access/disclosure statement for BWC + CCTV footage",
+  "status": "MISSING",
+  "existing_source": "BWC SOP exists (MB32 strength) but no privacy/retention artefact",
+  "action": "Draft the footage governance one-pager; the scheme's own redaction rule + buyer expectations (HNZ, Council) make this a likely clarification question.",
+  "priority": "P2-needed"
+ },
+ {
+  "section": "E. Emergency NEW-6",
+  "requirement": "First-aid provision as operational evidence",
+  "evidence_needed": "Kit locations/contents check records + per-shift first-aid-trained coverage",
+  "status": "MISSING",
+  "existing_source": "Implicit via training matrix only",
+  "action": "Start a monthly kit-check log; show first-aid coverage per shift from the training register + Deputy rosters.",
+  "priority": "P3-polish"
+ },
+ {
+  "section": "F. Engagement NEW-7",
+  "requirement": "Elected worker H&S representation (HSR) statement",
+  "evidence_needed": "Paragraph in the engagement procedure covering how workers may request HSR elections (distinct from the committee)",
+  "status": "MISSING",
+  "existing_source": "MB27 committee covers participation but not HSWA representation rights",
+  "action": "Add an HSR election-rights paragraph to the worker engagement procedure.",
+  "priority": "P3-polish"
+ },
+ {
+  "section": "B. System NEW-8",
+  "requirement": "Document-control procedure",
+  "evidence_needed": "Approval, review cycle, superseded-version handling; versioned headers on all SOPs",
+  "status": "MISSING",
+  "existing_source": "Duplicated/undated SOPs on disk: Drugs at work.docx in two folders; Fatigue Policy.docx vs Fatigue.docx \u2014 exactly what an assessor will spot",
+  "action": "Half-page doc-control procedure; dedupe and version-stamp the SOP library; pairs with the MB7 document index.",
+  "priority": "P2-needed"
+ },
+ {
+  "section": "D. Incidents NEW-9",
+  "requirement": "Standing notifiable-event REGISTER (even if nil)",
+  "evidence_needed": "A register demonstrating MB22 knowledge is operationalised + the written R&P notifiability assessment",
+  "status": "MISSING",
+  "existing_source": "-",
+  "action": "Create the register (nil entries fine); file the written notifiability assessments in it.",
+  "priority": "P2-needed"
+ },
+ {
+  "section": "GATE NEW-10",
+  "requirement": "Does PC 523941 actually require Totika (vs Woolworths Site360/WOW Contractor)? Does HNZ RFP 0018709 require a listing by award (~Feb 27)?",
+  "evidence_needed": "Answer from the tender documents Ahmad holds, in writing",
+  "status": "UNKNOWN",
+  "existing_source": "Primary Connect is NOT on the Totika buyer list; Te Whatu Ora IS a displayed buyer",
+  "action": "Ahmad + Claude check both tender document sets BY 20 NOV \u2014 this gates the urgent fee, the tender wording, and defines the real deadline for the whole exercise.",
+  "priority": "P1-blocker"
+ }
+]
