@@ -23,7 +23,7 @@
   "evidence_needed": "Induction/briefing records with worker signatures acknowledging the policy",
   "status": "PARTIAL",
   "existing_source": "SWEEP 17 Nov: acknowledgement MECHANISM proven \u2014 James Olsen signed/dated (~19/12/25) WW Covert LP SOP acknowledgement (\u26a0\ufe0f witness block blank; client-authored doc) + DocuSign Mitre 10 acknowledgements incl. safety clauses. NO sign-off against ASG's OWN policy/SMS found anywhere",
-  "action": "Cover the signed policy at this week's toolbox/induction and collect 3+ signed acknowledgements; complete witness sections. Check Connecteam for existing digital acknowledgements before creating paper ones.",
+  "action": "Prepared pack TBX-2026-001 (19 Nov) covers the signed policy and its attendance sheet doubles as the policy acknowledgement record \u2014 deliver it, collect 3+ signatures, file + upload to SafetySeek. Check Connecteam for existing digital acknowledgements too.",
   "priority": "P1-blocker"
  },
  {
@@ -248,7 +248,7 @@
   "evidence_needed": "Meeting types, frequency, reasoning + records",
   "status": "PARTIAL",
   "existing_source": "SWEEP 17 Nov UNLOCK: Connecteam schedule export \u2014 ALL 26 rostered shifts carry mandatory task 'Health & Safety Toolbox Meeting (APP FORM) with the Covert Team'; WW SOP mandates attendance. \u26a0\ufe0f export's Check-In/Complete columns are empty: proves ASSIGNMENT not completion. Zero delivery/attendance records anywhere on the filesystem (13-topic library in 10+ locations = content only)",
-  "action": "EXPORT CONNECTEAM FORM SUBMISSIONS \u2014 the single highest-value action from the sweep; if completions exist there, MB28 flips to HAVE in one move. Otherwise start recording attendance now and retain 2-3 signed sheets.",
+  "action": "SYSTEM BUILT 18 Nov (~/Desktop/ASG/Operations/Toolbox Meetings/): record template v1.0, FY27 programme with frequency rationale (per-shift Connecteam form + weekly Thursday talk + monthly formal), 3 prepared packs (TBX-2026-001 policy launch 19 Nov, 002 lone working 26 Nov, 003 violence/aggression Dec) + delivery register xlsx. STILL NEEDED: actual delivery \u2014 run 19 Nov meeting, collect signatures, complete Connecteam form, upload to SafetySeek. Also export Connecteam historical form submissions (may already hold completions).",
   "priority": "P1-blocker"
  },
  {
