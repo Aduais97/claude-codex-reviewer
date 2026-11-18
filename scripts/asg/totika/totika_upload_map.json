@@ -86,7 +86,7 @@
  {
   "mb": "MB15 + MB17",
   "topic": "Training register, matrix and competency records",
-  "status": "PENDING-RECORD",
+  "status": "READY-AFTER-FIX",
   "files": [
    "/Users/ahmadduais/Desktop/ASG/Totika/Evidence/C-Training/Staff COA Register - PSPLA Verified 10 Nov 2026.xlsx",
    "/Users/ahmadduais/Desktop/ASG/Totika/Evidence/C-Training/Onboarding pack.xlsx",
@@ -94,7 +94,7 @@
    "/Users/ahmadduais/Desktop/ASG/Totika/Evidence/C-Training/Woolworths_Training_-_Melvin_Yamben.pdf",
    "/Users/ahmadduais/Desktop/ASG/Totika/Evidence/C-Training/Deejay Oti.pdf"
   ],
-  "note": "Per Scheme Rules, worker names/CoA numbers on training records are REQUIRED to inform the assessment \u2014 no name redaction. Fixes first: lodge Jordan Martin COA renewal (expires 8 Dec, inside window); strip Notes-column internal commentary from COA register; correct Onboarding pack expired-but-Approved rows + populate First Aid + check for DOBs/IRD; redact WW staff names on the Melvin Yamben cert. CoA Return xlsx withdrawn (duplicative, heaviest PII). ASSESSOR DOWNGRADE: scores 2 as staged \u2014 resolve Hasi Nabawi EXPIRED COA row (27-Nov-2025) or annotate director-non-operational; reconcile register vs Onboarding/Connecteam names (Zuill, Clansey, Nehana, Yamben, Maka absent); renew Simmerjit Singh Brar (exp 20/11/26) + Jordan Martin (8/12/26); BUILD role-based training matrix incl. first-aid currency \u2014 licensing alone is anchor-2."
+  "note": "18 Nov: Hasi renewed (enter new COA no./expiry from certificate), Zac Shannon removed, register now 30 rows, internal commentary stripped from upload copy, group title. Remaining: name reconciliation vs Onboarding pack, Jordan Martin renewal (8 Dec), role-based training matrix build (sprint)."
  },
  {
   "mb": "MB16",

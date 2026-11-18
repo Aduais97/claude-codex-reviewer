@@ -140,7 +140,7 @@
   "evidence_needed": "Matrix (CoA, first aid, de-escalation, BWC, host responsibility per role) + register export showing dates/expiries",
   "status": "PARTIAL",
   "existing_source": "SWEEP 17 Nov: Staff COA Register PSPLA-verified 10 Nov 26 (31 named staff \u2014 count verified; not 32) + 22-name 2026 CoA Return + 29 ServeWise certificates + WW conflict-training certificate + \u26a0\ufe0f VERIFIER FIND: ~/Downloads/Onboarding pack.xlsx = 39-officer \u00d7 9-document competency register export (COA/driver licence/First Aid/WW training/Rapid induction, 96/351 entries Approved, expiries to 2033) \u2014 the claimed register EXISTS, partially populated",
-  "action": "Complete/refresh the existing Onboarding pack export (not build from scratch): fill First Aid column, reconcile with the COA register, add refresher dates = the consolidated matrix. Also closes the tender 'producible on request' claim.",
+  "action": "UPDATED 18 Nov (Ahmad): Hasi Nabawi holds a NEW current COA \u2014 register row set Active, enter new number/expiry from his certificate and re-verify on PSPLA; Zac Shannon REMOVED completely from the register (both staged + master, now 30 rows). Remaining: reconcile register vs Onboarding/Connecteam names (Zuill, Clansey, Nehana, Yamben, Maka); renew Jordan Martin (8 Dec) + watch Simmerjit Singh Brar in Onboarding pack (exp 20/11); BUILD the role-based training matrix incl. first-aid currency \u2014 licensing alone is anchor-2.",
   "priority": "P1-blocker"
  },
  {
@@ -329,7 +329,7 @@
   "evidence_needed": "Either NA with justification, or procedure + 2 prequal examples",
   "status": "MISSING",
   "existing_source": "No procedure; defensible position = 100% directly-employed workforce, zero subcontracted shifts in 12 months (payroll-verifiable, stated in PC tender); per-person vetting checklist exists only inside tender answer text",
-  "action": "Write a one-page 'direct employment / no subcontracting' policy with the force-majeure vetting checklist (CoA vs PSPLA register, ID, right-to-work, identical induction) and answer NA; WARNING: if the Fernando+Jason/Liberty B2B restructure proceeds, this flips LIVE and a real procedure + 2 prequal examples become mandatory before renewal AUDIT: resolve Zac Shannon 'Contractor (pay-run exclusion)' row in the COA register BEFORE filing the NA \u2014 confirm engaging entity (SLS RTC \u2192 mark register ASG-scope; ASG \u2192 NA wording must disclose the single contractor arrangement).",
+  "action": "Write the one-page 'direct employment / no subcontracting' policy with the force-majeure vetting checklist and answer NA. Zac Shannon contradiction RESOLVED 18 Nov \u2014 removed from the COA register entirely per Ahmad. Remaining gate: Liberty Security go-live date (if B2B invoicing starts before submission, the NA is false on day one).",
   "priority": "P2-needed"
  },
  {
