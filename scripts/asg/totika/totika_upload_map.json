@@ -285,10 +285,13 @@
  {
   "mb": "Profile-Insurance",
   "topic": "Insurance certificates",
-  "status": "READY-AFTER-FIX",
+  "status": "READY",
   "files": [
-   "/Users/ahmadduais/Desktop/ASG/Totika/Evidence/Insurance/ASG_Insurance_Certificates_PL10M_SL1M_from_HNZ_submission.pdf"
+   "Evidence/Insurance/CERTIFICATE - PL84187 - NZI Broadform Liability.pdf",
+   "Evidence/Insurance/CERTIFICATE - SL84189 - NZI Statutory Liability.pdf",
+   "Evidence/Insurance/CERTIFICATE - EL84188 - NZI Employers Liability.pdf",
+   "Evidence/Insurance/CERTIFICATE - PI84036 - NZIL Professional Indemnity.pdf"
   ],
-  "note": "Content clean and current (PL $10M to Jul 27, SL $1M to Aug 27, ASG Ltd). Rename only (drop HNZ reference); add broker schedule / PI decision when it lands 21 Nov."
+  "note": "NZI programme 18 Nov 26-27, BOTH entities named insureds: PL $10M / SL $1M / EL $1M / PI $500k. Confirm premium paid (validity condition); PI $500k vs $3M tender discussion \u2014 true-up or increase."
  }
 ]

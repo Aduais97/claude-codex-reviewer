@@ -381,9 +381,9 @@
   "section": "Profile: insurance",
   "requirement": "Insurance details/licences for the RapidCert supplier profile (NOT a Totika core criterion \u2014 explicitly out of scope in Scheme Rules \u2014 but collected, and buyers viewing the profile expect it; Simply Security benchmark: PL $10M, PI $1M, MV $10M)",
   "evidence_needed": "Standalone certificates of currency",
-  "status": "PARTIAL",
-  "existing_source": "PL $10M (AIG BIZ 117567, to 4 Jul 2027) + Statutory Liability $1M (BIZ 17786) exist only embedded at pp.83-84 of ASG_RFP_0018709_SUBMISSION_FULL.pdf; insured = ASG Ltd only; NO Professional Indemnity, NO Employers' Liability, NO SLS RTC cover sighted; broker schedule due 21 Nov",
-  "action": "Get standalone certificate PDFs from BizCover (schedule due 21 Nov); decide on the $3M PI quote (ASG already matches the Simply Security PL benchmark; PI closes the gap); do NOT use the expired $5M policy in the Metropolis zip",
+  "status": "HAVE",
+  "existing_source": "NEW NZI PROGRAMME 18 Nov 2026 (~/Desktop/ASG/Corporate/Insurance/NZI 2026-27/ + staged in Evidence/Insurance/): Broadform Liability $10M (PL84187), Statutory Liability $1M (SL84189), Employers Liability $1M (EL84188) all policy 6000214187; Professional Indemnity $500k (PI84036, policy 6000214188, excess $10k, retroactive = inception). ALL name BOTH entities: 'Absolute Security Group Limited, SLS RTC Limited'. Period 18 Nov 2026 - 18 Nov 2027. AIG certs superseded (moved to Internal). Exceeds Simply Security PL benchmark; PI $500k vs their $1M",
+  "action": "\u26a0\ufe0f TWO FLAGS: (1) certificates 'only valid when premium received in full' \u2014 confirm premium paid; (2) PI limit is $500k, NOT the $3M discussed for the PC tender \u2014 true-up any tender answer asserting PI $3M, or increase the limit before submission (Simply Security holds PI $1M). Otherwise upload-ready, both entities covered.",
   "priority": "P2-needed"
  },
  {
