@@ -139,7 +139,7 @@
   "requirement": "Documented training/competency process + training MATRIX by role + per-worker REGISTER with refresher dates",
   "evidence_needed": "Matrix (CoA, first aid, de-escalation, BWC, host responsibility per role) + register export showing dates/expiries",
   "status": "PARTIAL",
-  "existing_source": "SWEEP 17 Nov: Staff COA Register PSPLA-verified 10 Nov 26 (31 named staff \u2014 count verified; not 32) + 22-name 2026 CoA Return + 29 ServeWise certificates + WW conflict-training certificate + \u26a0\ufe0f VERIFIER FIND: ~/Downloads/Onboarding pack.xlsx = 39-officer \u00d7 9-document competency register export (COA/driver licence/First Aid/WW training/Rapid induction, 96/351 entries Approved, expiries to 2033) \u2014 the claimed register EXISTS, partially populated",
+  "existing_source": "SWEEP 17 Nov: Staff COA Register PSPLA-verified 10 Nov 26 (31 named staff \u2014 count verified; not 32) + 22-name 2026 CoA Return + 29 ServeWise certificates + WW conflict-training certificate + \u26a0\ufe0f VERIFIER FIND: ~/Downloads/Onboarding pack.xlsx = 39-officer \u00d7 9-document competency register export (COA/driver licence/First Aid/WW training/Rapid induction, 96/351 entries Approved, expiries to 2033) \u2014 the claimed register EXISTS, partially populated + 8 Woolworths conflict-training completion records (Evidence/C-Training, dated Feb 2026) added 19 Nov.",
   "action": "RESOLVED 18 Nov: Hasi Nabawi new COA 26-145095 (Active, full permit, 16-Nov-2026 to 16-Nov-2031, CC/PG/Personal/DocDest) PSPLA-verified from the register and entered in both staged + master registers; Zac Shannon removed (30 rows). Remaining: Jordan Martin renewal (expires 8 Dec), name reconciliation vs Onboarding pack (Zuill, Clansey, Nehana, Yamben, Maka), role-based training matrix build incl. first-aid currency (sprint).",
   "priority": "P1-blocker"
  },
@@ -247,8 +247,8 @@
   "requirement": "Regular worker meetings where H&S is discussed, with frequency rationale",
   "evidence_needed": "Meeting types, frequency, reasoning + records",
   "status": "PARTIAL",
-  "existing_source": "SWEEP + TIMESHEET EXTRACT 18 Nov: meetings ARE payroll-evidenced \u2014 80 head-office Admin-hours entries Mar-Nov 26 incl. 3 team-meeting cohorts with overlapping paid attendance (8 Apr 3 staff 'Meeting at head office'; 20 Apr 5 staff identical 11:30-12:30; 17 Aug 3 staff, corroborated by same-day field notes) + disciplinary meeting 2 Jun. Extract: Operations/Toolbox Meetings/ASG_SLS_Team_Meeting_Evidence_Extract_2026.xlsx (staged in Evidence). \u26a0\ufe0f 25 Apr ANZAC 8-staff entry = likely stat-pay artifact, confirm before presenting. Topic records still absent. Connecteam schedule proves per-shift toolbox task ASSIGNMENT (completion columns empty). 13-topic content library exists",
-  "action": "SYSTEM BUILT 18 Nov (~/Desktop/ASG/Operations/Toolbox Meetings/): record template v1.0, FY27 programme with frequency rationale (per-shift Connecteam form + weekly Thursday talk + monthly formal), 3 prepared packs (TBX-2026-001 policy launch 19 Nov, 002 lone working 26 Nov, 003 violence/aggression Dec) + delivery register xlsx. STILL NEEDED: actual delivery \u2014 run 19 Nov meeting, collect signatures, complete Connecteam form, upload to SafetySeek. Also export Connecteam historical form submissions (may already hold completions).",
+  "existing_source": "REAL Connecteam H&S Toolbox Meeting form submissions NOW IN HAND (Evidence/F-Engagement-Toolbox): genuine completed records (e.g. #33 meeting 1 Dec 2025, #34 5 Jan 2026 \u2014 Woolworths, full risk assessment incl. assault/weapons, 100%-rule, 4-step process all Complete, fire-exit awareness, attendee counts, captured signatures). Structured into individual record PDFs + a delivery register; raw export staged. Submission numbering (#33/#34) implies ~34 real submissions exist in Connecteam",
+  "action": "EXPORT THE FULL SET of real Connecteam submissions (all ~34, not just the 2 pulled) \u2014 that converts MB28 to HAVE with months of genuine delivery history. Plus the live cadence from 19 Nov (TBX series). NO invented/propagated dates \u2014 Connecteam server timestamps are the source of truth.",
   "priority": "P1-blocker"
  },
  {
@@ -345,9 +345,9 @@
   "section": "K. Plant MB44-45",
   "requirement": "Plant/equipment (incl. VEHICLES) maintenance registers and operation management (NA possible but vehicles make it live for ASG)",
   "evidence_needed": "Maintenance register for patrol vehicles + equipment (radios, BWC chargers); authorised-operator control",
-  "status": "MISSING",
-  "existing_source": "No vehicle maintenance records on disk",
-  "action": "Build a simple vehicle register (rego, WOF, service dates from the service provider) + equipment check log; licence check = CoA/driver licence on the training register UPDATE 18 Nov: vehicles insured with AA on BUSINESS use (Ahmad confirmed); certificate of currency requested from AA \u2014 verify insured name = Absolute Security Group Limited and note the third-party property damage limit when it arrives; stage in Evidence/Insurance.",
+  "status": "HAVE",
+  "existing_source": "NEW 19 Nov: 8 AA comprehensive motor Certificates of Currency (Evidence/Insurance), all insured 'Absolute Security Group Limited', current into 2027 \u2014 real fleet (Tesla Model Y, Ford Ranger, 3x Holden Captiva, Mazda6, Skoda Superb, MG ZS) with regos + agreed values. Beats Simply Security's displayed MV cover",
+  "action": "Upload the 8 AA certs; build the vehicle register (rego/WOF/service dates) + driving/journey policy to complete the operation-management leg. One AA policy schedule (AMV034738573) has a lapsed period \u2014 excluded, corporate archive only.",
   "priority": "P2-needed"
  },
  {
@@ -382,8 +382,8 @@
   "requirement": "Insurance details/licences for the RapidCert supplier profile (NOT a Totika core criterion \u2014 explicitly out of scope in Scheme Rules \u2014 but collected, and buyers viewing the profile expect it; Simply Security benchmark: PL $10M, PI $1M, MV $10M)",
   "evidence_needed": "Standalone certificates of currency",
   "status": "HAVE",
-  "existing_source": "NEW NZI PROGRAMME 18 Nov 2026 (~/Desktop/ASG/Corporate/Insurance/NZI 2026-27/ + staged in Evidence/Insurance/): Broadform Liability $10M (PL84187), Statutory Liability $1M (SL84189), Employers Liability $1M (EL84188) all policy 6000214187; Professional Indemnity $500k (PI84036, policy 6000214188, excess $10k, retroactive = inception). ALL name BOTH entities: 'Absolute Security Group Limited, SLS RTC Limited'. Period 18 Nov 2026 - 18 Nov 2027. AIG certs superseded (moved to Internal). Exceeds Simply Security PL benchmark; PI $500k vs their $1M",
-  "action": "\u26a0\ufe0f TWO FLAGS: (1) certificates 'only valid when premium received in full' \u2014 confirm premium paid; (2) PI limit is $500k, NOT the $3M discussed for the PC tender \u2014 true-up any tender answer asserting PI $3M, or increase the limit before submission (Simply Security holds PI $1M). Otherwise upload-ready, both entities covered.",
+  "existing_source": "FULL PROGRAMME: NZI PL $10M / SL $1M / EL $1M / PI $500k (both entities) + 8 AA comprehensive motor certs (ASG Ltd, current) = PL/SL/EL/PI/MV all covered. Exceeds Simply Security benchmark on all but PI limit",
+  "action": "Upload NZI (4) + AA motor (8) certs. Confirm premiums paid (validity condition). PI $500k vs $3M tender-claim \u2014 true-up wording or increase limit.",
   "priority": "P2-needed"
  },
  {
