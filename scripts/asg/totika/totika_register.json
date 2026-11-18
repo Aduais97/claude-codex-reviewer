@@ -140,7 +140,7 @@
   "evidence_needed": "Matrix (CoA, first aid, de-escalation, BWC, host responsibility per role) + register export showing dates/expiries",
   "status": "PARTIAL",
   "existing_source": "SWEEP 17 Nov: Staff COA Register PSPLA-verified 10 Nov 26 (31 named staff \u2014 count verified; not 32) + 22-name 2026 CoA Return + 29 ServeWise certificates + WW conflict-training certificate + \u26a0\ufe0f VERIFIER FIND: ~/Downloads/Onboarding pack.xlsx = 39-officer \u00d7 9-document competency register export (COA/driver licence/First Aid/WW training/Rapid induction, 96/351 entries Approved, expiries to 2033) \u2014 the claimed register EXISTS, partially populated",
-  "action": "UPDATED 18 Nov (Ahmad): Hasi Nabawi holds a NEW current COA \u2014 register row set Active, enter new number/expiry from his certificate and re-verify on PSPLA; Zac Shannon REMOVED completely from the register (both staged + master, now 30 rows). Remaining: reconcile register vs Onboarding/Connecteam names (Zuill, Clansey, Nehana, Yamben, Maka); renew Jordan Martin (8 Dec) + watch Simmerjit Singh Brar in Onboarding pack (exp 20/11); BUILD the role-based training matrix incl. first-aid currency \u2014 licensing alone is anchor-2.",
+  "action": "RESOLVED 18 Nov: Hasi Nabawi new COA 26-145095 (Active, full permit, 16-Nov-2026 to 16-Nov-2031, CC/PG/Personal/DocDest) PSPLA-verified from the register and entered in both staged + master registers; Zac Shannon removed (30 rows). Remaining: Jordan Martin renewal (expires 8 Dec), name reconciliation vs Onboarding pack (Zuill, Clansey, Nehana, Yamben, Maka), role-based training matrix build incl. first-aid currency (sprint).",
   "priority": "P1-blocker"
  },
  {
