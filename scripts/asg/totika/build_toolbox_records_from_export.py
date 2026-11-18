@@ -15,12 +15,13 @@ from reportlab.lib.enums import TA_LEFT, TA_CENTER
 from reportlab.platypus import SimpleDocTemplate, Paragraph, Spacer, Table, TableStyle
 
 NAVY = HexColor('#1B2A4A'); GREY = HexColor('#4A4A5A'); BORDER = HexColor('#D0D5DD'); LB = HexColor('#E8EDF5')
-SRC = glob.glob(os.path.expanduser('~/Downloads/H&S Toolbox Meeting_*.xlsx'))
+SRC = sorted(glob.glob(os.path.expanduser('~/Downloads/H&S Toolbox Meeting_*.xlsx')), key=os.path.getmtime)
 OUTDIR = os.path.expanduser('~/Desktop/ASG/Operations/Toolbox Meetings/Connecteam Records')
 EVID = os.path.expanduser('~/Desktop/ASG/Totika/Evidence/F-Engagement-Toolbox')
 os.makedirs(OUTDIR, exist_ok=True)
 
-wb = load_workbook(SRC[0], data_only=True); ws = wb.active
+wb = load_workbook(SRC[-1], data_only=True)  # newest/fullest export
+ws = wb.active
 hdr = [ws.cell(1, c).value for c in range(1, ws.max_column + 1)]
 
 def rows():

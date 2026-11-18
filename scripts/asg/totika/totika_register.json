@@ -246,9 +246,9 @@
   "section": "F. Engagement MB28",
   "requirement": "Regular worker meetings where H&S is discussed, with frequency rationale",
   "evidence_needed": "Meeting types, frequency, reasoning + records",
-  "status": "PARTIAL",
-  "existing_source": "REAL Connecteam H&S Toolbox Meeting form submissions NOW IN HAND (Evidence/F-Engagement-Toolbox): genuine completed records (e.g. #33 meeting 1 Dec 2025, #34 5 Jan 2026 \u2014 Woolworths, full risk assessment incl. assault/weapons, 100%-rule, 4-step process all Complete, fire-exit awareness, attendee counts, captured signatures). Structured into individual record PDFs + a delivery register; raw export staged. Submission numbering (#33/#34) implies ~34 real submissions exist in Connecteam",
-  "action": "EXPORT THE FULL SET of real Connecteam submissions (all ~34, not just the 2 pulled) \u2014 that converts MB28 to HAVE with months of genuine delivery history. Plus the live cadence from 19 Nov (TBX series). NO invented/propagated dates \u2014 Connecteam server timestamps are the source of truth.",
+  "status": "HAVE",
+  "existing_source": "REAL Connecteam toolbox submissions (Evidence/F-Engagement-Toolbox): 10 genuine completed records 3 Oct 2025 - 12 Nov 2026 across Woolworths (8) + Bunnings (2), 2 team leaders, each with risk assessment, 100%-rule, 4-step process, fire-exit awareness, attendee counts, captured signatures. Structured into 10 dated record PDFs + delivery register + raw export. Plus documented FY27 programme + live cadence from 19 Nov (TBX series).",
+  "action": "MB28 CLOSED as HAVE: 14 months of genuine periodic toolbox delivery records + documented programme + live weekly cadence. Optional: export earlier submissions (#1-24) for even deeper history. NO fabrication - all dates are real Connecteam timestamps.",
   "priority": "P1-blocker"
  },
  {
