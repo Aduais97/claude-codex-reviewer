@@ -116,12 +116,14 @@
  {
   "mb": "MB20",
   "topic": "Incident reporting procedure + 2 recent reports",
-  "status": "READY-AFTER-FIX",
+  "status": "READY",
   "files": [
    "/Users/ahmadduais/Desktop/ASG/Totika/Evidence/04_Incidents_and_Investigations/Incident_Report_Aug2026_REDACTED.pdf",
-   "/Users/ahmadduais/Desktop/ASG/Totika/Evidence/04_Incidents_and_Investigations/Investigation_Conduct_Review_Sep2026_REDACTED.pdf"
+   "/Users/ahmadduais/Desktop/ASG/Totika/Evidence/04_Incidents_and_Investigations/Investigation_Conduct_Review_Sep2026_REDACTED.pdf",
+   "/Users/ahmadduais/Desktop/ASG/Totika/Evidence/04_Incidents_and_Investigations/Incident_Register_Woolworths_REDACTED.xlsx",
+   "/Users/ahmadduais/Desktop/ASG/Totika/Evidence/04_Incidents_and_Investigations/Incident_Register_Bunnings_REDACTED.xlsx"
   ],
-  "note": "Upload _REDACTED PDF versions only (Richard Green; officer 'Dan'; docx exported to PDF to clean fake-2013 metadata). Strong exemplars once redacted \u2014 CRL report has explicit s23-25 HSWA determinations."
+  "note": "Upload _REDACTED PDF versions only (Richard Green; officer 'Dan'; docx exported to PDF to clean fake-2013 metadata). Strong exemplars once redacted \u2014 CRL report has explicit s23-25 HSWA determinations. + redacted incident registers at scale (WW 4,975 / Bunnings 2,082 entries, Evidence/04): structured H&S fields only, guard initials, PII/$ stripped."
  },
  {
   "mb": "MB21 + MB23",

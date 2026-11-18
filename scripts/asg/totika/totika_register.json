@@ -184,8 +184,8 @@
   "requirement": "Documented event recording/reporting procedure + TWO recent incident report examples",
   "evidence_needed": "Procedure + 2 reports, personal details REDACTED",
   "status": "HAVE",
-  "existing_source": "SWEEP 17 Nov: CRL First Looks report (issued 25 Aug 26, HSWA s23-25 determinations) + Cotton On incident report 6 Sep 26 + registers at scale: Bunnings GIR 1,740 named dual-timestamped entries (guard-signature marker every row, store countersignature ~21%; signature images live in the form platform, xlsx shows 'Image') + WW GIR 4,971 FY26 + FRT severe 151",
-  "action": "Pick CRL + Cotton On as the two examples; redact names. For the Bunnings register, export actual signature images from the source form platform before presenting as signed; stage a 1-month excerpt only (client data).",
+  "existing_source": "SWEEP 17 Nov: CRL First Looks report (issued 25 Aug 26, HSWA s23-25 determinations) + Cotton On incident report 6 Sep 26 + registers at scale: Bunnings GIR 1,740 named dual-timestamped entries (guard-signature marker every row, store countersignature ~21%; signature images live in the form platform, xlsx shows 'Image') + WW GIR 4,971 FY26 + FRT severe 151 PLUS redacted incident REGISTERS at scale (Evidence/04): Woolworths 4,975 entries + Bunnings 2,082 entries, structured H&S fields (date/region/site/severity/category/police/notification), guard initials, all offender/staff PII + $ values + free-text stripped; full registers under client confidentiality.",
+  "action": "MB20 HAVE: narrative incident reports + investigations + two redacted incident registers at scale (WW 4,975 / Bunnings 2,082). Shows consistent logging over time.",
   "priority": "P1-blocker"
  },
  {
