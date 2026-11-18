@@ -30,9 +30,11 @@ CW = PAGE_W - ML - MR
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 OUTDIR = os.path.expanduser('~/Desktop/ASG/Totika')
+INTERNAL = os.path.expanduser('~/Desktop/ASG/Totika/Internal-NotForUpload')
+os.makedirs(INTERNAL, exist_ok=True)
 os.makedirs(OUTDIR, exist_ok=True)
-PDF_OUT = os.path.join(OUTDIR, 'ASG_Totika_PreQual_Briefing_Nov2026.pdf')
-XLSX_OUT = os.path.join(OUTDIR, 'ASG_Totika_Evidence_Register.xlsx')
+PDF_OUT = os.path.join(INTERNAL, 'ASG_Totika_PreQual_Briefing_Nov2026.pdf')  # internal strategy - never shipped
+XLSX_OUT = os.path.join(INTERNAL, 'ASG_Totika_Evidence_Register_MASTER_internal.xlsx')  # master - Simon gets the trimmed copy
 
 REGISTER = json.load(open(os.path.join(HERE, 'totika_register.json')))
 

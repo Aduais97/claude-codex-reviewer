@@ -51,16 +51,24 @@ def build_cover():
 
 
 def build_trimmed_register():
-    src = os.path.join(T, 'ASG_Totika_Evidence_Register.xlsx')
+    src = os.path.join(T, 'Internal-NotForUpload', 'ASG_Totika_Evidence_Register_MASTER_internal.xlsx')
     wb = load_workbook(src)
     for name in list(wb.sheetnames):
         if name not in ('Evidence Register', 'Upload Map'):
             del wb[name]
     SOFTEN = [
         (re.compile(r'\$690k[^.;)]*', re.I), 'client commercial terms (on file)'),
-        (re.compile(r'fake[- ]2013[^.;)]*', re.I), 'file metadata corrected'),
-        (re.compile(r'[Nn]o retrofitted addendum optics[^.;)]*'), 'present honestly as formalised in the Nov 2026 reissue'),
         (re.compile(r'\$800k[^.;)]*', re.I), 'client commercial terms (on file)'),
+        (re.compile(r'fake[- ]?2013[^.;)]*', re.I), 'file metadata corrected'),
+        (re.compile(r'[^.;]*exported to PDF to clean[^.;]*metadata[^.;]*\.?', re.I), ''),
+        (re.compile(r'[Nn]o retrofitted addendum optics[^.;)]*'), 'present honestly as formalised in the Nov 2026 reissue'),
+        (re.compile(r'AUDIT-CORRECTED STRATEGY[^.]*\.'), ''),
+        (re.compile(r'Richard Green'), 'the AT contact'),
+        (re.compile(r"officer '?Dan'?"), 'the officer'),
+        (re.compile(r'\bDan\b'), 'the officer'),
+        (re.compile(r'Sapphire Nightclub'), 'the venue'),
+        (re.compile(r'Sapphire'), 'the venue'),
+        (re.compile(r'Shannon Gwin'), 'the former administrator'),
     ]
     n = 0
     for ws in wb:
@@ -107,10 +115,12 @@ def preflight():
                 print(f'FAIL placeholder "{m.group(0)}" in {p}'); ok = False
     # 3. signed SMS freshness heuristic
     sms = os.path.join(T, 'Evidence/A-Leadership-Policy/ASG_Health_and_Safety_Policy_SMS_Nov2026.pdf')
-    import datetime
-    age = (datetime.datetime.now() - datetime.datetime.fromtimestamp(os.path.getmtime(sms))).days
-    if age > 0:
-        print(f'WARN: staged SMS PDF is {age} day(s) old. Confirm it is the SIGNED regeneration before sending.')
+    if not os.path.exists(sms):
+        print('BLOCKER: signed SMS policy PDF not yet in Evidence/A-Leadership-Policy. '
+              'Directors must sign the policy; then export the signed PDF here before zipping (MB1 anchor).')
+        ok = False
+    else:
+        print('OK: signed SMS policy PDF present. Confirm it is the SIGNED version (not the unsigned draft).')
     # 4. zip inputs present
     for item in ZIP_CONTENTS:
         if not os.path.exists(os.path.join(T, item)):
