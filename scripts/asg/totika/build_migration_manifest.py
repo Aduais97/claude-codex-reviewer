@@ -33,9 +33,7 @@ doc.add_paragraph()
 p = doc.add_paragraph()
 p.add_run('Following your confirmation that internal incident records can be migrated into SafetySeek, this manifest lists '
           'every records source ASG holds, verified file by file on 17 November 2026. Items marked with a folder path are '
-          'already staged in the Totika evidence pack at ')
-r = p.add_run('~/Desktop/ASG/Totika/Evidence/'); r.font.name = 'Consolas'; r.font.size = Pt(9.5)
-p.add_run(' and can be provided in any format needed.')
+          'already staged in the attached evidence pack (Evidence folder) and can be provided in any format needed.')
 
 
 def heading(text):
@@ -88,19 +86,30 @@ p.add_run('Staff meetings are evidenced by payroll: SLS unified timesheets recor
           'overlapping (note "Meeting at head office") and a third sequential, and a payroll-evidenced disciplinary '
           'meeting (2 Jun; a separately minuted disciplinary process is on file in the 19 Mar 2026 Investigation '
           'Summary). The extract with attendee names, times and verbatim notes is attached '
-          '(ASG_SLS_Team_Meeting_Evidence_Extract_2026.xlsx) and can be migrated as meeting attendance evidence. '
+          '(ASG_Team_Meeting_Evidence_Extract_FOR_SIMON.xlsx, attached) and can be migrated as meeting attendance evidence. '
           'What the timesheets do not record is topics: no minutes or toolbox sign-offs were kept, and none have '
           'been created retrospectively. Two possible existing sources for topic-level records before anything is '
           'backfilled: ').bold = False
 doc.add_paragraph('Connecteam: a "Health & Safety Toolbox Meeting (APP FORM)" task is mandatory on every rostered shift - '
                   'if guards have been completing the form, the submissions export IS the delivery record. Please export.', style='List Bullet')
-doc.add_paragraph('SafetySeek history: any pre-2025 records from when the system was last active (acknowledgements, '
-                  'hazard register versions, incidents) - please export before rebuilding.', style='List Bullet')
+doc.add_paragraph('SafetySeek history: any pre-dormancy records (roughly before mid-2025) from when the system was last active '
+                  '(acknowledgements, hazard register versions, incidents) - please export before rebuilding.', style='List Bullet')
 p = doc.add_paragraph()
 r = p.add_run('If both come back empty, the recorded meeting cadence starts this week (Thursday induction 19 Nov is the first '
               'opportunity) rather than being backfilled.')
 r.italic = True
 
+heading('3a.  Governance system build (18 November 2026)')
+p = doc.add_paragraph()
+p.add_run('A full toolbox meeting system was built 18 November: record template v1.0, FY27 programme (per-shift '
+          'Connecteam form, weekly Thursday talk, monthly formal meeting, frequency rationale, 12-topic schedule), '
+          'prepared packs for the first three meetings, and a delivery register. First delivery is 19 November; '
+          'signed records will flow to you and Gina as created.')
+heading('3b.  Platform numbering warning')
+p = doc.add_paragraph()
+p.add_run('If submitting via the PREQUAL/RapidCert platform: its question numbering runs one higher than the '
+          'standard criteria after MB33. Map prepared answers by QUESTION TEXT, not number, and cross-check the '
+          'first three questions at upload.')
 heading('4.  Access')
 p = doc.add_paragraph()
 p.add_run('All source files are on hand and can be shared with you and Gina directly (originals or the staged evidence pack). '

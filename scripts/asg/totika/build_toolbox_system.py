@@ -26,6 +26,10 @@ os.makedirs(EVID, exist_ok=True)
 
 def new_doc():
     doc = Document()
+    import datetime as _dt
+    cp = doc.core_properties
+    cp.author = 'Absolute Security Group Ltd'
+    cp.created = _dt.datetime.now(); cp.modified = _dt.datetime.now()
     for s in doc.sections:
         s.top_margin = Cm(1.8); s.bottom_margin = Cm(1.8)
         s.left_margin = Cm(2.0); s.right_margin = Cm(2.0)
