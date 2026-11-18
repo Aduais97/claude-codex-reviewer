@@ -42,6 +42,7 @@ def build_cover():
         ('Your five deliverables', '1. Your engagement letter, please stating your ProfNZISM and HASANZ member body status (the MB8 anchor wants that wording). 2. Your gap review written up as the HSMS audit report for MB14. 3. Written confirmation of the member scheme and your HASANZ standing before 25 November (we need it for tender wording). 4. SafetySeek historical exports and Connecteam form submission exports per the manifest. 5. Your entity scope ruling (ASG Ltd versus SLS RTC sourced evidence) this week; it gates which monitoring and induction records we upload.'),
         ('Timing proposal for your agreement', 'Upload evidence early December; hold the marking to mid January 2027 so roughly eight weeks of live cadence makes a 3 defensible on the governance lines. The alternative is accepting a Developing grade in a December marking and re-marking later. Our analysis of the published Simply Security scorecard (81 percent Performing) suggests a mid January Performing in the low 80s is realistic; we would value your view.'),
         ('Platform numbering warning', 'If the submission platform numbering runs one higher than the standard criteria after MB33, map prepared answers by question text, not number, and cross check the first three questions at upload.'),
+        ('How this pack is organised', 'The Evidence folder is split into ten numbered folders in Totika reading order, so you can work top to bottom: 01 Leadership and Policy; 02 H&S System and Reporting; 03 Training and Competency; 04 Incidents and Investigations; 05 Worker Engagement and Toolbox; 06 Hazards, Risk and SOPs; 07 Welfare and Lone Worker; 08 Health, Wellbeing and Injury; 09 Insurance; 10 Recognition. Each folder holds one file per evidence item (related items are combined into a single PDF, e.g. all vehicle certificates in one file). The register workbook Upload Map tab is the authoritative map of which file answers which MB question.'),
         ('Confidentiality', 'The scheme requires redaction of personal information; redacted versions are what is staged. Client named material (the COA register, the meeting extract, HOTC and Woolworths documents) is shared with you under engagement confidentiality and is not for upload in unredacted form. Nothing from outside the Evidence folder is uploaded anywhere.'),
     ]
     for h, b in sections:
@@ -114,7 +115,7 @@ def preflight():
             if m:
                 print(f'FAIL placeholder "{m.group(0)}" in {p}'); ok = False
     # 3. signed SMS freshness heuristic
-    sms = os.path.join(T, 'Evidence/A-Leadership-Policy/ASG_Health_and_Safety_Policy_SMS_Nov2026.pdf')
+    sms = os.path.join(T, 'Evidence/01_Leadership_and_Policy/ASG_Health_and_Safety_Policy_SMS_Nov2026.pdf')
     if not os.path.exists(sms):
         print('BLOCKER: signed SMS policy PDF not yet in Evidence/A-Leadership-Policy. '
               'Directors must sign the policy; then export the signed PDF here before zipping (MB1 anchor).')
