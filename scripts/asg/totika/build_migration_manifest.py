@@ -80,10 +80,16 @@ table(['Source', 'Detail'], widths=[4.6, 12.0], rows=[
     ['Equipment / PPE issue', 'Equipment-issued block (vests, bodycams, radios, keys) opening every HOTC daily log'],
 ])
 
-heading('3.  Team meetings — honest position')
+heading('3.  Team meetings — payroll-evidenced position')
 p = doc.add_paragraph()
-p.add_run('Team meetings demonstrably happen (timesheet notes reference them) but no delivery records exist: no minutes, '
-          'no attendance sheets, no toolbox sign-offs. Two possible existing sources before anything is backfilled: ').bold = False
+p.add_run('Staff meetings are evidenced by payroll: SLS unified timesheets record 80 head-office Admin-hours entries '
+          '(Mar - Nov 2026), including three clear team-meeting cohorts with overlapping paid attendance (8 Apr: 3 staff, '
+          'note "Meeting at head office"; 20 Apr: 5 staff, identical 11:30-12:30 hour; 17 Aug: 3 staff, corroborated by '
+          'same-day field notes) plus a minuted disciplinary meeting (2 Jun). The extract with attendee names, times and '
+          'verbatim notes is attached (ASG_SLS_Team_Meeting_Evidence_Extract_2026.xlsx) and can be migrated as meeting '
+          'attendance evidence. What the timesheets do not record is topics: no minutes or toolbox sign-offs were kept, '
+          'and none have been created retrospectively. Two possible existing sources for topic-level records before '
+          'anything is backfilled: ').bold = False
 doc.add_paragraph('Connecteam: a "Health & Safety Toolbox Meeting (APP FORM)" task is mandatory on every rostered shift - '
                   'if guards have been completing the form, the submissions export IS the delivery record. Please export.', style='List Bullet')
 doc.add_paragraph('SafetySeek history: any pre-2025 records from when the system was last active (acknowledgements, '

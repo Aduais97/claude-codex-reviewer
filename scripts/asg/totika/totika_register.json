@@ -229,7 +229,7 @@
   "requirement": "Open-communication environment + TWO examples within 2 years",
   "evidence_needed": "Promotion methods + 2 documented instances (time, place, participants, outcome)",
   "status": "PARTIAL",
-  "existing_source": "SWEEP 17 Nov: (1) Connecteam schedule proves per-shift manager check-in + safety notes pushed to guards; (2) supervisor welfare shifts with two-way notes; (3) VERIFIER FIND: Glenn Sinclair (WW Investigation & Protection Lead) email thread 14 Sep 26 engaging on ASG's incident-grading methodology = documented two-way H&S communication",
+  "existing_source": "SWEEP 17 Nov: (1) Connecteam schedule proves per-shift manager check-in + safety notes pushed to guards; (2) supervisor welfare shifts with two-way notes; (3) VERIFIER FIND: Glenn Sinclair (WW Investigation & Protection Lead) email thread 14 Sep 26 engaging on ASG's incident-grading methodology = documented two-way H&S communication. PLUS timesheet meeting-evidence extract 18 Nov (payroll-evidenced staff gatherings with attendance)",
   "action": "Write up 2 examples: the Sinclair thread + one guard-raised issue from HOTC logs (issue \u2192 response \u2192 outcome).",
   "priority": "P2-needed"
  },
@@ -247,7 +247,7 @@
   "requirement": "Regular worker meetings where H&S is discussed, with frequency rationale",
   "evidence_needed": "Meeting types, frequency, reasoning + records",
   "status": "PARTIAL",
-  "existing_source": "SWEEP 17 Nov UNLOCK: Connecteam schedule export \u2014 ALL 26 rostered shifts carry mandatory task 'Health & Safety Toolbox Meeting (APP FORM) with the Covert Team'; WW SOP mandates attendance. \u26a0\ufe0f export's Check-In/Complete columns are empty: proves ASSIGNMENT not completion. Zero delivery/attendance records anywhere on the filesystem (13-topic library in 10+ locations = content only)",
+  "existing_source": "SWEEP + TIMESHEET EXTRACT 18 Nov: meetings ARE payroll-evidenced \u2014 80 head-office Admin-hours entries Mar-Nov 26 incl. 3 team-meeting cohorts with overlapping paid attendance (8 Apr 3 staff 'Meeting at head office'; 20 Apr 5 staff identical 11:30-12:30; 17 Aug 3 staff, corroborated by same-day field notes) + disciplinary meeting 2 Jun. Extract: Operations/Toolbox Meetings/ASG_SLS_Team_Meeting_Evidence_Extract_2026.xlsx (staged in Evidence). \u26a0\ufe0f 25 Apr ANZAC 8-staff entry = likely stat-pay artifact, confirm before presenting. Topic records still absent. Connecteam schedule proves per-shift toolbox task ASSIGNMENT (completion columns empty). 13-topic content library exists",
   "action": "SYSTEM BUILT 18 Nov (~/Desktop/ASG/Operations/Toolbox Meetings/): record template v1.0, FY27 programme with frequency rationale (per-shift Connecteam form + weekly Thursday talk + monthly formal), 3 prepared packs (TBX-2026-001 policy launch 19 Nov, 002 lone working 26 Nov, 003 violence/aggression Dec) + delivery register xlsx. STILL NEEDED: actual delivery \u2014 run 19 Nov meeting, collect signatures, complete Connecteam form, upload to SafetySeek. Also export Connecteam historical form submissions (may already hold completions).",
   "priority": "P1-blocker"
  },
