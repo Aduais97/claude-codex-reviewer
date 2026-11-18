@@ -153,19 +153,22 @@ ACTION_PLAN = [
      "ASG_Health_and_Safety_Policy_SMS_Nov2026 and regenerate the PDF. P1: the drafted PC Q8.1 answer claims the "
      "SMS is 'issued and signed November 2026' and uploads it in place of a certificate — it must actually be "
      "signed before submission."),
-    ("4. Free Totika supplier registration + PAY RapidCert", "Shannon or Ahmad", "by 21 Nov (before PC submission)",
-     "Register ASG at app.totika.org (free), then purchase the TOTIKA Category 2 assessment at "
-     "app.rapidcert.co.nz/signup/totika ($949+GST = $1,091.35). Paying BEFORE 25 Nov makes 'Category 2 assessment "
-     "in progress with SHE Pre-Qual' literally true in the Q8.1/Q4.5 answers — far stronger than a bare "
-     "commitment. Urgent fee (+$250) NOT needed: no track delivers a certificate by 25 Nov, and the real deadline "
-     "is mobilisation (1 Mar 2027)."),
-    ("5. Pre-payment email to SHE Prequal", "Claude drafts, Ahmad sends", "17-18 Nov",
-     "One email to support@sheprequal.co.nz (06 833 7227): (a) is the $20M Category 2 contract cap per annum or "
-     "whole-of-term — the PC contract term is stated nowhere in the RFx (clarification Q1 lodged); if WW answers "
-     "5 years at $4.5-5M/yr, whole-of-term exceeds $20M and Category 3 recategorisation applies within one month "
-     "of award; (b) are clarification rounds included in the fee (unverified; fees non-refundable); "
-     "(c) Christmas assessor cutoff date; (d) current member-scheme roster."),
-    ("6. Live records that cannot be backfilled", "Ahmad / Shannon / ops", "BEFORE 24 Nov (~3 hrs total)",
+    ("4. Start the assessment BEFORE 25 Nov (now via Simon Glasgow / VINCI)", "Ahmad + Simon", "by 21 Nov",
+     "UPDATE 18 Nov: Simon Glasgow ProfNZISM (VINCI, invoice 012570 'Prequal support Totika' $1,500+GST) is running "
+     "the Totika prequal with Gina on SafetySeek. Confirm with Simon WHICH member scheme he submits through (all "
+     "assess the same national standard; scheme fee ~$949+GST Cat 2 is additional to his support fee) and ensure "
+     "ASG's free registration at app.totika.org plus the paid assessment are STARTED before 25 Nov — that is what "
+     "makes 'Category 2 assessment in progress' literally true in the PC Q8.1/Q4.5 answers. Urgent fees not "
+     "needed: the real deadline is mobilisation (1 Mar 2027)."),
+    ("5. Questions for Simon (replaces the SHE Prequal email)", "Ahmad asks, Claude drafts", "this week",
+     "(a) Which member scheme, and is he HASANZ-registered for the consultant-submission route (otherwise Gina "
+     "submits as employee)? (b) The $20M Category 2 cap: per annum or whole-of-term — the PC contract term is "
+     "stated nowhere (clarification Q1 lodged); a 5-yr award at $4.5-5M/yr exceeds $20M whole-of-term and forces "
+     "Category 3 recategorisation within one month of award. (c) Christmas assessor cutoff. (d) Can he export "
+     "SafetySeek's HISTORICAL records (pre-dormancy: hazard register versions, acknowledgements, incidents) — "
+     "18 months stale but still evidence the system operated. (e) Share the ETR evidence register + Evidence/ "
+     "folder with him and Gina so the sprint and his evidence-based tasks are one list, not two."),
+    ("6. Live records that cannot be backfilled", "Ahmad / Gina / ops", "BEFORE 24 Nov (~3 hrs total)",
      "Do these before PC submission week swallows the calendar: management meeting with H&S as agenda item 1 + "
      "3-5 FY27 H&S KPIs, minuted (MB5/12); first recorded H&S committee meeting (MB27); toolbox talk covering the "
      "signed policy with signed attendance (MB2/28); induction sign-offs at the 19 Nov Thursday session — only "
@@ -175,13 +178,13 @@ ACTION_PLAN = [
      "R&P notifiability CLEARED 17 Nov: Ahmad confirms the Reign & Pour incident did not meet the HSWA s23 "
      "notifiable threshold, so the nil WorkSafe declaration in PC Q8.5 stands and R&P can be used as an "
      "investigation example. Remaining: (a) Nil WorkSafe/court return for ASG Ltd and directors (assessor runs "
-     "a court search). (b) SafetySeek genuinely in use — the PC Q8.1 answer asserts the SMS 'is administered "
-     "through the SafetySeek platform'; confirm or strip before submission. (c) Deputy training/CoA register "
+     "a court search). (b) RESOLVED 18 Nov: SafetySeek is real — dormant 18 months since Shannon's departure, now being "
+     "reactivated by Gina with Simon Glasgow; keep Q8.1 wording honest about the refresh. (c) Deputy training/CoA register "
      "real and exportable. (d) PSPLA Responsible Employee named + licence certificates downloaded. (e) BizCover "
      "schedule (due 21 Nov) -> standalone certificates; decide the $3M PI quote."),
-    ("8. Build/collate sprint (Claude-buildable; post-sweep this is mostly COLLATION)", "Claude + Shannon", "26-28 Nov (after PC submission)",
-     "TOP ACTION: export Connecteam 'H&S Toolbox Meeting' form submissions + any digital policy acknowledgements "
-     "(may close MB28/MB2 outright). Then: re-date and restructure the EXISTING hazard register so "
+    ("8. Build/collate sprint (Claude-buildable; post-sweep this is mostly COLLATION)", "Claude + Gina + Simon", "26-28 Nov (after PC submission)",
+     "TOP ACTIONS: export Connecteam 'H&S Toolbox Meeting' form submissions + any digital policy acknowledgements "
+     "(may close MB28/MB2 outright) AND export SafetySeek historical records via Simon. Then: re-date and restructure the EXISTING hazard register so "
      "violence/aggression leads + 2 site risk assessments (MB29); complete the EXISTING Onboarding pack.xlsx into "
      "the training matrix (MB15); lone-worker procedure wrapped around the 980-log welfare-check record + staged "
      "extracts; HOTC site safety plan (MB10); finish/sign the WW ethical self-audit then run the internal HSMS "
@@ -197,13 +200,13 @@ ACTION_PLAN = [
      "live position: supplier registration completed, Category 2 assessment in progress with SHE Pre-Qual, "
      "listing expected December 2026, ahead of the 1 March 2027 commencement. Only submit this wording if "
      "payment (step 4) actually happened."),
-    ("10. Evidence upload and submission timing", "Shannon (employee submission satisfies the rule)", "early Dec",
+    ("10. Evidence upload and submission timing", "Simon (if HASANZ-registered) or Gina (employee)", "early Dec",
      "With HNZ parked, 'Performing' pressure is off: RFX-22 asks for recognition under Totika, and a listed "
      "supplier is recognised whether graded Performing or Developing. So submit as soon as the evidence set is "
      "coherent (early Dec after the 26-28 Nov build sprint), accept a Developing first pass if that is the "
      "outcome, and re-mark at a later review once 3-6 months of cadence records exist. Realistic listing: late "
      "Dec 2026 (or mid-Jan 2027 across the Christmas shutdown) — months ahead of 1 Mar 2027 mobilisation."),
-    ("11. After approval", "Shannon", "on listing",
+    ("11. After approval", "Gina", "on listing",
      "Download certificate (category, score %, Performing/Developing, valid-until) + full report; upload proof to "
      "the Totika dashboard at app.totika.org so buyers can see the listing. Diarise annual renewal AND the "
      "one-month recategorisation rule: if the business changes (e.g. 5-yr PC award pushes whole-of-term value "
@@ -215,12 +218,12 @@ OPEN_QUESTIONS = [
     ("WW contract term", "When Woolworths answers clarification Q1 (initial term from 1 Mar 2027 + renewals): does term x ~$4.5-5M/yr exceed $20M whole-of-term? If yes, Category 3 recategorisation applies within one month of award ($1,459+GST/yr, larger question set)."),
     ("WorkSafe / court history", "Confirm nil enforcement/prosecution/investigation (5 years) for ASG Ltd, SLS RTC Ltd and all directors — the assessor verifies via court search."),
     ("Policy signatures", "Sign the H&S policy (Ahmad + Hasibullah) — nothing can be submitted until done. First verify Hasibullah's current registered directorship."),
-    ("SafetySeek", "Is SafetySeek genuinely in use as the SMS platform? If not, the claim must be dropped before it reaches an assessor."),
+    ("VINCI invoice", "Pay/approve Simon's invoice 012570 ($1,725 incl GST, QBAR Ltd, Kiwibank 38-9000-0392260-00, 'due on invoice' though dated 30 Nov) — he has started work (Gina set up, SafetySeek refresh underway)."),
     ("Deputy training register", "Does the Deputy-linked training/CoA register with expiry alerts (claimed in both tenders) actually exist and export? If not it must be stood up now."),
     ("Insurance", "Chase BizCover schedule (due 21 Nov) for standalone certificates; decide the $3M PI quote; is any cover held in SLS RTC's name?"),
     ("PSPLA", "Who is the Responsible Employee ('[to confirm]' in the structure doc)? Download both PSPLA licence certificates."),
     ("Fatigue limits", "Do 12h max shift / 10h min rest / 60h per 7 days match the issued Fatigue Policy? Reconcile before asserting to Totika."),
-    ("Submitter", "Who submits in RapidCert — must be an ASG employee (Shannon as H&S Administrator is natural) or a HASANZ-registered consultant."),
+    ("Simon's scheme", "Which Totika member scheme does Simon submit through, and is he HASANZ-registered (consultant-submission route)? Otherwise Gina submits as employee."),
     ("Liberty go-live", "Expected go-live date for the Fernando+Jason/Liberty B2B restructure? If invoicing starts before submission, the 'no subcontracting' NA answer is false on day one."),
     ("Inductees", "Do 3 genuine new inductees exist across the 19/26 Nov Thursday sessions, or should induction records be exported from Deputy history?"),
 ]

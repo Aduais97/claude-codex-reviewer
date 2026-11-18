@@ -75,9 +75,9 @@
   "section": "B. System MB8",
   "requirement": "Access to competent H&S advice (who, qualifications, recent example)",
   "evidence_needed": "Advisor name, internal/external, qualifications, example of advice used",
-  "status": "PARTIAL",
-  "existing_source": "Shannon Gwin named as H&S Administrator in SMS; qualifications not documented",
-  "action": "Half-page statement: Shannon's role + quals; name external advisor if any (HASANZ-member advisor scores 4); one recent example",
+  "status": "HAVE",
+  "existing_source": "VINCI email 18 Nov 26: Simon Glasgow ProfNZISM, DipAdtEd, DipMWHS (VINCI Management H&S / QBAR Ltd, 021 044 3352) is ASG's engaged external H&S consultant \u2014 invoice 012570 'Prequal support Totika' $1,500+GST. NZISM professional grade; HASANZ-member association. Recent worked example of advice = this engagement + SafetySeek system refresh",
+  "action": "Cite Simon as the external competent advisor (score-4 path) + Gina as internal H&S administrator; confirm Simon's HASANZ registration status for the consultant-submission route.",
   "priority": "P2-needed"
  },
  {
@@ -131,7 +131,7 @@
   "evidence_needed": "Audit procedure + a completed internal audit with findings and corrective actions",
   "status": "MISSING",
   "existing_source": "WW Ethical Self Audit exists but DRAFT/unsigned/undated (30 min from usable); no HSMS audit anywhere",
-  "action": "Finish/sign/date the WW ethical self-audit (quick partial win), then run the documented internal H&S self-audit (Shannon, half-day, SMS checklist) with findings + corrective actions.",
+  "action": "Finish/sign/date the WW ethical self-audit (quick partial win), then run the documented internal H&S self-audit (Gina + Simon Glasgow, half-day, SMS checklist) with findings + corrective actions.",
   "priority": "P1-blocker"
  },
  {
@@ -401,7 +401,7 @@
   "evidence_needed": "Verification or removal of each unverified claim before it is repeated to Totika",
   "status": "UNKNOWN",
   "existing_source": "PC draft answers (24 bracketed placeholders) + tender texts commit to: toolbox topics with recorded attendance, per-officer training register 'producible on request' (now partially real \u2014 Onboarding pack.xlsx), weekly recorded supervisor inspections with findings tracked to closure, monthly hazard-register/corrective-action reviews to directors, per-officer onboarding checklists in personnel files. The recurring-cadence records do not yet exist on disk",
-  "action": "Ahmad confirms SafetySeek + Deputy register claims; stand up the committed cadences (inspections, monthly reviews, toolbox attendance) or soften wording before they are repeated to an assessor. Only assert what can be evidenced on request.",
+  "action": "RESOLVED PARTS 18 Nov: SafetySeek IS ASG's platform (VINCI-confirmed) but dormant ~18 months since Shannon's departure \u2014 Gina now reactivating it with Simon. PC Q8.1 'administered through SafetySeek' is now true-in-progress; keep wording honest ('administered through SafetySeek, currently being refreshed with our external advisor'). Remaining: Deputy register claim + stand up the committed cadences (inspections, monthly reviews, toolbox attendance) or soften wording.",
   "priority": "P1-blocker"
  },
  {
