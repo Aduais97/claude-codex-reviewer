@@ -347,7 +347,7 @@
   "evidence_needed": "Maintenance register for patrol vehicles + equipment (radios, BWC chargers); authorised-operator control",
   "status": "MISSING",
   "existing_source": "No vehicle maintenance records on disk",
-  "action": "Build a simple vehicle register (rego, WOF, service dates from the service provider) + equipment check log; licence check = CoA/driver licence on the training register",
+  "action": "Build a simple vehicle register (rego, WOF, service dates from the service provider) + equipment check log; licence check = CoA/driver licence on the training register UPDATE 18 Nov: vehicles insured with AA on BUSINESS use (Ahmad confirmed); certificate of currency requested from AA \u2014 verify insured name = Absolute Security Group Limited and note the third-party property damage limit when it arrives; stage in Evidence/Insurance.",
   "priority": "P2-needed"
  },
  {
@@ -437,7 +437,7 @@
   "evidence_needed": "Driving policy: pre-start checks, phone-use rule, fatigue-and-driving interaction, vehicle incident procedure",
   "status": "MISSING",
   "existing_source": "Zero driving documents on disk (search confirmed); eco-patrol vehicles + mobile patrol make it live",
-  "action": "Write the driving/journey-management policy and a pre-start check sheet; driving is the other killer risk alongside assault.",
+  "action": "Write the driving/journey-management policy and a pre-start check sheet; driving is the other killer risk alongside assault. UPDATE 18 Nov: vehicles insured with AA on BUSINESS use (Ahmad confirmed); certificate of currency requested from AA \u2014 verify insured name = Absolute Security Group Limited and note the third-party property damage limit when it arrives; stage in Evidence/Insurance.",
   "priority": "P2-needed"
  },
  {
