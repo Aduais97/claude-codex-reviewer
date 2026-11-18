@@ -61,15 +61,15 @@ def kv_table(doc, pairs, label_w=4.2, val_w=12.4):
 
 def attendance_table(doc, rows=10):
     heading(doc, 'Attendance (each attendee signs to confirm attendance and understanding)')
-    tb = doc.add_table(rows=1, cols=4)
+    tb = doc.add_table(rows=1, cols=3)
     tb.style = 'Table Grid'
-    widths = [5.2, 4.2, 3.6, 3.6]
-    for i, h in enumerate(['Name (print)', 'Role / Site', 'Signature', 'CoA number (if held)']):
+    widths = [6.0, 5.4, 5.2]
+    for i, h in enumerate(['Name (print)', 'Role / Site', 'Signature']):
         c = tb.rows[0].cells[i]; c.width = Cm(widths[i])
         p = c.paragraphs[0]; r = p.add_run(h); r.bold = True; r.font.size = Pt(9.5)
     for _ in range(rows):
         cells = tb.add_row().cells
-        for i in range(4):
+        for i in range(3):
             cells[i].width = Cm(widths[i])
             cells[i].paragraphs[0].add_run(' ').font.size = Pt(12)
     doc.add_paragraph()
@@ -148,15 +148,24 @@ p.add_run('This programme gives effect to ASG\'s duties to engage with workers a
           'records exist and none are to be created retrospectively.')
 heading(doc, '2. Meeting rhythm and frequency rationale', 13)
 for b in ['Per shift: a brief safety check-in delivered through the Connecteam Health and Safety Toolbox Meeting '
-          'APP FORM task that is already mandatory on every rostered shift. The completed form is the delivery record.',
+          'APP FORM task that is already mandatory on every rostered shift. The completed form becomes the delivery '
+          'record; completion rates are monitored monthly from 19 November 2026.',
           'Weekly (Thursday induction and refresher session, Queen Street office): a 10 to 15 minute toolbox talk '
-          'using the topic schedule below, recorded on the ASG Toolbox Meeting Record with signed attendance.',
+          'using the topic schedule below, recorded on the ASG Toolbox Meeting Record with signed attendance. '
+          'Weekly talks may deliver scheduled topics early where operational risk warrants it.',
           'Monthly: one formal toolbox meeting per site group covering the scheduled monthly topic, plus review of '
           'incidents, hazards raised and open actions. Recorded on the ASG Toolbox Meeting Record.',
           'Rationale: ASG guards work dispersed, often alone and at night across hospitality, retail and patrol '
           'sites, so a high-frequency light rhythm (per shift and weekly) is used rather than a single monthly '
           'gathering, with the monthly formal meeting providing depth and action tracking.']:
     doc.add_paragraph(b, style='List Bullet')
+heading(doc, '2a. Worker representation', 12)
+p = doc.add_paragraph()
+p.add_run('In addition to these meetings, any worker may raise a health and safety matter directly with the H&S '
+          'Administrator or any manager at any time, and workers may at any time request the election of one or '
+          'more Health and Safety Representatives under Part 3 of the Health and Safety at Work Act 2015 and the '
+          'Health and Safety at Work (Worker Engagement, Participation and Representation) Regulations 2016. Any '
+          'such request will be facilitated in accordance with the Regulations.')
 heading(doc, '3. Topic schedule (mapped to ASG principal risks)', 13)
 tb = doc.add_table(rows=1, cols=3); tb.style = 'Table Grid'
 for i, h in enumerate(['Month', 'Topic', 'Linked material']):
@@ -199,6 +208,9 @@ PACKS = [
          loc='ASG Office, 7/220 Queen Street, Auckland (Thursday induction and refresher session)',
          fac='[Facilitator name]',
          topic='H&S policy launch, incident reporting and notifiable events',
+         prereq='PREREQUISITE: deliver this meeting only after both directors have signed the H&S Policy/SMS. If not '
+                'yet signed at delivery, amend the first talking point verbally to "is being signed this week" and do '
+                'NOT use this attendance sheet as the policy acknowledgement record.',
          points=['The ASG Health and Safety Policy and Safety Management System (November 2026) has been signed by '
                  'the directors: what it commits ASG and every guard to.',
                  'Everyone\'s duty to take reasonable care and report: what counts as an incident, a near miss and '
@@ -233,6 +245,9 @@ for pk in PACKS:
     title(doc, 'ASG Toolbox Meeting Record',
           f"Absolute Security Group Ltd  |  Prepared meeting pack {pk['no']}  |  Record is complete only when attendance is signed")
     doc.add_paragraph()
+    if pk.get('prereq'):
+        w = doc.add_paragraph()
+        r = w.add_run(pk['prereq']); r.bold = True; r.font.size = Pt(9.5); r.font.color.rgb = RGBColor(0xC0, 0x39, 0x2B)
     record_form(doc, meeting_no=pk['no'], date=pk['date'], time=pk['time'], location=pk['loc'],
                 facilitator=pk['fac'], topic=pk['topic'], talking_points=pk['points'],
                 discussion_prompts=pk['prompts'])
@@ -257,9 +272,14 @@ for c, (h, w) in enumerate(zip(hdrs, widths), 1):
     cell.border = Border(*[Side(style='thin', color='D0D5DD')] * 4)
     ws.column_dimensions[get_column_letter(c)].width = w
 ws.freeze_panes = 'A2'
-ws.cell(2, 1, 'TBX-2026-001'); ws.cell(2, 2, '19/11/2026'); ws.cell(2, 3, 'weekly')
-ws.cell(2, 4, 'H&S policy launch, incident reporting and notifiable events')
-ws.cell(2, 5, 'ASG Office, Queen St'); ws.cell(2, 12, 'PLANNED - complete this row after delivery')
+PLANNED = [
+    ('TBX-2026-001', '19/11/2026', 'weekly', 'H&S policy launch, incident reporting and notifiable events'),
+    ('TBX-2026-002', '26/11/2026', 'weekly', 'Lone working and welfare checks'),
+    ('TBX-2026-003', 'Dec 2026', 'monthly', 'Violence and aggression: de-escalation and use of force expectations'),
+]
+for i, (no, dt, typ, topic) in enumerate(PLANNED, 2):
+    ws.cell(i, 1, no); ws.cell(i, 2, dt); ws.cell(i, 3, typ); ws.cell(i, 4, topic)
+    ws.cell(i, 5, 'ASG Office, Queen St'); ws.cell(i, 12, 'PLANNED - complete this row only AFTER delivery')
 reg = os.path.join(OUTDIR, 'ASG_Toolbox_Delivery_Register.xlsx')
 wb.save(reg)
 

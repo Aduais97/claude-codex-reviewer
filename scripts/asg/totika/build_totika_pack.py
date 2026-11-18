@@ -90,7 +90,7 @@ def header_footer(canvas, doc):
     canvas.drawRightString(PAGE_W - MR, PAGE_H - 36, 'CONFIDENTIAL')
     canvas.line(ML, 40, PAGE_W - MR, 40)
     canvas.setFont('Helvetica', 7.5)
-    canvas.drawString(ML, 30, '17 November 2026')
+    canvas.drawString(ML, 30, '18 November 2026 (reissue)')
     canvas.drawCentredString(PAGE_W / 2, 30, f'Page {doc.page}')
     canvas.drawRightString(PAGE_W - MR, 30, 'ETR run wf_2edef0ec-0a4')
     canvas.restoreState()
@@ -236,7 +236,7 @@ SCHEME_FACTS = [
     ("Categories", "S sole trader $280/2yr; Cat 1 $450/2yr (<=20 people AND <=$2.5M contracts AND no high-risk primary); Cat 2 $949/1yr (<=200 people, <=$20M, no very-high-risk primary); Cat 3 $1,459/1yr (>200 people or >$20M or VHR primary). All +GST, SHE Prequal pricing"),
     ("ASG category", "Category 2, primary activity 'Security Services' (never 'Labour Hire' or 'Facilities Management' — both High-Risk list items). Security/guarding/crowd control/patrol absent from both risk lists (Scheme Rules v3.4.2 + High-Risk Definitions v1.2, verified twice independently)"),
     ("Category risk", "The $20M cap reads as whole-of-term ('does not take on contracts with value in excess of NZ$20M'); 'take on' is present practice, so Cat 2 is correct today, but a 5-yr PC award (~$22.5-25M) likely forces Cat 3 within the one-month recategorisation window"),
-    ("Question set", "Cat 2 = MB1-MB54 (Core Criteria v3.4). Scoring 0-4 per question; 'Performing' = 3 on every applicable question, else 'Developing'. Expected NA set for a guarding firm: MB18, MB25, MB34, MB46-49 (Simply Security precedent)"),
+    ("Question set", "Cat 2 = MB1-MB54 (Core Criteria v3.4). Scoring 0-4 per question; 'Performing' = 3 on every applicable question, else 'Developing'. Verified NA set for a guarding firm: MB18, MB34, MB46-49; MB25 answered with the HOTC SSSP emergency section, NOT NA (street patrols are not under a client plan)"),
     ("Process", "app.rapidcert.co.nz/signup/totika -> pay -> upload evidence per question -> first decision ~6 working days (urgent ~1 day, +$250+GST) -> clarification round(s) -> certificate + report -> upload proof to Totika dashboard. Fees non-refundable; clarification-fee treatment unverified"),
     ("Rules that bite", "Submission only by an employee or HASANZ-registered consultant. Personal info in evidence must be redacted. Insurance is outside Totika scoring but collected on the profile (buyers see it). Category change -> new assessment within 1 month or listing expires"),
     ("Precedent", "Simply Security Ltd: 179 staff, Category 2, 'Security Services', Performing at 81%, valid Jun 2026-Jun 2027, PL $10M / PI $1M / MV $10M — assessed by PREQUAL. The template outcome for ASG"),
@@ -383,12 +383,14 @@ def build_pdf():
                        'Council, Auckland Transport, Eke Panuku, Watercare, SkyCity, Auckland Airport, St John, '
                        'NZTA, Fonterra and IAG — essentially ASG\'s target client list for CBD, precinct and '
                        'corporate work.', S['body']))
-    E.append(Paragraph('The Woolworths correction', S['h3']))
-    E.append(Paragraph('<b>Woolworths / Primary Connect is not a Totika buyer.</b> Woolworths runs its own '
-                       'prequalification through the Site360 (WOW Contractor) portal. For DC tender 523941, '
-                       'Totika is supporting H&amp;S evidence inside the response, not the binding prequal — '
-                       'verify in the tender documents (by 20 Nov) before paying for urgency, and plan for '
-                       'Site360 onboarding if awarded.', S['body']))
+    E.append(Paragraph('The Woolworths position (resolved 17 Nov)', S['h3']))
+    E.append(Paragraph('Woolworths / Primary Connect is not a Totika buyer member, but <b>the PC 523941 tender '
+                       'itself names Totika as an accepted route</b>: question 8.1 / RFX-22 asks for an OHS '
+                       'management system "certified to ISO 45001:2018 or recognized under Totika / ACC WSMP; '
+                       'please attach certificate" (ACC WSMP is retired; ISO 45001 not held — Totika is the '
+                       'practical answer). Site 360 in the PC documents is the DC visitor sign-in kiosk guards '
+                       'operate, not a supplier prequal portal. The assessment must be formally started before the '
+                       '25 Nov submission for the Q8.1 answer to truthfully say "assessment in progress".', S['body']))
     E.append(Paragraph('Competitor parity', S['h3']))
     E.append(Paragraph('<b>Simply Security Ltd</b> — 179 staff, near-identical scale — holds Category 2, primary '
                        'activity "Security Services", Performing at 81%, insurances PL $10M / PI $1M / MV $10M '
@@ -449,9 +451,11 @@ def build_pdf():
     E.append(Paragraph('Each applicable question (MB1-MB54) is scored 0-4 against published anchors. '
                        '<b>"Performing" requires a 3 on every applicable question</b> — a single 2 grades the '
                        'whole assessment "Developing" (still listed, lower standing). Construction-only sections '
-                       'are answered NA with justification; the expected NA set for a guarding firm is MB18 '
-                       '(hazardous-work licences), MB25 (site emergency plans), MB34 (health monitoring) and '
-                       'MB46-49 (hazardous substances), exactly as in the Simply Security report. Insurance is '
+                       'are answered NA with justification; the verified NA set for a guarding firm is MB18 '
+                       '(hazardous-work licences), MB34 (health monitoring) and MB46-49 (hazardous substances). '
+                       'MB25 (site emergency plans) is NOT answered NA — HOTC street patrols are not under any '
+                       'client emergency plan, so MB25 is answered with the HOTC site safety plan\'s emergency '
+                       'section instead. Insurance is '
                        'outside Totika scoring but is collected on the supplier profile and visible to buyers — '
                        'ASG already matches the PL $10M benchmark; the open PI decision closes the gap.', S['body']))
     E.append(PageBreak())
@@ -521,10 +525,13 @@ def build_pdf():
          'shutdown (SHE\'s cutoff unverified; ask in the step-5 email). Survivable: the only confirmed buyer '
          'deadline is HNZ award ~Feb 2027. A listing is NOT achievable before the 25 Nov PC submission on the '
          'standard track; the tender wording in step 4 covers it truthfully.'),
-        ('Developing vs Performing',
-         'One sub-3 score anywhere grades Developing. Freshly minted records make 2s plausible on the '
-         'engagement/leadership questions (MB5, MB27, MB28, MB37). Mitigation: run the cadence for 4+ weeks '
-         'before submitting, or accept Developing first and re-mark at clarification/renewal.'),
+        ('Developing vs Performing (compliance audit 18 Nov)',
+         'One sub-3 score anywhere grades Developing. The 18 Nov assessor-simulation scored the staged pack: '
+         'likely 2s at an early-Dec marking on MB2, MB5, MB12, MB16, MB21/23, MB27, MB28, MB30-31 and MB37-38, '
+         'with MB29 and MB36 at 1-2 until rebuilt. Recommendation adopted: upload documents early-Dec but agree '
+         'with Simon to hold the assessment marking to mid-Jan 2027 (8 weeks of cadence makes a 3 defensible on '
+         'every applicable line) — or knowingly accept a Developing listing in Dec, which still satisfies the PC '
+         'Q8.1 "assessment in progress" wording, and re-mark in January.'),
         ('Liberty flip',
          'If the Fernando+Jason/Liberty B2B restructure goes live, the "no subcontracting" NA (MB39-42) dies and '
          'a real subcontractor-management procedure + prequal examples become mandatory — within one month, per '
@@ -598,6 +605,28 @@ def build_xlsx():
             if i % 2 == 0:
                 cell.fill = ALT_F
     ws.auto_filter.ref = f'A1:G{len(REGISTER) + 1}'
+
+    upload_map_path = os.path.join(HERE, 'totika_upload_map.json')
+    if os.path.exists(upload_map_path):
+        UM = json.load(open(upload_map_path))
+        ST_FONT = {'READY': Font(name='Calibri', size=10, bold=True, color='27AE60'),
+                   'READY-AFTER-FIX': Font(name='Calibri', size=10, bold=True, color='E67E22'),
+                   'PENDING-RECORD': Font(name='Calibri', size=10, bold=True, color='C0392B'),
+                   'NA-JUSTIFIED': Font(name='Calibri', size=10, bold=True, color='4A4A5A'),
+                   'MISSING': Font(name='Calibri', size=10, bold=True, color='C0392B')}
+        ws = wb.create_sheet('Upload Map')
+        sheet(ws, ['MB line', 'Topic', 'Status', 'Files to upload (Evidence/ paths)', 'Note'],
+              [14, 30, 16, 60, 70])
+        for i, u in enumerate(UM, 2):
+            files = '\n'.join(f.replace('/Users/ahmadduais/Desktop/ASG/Totika/', '') for f in u.get('files', [])) or '-'
+            vals = [u['mb'], u['topic'], u['status'], files, u.get('note', '')]
+            for c, v in enumerate(vals, 1):
+                cell = ws.cell(i, c, v)
+                cell.font = ST_FONT.get(u['status'], B) if c == 3 else B
+                cell.alignment = WRAP; cell.border = THIN
+                if i % 2 == 0:
+                    cell.fill = ALT_F
+        ws.auto_filter.ref = f'A1:E{len(UM) + 1}'
 
     ws = wb.create_sheet('Action Plan')
     sheet(ws, ['Step', 'Owner', 'When', 'Detail'], [34, 24, 22, 110])

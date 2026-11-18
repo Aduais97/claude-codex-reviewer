@@ -64,7 +64,7 @@ def table(headers, rows, widths):
 heading('1.  Incident records (migrate — the big win)')
 table(['Source', 'Volume and dates', 'Format'], widths=[5.0, 8.6, 3.0], rows=[
     ['Bunnings Guard Incident Reports (GIR) register', '1,740 named entries, 2 Jul 2025 - 31 Oct 2026, dual timestamps, severity, Auror refs. Guard-signature marker every row; actual signature images sit in the source form platform and should be exported with the data.', 'Excel (weekly exports; consolidated file held)'],
-    ['Woolworths GIR register', '4,971 named entries covering full FY26, plus ~1,029 deterrent-event records and Mitre 10 / Warehouse weekly export sets', 'Excel'],
+    ['Woolworths GIR register', '4,971 named entries covering full FY26, plus approximately 1,020 deterrent-event records and Mitre 10 / Warehouse weekly export sets', 'Excel'],
     ['Woolworths FRT severe incident register', '151 entries, 14 Mar - 14 Oct 2026', 'Excel'],
     ['HOTC CBD patrol incident data', '~980 daily shift logs Mar 2024 - 15 Nov 2026 (incidents with time/location/resolution, police interactions) + continuous weekly data registers with per-category counts', 'Word daily logs + Excel weeklies'],
     ['Completed investigations', 'Cotton On (incident 6 Sep 26, officer statement, video review, findings, corrective actions) + Investigation Summary 19 Mar 26 + CRL First Looks report (issued 25 Aug 26, HSWA s23-25 notifiable-event determinations)', 'PDF/Word'],
@@ -83,13 +83,15 @@ table(['Source', 'Detail'], widths=[4.6, 12.0], rows=[
 heading('3.  Team meetings — payroll-evidenced position')
 p = doc.add_paragraph()
 p.add_run('Staff meetings are evidenced by payroll: SLS unified timesheets record 80 head-office Admin-hours entries '
-          '(Mar - Nov 2026), including three clear team-meeting cohorts with overlapping paid attendance (8 Apr: 3 staff, '
-          'note "Meeting at head office"; 20 Apr: 5 staff, identical 11:30-12:30 hour; 17 Aug: 3 staff, corroborated by '
-          'same-day field notes) plus a minuted disciplinary meeting (2 Jun). The extract with attendee names, times and '
-          'verbatim notes is attached (ASG_SLS_Team_Meeting_Evidence_Extract_2026.xlsx) and can be migrated as meeting '
-          'attendance evidence. What the timesheets do not record is topics: no minutes or toolbox sign-offs were kept, '
-          'and none have been created retrospectively. Two possible existing sources for topic-level records before '
-          'anything is backfilled: ').bold = False
+          '(Mar - Nov 2026), including two cohorts with fully overlapping paid attendance (20 Apr: 5 staff, identical '
+          '11:30-12:30 hour; 17 Aug: 3 staff, corroborated by same-day field notes), plus 8 Apr with two staff '
+          'overlapping (note "Meeting at head office") and a third sequential, and a payroll-evidenced disciplinary '
+          'meeting (2 Jun; a separately minuted disciplinary process is on file in the 19 Mar 2026 Investigation '
+          'Summary). The extract with attendee names, times and verbatim notes is attached '
+          '(ASG_SLS_Team_Meeting_Evidence_Extract_2026.xlsx) and can be migrated as meeting attendance evidence. '
+          'What the timesheets do not record is topics: no minutes or toolbox sign-offs were kept, and none have '
+          'been created retrospectively. Two possible existing sources for topic-level records before anything is '
+          'backfilled: ').bold = False
 doc.add_paragraph('Connecteam: a "Health & Safety Toolbox Meeting (APP FORM)" task is mandatory on every rostered shift - '
                   'if guards have been completing the form, the submissions export IS the delivery record. Please export.', style='List Bullet')
 doc.add_paragraph('SafetySeek history: any pre-2025 records from when the system was last active (acknowledgements, '

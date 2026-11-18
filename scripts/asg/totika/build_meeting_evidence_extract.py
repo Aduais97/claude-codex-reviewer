@@ -21,7 +21,7 @@ EVID = os.path.expanduser('~/Desktop/ASG/Totika/Evidence/F-Engagement-Toolbox')
 
 # classification of multi-staff dates, reviewed 18 Nov 2026
 CLASSIFY = {
-    '2026-04-08': ('TEAM MEETING (evidenced)', "3 staff overlapping midday; Hardik Patel note: 'Meeting at head office'"),
+    '2026-04-08': ('TEAM MEETING (partially evidenced)', "Two staff with overlapping paid time midday (12:00-13:00 / 12:00-14:00; note 'Meeting at head office'); a third attended sequentially 14:00-16:00"),
     '2026-04-20': ('TEAM MEETING (evidenced)', "5 staff all 11:30-12:30 (identical hour); Farshid Hakimi note: 'Meeting forgot to sign in'"),
     '2026-08-17': ('TEAM MEETING (evidenced)', "3 staff 13:00-14:00 identical hour; corroborated by same-day field timesheet notes from Manukau guards referencing 'the meeting'"),
     '2026-06-02': ('DISCIPLINARY MEETING', "2 staff 12:00-13:30; both notes name a disciplinary meeting (also corroborates ASG's minuted disciplinary process)"),
@@ -128,6 +128,60 @@ for i, e in enumerate(sorted(entries, key=lambda x: (x[1], x[0])), 2):
         cell = ws.cell(i, c, v); cell.font = B; cell.alignment = WRAP; cell.border = THIN
 
 wb.save(OUT)
-shutil.copy(OUT, EVID)
 print('XLSX ->', OUT)
-print('staged ->', EVID)
+
+# ---- upload-redacted copy: cohort evidence only, initials, no disciplinary/PII rows,
+# window-bounded, entity-scope declared. Full version stays internal.
+def initials(name):
+    parts = [p for p in name.split() if p]
+    return '.'.join(p[0].upper() for p in parts) + '.'
+
+wb2 = Workbook()
+ws = wb2.active; ws.title = 'Basis and Limitations'
+sheet(ws, ['Statement'], [130])
+for i, s in enumerate([
+    'WHAT THIS IS: an extract of unified timesheet (payroll) records evidencing staff gatherings at head office, '
+    'window March - November 2026, compiled 18 November 2026. Staff identified by initials; full names held on file '
+    'and producible to the assessor on request (Totika Scheme Rules redaction of personal information).',
+    'ENTITY BASIS: payroll records are drawn from the ASG Group workforce system administered under common '
+    'management (ASG Ltd and group company SLS RTC Ltd share rostering, payroll, training and health and safety '
+    'systems, single executive management). The applicant entity is ASG Ltd.',
+    'WHAT THIS IS NOT: topic-level meeting records. Timesheets prove attendance and timing only; no minutes or '
+    'toolbox records were kept for these gatherings and none have been created retrospectively. Formal recorded '
+    'toolbox delivery (template + signed attendance + Connecteam form) begins 19 November 2026.',
+    'SCOPE: only dates classified as team meetings are included below. Admin, interview and other single-purpose '
+    'head-office entries are excluded from this upload extract; the full working extract is retained internally.'], start=2):
+    cell = ws.cell(i, 1, s); cell.font = B; cell.alignment = WRAP; cell.border = THIN
+    ws.row_dimensions[i].height = 52
+
+ws = wb2.create_sheet('Meeting Cohorts (redacted)')
+sheet(ws, ['Date', 'Classification', 'Staff (count)', 'Attendees (initials)', 'Times', 'Basis'],
+      [12, 28, 10, 24, 30, 60])
+r = 2
+for d in sorted(by_date):
+    if not d.startswith('2026'):
+        continue
+    es = by_date[d]
+    names = sorted(set(e[0] for e in es))
+    if len(names) < 2:
+        continue
+    cls, basis = CLASSIFY.get(d, ('UNCLASSIFIED', ''))
+    if 'TEAM MEETING' not in cls:
+        continue
+    times = '; '.join(f"{initials(e[0])} {e[2]}-{e[3]}" for e in es)
+    for c, v in enumerate([d, cls, len(names), ', '.join(initials(n) for n in names), times, basis], 1):
+        cell = ws.cell(r, c, v)
+        cell.font = GREEN_F if c == 2 else B
+        cell.alignment = WRAP; cell.border = THIN
+    r += 1
+OUT2 = os.path.join(EVID, 'ASG_Team_Meeting_Attendance_Evidence_UPLOAD_REDACTED.xlsx')
+wb2.save(OUT2)
+# full extract is internal-only; remove any full copy from Evidence
+full_in_evid = os.path.join(EVID, os.path.basename(OUT))
+if os.path.exists(full_in_evid):
+    os.remove(full_in_evid)
+internal = os.path.expanduser('~/Desktop/ASG/Totika/Internal-NotForUpload')
+os.makedirs(internal, exist_ok=True)
+shutil.copy(OUT, internal)
+print('redacted upload copy ->', OUT2)
+print('full extract internal ->', internal)

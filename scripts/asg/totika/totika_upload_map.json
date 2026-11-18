@@ -1,0 +1,294 @@
+[
+ {
+  "mb": "MB1",
+  "topic": "H&S policy signed by top management",
+  "status": "READY-AFTER-FIX",
+  "files": [
+   "/Users/ahmadduais/Desktop/ASG/Totika/Evidence/A-Leadership-Policy/ASG_Health_and_Safety_Policy_SMS_Nov2026.pdf"
+  ],
+  "note": "Upload ONLY after both directors sign/date p17 and Shannon Gwin is replaced with Gina; regenerate PDF. Remove the unsigned .docx duplicate from Evidence."
+ },
+ {
+  "mb": "MB2",
+  "topic": "Policy communicated with worker acknowledgement",
+  "status": "PENDING-RECORD",
+  "files": [
+   "/Users/ahmadduais/Desktop/ASG/Operations/Toolbox Meetings/Toolbox_TBX-2026-001_H&S_policy_launch.docx",
+   "/Users/ahmadduais/Desktop/ASG/Totika/Evidence/A-Leadership-Policy/Signed Wooolworths Covert Loss Prevention SOP.pdf"
+  ],
+  "note": "Primary = TBX-001 signed attendance (19 Nov). Supporting = WW SOP acknowledgement page ONLY (extracted, rotated, renamed). Mitre 10 doc withdrawn (client-confidential). Coverage risk: 3+ signatures vs ~39 officers \u2014 note rollout plan in answer text."
+ },
+ {
+  "mb": "MB3 + MB7",
+  "topic": "Responsibilities defined / HSMS documentation",
+  "status": "READY-AFTER-FIX",
+  "files": [
+   "/Users/ahmadduais/Desktop/ASG/Totika/Evidence/A-Leadership-Policy/ASG_Health_and_Safety_Policy_SMS_Nov2026.pdf"
+  ],
+  "note": "Signed SMS + new HSMS document index (NEW-8, Claude drafts by 28 Nov) closes MB7 PARTIAL."
+ },
+ {
+  "mb": "MB4",
+  "topic": "Action/corrective tracking system",
+  "status": "READY-AFTER-FIX",
+  "files": [
+   "/Users/ahmadduais/Desktop/ASG/Totika/Evidence/D-Incidents/HOTC_Incident_Conduct_Review_Cotton_On_06_September_2026.pdf"
+  ],
+  "note": "Anchor on the Cotton On corrective-action close-out as the worked example. Action Register.xlsx WITHDRAWN (2024-only, public-individual PII)."
+ },
+ {
+  "mb": "MB5 + MB9 + MB12",
+  "topic": "Leadership active commitment / budget / goals set & tracked",
+  "status": "PENDING-RECORD",
+  "files": [
+   "/Users/ahmadduais/Desktop/ASG/Totika/Evidence/B-System/HOTC_LCF_Pilot_Accountability_Report.pdf"
+  ],
+  "note": "Create: minuted management meeting (Ahmad chairs by 21 Nov) setting 3-5 FY27 KPIs + approving H&S budget + noting director field walk; repeat early Dec for cadence. LCF report uploaded as MB12 excerpt only (redacted). Early-Dec marking still scores 2 \u2014 mid-Jan shows monitoring."
+ },
+ {
+  "mb": "MB6 + MB11",
+  "topic": "Resourcing decision / improvement worked examples",
+  "status": "PENDING-RECORD",
+  "files": [],
+  "note": "Claude drafts two one-pagers by 28 Nov (MB6: BWC/stab-vest capex decision; MB11: BWC rollout + HOTC Reporting App before/after); Ahmad dates and signs."
+ },
+ {
+  "mb": "MB8",
+  "topic": "Access to competent H&S advice",
+  "status": "PENDING-RECORD",
+  "files": [],
+  "note": "BOTH VINCI .emls and the invoice withdrawn (dormancy admission + bank details). Replace with one-page VINCI engagement letter: role, scope, ProfNZISM / DipAdtEd / DipMWHS, NZISM = HASANZ member body = score-4 path per v3.4."
+ },
+ {
+  "mb": "MB10 + MB25 + MB43",
+  "topic": "HOTC site-specific safety plan / emergency planning",
+  "status": "PENDING-RECORD",
+  "files": [],
+  "note": "Highest-value single build: HOTC SSSP (hazards, lone/night work, duress, welfare cadence, safe haven, emergency/escalation, PCBU interface) \u2014 Claude by 25 Nov, Simon reviews, Ahmad signs by 3 Dec. MB25 answered WITH the SSSP emergency section, NOT NA (v3.4 NA requires ALWAYS working under a client's plan \u2014 street patrols contradict it)."
+ },
+ {
+  "mb": "MB13",
+  "topic": "Two most recent H&S performance reports",
+  "status": "READY-AFTER-FIX",
+  "files": [
+   "/Users/ahmadduais/Desktop/ASG/Totika/Evidence/B-System/HOTC_Performance_Report_JulSep2026.pdf",
+   "/Users/ahmadduais/Desktop/ASG/Totika/Evidence/B-System/Woolworths National LP & Safety Report - Week Ending 16 August 2026.pdf"
+  ],
+  "note": "HOTC: upload 2-3pp excerpt (exec summary + safety metrics), client genericised. WW weekly: resolve SLS RTC entity scope with Simon first; if ASG-only, substitute an ASG-branded/internal report; if kept, H&S block only, stores/client/$ stripped. ENTITY: SLS RTC-sourced \u2014 covered by Simon entity-scope ruling; upload copies state the ASG group basis."
+ },
+ {
+  "mb": "MB14",
+  "topic": "HSMS audit",
+  "status": "PENDING-RECORD",
+  "files": [],
+  "note": "Simon issues his gap review AS a dated internal-audit report (findings, corrective actions, owners) by 28 Nov; Claude drafts the 1-page audit procedure; finish/sign WW Ethical Self Audit as supporting."
+ },
+ {
+  "mb": "MB15 + MB17",
+  "topic": "Training register, matrix and competency records",
+  "status": "PENDING-RECORD",
+  "files": [
+   "/Users/ahmadduais/Desktop/ASG/Totika/Evidence/C-Training/Staff COA Register - PSPLA Verified 10 Nov 2026.xlsx",
+   "/Users/ahmadduais/Desktop/ASG/Totika/Evidence/C-Training/Onboarding pack.xlsx",
+   "/Users/ahmadduais/Desktop/ASG/Totika/Evidence/C-Training/ASG Bars & Events Security - Guard Field Manual (July 2026).pdf",
+   "/Users/ahmadduais/Desktop/ASG/Totika/Evidence/C-Training/Woolworths_Training_-_Melvin_Yamben.pdf",
+   "/Users/ahmadduais/Desktop/ASG/Totika/Evidence/C-Training/Deejay Oti.pdf"
+  ],
+  "note": "Per Scheme Rules, worker names/CoA numbers on training records are REQUIRED to inform the assessment \u2014 no name redaction. Fixes first: lodge Jordan Martin COA renewal (expires 8 Dec, inside window); strip Notes-column internal commentary from COA register; correct Onboarding pack expired-but-Approved rows + populate First Aid + check for DOBs/IRD; redact WW staff names on the Melvin Yamben cert. CoA Return xlsx withdrawn (duplicative, heaviest PII). ASSESSOR DOWNGRADE: scores 2 as staged \u2014 resolve Hasi Nabawi EXPIRED COA row (27-Nov-2025) or annotate director-non-operational; reconcile register vs Onboarding/Connecteam names (Zuill, Clansey, Nehana, Yamben, Maka absent); renew Simmerjit Singh Brar (exp 20/11/26) + Jordan Martin (8/12/26); BUILD role-based training matrix incl. first-aid currency \u2014 licensing alone is anchor-2."
+ },
+ {
+  "mb": "MB16",
+  "topic": "Induction + 3 recent recorded inductions",
+  "status": "PENDING-RECORD",
+  "files": [
+   "/Users/ahmadduais/Desktop/ASG/Totika/Evidence/C-Training/ASG Bars & Events Security - Guard Field Manual (July 2026).pdf",
+   "/Users/ahmadduais/Desktop/ASG/Totika/Evidence/C-Training/training.xlsx"
+  ],
+  "note": "3 inductee sign-offs at TBX-001/002 (19/26 Nov) MUST be entered on the training register \u2014 v3.4 anchor 2 is literally 'not recorded on the training register'. training.xlsx renamed to CRL_Station_Induction_Attendance_Feb2026.xlsx as supporting (client-site inductions only). ENTITY: SLS RTC-sourced \u2014 covered by Simon entity-scope ruling; upload copies state the ASG group basis."
+ },
+ {
+  "mb": "MB18",
+  "topic": "Hazardous work",
+  "status": "NA-JUSTIFIED",
+  "files": [],
+  "note": "NA sound (Simply Security precedent; guarding absent from v3.4 risk lists) but write the justification to pre-empt the 'work around mobile plant' probe (client site inductions cover it). Diarise: flips LIVE if the Primary Connect DC contract commences \u2014 one-month reassessment window."
+ },
+ {
+  "mb": "MB19 + MB20",
+  "topic": "Incident reporting procedure + 2 recent reports",
+  "status": "READY-AFTER-FIX",
+  "files": [
+   "/Users/ahmadduais/Desktop/ASG/Totika/Evidence/D-Incidents/ASG_CRL_First_Looks_Incident_Report_Aug2026.pdf",
+   "/Users/ahmadduais/Desktop/ASG/Totika/Evidence/D-Incidents/HOTC-IncidentReport-CottonOn-06Sep2026.docx"
+  ],
+  "note": "Upload _REDACTED PDF versions only (Richard Green; officer 'Dan'; docx exported to PDF to clean fake-2013 metadata). Strong exemplars once redacted \u2014 CRL report has explicit s23-25 HSWA determinations."
+ },
+ {
+  "mb": "MB21 + MB23",
+  "topic": "Two investigations with root cause + corrective actions to completion",
+  "status": "READY-AFTER-FIX",
+  "files": [
+   "/Users/ahmadduais/Desktop/ASG/Totika/Evidence/D-Incidents/ASG_InvestigationSummary_HOTC.pdf",
+   "/Users/ahmadduais/Desktop/ASG/Totika/Evidence/D-Incidents/HOTC_Incident_Conduct_Review_Cotton_On_06_September_2026.pdf"
+  ],
+  "note": "Lead with Cotton On (structurally strongest) and CLOSE its 4 open corrective actions genuinely (TBX-003 delivery record + coaching record) \u2014 all were in open states; Sapphire summary = example #2 with one honest sentence that root-cause discipline was formalised in the Nov 2026 reissue (dated as such). No retrofitted addendum optics."
+ },
+ {
+  "mb": "MB22",
+  "topic": "Notifiable events",
+  "status": "READY-AFTER-FIX",
+  "files": [
+   "/Users/ahmadduais/Desktop/ASG/Totika/Evidence/A-Leadership-Policy/ASG_Health_and_Safety_Policy_SMS_Nov2026.pdf"
+  ],
+  "note": "Signed SMS section + stage the 'Dangerous occurrences notifiable events' toolbox doc (cited HAVE but not staged) + new nil notifiable-event register (created 19 Nov, nil entries \u2014 10-min honest build)."
+ },
+ {
+  "mb": "MB24",
+  "topic": "Violence/assault response",
+  "status": "READY-AFTER-FIX",
+  "files": [
+   "/Users/ahmadduais/Desktop/ASG/Totika/Evidence/A-Leadership-Policy/ASG_Health_and_Safety_Policy_SMS_Nov2026.pdf",
+   "/Users/ahmadduais/Desktop/ASG/Totika/Evidence/C-Training/ASG Bars & Events Security - Guard Field Manual (July 2026).pdf"
+  ],
+  "note": "Signed SMS + Guard Field Manual assault-response modules; note bars/events scope honestly, TBX-003 (Dec) extends to HOTC-wide."
+ },
+ {
+  "mb": "MB26",
+  "topic": "Two worker open-communication examples",
+  "status": "READY-AFTER-FIX",
+  "files": [
+   "/Users/ahmadduais/Desktop/ASG/Totika/Evidence/F-Engagement-Toolbox/Weekly Report Week Ending 13th of September 2026.eml"
+  ],
+  "note": "Sinclair thread (verified genuine, 14 Sep 26) = example 1, as redacted PDF with caption tying it to the incident-grading H&S dialogue \u2014 but it is CLIENT engagement; pair with a WORKER-raised example from the TBX-001/002 'issues raised' sections before upload."
+ },
+ {
+  "mb": "MB27 + MB28 + MB30-31",
+  "topic": "Worker participation / H&S meetings / controls communicated",
+  "status": "PENDING-RECORD",
+  "files": [
+   "/Users/ahmadduais/Desktop/ASG/Operations/Toolbox Meetings/ASG_Toolbox_Programme_FY27_v1.0.docx",
+   "/Users/ahmadduais/Desktop/ASG/Operations/Toolbox Meetings/ASG_Toolbox_Meeting_Record_TEMPLATE_v1.0.docx",
+   "/Users/ahmadduais/Desktop/ASG/Operations/Toolbox Meetings/ASG_Toolbox_Delivery_Register.xlsx",
+   "/Users/ahmadduais/Desktop/ASG/Totika/Evidence/F-Engagement-Toolbox/ASG_SLS_Team_Meeting_Evidence_Extract_2026.xlsx",
+   "/Users/ahmadduais/Desktop/ASG/Totika/Evidence/F-Engagement-Toolbox/Connecteam_schedule_export_toolbox_task_W48.xlsx"
+  ],
+  "note": "System is HSWA ss58-61 compliant; score rides on signed TBX-001 (19 Nov) and TBX-002 (26 Nov) records. Meeting extract uploaded only as redacted version (initials, disciplinary/ANZAC/Nov-2025 rows resolved); Connecteam export renamed date-explicit and presented as ASSIGNMENT only. Export Connecteam form SUBMISSIONS first \u2014 if any exist they add honest history; if empty, soften the per-shift 'completed form is the delivery record' claim. ENTITY: SLS RTC-sourced \u2014 covered by Simon entity-scope ruling; upload copies state the ASG group basis."
+ },
+ {
+  "mb": "MB29",
+  "topic": "Hazard ID procedure + current risk register",
+  "status": "READY-AFTER-FIX",
+  "files": [
+   "/Users/ahmadduais/Desktop/ASG/Totika/Evidence/G-Hazards-SOPs/Absolute Security Group Ltd Hazard and Risk Register.pdf",
+   "/Users/ahmadduais/Desktop/ASG/Totika/Evidence/G-Hazards-SOPs/RISK and Procedures ASG 2024.pdf"
+  ],
+  "note": "BLOCKER as staged (review dates 22/02/2026 lapsed). Genuine re-review on/after 19 Nov, minuted; violence/lone-work/fatigue moved to lead; entity name + 'Loan working'/'Marina' fixed; reissue as v2. RISK 2024 doc gets a cover page identifying it as the risk-management section. Upload v2 only."
+ },
+ {
+  "mb": "MB32",
+  "topic": "Safe work procedures",
+  "status": "READY-AFTER-FIX",
+  "files": [
+   "/Users/ahmadduais/Desktop/ASG/Totika/Evidence/G-Hazards-SOPs/Safety_Team_Body_Worn_Camera_SOP.docx",
+   "/Users/ahmadduais/Desktop/ASG/Totika/Evidence/G-Hazards-SOPs/Safety_Team_Alcohol_Drug_Enforcement_SOP.docx",
+   "/Users/ahmadduais/Desktop/ASG/Totika/Evidence/G-Hazards-SOPs/Safety_Team_Business_Call_Response_SOP.docx"
+  ],
+  "note": "All three need version/issue/review-date/approver headers and PDF export (also purges battledronesnft metadata). BWC + A&D = primary pair. A&D Enforcement SOP maps to MB32 ONLY \u2014 never present as the MB35 workplace D&A policy."
+ },
+ {
+  "mb": "MB33",
+  "topic": "PPE provided free + records",
+  "status": "PENDING-RECORD",
+  "files": [
+   "/Users/ahmadduais/Desktop/ASG/Totika/Evidence/H-Welfare-LoneWorker/HOTC Daily Report - Monday 1 June 2026.docx"
+  ],
+  "note": "PPE.docx WITHDRAWN (generic, undercuts free-PPE requirement). Build 1-page ASG PPE register + free-of-charge statement + stab-vest/BWC detail; evidence records via the HOTC log equipment-issue blocks (2.7-year history \u2014 uncredited goldmine)."
+ },
+ {
+  "mb": "MB34",
+  "topic": "Health hazard exposures",
+  "status": "NA-JUSTIFIED",
+  "files": [],
+  "note": "v3.4-verified sound; write NA with the MB36 cross-reference (night work/fatigue handled there)."
+ },
+ {
+  "mb": "MB35",
+  "topic": "Workplace drugs & alcohol policy",
+  "status": "READY-AFTER-FIX",
+  "files": [
+   "/Users/ahmadduais/Desktop/ASG/Totika/Evidence/A-Leadership-Policy/ASG_Health_and_Safety_Policy_SMS_Nov2026.pdf"
+  ],
+  "note": "Signed SMS D&A section + stage 'Drugs at work.docx' (cited HAVE but not staged \u2014 stage into G-Hazards-SOPs)."
+ },
+ {
+  "mb": "MB36 + NEW-3",
+  "topic": "Fatigue/stress/wellbeing + injury management/RTW",
+  "status": "PENDING-RECORD",
+  "files": [
+   "/Users/ahmadduais/Desktop/ASG/Totika/Evidence/G-Hazards-SOPs/Fatigue Policy.docx"
+  ],
+  "note": "Fatigue Policy rewritten: HSWA 2015 (currently cites Australian WHS law), insert 12h/10h/60h limits AFTER verifying against actual rostering, version block + signature, PDF. RTW: replace Torrin .eml with ASG_RTW_Worked_Example_REDACTED.pdf + 1-page injury-management procedure. Score-4 path: attach Deputy roster extract showing limit compliance. ASSESSOR DOWNGRADE: Fatigue Policy is a 2023 Australian-WHS-law doc with no limits/signature \u2014 wholesale rewrite + new stress/wellbeing artefact (EAP, post-incident welfare per CRL/Cotton On follow-ups) in the sprint."
+ },
+ {
+  "mb": "MB37-38",
+  "topic": "Workplace inspections",
+  "status": "PENDING-RECORD",
+  "files": [],
+  "note": "Fully missing and cannot be backfilled: Claude builds 1-page guard-site inspection checklist NOW; Gina/supervisor completes inspection #1 (HOTC) by 21 Nov and #2 (venue) by 28 Nov with corrective actions recorded AND closed. Two dated records = 3."
+ },
+ {
+  "mb": "MB39-42",
+  "topic": "Subcontractor management",
+  "status": "NA-JUSTIFIED",
+  "files": [],
+  "note": "100% direct employment, payroll-verifiable. Claude writes the no-subcontracting policy + force-majeure vetting checklist by 28 Nov; Ahmad signs. GATE: if Liberty Security invoices before submission, these flip LIVE (real procedure + 2 prequal examples required) \u2014 answer Open Question 10 first."
+ },
+ {
+  "mb": "MB44-45 + NEW-4",
+  "topic": "Plant, equipment and vehicles",
+  "status": "PENDING-RECORD",
+  "files": [
+   "/Users/ahmadduais/Desktop/ASG/Totika/Evidence/H-Welfare-LoneWorker/HOTC Daily Report - Monday 1 June 2026.docx"
+  ],
+  "note": "Cross-reference the HOTC equipment-issue blocks (vests/BWC/radios/keys) \u2014 already-staged equipment-check evidence. Missing half = vehicles: Claude builds register template, Ahmad supplies rego/WOF/service data by 28 Nov, Gina populates; + driving policy and pre-start sheet."
+ },
+ {
+  "mb": "MB46-49",
+  "topic": "Hazardous substances",
+  "status": "NA-JUSTIFIED",
+  "files": [],
+  "note": "v3.4-verified: 'NA possible if hazardous substances other than general household type/quantities clearly not held' \u2014 matches ASG exactly."
+ },
+ {
+  "mb": "MB50-53",
+  "topic": "Enforcement/prosecution history declarations",
+  "status": "PENDING-RECORD",
+  "files": [],
+  "note": "Unscored but submission-gating: Ahmad confirms nil WorkSafe/court history for ASG Ltd + all directors and verifies Hasibullah's directorship on the Companies Register by 21 Nov. Assessor runs a court search \u2014 never guess."
+ },
+ {
+  "mb": "MB54",
+  "topic": "Third-party recognition",
+  "status": "MISSING",
+  "files": [],
+  "note": "Both HOTC Quarterly Value Reviews WITHDRAWN (self-authored funding advocacy exposing HOTC's $690k/$800k budget \u2014 wrong evidence type + confidentiality breach). Source genuine recognition: HOTC contract renewal correspondence, client thank-you, NZSA membership certificate, LCF pilot extension decision. Unscored-bonus line \u2014 acceptable to leave thin."
+ },
+ {
+  "mb": "Profile-Company",
+  "topic": "Company details / structure",
+  "status": "READY-AFTER-FIX",
+  "files": [
+   "/Users/ahmadduais/Desktop/ASG/Totika/Evidence/Company/ASG Group - Company Structure (NZSA).docx"
+  ],
+  "note": "Resolve both '[to confirm from PSPLA records]' placeholders, delete internal commentary, retitle for general use, export PDF."
+ },
+ {
+  "mb": "Profile-Insurance",
+  "topic": "Insurance certificates",
+  "status": "READY-AFTER-FIX",
+  "files": [
+   "/Users/ahmadduais/Desktop/ASG/Totika/Evidence/Insurance/ASG_Insurance_Certificates_PL10M_SL1M_from_HNZ_submission.pdf"
+  ],
+  "note": "Content clean and current (PL $10M to Jul 27, SL $1M to Aug 27, ASG Ltd). Rename only (drop HNZ reference); add broker schedule / PI decision when it lands 21 Nov."
+ }
+]

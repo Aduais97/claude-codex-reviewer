@@ -14,7 +14,7 @@
   "evidence_needed": "Signed policy with commitment to legal compliance, good practice, worker consultation, continuous improvement",
   "status": "PARTIAL",
   "existing_source": "/Users/ahmadduais/Desktop/ASG/Tenders/HNZ Security Officer Services 0018709/ASG_Health_and_Safety_Policy_SMS_Nov2026.docx \u2014 comprehensive but signature lines BLANK everywhere, while the PC tender claims it is 'signed'",
-  "action": "Both directors (Ahmad Duais, Hasibullah Nabawi) sign and date TODAY; regenerate the PDF; this also closes the consistency risk with the tender claim",
+  "action": "Both directors (Ahmad Duais, Hasibullah Nabawi) sign and date TODAY; regenerate the PDF; this also closes the consistency risk with the tender claim Assessor pre-empt: policy statement sits at p15-17 of a 37pp manual \u2014 publish a standalone signed policy-statement page workers can access (noticeboard/Connecteam).",
   "priority": "P1-blocker"
  },
  {
@@ -194,7 +194,7 @@
   "evidence_needed": "2 investigation reports + closed corrective-action records + comms proof (toolbox)",
   "status": "HAVE",
   "existing_source": "SWEEP 17 Nov: Cotton On conduct review (incident 6 Sep, statement 11 Sep, video review, substantiated finding, corrective actions) + Investigation Summary 19 Mar 26 (minuted disciplinary process, legal review). \u26a0\ufe0f The COMPLETED Reign & Pour investigation report (promised to client 'by 27 Oct') is NOT on disk \u2014 only the 21 Oct DRAFT response letter at Operations/Clients/Reign & Pour/",
-  "action": "Use Cotton On + 19 Mar 26 summary as the two investigations; present as process maturity (complaint \u2192 investigated \u2192 substantiated \u2192 corrective action); redact officer/complainant identifiers. LOCATE or write the completed R&P report (likely email/Google Docs) before citing the R&P pack anywhere.",
+  "action": "AUDIT-CORRECTED STRATEGY: lead with Cotton On review (strongest structure: evidence table, per-allegation findings) and genuinely CLOSE its 4 open corrective actions (TBX-003 delivery + coaching record + post-training sign-off) \u2014 all were open, scoring 2. Sapphire Investigation Summary = example #2, with one honest dated sentence that root-cause discipline was formalised in the Nov 2026 system reissue. Redacted PDFs staged (_REDACTED); originals quarantined.",
   "priority": "P1-blocker"
  },
  {
@@ -221,7 +221,7 @@
   "evidence_needed": "Plan copy or NA justification",
   "status": "PARTIAL",
   "existing_source": "Simply Security answered NA; ASG's HOTC SSSP (MB10 action) will contain emergency/safe-haven content",
-  "action": "Fold emergency response into the HOTC SSSP and cite it; otherwise justified NA (work under client emergency plans)",
+  "action": "COMPLIANCE AUDIT 18 Nov: do NOT answer NA \u2014 HOTC street patrols are not under any client emergency plan, so the v3.4 NA condition fails and a rejected NA damages the credible NA set (MB18/34/46-49). Answer WITH the HOTC SSSP emergency section (safe havens, duress, escalation) once built.",
   "priority": "P3-polish"
  },
  {
@@ -257,7 +257,7 @@
   "evidence_needed": "Register + 2 completed site/activity risk assessments",
   "status": "PARTIAL",
   "existing_source": "SWEEP 17 Nov: a genuinely FILLED company Hazard and Risk Register EXISTS (~/Downloads/Absolute Security Group Ltd Hazard and Risk Register.pdf \u2014 scored, hierarchy of controls, residual scores) + RISK and Procedures ASG 2024.pdf (30pp framework). \u26a0\ufe0f TWO lapsed review dates (22/02/2026 AND 22/08/2024); first page dominated by generic office hazards (template-ish); aggression/violence not the lead hazard",
-  "action": "Re-review and re-date ALL rows; restructure so occupational violence/aggression, lone working and fatigue LEAD the register; then complete 2 current site risk assessments (HOTC + one venue). CRL report provides one worked notifiable-event assessment.",
+  "action": "Re-review and re-date ALL rows; restructure so occupational violence/aggression, lone working and fatigue LEAD the register; then complete 2 current site risk assessments (HOTC + one venue). CRL report provides one worked notifiable-event assessment. AUDIT: v2 must CREATE new guarding-specific hazard rows (violence/aggression from public, fatigue/night work, crowd/event work, trespass confrontation) \u2014 none exist as standalone rows; register is office-generic; scored 1 as staged.",
   "priority": "P1-blocker"
  },
  {
@@ -311,7 +311,7 @@
   "evidence_needed": "Fatigue policy with numeric limits applied in rostering + wellbeing approach",
   "status": "PARTIAL",
   "existing_source": "/Users/ahmadduais/Desktop/ASG/Operations/SOPs/SECONDARY DOCUMENTATION/Fatigue Policy.docx + SMS fatigue/stress sections; tender text asserts 12h max shift / 10h rest / 60h per 7 days with a [VERIFY] flag",
-  "action": "Reconcile the numeric limits with the issued Fatigue Policy (update the policy to state them), show a Deputy roster extract demonstrating compliance, add EAP/wellbeing line \u2014 score-4 opportunity",
+  "action": "AUDIT DOWNGRADE (scored 1-2): Fatigue Policy.docx is a 2023 document citing Australian WHS law \u2014 wholesale rewrite required: HSWA 2015 basis, 12h/10h/60h limits (verify vs rostering first), version block + signature; PLUS new stress/wellbeing artefact (EAP line, post-incident welfare follow-up \u2014 CRL and Cotton On docs evidence the practice). Sprint build 28 Nov-3 Dec.",
   "priority": "P1-blocker"
  },
  {
@@ -329,7 +329,7 @@
   "evidence_needed": "Either NA with justification, or procedure + 2 prequal examples",
   "status": "MISSING",
   "existing_source": "No procedure; defensible position = 100% directly-employed workforce, zero subcontracted shifts in 12 months (payroll-verifiable, stated in PC tender); per-person vetting checklist exists only inside tender answer text",
-  "action": "Write a one-page 'direct employment / no subcontracting' policy with the force-majeure vetting checklist (CoA vs PSPLA register, ID, right-to-work, identical induction) and answer NA; WARNING: if the Fernando+Jason/Liberty B2B restructure proceeds, this flips LIVE and a real procedure + 2 prequal examples become mandatory before renewal",
+  "action": "Write a one-page 'direct employment / no subcontracting' policy with the force-majeure vetting checklist (CoA vs PSPLA register, ID, right-to-work, identical induction) and answer NA; WARNING: if the Fernando+Jason/Liberty B2B restructure proceeds, this flips LIVE and a real procedure + 2 prequal examples become mandatory before renewal AUDIT: resolve Zac Shannon 'Contractor (pay-run exclusion)' row in the COA register BEFORE filing the NA \u2014 confirm engaging entity (SLS RTC \u2192 mark register ASG-scope; ASG \u2192 NA wording must disclose the single contractor arrangement).",
   "priority": "P2-needed"
  },
  {
@@ -372,9 +372,9 @@
   "section": "M. History MB54",
   "requirement": "H&S awards/recognition (optional, positive)",
   "evidence_needed": "Any recognition",
-  "status": "PARTIAL",
-  "existing_source": "NZSA membership; HOTC contract renewals; LCF accountability report",
-  "action": "List NZSA membership + HOTC quarterly value reviews as client recognition",
+  "status": "MISSING",
+  "existing_source": "Value reviews WITHDRAWN (client-confidential funding advocacy)",
+  "action": "Source genuine recognition: HOTC renewal correspondence, client thank-you, NZSA membership certificate, LCF extension decision.",
   "priority": "P3-polish"
  },
  {
@@ -401,7 +401,7 @@
   "evidence_needed": "Verification or removal of each unverified claim before it is repeated to Totika",
   "status": "UNKNOWN",
   "existing_source": "PC draft answers (24 bracketed placeholders) + tender texts commit to: toolbox topics with recorded attendance, per-officer training register 'producible on request' (now partially real \u2014 Onboarding pack.xlsx), weekly recorded supervisor inspections with findings tracked to closure, monthly hazard-register/corrective-action reviews to directors, per-officer onboarding checklists in personnel files. The recurring-cadence records do not yet exist on disk",
-  "action": "RESOLVED PARTS 18 Nov: SafetySeek IS ASG's platform (VINCI-confirmed) but dormant ~18 months since Shannon's departure \u2014 Gina now reactivating it with Simon. PC Q8.1 'administered through SafetySeek' is now true-in-progress; keep wording honest ('administered through SafetySeek, currently being refreshed with our external advisor'). Remaining: Deputy register claim + stand up the committed cadences (inspections, monthly reviews, toolbox attendance) or soften wording.",
+  "action": "RESOLVED PARTS 18 Nov: SafetySeek IS ASG's platform (VINCI-confirmed) but dormant ~18 months since Shannon's departure \u2014 Gina now reactivating it with Simon. PC Q8.1 'administered through SafetySeek' is now true-in-progress; keep wording honest ('administered through SafetySeek, currently being refreshed with our external advisor'). Remaining: Deputy register claim + stand up the committed cadences (inspections, monthly reviews, toolbox attendance) or soften wording. AUDIT: the SMS's OWN internal promises become live once signed \u2014 'frequently held H&S meetings', self-nomination committee, annual review w/ ACC self-assessment, Administrator-as-HSR. Soften these clauses in the reissue before signing OR stand up committee/HSR in the Nov-Dec window. Entity-scope ruling (Simon) now covers ALL SLS-sourced evidence, not just the WW weekly.",
   "priority": "P1-blocker"
  },
  {
