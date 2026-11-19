@@ -26,17 +26,18 @@ BOLD = Font(bold=True)
 CB = "2. Pricing Proposal - Charge Br"   # exact (31-char truncated) sheet name
 PROF = "3. Pricing Proposal - Profile"
 
-# ---- Build-up inputs (COMPETITIVE scenario) ----------------------------------
-# Base wages per Ahmad 19 Nov; lean 14% operating load; 5% margin to beat FIRST and
-# sit at Allied's upper edge while staying above water.
-# (Premium scenario was base 27.50/31.00, operating 17.5%, margin 11% -> $43.33/$48.85.)
+# ---- Build-up inputs (COMPETITIVE - ALIGNED rates) ---------------------------
+# Per Ahmad 19 Nov: narrow the guard/supervisor gap (guard up, supervisor down),
+# revenue-neutral. Base premium for supervisor trimmed to ~$0.75 (shift-lead).
+# Lean 14% operating; 5% margin. Guard ~$37.53 / Supervisor ~$38.61 (gap ~$1.08).
+# (Prior competitive: 25.50/27.25 -> 37.16/39.71. Premium: 27.50/31.00 -> 43.33/48.85.)
 # Standard Guard
-STD = dict(base=25.50, stat=1.53,                       # $ base, $ stat-holiday loading (~6% of base)
+STD = dict(base=25.75, stat=1.55,                       # $ base, $ stat-holiday loading (~6% of base)
            al=0.08, sick=0.035, bereav=0.003, acc=0.009, kiwi=0.035, other_leave=0.002,
            training=0.03, uniform=0.012, opsmgmt=0.045, equip=0.012, admin=0.021, other=0.02,
            margin=0.05)
 # Supervisor Guard
-SUP = dict(base=27.25, stat=1.64,
+SUP = dict(base=26.50, stat=1.59,
            al=0.08, sick=0.035, bereav=0.003, acc=0.009, kiwi=0.035, other_leave=0.002,
            training=0.03, uniform=0.012, opsmgmt=0.045, equip=0.012, admin=0.021, other=0.02,
            margin=0.05)
