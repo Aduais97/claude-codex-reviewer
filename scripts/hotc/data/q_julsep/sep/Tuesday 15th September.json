@@ -1,0 +1,830 @@
+{
+ "date_iso": "2026-09-15",
+ "date": "Tuesday, 15 September 2026",
+ "fname": "HOTC Daily Report - Tuesday 15 September 2026.docx",
+ "ops_day": "Tuesday 15th September",
+ "col": "Tue 15th",
+ "month": "September",
+ "week": "Week 3 14th September - 20th September",
+ "coverage": "Morning (Team 1) · Afternoon/Evening · Night",
+ "sections": [
+  {
+   "title": "Morning Shift — Team 1 (06:30 – 14:30)",
+   "items": [
+    [
+     "n",
+     "Equipment received: 5 x Keys, 2 x Swipe Cards, 2 x Vests, Ops Phone, 2 x Bodycam, 2 x Radio."
+    ],
+    [
+     "e",
+     "06:35",
+     "Debrief with night shift regarding early morning status of the CBD."
+    ],
+    [
+     "e",
+     "06:40",
+     "Debrief completed, suiting up for deployment and patrols."
+    ],
+    [
+     "sub",
+     "Delta Route"
+    ],
+    [
+     "e",
+     "06:43",
+     "Commencing Delta Route."
+    ],
+    [
+     "e",
+     "06:46",
+     "Welfare check on stores along Queen Street towards Britomart Square."
+    ],
+    [
+     "e",
+     "06:49",
+     "Welfare check, all clear:"
+    ],
+    [
+     "b",
+     [
+      "Farmer's",
+      "Peter Alexander",
+      "Lotus Foreign Exchange",
+      "Vans",
+      "Glassons",
+      "Noel Leeming",
+      "W Cosmetics",
+      "Mecca",
+      "Dangerfield",
+      "Lush",
+      "NZ Muscle",
+      "2degrees"
+     ]
+    ],
+    [
+     "e",
+     "06:57",
+     "Welfare check Durham Street East and West alleyway, welfare check on all businesses within both vicinities, all clear."
+    ],
+    [
+     "e",
+     "07:13",
+     "Welfare check, all clear:"
+    ],
+    [
+     "b",
+     [
+      "Merchant",
+      "Novo",
+      "UGG Shoes",
+      "Lovisa",
+      "TechPro",
+      "Fat Salmon Sushi",
+      "Typo",
+      "Skechers",
+      "Platypus",
+      "Pat Menzies",
+      "Chongcha",
+      "Mirrou",
+      "Hour Glass",
+      "Mountain Warehouse",
+      "Hallensteins",
+      "JB Hi-Fi",
+      "One NZ",
+      "New Balance",
+      "Dunkin Donuts",
+      "Merri and Gifts",
+      "Currency Exchange",
+      "City Life",
+      "Pagani",
+      "Kiwiana Souvenirs",
+      "Oscar Wylee",
+      "Mansors",
+      "Spec Savers",
+      "OPSM"
+     ]
+    ],
+    [
+     "e",
+     "07:27",
+     "Welfare check Vulcan Lane and businesses within the vicinity, all clear."
+    ],
+    [
+     "e",
+     "07:35",
+     "Welfare check, all clear:"
+    ],
+    [
+     "b",
+     [
+      "Partridge Jewelry",
+      "Pandora",
+      "Queens Jewelry",
+      "Sail Away Souvenirs",
+      "Global Culture",
+      "Michael Hills",
+      "Macpac",
+      "Kathmandu",
+      "Art Gallery",
+      "House of Haghi",
+      "Taco Bell",
+      "Shortland Street Convenience Store"
+     ]
+    ],
+    [
+     "e",
+     "07:47",
+     "Welfare check BNZ Place, BNZ building entrance Shortland St, Partridge Jewelry, Pocket Park, all clear."
+    ],
+    [
+     "e",
+     "07:54",
+     "Welfare check Cookes, Fable, Cartier, Quest, Western Union Money Exchange, Q Convenience Store, all clear."
+    ],
+    [
+     "e",
+     "08:01",
+     "Welfare check Imperial Lane, building sweep around the area, all clear."
+    ],
+    [
+     "e",
+     "08:12",
+     "Welfare check Queens Arcade, all clear."
+    ],
+    [
+     "e",
+     "08:15",
+     "Arrived at check-in Commercial Bay, full sweep around the area, all clear."
+    ],
+    [
+     "e",
+     "08:22",
+     "Welfare check, all clear:"
+    ],
+    [
+     "b",
+     [
+      "Macdonalds Britomart",
+      "Starbucks",
+      "Hollywood Cafe",
+      "Daily Bread",
+      "Deli & Bakery",
+      "4Square",
+      "Adidas",
+      "Movenpick Hotel",
+      "ICBC",
+      "Daikoku Restaurant",
+      "NZ Gifts",
+      "77 Convenience Store Commerce St"
+     ]
+    ],
+    [
+     "e",
+     "08:35",
+     "Standing by to show presence to morning commuters and the public before moving along to the next checkpoint."
+    ],
+    [
+     "e",
+     "08:56",
+     "Welfare check, all clear:"
+    ],
+    [
+     "b",
+     [
+      "Dilworth Building Entrance Customs Street East",
+      "Massage",
+      "Change Money Exchange",
+      "Custom Mart",
+      "Burger Fuel",
+      "St Pierre's Sushi",
+      "Health NZ",
+      "Tuck Shop",
+      "Kiwibank"
+     ]
+    ],
+    [
+     "e",
+     "09:04",
+     "Arrived at check-in Corner of Fort Street and Fort Lane, all clear."
+    ],
+    [
+     "e",
+     "09:07",
+     "Welfare check, all clear:"
+    ],
+    [
+     "b",
+     [
+      "Evan's Kebab",
+      "Vape Haven",
+      "Right Track Sports Bar",
+      "Murdochs",
+      "Seoul Night",
+      "KFC",
+      "Vapor King",
+      "Jo & Joe"
+     ]
+    ],
+    [
+     "e",
+     "09:15",
+     "Welfare check Wilson Carpark Fort St, sweep around the area, all clear."
+    ],
+    [
+     "e",
+     "09:20",
+     "Welfare check Hoka, UGG Shoes, North Face, Taco Bell, Shortland Street Convenience Store, all clear."
+    ],
+    [
+     "e",
+     "09:27",
+     "Welfare check on stores along lower High Street towards Lorne St, all clear:"
+    ],
+    [
+     "b",
+     [
+      "Barkers",
+      "3 Wisemen",
+      "Corner Bar",
+      "Debrett's Kitchen",
+      "Hotel Debrett",
+      "Cosmic",
+      "Trainers",
+      "Mortimer Hirst Optometrist",
+      "Gorman",
+      "Melba",
+      "High Street Supermarket",
+      "Shut the Front Door",
+      "Books on High",
+      "Little Unity Books",
+      "Aimai",
+      "Vapo",
+      "Optics"
+     ]
+    ],
+    [
+     "e",
+     "09:37",
+     "Welfare check through O'Connell St, all clear:"
+    ],
+    [
+     "b",
+     [
+      "Wild Cocoa Chocolate",
+      "Gilt Brasserie",
+      "Rumors Coffee",
+      "Sumthin Dumpling",
+      "Proper Pizza"
+     ]
+    ],
+    [
+     "e",
+     "09:44",
+     "Welfare check Freyberg Sq and Chancery Square."
+    ],
+    [
+     "e",
+     "09:47",
+     "Management call from Hasi to make our way back to headquarters and collect flyers for the survey."
+    ],
+    [
+     "e",
+     "10:00",
+     "All routes and patrols on hold for the rest of the shift while we sweep from the top of Mayoral Drive down Queen Street handing out survey flyers to all stores in the CBD, while remaining vigilant for response calls and incidents."
+    ],
+    [
+     "ei",
+     "11:20",
+     "Response call from Fun Tech during survey handouts regarding an angry customer. Assistance requested."
+    ],
+    [
+     "er",
+     "11:25",
+     "Arrived at the response call and spoke to both the staff and customer, heard both sides of their stories and requested they settle the disagreement with the owner when he comes into work. Customer claims his phone was never returned after handing it in to be fixed. Both parties agreed and parted ways."
+    ],
+    [
+     "e",
+     "11:37",
+     "Returning to handing out survey flyers."
+    ],
+    [
+     "e",
+     "13:57",
+     "Flyers and survey forms handed out, sitting at 45 forms accepted; some stores did not accept due to language barrier or manager not present. Heading back to headquarters to grab flyers from Hasi."
+    ],
+    [
+     "ei",
+     "14:04",
+     "Response call from Hasi regarding an obnoxious male individual walking in public being aggressive."
+    ],
+    [
+     "er",
+     "14:10",
+     "Tracked him down to One NZ. Tried talking to him to calm him down but he ignored us and kept walking away. Auckland Council present. (video on file)"
+    ],
+    [
+     "e",
+     "14:15",
+     "Busy day, no lunch break or interval break."
+    ],
+    [
+     "e",
+     "14:30",
+     "Changeover to Afternoon shift."
+    ]
+   ]
+  },
+  {
+   "title": "Afternoon/Evening Shift (14:30 – 22:30)",
+   "items": [
+    [
+     "n",
+     "Equipment received: 5 x Keys, 2 x Swipe Cards, 2 x Vests, 1 x Ops Phone."
+    ],
+    [
+     "e",
+     "14:35",
+     "Commencing patrols; routes on hold until response calls received. In the meantime commencing survey handouts to stores as well as welfare check-ins."
+    ],
+    [
+     "e",
+     "14:45",
+     "Continuing survey handouts to stores, no response calls received."
+    ],
+    [
+     "e",
+     "15:00",
+     "Continuing survey handouts to stores, no response calls received."
+    ],
+    [
+     "e",
+     "15:15",
+     "Continuing survey handouts to stores, no response calls received."
+    ],
+    [
+     "e",
+     "15:35",
+     "Continuing survey handouts, no response calls received."
+    ],
+    [
+     "e",
+     "16:13",
+     "Survey handouts still being continued, no response calls received."
+    ],
+    [
+     "e",
+     "16:53",
+     "Survey handouts still being continued, no issues reported and no response calls received."
+    ],
+    [
+     "e",
+     "17:30",
+     "No response calls received, no issues identified and no problematic issues occurred during survey handouts."
+    ],
+    [
+     "e",
+     "18:00",
+     "Commencing floor checks."
+    ],
+    [
+     "ei",
+     "18:09",
+     "Response call from an ASG security guard regarding a suspicious male that walked into his home carpark; asked for assistance in removing him from the premises."
+    ],
+    [
+     "e",
+     "18:15",
+     "Floor checks complete."
+    ],
+    [
+     "er",
+     "18:33",
+     "Arrived at 21 Hobson St Wilson Carpark, engaged with the male the ASG guard was suspicious of and did a welfare check on him; he informed us he was just relaxing and getting away from the outside world. No harm was caused and that was all that was asked of us, no issues to report. (video on file)"
+    ],
+    [
+     "e",
+     "18:45",
+     "Heading back to HQ to charge ops phone due to low percentage."
+    ],
+    [
+     "e",
+     "18:55",
+     "While heading back to HQ did a welfare check: Ace Karaoke, Shakespeare, Good 2 Go Convenience — all clear, nothing to report."
+    ],
+    [
+     "e",
+     "19:00",
+     "Arrived at the corner of Albert St / Victoria St West, welfare check: 77 Convenience, Mr Tacos, The Fiddler, V Phix Mobiles, Skymart, Surf n Snow Backpackers — all clear, none have anything to report."
+    ],
+    [
+     "ei",
+     "19:08",
+     "Response call from Midcity regarding a male sitting outside their store on level 1; asked for assistance in moving him along."
+    ],
+    [
+     "er",
+     "19:12",
+     "Arrived at response call, POI had already departed the premises. Heading back to HQ to charge ops phone."
+    ],
+    [
+     "e",
+     "19:20",
+     "Arrived at HQ charging ops phone."
+    ],
+    [
+     "e",
+     "21:21",
+     "Ops phone at 74%, recommencing survey handouts to businesses while remaining vigilant and aware of any problems / response calls."
+    ],
+    [
+     "ei",
+     "21:38",
+     "Response call from Movenpick Hotel regarding a male sitting outside their emergency exit; asked for assistance in moving the POI along."
+    ],
+    [
+     "er",
+     "21:44",
+     "Arrived at Movenpick Hotel emergency exit, advised the male he had to move away from the emergency exit as requested by Movenpick staff; he complied with our orders, no issues to report. (photo on file)"
+    ],
+    [
+     "e",
+     "21:49",
+     "Recommencing survey handouts."
+    ],
+    [
+     "e",
+     "22:20",
+     "Arrived back at HQ for handover to Night shift."
+    ],
+    [
+     "e",
+     "22:30",
+     "Afternoon shift complete, handover to Night shift. Equipment handover: 5 x Keys, 2 x Swipe Cards, 2 x Vests, 1 x Ops Phone. Auror reports have been processed."
+    ]
+   ]
+  },
+  {
+   "title": "Night Shift (22:30 – 06:30)",
+   "items": [
+    [
+     "n",
+     "Equipment received: 5 x Keys, 2 x Swipe Cards, 2 x Vests, Ops Phone, 2 x Bodycam, 2 x Radio."
+    ],
+    [
+     "ei",
+     "22:46",
+     "Response call from Noel Leeming requesting assistance to move a vagrant along from the front entrance. Making our way now."
+    ],
+    [
+     "er",
+     "22:50",
+     "Arrived at the store, found no vagrant by the entrance, no further issues. Store has been informed, resuming patrols on Queen St."
+    ],
+    [
+     "e",
+     "23:00",
+     "Sweep on Lower Queen Street complete, no issues to report. Vulcan Lane, Shortland St all clear. Continuing patrol to Fort St."
+    ],
+    [
+     "e",
+     "23:10",
+     "Fort St all clear, no issues to report, welfare checks complete. Heading to Gore St."
+    ],
+    [
+     "e",
+     "23:15",
+     "Gore St sweep, all clear, welfare checks complete, no issues to report. Heading to Commercial Bay."
+    ],
+    [
+     "e",
+     "23:18",
+     "Customs St all clear, no issues to report. Crossing into Commercial Bay."
+    ],
+    [
+     "e",
+     "23:25",
+     "Commercial Bay sweep and welfare checks complete, no issues to report. Heading up Albert St."
+    ],
+    [
+     "ei",
+     "23:39",
+     "Heading back to Noel Leeming as the vagrant reported earlier has now come back and is harassing the contractors of the store. Heading there now."
+    ],
+    [
+     "er",
+     "23:45",
+     "Vagrant has been moved along, was not compliant at first but moved along, no further issues. Standing by as the vagrant is still in the area."
+    ],
+    [
+     "e",
+     "23:50",
+     "Standing by Noel Leeming."
+    ],
+    [
+     "e",
+     "23:55",
+     "Resuming patrol heading up Queen St. (video on file)"
+    ],
+    [
+     "e",
+     "00:01",
+     "Standing by for any assistance from the police, no further issues."
+    ],
+    [
+     "e",
+     "00:10",
+     "Resuming patrol, no assistance needed from police, heading up Queen St."
+    ],
+    [
+     "e",
+     "00:21",
+     "Upper Queen St welfare checks partially completed from Noel Leeming to McDonald's Queen Street, all clear, no issues to report. Visual check on Darby all clear. Continuing patrol up Queen St."
+    ],
+    [
+     "e",
+     "00:28",
+     "Upper Queen St sweep complete, no issues to report, welfare checks clear. Continuing patrol to Aotea Sq."
+    ],
+    [
+     "e",
+     "00:34",
+     "Aotea Square all clear, no issues to report. Heading to Victoria St via Elliot St."
+    ],
+    [
+     "e",
+     "00:40",
+     "Elliot St all clear, no issues to report. Heading up to Victoria St."
+    ],
+    [
+     "e",
+     "00:47",
+     "Victoria St all clear, no issues to report, welfare checks complete. Heading to the Cathedral."
+    ],
+    [
+     "e",
+     "00:50",
+     "Federal St all clear, no issues to report."
+    ],
+    [
+     "e",
+     "00:57",
+     "The Cathedral sweep completed, no issues to report. Heading to Ace Karaoke for welfare check."
+    ],
+    [
+     "e",
+     "01:05",
+     "Ace Karaoke welfare check, all clear, no issues to report. Heading to Albert St."
+    ],
+    [
+     "e",
+     "01:11",
+     "Albert St sweep complete, no issues to report, welfare checks complete. Continuing patrols."
+    ],
+    [
+     "e",
+     "01:15",
+     "Customs St all clear, no issues to report. Continuing to High St."
+    ],
+    [
+     "e",
+     "01:20",
+     "Commercial Bay visual check, all clear, no issues to report. Continuing to High St."
+    ],
+    [
+     "e",
+     "01:25",
+     "Fort St alleyway all clear, no issues to report. Continuing patrol to High St."
+    ],
+    [
+     "e",
+     "01:30",
+     "High St partially completed, no issues to report. Heading to Freyberg Sq."
+    ],
+    [
+     "e",
+     "01:34",
+     "Freyberg Sq all clear, no issues to report. Checking up on Chancery."
+    ],
+    [
+     "e",
+     "01:36",
+     "Chancery all clear, no issues to report. Heading back onto High St to complete sweep."
+    ],
+    [
+     "e",
+     "01:42",
+     "High St complete sweep, all clear, no issues to report. Heading to Lorne St."
+    ],
+    [
+     "e",
+     "01:50",
+     "Lorne St partial sweep complete, no issues to report. Continuing sweep on Lorne St."
+    ],
+    [
+     "e",
+     "01:59",
+     "Lorne St sweep complete, no issues to report, welfare checks clear. Heading to Auckland Library."
+    ],
+    [
+     "e",
+     "02:05",
+     "Auckland Library all clear, no issues to report."
+    ],
+    [
+     "e",
+     "02:10",
+     "Heading back to HQ to charge ops phone as the percentage is low."
+    ],
+    [
+     "e",
+     "02:15",
+     "Standing by for response calls while ops phone is charging."
+    ],
+    [
+     "e",
+     "02:30",
+     "Ops phone still charging, 0 response calls to report."
+    ],
+    [
+     "e",
+     "02:50",
+     "Ops phone charged sufficiently, heading out for patrol. Making our way down Queen St."
+    ],
+    [
+     "e",
+     "03:00",
+     "Lower Queen St clear, no issues. Vulcan Lane, Shortland St all clear. Heading to Commercial Bay."
+    ],
+    [
+     "e",
+     "03:10",
+     "Commercial Bay sweep all clear, no issues, welfare check complete. Heading to sweep Tyler and Commerce St."
+    ],
+    [
+     "e",
+     "03:12",
+     "Galway St visual check, all clear, no issues."
+    ],
+    [
+     "e",
+     "03:16",
+     "Tyler St all clear, no issues. Currently sweeping Commerce St."
+    ],
+    [
+     "e",
+     "03:24",
+     "Commerce St all clear, no issues to report."
+    ],
+    [
+     "e",
+     "03:26",
+     "Gore St all clear, no issues to report, welfare checks all clear. Heading to High St."
+    ],
+    [
+     "e",
+     "03:28",
+     "Fort St all clear, no issues to report."
+    ],
+    [
+     "e",
+     "03:30",
+     "Continuing to High St."
+    ],
+    [
+     "e",
+     "03:36",
+     "High St all clear, no issues."
+    ],
+    [
+     "e",
+     "03:38",
+     "Freyberg Sq all clear, no issues to report."
+    ],
+    [
+     "e",
+     "03:43",
+     "High St complete sweep, all clear, no further issues. Heading up Victoria St."
+    ],
+    [
+     "e",
+     "03:46",
+     "Currently still making our way to Victoria St."
+    ],
+    [
+     "e",
+     "03:54",
+     "Queen St all clear, no issues."
+    ],
+    [
+     "e",
+     "03:59",
+     "Victoria St all clear, no issues to report, welfare check completed."
+    ],
+    [
+     "e",
+     "04:01",
+     "Heading to Aotea Square."
+    ],
+    [
+     "e",
+     "04:10",
+     "Aotea Square sweep complete, all clear."
+    ],
+    [
+     "e",
+     "04:16",
+     "Elliott St all clear, no issues to report. Heading back onto Queen St."
+    ],
+    [
+     "e",
+     "04:26",
+     "Upper Queen St all clear, no issues to report. Heading to Auckland Library."
+    ],
+    [
+     "e",
+     "04:33",
+     "Auckland Library all clear, no visual issues to report."
+    ],
+    [
+     "e",
+     "04:39",
+     "Heading back down Queen St."
+    ],
+    [
+     "e",
+     "04:48",
+     "Queen St McDonald's – Vulcan Lane all clear, no issues to report. Heading back to HQ for a 15 min break."
+    ],
+    [
+     "e",
+     "04:58",
+     "Commencing 15 minutes standing by HQ for response calls while on break."
+    ],
+    [
+     "e",
+     "05:13",
+     "Break concluded, no further issues, heading out for patrol."
+    ],
+    [
+     "e",
+     "05:19",
+     "High St all clear."
+    ],
+    [
+     "e",
+     "05:23",
+     "Freyberg Sq all clear."
+    ],
+    [
+     "e",
+     "05:26",
+     "High St complete, no issues. Coming up on Fort St."
+    ],
+    [
+     "e",
+     "05:28",
+     "Fort St all clear, no issues to report. Heading to Gore St."
+    ],
+    [
+     "e",
+     "04:32",
+     "Gore St all clear, welfare check-in complete."
+    ],
+    [
+     "ei",
+     "04:33",
+     "Response call McDonald's Queen St requesting assistance to move a vagrant along. Heading there now."
+    ],
+    [
+     "er",
+     "04:52",
+     "Arrived and removed sleeping vagrants from the venue. All compliant, no further issues, both removed at 04:45. (video on file)"
+    ],
+    [
+     "e",
+     "06:00",
+     "Heading back to HQ for 30 minute break and standby for guard handover."
+    ],
+    [
+     "e",
+     "06:30",
+     "Night shift concluded, handover complete, no further issues."
+    ]
+   ]
+  }
+ ],
+ "metrics": {
+  "calls": 7,
+  "police": 0,
+  "aggressive": 1,
+  "drinking": 0,
+  "assist": 2,
+  "serious": 0,
+  "arrests": 0,
+  "injuries": 0,
+  "vagrants": 4,
+  "theft": 0,
+  "intoxicated": 0,
+  "medical": 0
+ }
+}

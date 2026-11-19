@@ -1,0 +1,165 @@
+{
+  "september_totals": {
+    "days_covered": 30,
+    "total_actions": 910,
+    "proactive_patrols_monitoring": 378,
+    "resident_access_service": 96,
+    "amenity_securing": 115,
+    "genuine_faults_escalated": 24,
+    "routine_contractor_oversight": 92,
+    "incidents_interventions": 34
+  },
+  "headline_values": [
+    "Documented ASG security presence on every one of September's 30 days \u2014 910 logged security actions, an average of over 30 each day.",
+    "ASG covers the building's highest-risk windows: overnight on weeknights and a full 24 hours across every weekend, consistently all month.",
+    "Preventative by design \u2014 378 proactive patrols and CCTV monitoring sweeps plus 115 amenity and access-point actions, together over half of all logged activity.",
+    "Hands-on response to serious resident-safety events: a domestic-violence response, three medical/ambulance assists, and two lift entrapments safely resolved.",
+    "24 building faults caught and escalated \u2014 including a loading-bay gate fault diagnosed and fixed in-house after the specialist contractor could not \u2014 plus 96 direct resident-service actions."
+  ],
+  "sections": [
+    {
+      "title": "Daily Presence & Coverage, All Month",
+      "narrative": "ASG maintained a documented security presence on every one of September's 30 days, logging 910 individual actions \u2014 an average of over 30 each day. ASG provides the building's after-hours security cover: overnight on weeknights, from the evening handover through to the morning, and a full 24 hours across every weekend \u2014 consistently throughout the month, which are the windows when the building is otherwise unstaffed. Every shift is handed over and logged, giving a continuous written record of what happened on site.",
+      "metrics": [
+        {
+          "value": "30 of 30",
+          "label": "Days with security presence"
+        },
+        {
+          "value": "910",
+          "label": "Logged security actions"
+        },
+        {
+          "value": "30+",
+          "label": "Average actions per day"
+        },
+        {
+          "value": "Overnight + weekends",
+          "label": "After-hours coverage pattern"
+        }
+      ]
+    },
+    {
+      "title": "Proactive Patrols & Monitoring",
+      "narrative": "The large majority of ASG's month was preventative rather than reactive. Guards completed 378 proactive patrols and CCTV monitoring sweeps \u2014 internal floors, external perimeter, car park and loading bay \u2014 and carried out 115 amenity and access-point actions such as securing roller doors and opening and checking the pool and common areas. Combined, patrolling and securing accounted for 493 logged actions, over half of everything recorded for the month, which is what keeps incidents low and issues caught early. CCTV also delivered evidentiary value: when a lift-lobby glass panel was vandalised overnight, guards made the area safe and captured footage to identify the person responsible.",
+      "metrics": [
+        {
+          "value": "378",
+          "label": "Proactive patrols & CCTV sweeps"
+        },
+        {
+          "value": "115",
+          "label": "Amenity & access-point actions"
+        },
+        {
+          "value": "493",
+          "label": "Combined preventative actions (over half of all activity)"
+        }
+      ]
+    },
+    {
+      "title": "Resident Service & Access",
+      "narrative": "Residents were served directly 96 times during the month \u2014 lockouts resolved, new and replacement access cards issued, and residents escorted and reassured when distressed. When several units lost water pressure, guards inspected, escalated to the on-site manager, arranged a plumber, and gave affected residents temporary swipe access to alternative rooms with water facilities so they were not left without. On another occasion guards assisted a disoriented resident, helped her return safely to her home, and completed a welfare check.",
+      "metrics": [
+        {
+          "value": "96",
+          "label": "Resident access & service actions"
+        }
+      ]
+    },
+    {
+      "title": "Incident Response & Safety",
+      "narrative": "ASG logged 34 incident-related actions across September and handled the serious ones directly. These included a domestic-violence response in which guards supported an at-risk occupant and briefed and escorted attending Police, plus a precautionary overnight welfare watch on a separate report; three medical/ambulance assists; and two lift entrapments safely resolved \u2014 four people released from one lift and a housekeeper from another, with the lift contractor mobilised to restore service. Guards also managed vandalism, noise and theft reports, and directed non-residents and intoxicated individuals off the premises, keeping disorder off site.",
+      "metrics": [
+        {
+          "value": "34",
+          "label": "Incident-related actions logged"
+        },
+        {
+          "value": "1 (+1 watch)",
+          "label": "Domestic-violence responses"
+        },
+        {
+          "value": "3",
+          "label": "Medical / ambulance assists"
+        },
+        {
+          "value": "2",
+          "label": "Lift entrapments resolved (6+ people)"
+        }
+      ]
+    },
+    {
+      "title": "Protecting the Building Asset",
+      "narrative": "Guards caught and escalated 24 building-fault events during the month \u2014 several of them recurring issues (the escalator, a resident-entrance door and the car-park exit door) that ASG tracked and re-escalated each time they failed. Standout work included diagnosing a loading-bay gate fault as dirty, wet sensors and fixing it in-house after the specialist door contractor could not identify the cause \u2014 avoiding further downtime \u2014 and identifying the likely source of a water leak in the unit above. When a resident entrance would not secure, a guard stayed stationed guarding the open entrance until it was temporarily secured and placed out-of-service signage in the lifts. As the building's single after-hours point of contact, ASG also received and coordinated 92 routine contractor and waste visits, mobilising and directing vendors so the building kept running.",
+      "metrics": [
+        {
+          "value": "24",
+          "label": "Fault events caught & escalated"
+        },
+        {
+          "value": "92",
+          "label": "Routine contractor & waste visits coordinated"
+        },
+        {
+          "value": "In-house",
+          "label": "Loading-bay gate fault resolved (downtime avoided)"
+        }
+      ]
+    }
+  ],
+  "curated_highlights": [
+    {
+      "date": "5 September",
+      "title": "Water leak \u2014 likely source identified",
+      "description": "Investigated a reported leak and traced the likely source to a pipe connection in the unit directly above."
+    },
+    {
+      "date": "5 September",
+      "title": "Medical assist",
+      "description": "Reception called an ambulance for a resident needing medical attention; the guard supported them at reception until help arrived."
+    },
+    {
+      "date": "6 September",
+      "title": "Loading-bay gate fault fixed in-house",
+      "description": "After the specialist door contractor could not identify the cause, the guard diagnosed the fault as dirty, wet sensors, cleaned them, and restored correct operation \u2014 avoiding further downtime."
+    },
+    {
+      "date": "13 September",
+      "title": "Overnight vandalism made safe; offender captured on CCTV",
+      "description": "A lift-lobby glass panel was vandalised overnight; guards cleared and made the area safe, arranged cleaning, and captured CCTV footage to identify the person responsible."
+    },
+    {
+      "date": "17 September",
+      "title": "Unsecured resident entrance guarded until secured",
+      "description": "Finding a resident entrance would not shut, the guard escalated to building management, arranged an on-call technician, remained stationed guarding the open entrance until it was temporarily secured, and placed out-of-service signage in the lifts."
+    },
+    {
+      "date": "19 September",
+      "title": "Water-pressure fault worked and escalated",
+      "description": "With several units reporting loss of water pressure, the guard inspected, tested a vacant unit, escalated to the on-site manager and arranged a plumber."
+    },
+    {
+      "date": "19 September",
+      "title": "Alternative water access arranged for residents",
+      "description": "Gave affected residents temporary swipe access to alternative rooms with water facilities during the fault."
+    },
+    {
+      "date": "20 September",
+      "title": "Disoriented resident assisted safely home",
+      "description": "Assisted a disoriented resident, helped her return safely to her home, and completed a follow-up welfare check."
+    },
+    {
+      "date": "26 September",
+      "title": "Lift entrapment resolved \u2014 four people",
+      "description": "Four people were trapped in a lift; security called the lift contractor and stayed in contact with those inside until the lift was returned to service and they were released."
+    },
+    {
+      "date": "29 September",
+      "title": "Second lift entrapment resolved",
+      "description": "A housekeeper became trapped in another lift; security kept them calm, the lift contractor was mobilised, and they were safely released."
+    }
+  ],
+  "closing": "September shows ASG working as the building's single, documented after-hours security partner \u2014 present every day, preventing problems through constant patrolling, responding first to resident-safety events, and protecting the building's systems and amenities. We look forward to continuing that standard of service and peace of mind with the incoming management team.",
+  "confidentiality": "CONFIDENTIAL \u2014 prepared for building management. Contains aggregated, de-identified operational information; not for onward distribution. Incident-level detail is available to authorised management on request under appropriate confidentiality."
+}

@@ -1,0 +1,335 @@
+{
+  "title": "HOTC — Quarterly Performance Report",
+  "period": "July – September 2026",
+  "exec_summary": [
+    "607 business calls responded to across the Jul–Sep quarter — an average of roughly 6.6 calls every day — with September the single busiest month at 223 calls.",
+    "The Safety Team intervened in 36 serious incidents over the quarter (13 Jul · 8 Aug · 15 Sep), de-escalating and physically separating parties on the ground.",
+    "168 aggressive-behaviour incidents managed and de-escalated (peaking at 65 in September) — yet only 5 injuries recorded across the entire quarter, and zero in both July and September.",
+    "15 arrests supported (including citizen's arrests) — offenders detained and handed to Police — across the three months.",
+    "Police-attended incidents held to 74 for the quarter, down from 151 in the same period of 2024 (−51%) and below the 77 recorded in the same period of 2025 — fewer situations escalating to Police despite a heavier aggression load.",
+    "302 vagrancy-related responses delivered — welfare checks, move-ons and safeguarding of vulnerable and intoxicated people — the largest single incident category of the quarter.",
+    "107 retail-theft incidents attended, with goods recovered and offenders detained for Police; theft volume rose month-on-month (33 → 36 → 38).",
+    "73 assistance requests fulfilled for city businesses and the public, climbing steadily through the quarter (18 → 22 → 33).",
+    "Public-drinking incidents reduced to 80 for the quarter, down from 94 in 2025 and 116 in 2024 — a sustained year-on-year reduction consistent with the Safety Team's visible deterrent presence.",
+    "39 intoxicated persons safeguarded and 13 medical events attended, including welfare and first-response support.",
+    "213 incidents published to the Auror crime-intelligence platform (60 Jul · 79 Aug · 74 Sep) — building prosecution-ready offender intelligence shared with Police and retailers.",
+    "September stood out as the peak-demand month, posting the quarter's highest calls (223), aggression (65), serious incidents (15) and assistance (33) — all absorbed without a single recorded injury."
+  ],
+  "sections": [
+    {
+      "title": "Safety Improvement — Police & Aggression",
+      "paras": [
+        "Police-attended incidents were held to 74 across the quarter (23 Jul, 22 Aug, 29 Sep) — roughly half the 151 recorded in the same period of 2024 (a 51% reduction) and below the 77 logged in the same period of 2025 (the 2025 figure is itself understated, as July 2025 captured only three reporting weeks). The trend is clear: fewer situations are escalating to Police attendance, even as the team manages a heavier aggression load. The Safety Team continues to intervene early, de-escalate and physically separate parties before incidents reach that threshold.",
+        "Aggressive-behaviour incidents rose to 168 for the quarter (53 Jul, 50 Aug, 65 Sep), up from 124 in the same period of 2025, and the team intervened in 36 serious incidents (13 Jul, 8 Aug, 15 Sep), with September the most demanding month. Despite that volume, only five injuries were recorded across the whole quarter — none in July or September — and 15 offenders were detained and handed to Police. The low harm outcome relative to the weight of aggression handled reflects disciplined, hands-on intervention."
+      ]
+    },
+    {
+      "title": "Deterrence & Coverage",
+      "paras": [
+        "Across the quarter the team responded to 607 business calls — an average of about 6.6 a day — maintaining a consistent, visible presence across the city centre through peak and late-economy hours. Call volume has eased from prior years (822 in the same period of 2024, 660 in 2025) while the share of serious and aggressive work the team absorbs has grown, consistent with a more settled day-to-day baseline backed by a stronger response when it is needed.",
+        "Deterrence shows most clearly in public drinking, which fell to 80 incidents for the quarter — down from 94 in 2025 and 116 in 2024, a sustained year-on-year reduction that tracks the team's uniformed, high-visibility presence. That presence continues to suppress low-level antisocial behaviour before it escalates into something requiring Police."
+      ]
+    },
+    {
+      "title": "Vagrancy Response & Community Safety",
+      "paras": [
+        "Vagrancy was the single largest incident category of the quarter at 302 responses (120 Jul, 76 Aug, 106 Sep), spiking in July and again in September. These are handled as welfare-first encounters — checking on rough sleepers, moving people on from business entrances where needed, and safeguarding vulnerable and intoxicated individuals — balancing compassion with public amenity.",
+        "Alongside this, the team fulfilled 73 assistance requests (rising 18 → 22 → 33 across the quarter), safeguarded 39 intoxicated persons and attended 13 medical events, including welfare and first-response support. The steadily rising assistance trend into September reflects the team being increasingly relied on by businesses and the public as a trusted first point of contact."
+      ]
+    },
+    {
+      "title": "Retail Theft & Recovery",
+      "paras": [
+        "The team attended 107 retail-theft incidents across the quarter, with volume climbing each month (33 Jul, 36 Aug, 38 Sep). With a visible presence on the shop floor, the Safety Team deters offending, intervenes in thefts in progress, recovers goods and detains offenders for Police where it is safe to do so.",
+        "The steady month-on-month rise underlines retail crime as a persistent pressure on city-centre businesses, and the team's visible presence and rapid response remain the frontline control — stopping thefts as they occur and returning recovered goods to retailers."
+      ]
+    }
+  ],
+  "yoy": [
+    [
+      "Metric",
+      "2024 avg/mo",
+      "2025 avg/mo",
+      "2026 Jul–Sep avg/mo",
+      "Trend"
+    ],
+    [
+      "Police Calls / month",
+      "51.9",
+      "37.2",
+      "24.7",
+      "Down ~34% vs 2025"
+    ],
+    [
+      "Aggressive Behaviour / month",
+      "51.5",
+      "47.3",
+      "56.0",
+      "Up ~18% vs 2025"
+    ],
+    [
+      "Public Drinking / month",
+      "46.2",
+      "35.9",
+      "26.7",
+      "Down ~26% vs 2025"
+    ],
+    [
+      "Vagrants moved on / month",
+      "n/a",
+      "n/a",
+      "100.7",
+      "New measure — no pre-2026 baseline"
+    ],
+    [
+      "Shoplifting / theft / month",
+      "n/a",
+      "n/a",
+      "35.7",
+      "New measure — no pre-2026 baseline"
+    ]
+  ],
+  "demonstrated_value": [
+    [
+      "Dimension",
+      "Evidence (Jul–Sep 2026)",
+      "Outcome"
+    ],
+    [
+      "Violence & harm reduction",
+      "168 aggressive-behaviour incidents and 36 serious incidents managed on the ground",
+      "Only 5 injuries recorded across the quarter; zero in both July and September"
+    ],
+    [
+      "Police de-escalation",
+      "74 police-attended incidents vs 151 in the same quarter of 2024",
+      "Fewer situations escalating to Police despite a heavier aggression load"
+    ],
+    [
+      "Offender accountability",
+      "15 arrests and citizen's arrests; trespass notices served (e.g. OPSM 05 Jul, Cotton On 17 Sep)",
+      "Offenders detained and handed to Police; repeat offenders trespassed"
+    ],
+    [
+      "Retail protection",
+      "107 theft incidents attended, goods recovered",
+      "Stolen merchandise returned to retailers (Mirrou, Lovisa, Recycle Boutique, Gotcha, Cotton On, Mountain Warehouse)"
+    ],
+    [
+      "Vulnerable-person safeguarding",
+      "302 vagrancy responses, 39 intoxicated persons, 13 medical events",
+      "Welfare-first move-ons and first-response support; collapsed/unresponsive people cared for until paramedics arrived"
+    ],
+    [
+      "Night-economy safety",
+      "De-escalation and separations at Bar 101, Chancery Square and McDonald's",
+      "Brawls broken up and parties separated, frequently without Police attendance"
+    ],
+    [
+      "Public-drinking deterrence",
+      "80 public-drinking incidents, down from 94 (2025) and 116 (2024)",
+      "Sustained year-on-year reduction consistent with the Safety Team's visible presence"
+    ],
+    [
+      "Business & public assistance",
+      "73 assistance requests fulfilled (18 → 22 → 33)",
+      "Team increasingly relied on as a trusted first point of contact"
+    ],
+    [
+      "Visible coverage",
+      "607 business calls (~6.6/day); 332 patrol routes completed",
+      "Consistent Safety Team presence through peak and late-economy hours"
+    ],
+    [
+      "Offender intelligence (Auror)",
+      "213 incidents published to Auror (60 / 79 / 74)",
+      "Prosecution-ready evidence and offender tracking shared with Police"
+    ]
+  ],
+  "highlights": [
+    {
+      "group": "Safeguarding, Violence Intervention & Critical Response",
+      "items": [
+        "04 Jul — McDonald's Britomart: after a woman stopped him stealing a scooter, a child threatened to harm her with a weapon; guards confiscated a switchblade from the child (later identified as aged 10) and handed the matter to Police.",
+        "03 Jul — Kong nightclub, Queen St: attended an unresponsive male suffering seizures, providing care and crowd control until the ambulance arrived.",
+        "16 Jul — 188 Queen St: witnessed a man being assaulted by a vagrant, moved in to apprehend the assailant and reach the victim, then assisted Police with the arrest on arrival.",
+        "15 Aug — McDonald's Britomart: found a person collapsed and unresponsive at 02:43, called an ambulance and stayed with her until paramedics arrived.",
+        "13 Aug — Movenpick Hotel, Queen St: attended a disoriented, intoxicated elderly woman who refused to leave, flagged down Police and stood by until her husband was located and collected her safely.",
+        "11 Aug — 77 Convenience Store, Mid City: responded to a female collapsed outside the store and stayed with her providing care until paramedics arrived.",
+        "26 Aug — McDonald's Britomart: after a youth was robbed at knife-point and sheltered by staff in the store room, guards secured him and called Police, who escorted the frightened youth safely to his mother.",
+        "10 Sep — Imperial Lane, Queen St: moved in on two males about to fight, physically got between them and separated the pair, then briefed an attending Police officer who stayed in case of further trouble.",
+        "17 Sep — Queen St CBD (HOTC request): at HOTC's request, approached and spent time calming a distressed female in public, recognising a mental-health crisis rather than a security threat.",
+        "23 Sep — McDonald's Britomart: follow-up check after a staff member reported a knife had been pulled on her by a group of minors; confirmed the area clear and maintained presence."
+      ]
+    },
+    {
+      "group": "Theft Prevention & Property Recovery",
+      "items": [
+        "09 Jul — Specsavers, 175 Queen St: identified a known repeat offender and an accomplice who took three pairs of glasses (indicative value ~$1,377) and arranged a trespass notice on the store's behalf.",
+        "06 Jul — Mirrou, Queen St: tracked the female offender and recovered the stolen merchandise on Durham Street East, returning it to the store.",
+        "24 Jul — Recycle Boutique, Queen St: located the offender by the Auckland Library and recovered the stolen jacket despite other vagrants attempting to intervene.",
+        "01 Jul — Lovisa, Queen St: spotted the offender heading up Queen St and recovered the stolen items.",
+        "17 Aug — Mountain Warehouse, Queen St: stopped a suspect leaving the store and recovered concealed goods (indicative value $400–500), returning them to the retailer.",
+        "12 Aug — W Cosmetics, Queen St: intercepted the male suspect outside Ippondo on Queen St and retrieved the stolen product.",
+        "21 Aug — Specsavers, Queen St: responded to a glasses theft, tracked the suspect's last-seen direction and recovered the stolen items.",
+        "31 Aug — Mountain Warehouse, Queen St: removed a repeat offender from the store, tracked him down and recovered a stolen jacket.",
+        "17 Sep — Gotcha, High St: intercepted two offenders on Vulcan Lane who had stolen two wallets, recovered both items and returned them to Gotcha staff.",
+        "17 Sep — Cotton On, Queen St: stopped a known repeat offender attempting to leave with roughly $1,000 of goods concealed, recovered the items and issued a trespass notice."
+      ]
+    },
+    {
+      "group": "Police Coordination & Arrests",
+      "items": [
+        "05 Jul — OPSM, Queen St: after a male broke into OPSM and abused staff, located him at the Chemist Warehouse corner on Wyndham St and issued a two-year trespass notice before Police arrested him.",
+        "12 Jul — Ippondo, Queen St: pursued a shoplifter who boarded a bus to escape, removed him at the jurisdiction boundary and held him for Police.",
+        "08 Jul — Mountain Warehouse, Queen St: recovered stolen goods from a female offender who then assaulted a security staffer; Police were called and took her into custody.",
+        "04 Jul — Vape Haven, Fort St: confronted an aggressive vagrant who had spat in a worker's face and was using drugs; he was arrested.",
+        "16 Aug — The Fiddler, Vulcan Lane: after a male made threats involving a gun inside the bar, advised staff to call Police and located him at a nearby convenience store; Police arrested him on sight and a visual ID was logged to Auror.",
+        "31 Aug — Chemist Warehouse, Queen St: pursued a male who had indecently exposed himself in public, tracked him to the AUT campus on Wellesley Street East, where Police arrived and arrested him.",
+        "10 Aug — Smith & Caughey's, Queen St: supported Auckland Council Wardens and Police to serve trespass notices on two individuals, standing by until the notices were issued.",
+        "22 Aug — McDonald's Britomart: responded to an early-morning brawl inside the store; on Police arrival, guards pointed out the individuals involved in the assault to assist them.",
+        "09 Sep — Queen St: intervened to stop a male causing a public disturbance on top of a car, contacted Police and stood by; Police arrived and arrested him.",
+        "29 Sep — Commercial Bay: broke up and separated a fighting group; Police attended, a knife was reported to Police by one party, and the group was arrested."
+      ]
+    },
+    {
+      "group": "Night Economy & De-escalation",
+      "items": [
+        "03 Jul — Chancery Square: broke up a physical altercation among an intoxicated group and cleared the area.",
+        "03 Jul — Kong, Queen St: intervened in a commotion between two groups of males outside the venue and maintained presence until it dispersed.",
+        "15 Jul — Bar 101, Queen St: talked down and moved on an intoxicated man who was refused entry and pushing at the door.",
+        "14 Aug — Bar 101 / Domino's corner, Queen St: intervened directly as three males assaulted another and separated the parties.",
+        "16 Aug — The Fiddler, Queen St: a male abusing patrons while wearing knuckle dusters threatened a firearm — guards had staff call Police immediately.",
+        "25 Sep — Reign N Pour, Quay St: held presence to contain an intoxicated male who turned aggressive toward the public and abused guards.",
+        "29 Aug — Bar 101: after a post-closing brawl left two males badly injured, guards sheltered and welfare-checked them until help arrived.",
+        "11 Sep — Bar 101: stood by a major brawl with emergency services on scene and held back a gathering crowd.",
+        "23 Sep — Quay Street: broke up a late-night fight after punches had been thrown.",
+        "29 Sep — Commercial Bay: broke up a brawl involving a male and several females; Police arrested the group (one found with a knife) by 02:17."
+      ]
+    },
+    {
+      "group": "Community Safety & Events",
+      "items": [
+        "03 Jul — Britomart (by McDonald's): stopped a group of teens harassing an elderly man and stood by for his safety until they left.",
+        "07 Jul — Queen St: helped a lost tourist, escorting him and giving directions to the Ferry Terminal.",
+        "08 Jul — Starbucks, Queen St: walked a staff member who felt unsafe out to her car.",
+        "10 Jul — Aotea Square: provided security presence for the large crowds at Stan Walker's Matariki performance.",
+        "18 Jul — Quay St / Britomart: stayed with a group of distressed women who reported being followed, then escorted them safely to their Uber.",
+        "08 Aug — Aotea Square: provided presence and welfare checks alongside Police during a public protest.",
+        "13 Aug — Movenpick Hotel, Customs St: assisted a disoriented elderly woman (possible dementia), flagged down Police and arranged for her husband to collect her safely.",
+        "18 Aug — Glassons, Queen St: escorted staff safely to their vehicles after they felt unsafe with a trespassed male lingering nearby.",
+        "28 Aug — McDonald's, Queen St: located a missing child crying for their parents and reunited them with family.",
+        "30 Sep — Avachi, Queen St: de-escalated an intoxicated elderly man harassing the public, directing him to food and water, which resolved the situation."
+      ]
+    }
+  ],
+  "monthly": [
+    [
+      "Metric",
+      "Jul",
+      "Aug",
+      "Sep",
+      "Quarter"
+    ],
+    [
+      "Business Calls",
+      "191",
+      "193",
+      "223",
+      "607"
+    ],
+    [
+      "Police Interactions",
+      "23",
+      "22",
+      "29",
+      "74"
+    ],
+    [
+      "Aggressive Behaviour",
+      "53",
+      "50",
+      "65",
+      "168"
+    ],
+    [
+      "Public Drinking",
+      "25",
+      "23",
+      "32",
+      "80"
+    ],
+    [
+      "Vagrants Moved On",
+      "120",
+      "76",
+      "106",
+      "302"
+    ],
+    [
+      "Shoplifting / Theft",
+      "33",
+      "36",
+      "38",
+      "107"
+    ],
+    [
+      "Serious Incidents",
+      "13",
+      "8",
+      "15",
+      "36"
+    ],
+    [
+      "Intoxicated Persons",
+      "13",
+      "10",
+      "16",
+      "39"
+    ],
+    [
+      "Welfare / Assistance",
+      "18",
+      "22",
+      "33",
+      "73"
+    ],
+    [
+      "Arrests / Citizen's Arrests",
+      "7",
+      "3",
+      "5",
+      "15"
+    ],
+    [
+      "Auror events published",
+      "60",
+      "79",
+      "74",
+      "213"
+    ],
+    [
+      "Total Activity (ex-calls)",
+      "305",
+      "250",
+      "339",
+      "894"
+    ],
+    [
+      "Patrol routes",
+      "109",
+      "146",
+      "77",
+      "332"
+    ]
+  ],
+  "cumulative": [],
+  "caveats": [
+    "Figures are drawn from the Safety Team's daily patrol reports for July–September 2026 and have been independently data-verified.",
+    "The detailed incident categories — vagrancy, theft, serious incidents, arrests, intoxication and medical events — have been recorded since March 2026; year-on-year comparisons for these measures before that date are shown as 'n/a' rather than estimated.",
+    "Theft values quoted in the highlights are indicative figures provided by store staff at the time and have not been independently verified.",
+    "'Total Activity' is a combined count of all recorded actions other than business calls; as a single incident can involve more than one category, it is a measure of overall activity rather than a count of distinct incidents.",
+    "'Patrol routes' counts the patrol routes commenced as recorded in the daily reports.",
+    "Police figures are compared both against the same quarter in prior years (in the summary) and against the prior-year monthly average (in the year-on-year table); both show a clear downward trend."
+  ]
+}

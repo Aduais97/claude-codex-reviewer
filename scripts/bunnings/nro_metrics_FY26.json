@@ -1,0 +1,311 @@
+{
+ "tag": "FY26",
+ "kicker": "FY26 \u00b7 FULL-YEAR REVIEW",
+ "period_label": "1 July 2025 \u2013 30 June 2026",
+ "phrase": "FY26 (1 Jul 2025 \u2013 30 Jun 2026)",
+ "foot": "FY26",
+ "date_lo": "2025-07-02",
+ "date_hi": "2026-06-30",
+ "incidents": 1315,
+ "sites": 26,
+ "regions": 7,
+ "recovered": 254543.95,
+ "stolen": 15301.59,
+ "identified": 269845.54,
+ "recovery_pct": 94.3,
+ "auror_pct": 100.0,
+ "severity": {
+  "1": 1083,
+  "2": 142,
+  "3": 59,
+  "4": 27,
+  "5": 4
+ },
+ "sev3plus": 90,
+ "sev45": 31,
+ "risk_window_pct": 69.2,
+ "peak_day": [
+  "Monday",
+  260
+ ],
+ "hottest_cell": {
+  "day": "Monday",
+  "hour": 16,
+  "count": 39
+ },
+ "heat": {
+  "2_10": 24,
+  "2_16": 26,
+  "3_10": 20,
+  "3_12": 24,
+  "3_14": 26,
+  "3_16": 22,
+  "4_10": 13,
+  "5_14": 11,
+  "5_15": 21,
+  "5_16": 15,
+  "6_17": 14,
+  "0_10": 20,
+  "0_15": 36,
+  "0_17": 28,
+  "1_13": 22,
+  "1_16": 25,
+  "2_15": 17,
+  "3_9": 10,
+  "3_15": 37,
+  "3_18": 19,
+  "4_12": 29,
+  "4_14": 23,
+  "4_15": 28,
+  "5_12": 20,
+  "5_13": 13,
+  "6_12": 12,
+  "6_15": 15,
+  "0_16": 39,
+  "1_9": 11,
+  "1_15": 25,
+  "2_12": 23,
+  "2_14": 12,
+  "2_19": 4,
+  "4_11": 12,
+  "4_13": 18,
+  "4_16": 17,
+  "6_16": 13,
+  "6_18": 8,
+  "0_14": 22,
+  "1_17": 26,
+  "1_12": 22,
+  "2_17": 20,
+  "3_11": 12,
+  "3_13": 25,
+  "3_17": 26,
+  "4_18": 19,
+  "5_17": 17,
+  "6_14": 19,
+  "0_11": 23,
+  "0_13": 28,
+  "0_18": 19,
+  "2_13": 13,
+  "0_9": 11,
+  "1_14": 20,
+  "2_18": 9,
+  "3_8": 2,
+  "4_17": 28,
+  "5_9": 8,
+  "5_11": 9,
+  "5_18": 11,
+  "6_11": 16,
+  "0_19": 5,
+  "1_10": 24,
+  "1_18": 8,
+  "1_19": 3,
+  "2_11": 19,
+  "0_12": 27,
+  "6_13": 6,
+  "1_11": 16,
+  "3_19": 3,
+  "5_10": 8,
+  "2_9": 15,
+  "4_9": 8,
+  "0_23": 1,
+  "1_8": 1,
+  "3_20": 2,
+  "6_10": 3,
+  "6_9": 3,
+  "4_0": 1,
+  "2_23": 1,
+  "5_19": 1,
+  "6_19": 1,
+  "0_8": 1,
+  "1_21": 1
+ },
+ "top6": [
+  {
+   "store": "Bunnings Mt Roskill",
+   "recovered": 50038.25,
+   "share": 19.7,
+   "incidents": 193,
+   "sev3": 11
+  },
+  {
+   "store": "Bunnings Mt Wellington",
+   "recovered": 47695.86,
+   "share": 18.7,
+   "incidents": 215,
+   "sev3": 18
+  },
+  {
+   "store": "Bunnings Manukau",
+   "recovered": 37779.5,
+   "share": 14.8,
+   "incidents": 187,
+   "sev3": 12
+  },
+  {
+   "store": "Bunnings Botany",
+   "recovered": 24807.82,
+   "share": 9.7,
+   "incidents": 116,
+   "sev3": 14
+  },
+  {
+   "store": "Bunnings Takanini",
+   "recovered": 24024.71,
+   "share": 9.4,
+   "incidents": 108,
+   "sev3": 3
+  },
+  {
+   "store": "Bunnings Riccarton",
+   "recovered": 21792.82,
+   "share": 8.6,
+   "incidents": 114,
+   "sev3": 9
+  }
+ ],
+ "top6_share": 81.0,
+ "regional": [
+  {
+   "region": "Auckland - T\u0101maki Makaurau",
+   "recovered": 203417.43,
+   "incidents": 913
+  },
+  {
+   "region": "Canterbury - Waitaha",
+   "recovered": 38138.81,
+   "incidents": 205
+  },
+  {
+   "region": "Waikato",
+   "recovered": 7638.71,
+   "incidents": 66
+  },
+  {
+   "region": "Wellington - Te Whanganui-a-Tara",
+   "recovered": 4201.2,
+   "incidents": 123
+  },
+  {
+   "region": "Northland - Te Tai Tokerau",
+   "recovered": 985.25,
+   "incidents": 6
+  },
+  {
+   "region": "Otago - \u014ct\u0101kou",
+   "recovered": 110.6,
+   "incidents": 1
+  },
+  {
+   "region": "Nelson - Whakat\u016b",
+   "recovered": 51.95,
+   "incidents": 1
+  }
+ ],
+ "signoff": {
+  "Guard": 100.0,
+  "Duty Manager": 12.7,
+  "Checkout Operator": 4.0,
+  "Supervisor": 3.1,
+  "Store Manager": 1.9
+ },
+ "serious_hotspots": [
+  {
+   "store": "Bunnings Mt Wellington",
+   "sev3": 18
+  },
+  {
+   "store": "Bunnings Botany",
+   "sev3": 14
+  },
+  {
+   "store": "Bunnings Manukau",
+   "sev3": 12
+  },
+  {
+   "store": "Bunnings Mt Roskill",
+   "sev3": 11
+  },
+  {
+   "store": "Bunnings Shirley",
+   "sev3": 9
+  }
+ ],
+ "trend": [
+  {
+   "key": "2025-07",
+   "label": "Jul 25",
+   "incidents": 97,
+   "recovered": 17431.08
+  },
+  {
+   "key": "2025-08",
+   "label": "Aug 25",
+   "incidents": 90,
+   "recovered": 24916.09
+  },
+  {
+   "key": "2025-09",
+   "label": "Sep 25",
+   "incidents": 117,
+   "recovered": 23686.75
+  },
+  {
+   "key": "2025-10",
+   "label": "Oct 25",
+   "incidents": 124,
+   "recovered": 26516.92
+  },
+  {
+   "key": "2025-11",
+   "label": "Nov 25",
+   "incidents": 125,
+   "recovered": 27802.2
+  },
+  {
+   "key": "2025-12",
+   "label": "Dec 25",
+   "incidents": 120,
+   "recovered": 26476.69
+  },
+  {
+   "key": "2026-01",
+   "label": "Jan 26",
+   "incidents": 109,
+   "recovered": 26006.99
+  },
+  {
+   "key": "2026-02",
+   "label": "Feb 26",
+   "incidents": 97,
+   "recovered": 12669.39
+  },
+  {
+   "key": "2026-03",
+   "label": "Mar 26",
+   "incidents": 117,
+   "recovered": 21305.4
+  },
+  {
+   "key": "2026-04",
+   "label": "Apr 26",
+   "incidents": 127,
+   "recovered": 21461.17
+  },
+  {
+   "key": "2026-05",
+   "label": "May 26",
+   "incidents": 95,
+   "recovered": 12872.3
+  },
+  {
+   "key": "2026-06",
+   "label": "Jun 26",
+   "incidents": 97,
+   "recovered": 13398.97
+  }
+ ],
+ "trend_unit": "month",
+ "hours_window": 14282.8,
+ "inc_per_100h": 9.21,
+ "hours_per_inc": 10.9
+}

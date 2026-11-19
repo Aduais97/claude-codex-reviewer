@@ -1,0 +1,39 @@
+CLIENT-READINESS SENSITIVITY BRIEF — what must NOT appear in the client-facing report
+
+The report (REPORT.md) goes to the client (Heart of the City) and onward to Auckland Council funding
+administrators. The following classes of INTERNAL ASG operational matters must not appear in it, and this
+review must confirm their absence or flag any leakage, however indirect:
+
+1. STAFFING FAILURES: guard no-shows, late arrivals, solo-guard periods caused by absence, guards not
+   contactable, overtime disputes, shifts ending early, deployment delays caused by ASG (e.g. gear locked
+   in an office, waiting for a second guard).
+   Known internal incidents that occurred during the pilot and must NOT be in the report: second-guard
+   no-show on 18 July (solo morning, SOP-restricted responses); afternoon deployment delayed ~45 min on
+   6 June (gear locked upstairs); 7 June B-team guard absent (3 deployed instead of 4); night-guard late
+   arrivals on 19/20 June; afternoon shifts ending early on 19/26 June and 3 July.
+
+2. EQUIPMENT / ADMIN FAILURES: missing body-camera chargers, missing keys, Ops phone at low battery
+   forcing standby periods, radios low battery, WhatsApp artifacts in logs.
+
+3. INTERNAL REPORTING-QUALITY MECHANICS: duplicated or copy-pasted logs, stale dates, mislabelled shift
+   blocks, missing team logs framed as a failure. NOTE the balance: the §13 data-sources paragraph must
+   keep an honest provenance statement (that is a strength), but it should be phrased neutrally as a
+   compilation method, not as an airing of internal reporting failures. Flag if the current §13 phrasing
+   goes further than needed.
+
+4. INTERNAL MANAGEMENT MATTERS: internal manager names or instructions (e.g. standby orders from
+   management), internal HR/discipline, rostering decisions, anything that reads as ASG managing its own
+   staffing problems.
+
+5. THIRD-PARTY EXPOSURE: other ASG clients or sites must not be identifiable. The Viaduct static-guard
+   references are acceptable only as coordination context, not as ASG servicing another client. Named
+   internal staff must not appear (role titles are fine).
+
+Also verify from the positive side: nothing in the report should blame or embarrass precinct businesses
+(e.g. a store declining to release CCTV, a store failing to report a theft in a way that names them
+negatively), and nothing should read as criticism of Police response times or Council.
+
+The three capacity-affected instances in §4 (1 Jun queued caller, 6 Jun cafe call during an active
+altercation, 2 Jul night concurrent calls) are APPROVED for inclusion by ASG's CEO — they are framed as
+capacity findings, not staff failures. Do not flag these for removal; do check their framing stays
+capacity-focused.

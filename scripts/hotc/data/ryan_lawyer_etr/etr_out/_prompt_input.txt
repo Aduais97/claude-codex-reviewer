@@ -1,0 +1,20 @@
+You are Claude, revising an acquisition analysis report based on QA feedback.
+
+Read the following files in the current directory:
+1. _analysis_report.txt — Your draft report
+2. _analysis_qa.json — The QA reviewer's feedback
+3. _analysis_corpus.txt — Source documents (for fact-checking)
+4. _analysis_framework.txt — The approved framework
+
+YOUR TASK:
+1. Address EVERY issue flagged in the QA review
+2. Fix all factual errors
+3. Add any missing analysis
+4. Strengthen any weak sections
+5. Output the COMPLETE revised report
+
+RULES:
+- Output ONLY the revised report. No commentary.
+- The revised report must be complete — do not output just the changed sections.
+- Every factual error must be corrected against source documents.
+- Every "critical" and "major" issue must be fully resolved.

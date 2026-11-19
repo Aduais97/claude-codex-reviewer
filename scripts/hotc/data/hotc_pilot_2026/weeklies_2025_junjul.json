@@ -1,0 +1,62 @@
+[
+ {
+  "path": "June/Week 3 16th June - 22nd June/Weekly Data Report/Weekly Data Report.xlsx",
+  "metrics": {
+   "Calls Made From Businesses": 43.0,
+   "Police Calls": 5.0,
+   "Aggressive Behaviour": 7.0,
+   "Public Drinking/Cannabis": 6.0,
+   "Assistance Provided": 6.0
+  }
+ },
+ {
+  "path": "June/Week 1 1st June - 8th June/Weekly Data Report/Weekly Data Report.xlsx",
+  "metrics": {
+   "Calls Made From Businesses": 44.0,
+   "Police Calls": 8.0,
+   "Aggressive Behaviour": 13.0,
+   "Public Drinking/Cannabis": 10.0,
+   "Assistance Provided": 8.0
+  }
+ },
+ {
+  "path": "June/Week 4 23rd June - 29th June/Weekly Data Report.xlsx",
+  "metrics": {
+   "Calls Made From Businesses": 52.0,
+   "Police Calls": 2.0,
+   "Aggressive Behaviour": 8.0,
+   "Public Drinking/Cannabis": 9.0,
+   "Assistance Provided": 10.0
+  }
+ },
+ {
+  "path": "June/Week 2 9th June - 15th June/Weekly Data Report/Weekly Data Report.xlsx",
+  "metrics": {
+   "Calls Made From Businesses": 52.0,
+   "Police Calls": 12.0,
+   "Aggressive Behaviour": 5.0,
+   "Public Drinking/Cannabis": 14.0,
+   "Assistance Provided": 4.0
+  }
+ },
+ {
+  "path": "July/Week 2 7th July - 13th July/Weekly Data Report.xlsx",
+  "metrics": {
+   "Calls Made From Businesses": 48.0,
+   "Police Calls": 11.0,
+   "Aggressive Behaviour": 5.0,
+   "Public Drinking/Cannabis": 9.0,
+   "Assistance Provided": 4.0
+  }
+ },
+ {
+  "path": "July/Week 1 30th June - 6th July/Weekly Data Report.xlsx",
+  "metrics": {
+   "Calls Made From Businesses": 38.0,
+   "Police Calls": 1.0,
+   "Aggressive Behaviour": 14.0,
+   "Public Drinking/Cannabis": 10.0,
+   "Assistance Provided": 6.0
+  }
+ }
+]

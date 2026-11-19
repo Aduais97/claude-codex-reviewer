@@ -1,0 +1,101 @@
+FINAL PILOT STATISTICS (single source of truth)
+{
+ "days": 48,
+ "window": "1 June \u2013 18 July 2026 (pilot commenced 2 June; runs to 24 July)",
+ "reconstructed_days": [
+  "2026-06-01",
+  "2026-06-02",
+  "2026-06-03",
+  "2026-06-07",
+  "2026-06-08",
+  "2026-06-09",
+  "2026-06-10",
+  "2026-06-14",
+  "2026-06-21"
+ ],
+ "floors_used": {
+  "response_calls": 9,
+  "move_ons": 4,
+  "welfare_person_checks": 1,
+  "police_escalations": 1,
+  "thefts": 2,
+  "aggression_incidents": 3,
+  "trespass_events": 1,
+  "auror_mentions": 1,
+  "store_checks_named": 95,
+  "store_sweep_mentions": 17
+ },
+ "totals": {
+  "response_calls": 406,
+  "move_ons": 156,
+  "welfare_person_checks": 35,
+  "police_escalations": 39,
+  "thefts": 79,
+  "aggression_incidents": 142,
+  "trespass_events": 30,
+  "auror_mentions": 48,
+  "store_checks_named": 4354,
+  "store_sweep_mentions": 678,
+  "arrests": 13,
+  "public_drinking": 10,
+  "intoxicated": 7,
+  "medical": 5,
+  "serious": 22,
+  "injuries": 2,
+  "assistance": 48
+ },
+ "weekly_avg": {
+  "response_calls": 59.2,
+  "move_ons": 22.8,
+  "welfare_person_checks": 5.1,
+  "police_escalations": 5.7,
+  "thefts": 11.5,
+  "aggression_incidents": 20.7,
+  "trespass_events": 4.4,
+  "auror_mentions": 7.0,
+  "store_checks_named": 635.0,
+  "store_sweep_mentions": 98.9,
+  "arrests": 1.9,
+  "public_drinking": 1.5,
+  "intoxicated": 1.0,
+  "medical": 0.7,
+  "serious": 3.2,
+  "injuries": 0.3,
+  "assistance": 7.0
+ },
+ "baseline_weekly": {
+  "calls": 40.7,
+  "move_ons": 17.9,
+  "aggression": 10.8,
+  "theft": 8.3,
+  "police": 4.4,
+  "arrests": 1.2,
+  "arrests_total_10wk": 12,
+  "window": "9 Mar \u2013 31 May 2026, 10 clean Mon\u2013Sun weeks",
+  "fri_sat_share_pct": 35
+ },
+ "yoy_2025_weekly": {
+  "calls": 46.2,
+  "police": 6.5,
+  "aggression": 8.7,
+  "window": "Jun\u2013Jul 2025, 6 weeks, older 5-metric format"
+ },
+ "capacity": {
+  "pre_pilot": "211 missed interventions = 29% of calls; 51 busy instances (ASG analysis Jan\u2013Apr 2026)",
+  "pilot_instances": [
+   {
+    "date": "2026-06-01",
+    "what": "Coffee Club caller queued behind another incident (pilot day zero)"
+   },
+   {
+    "date": "2026-06-06",
+    "what": "Cafe call unattended while guards managed an active altercation"
+   },
+   {
+    "date": "2026-07-02",
+    "what": "Night: second concurrent call queued minutes behind the first \u2014 both attended"
+   }
+  ],
+  "statement": "Three capacity-affected responses in 48 days (~1%); none in the two-team daytime window after the first week."
+ }
+}

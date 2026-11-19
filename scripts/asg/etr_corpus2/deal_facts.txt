@@ -1,0 +1,26 @@
+DEAL FACTS — Nikki Wairau Christian share buyout (source: Ahmad Duais, 20 Jul 2026 + NZ Companies Register 21 Jul 2026)
+
+- Vendor: Nikki Wairau Christian (current business partner; was a PURCHASER in the 2023 Pro Host precedent).
+- Purchaser: Ahmad Duais.
+- Subject: ALL of the Vendor's shares in BOTH companies:
+  1. Absolute Security Group Limited — company no. 8517467, NZBN 9429050952960, registered office
+     7/220 Queen Street Auckland Central 1010. 10,000 issued ordinary shares.
+  2. SLS RTC Limited — company no. 9325956, NZBN 9429052674921, registered office Office 2, Level 7,
+     220 Queen Street Auckland Central 1010. 10,000 issued ordinary shares.
+- REGISTER POSITION (30 Jun 2026, both companies identical): Ahmad Duais 4,459 (44.59%); Hasibullah
+  Nabawi 4,016 (40.16%); Lockhart Trustee Services No.222 Limited 1,524 (15.24%); Nikki Wairau
+  Christian 1 share (0.01%). UNRESOLVED: whether the Lockhart trustee holding is the Vendor's
+  beneficial stake — if so the trustee must be joined. Share numbers in the draft are [●] placeholders.
+- Price: NZD $260,000 total. Payments: $100,000 at settlement on 1 August 2026; $80,000 on
+  1 September 2026; $80,000 on 1 October 2026.
+- Purchaser's required protections (Ahmad's words): the Vendor must "not go and work within the
+  security guarding sector", "restraints around customers", "ensuring we put good protections".
+- Both precedents use: 12% p.a. default interest; 14-day default/remedy windows; 2-year client
+  non-solicit; negotiation-then-arbitration (Arbitration Act 1996, single arbitrator, NZLS appointment).
+- Sensitive context the drafter knows: the companies and their directors are subject to an open PSPLA
+  → CIPU regulatory process; the draft's clause 14 (regulatory cooperation; no transfer/release of
+  personal regulatory liability) is deliberate. The agreement must NOT purport to release or conceal
+  personal regulatory liability.
+- The Vendor works in the business (weekly pay ~$1,923) — employment must end at settlement with a
+  proper release (s149 ERA certified record of settlement flagged in clause 9.2 and drafting notes).
+- This will be reviewed by solicitors before signing (Franklin Law drafted the Pro Host precedent).

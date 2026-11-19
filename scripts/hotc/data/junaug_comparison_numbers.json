@@ -1,0 +1,60 @@
+{
+ "monthly": {
+  "2026-06": {
+   "calls": 202,
+   "police": 26,
+   "aggressive": 62,
+   "drinking": 28,
+   "assist": 15,
+   "serious": 10,
+   "arrests": 7,
+   "injuries": 0,
+   "vagrants": 78,
+   "theft": 49,
+   "intoxicated": 17,
+   "medical": 3
+  },
+  "2026-07": {
+   "calls": 191,
+   "police": 23,
+   "aggressive": 53,
+   "drinking": 25,
+   "assist": 18,
+   "serious": 13,
+   "arrests": 7,
+   "injuries": 0,
+   "vagrants": 120,
+   "theft": 33,
+   "intoxicated": 13,
+   "medical": 4
+  },
+  "2026-08": {
+   "calls": 193,
+   "police": 22,
+   "aggressive": 50,
+   "drinking": 23,
+   "assist": 22,
+   "serious": 8,
+   "arrests": 3,
+   "injuries": 5,
+   "vagrants": 76,
+   "theft": 36,
+   "intoxicated": 10,
+   "medical": 3
+  }
+ },
+ "quarter": {
+  "calls": 586,
+  "police": 71,
+  "aggressive": 165,
+  "drinking": 76,
+  "assist": 55,
+  "serious": 31,
+  "arrests": 17,
+  "injuries": 5,
+  "vagrants": 274,
+  "theft": 118,
+  "intoxicated": 40,
+  "medical": 10
+ }
+}

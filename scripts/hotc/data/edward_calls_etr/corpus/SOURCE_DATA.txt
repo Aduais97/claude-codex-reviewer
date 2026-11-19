@@ -1,0 +1,38 @@
+SOURCE DATA — Calls from Businesses, weekly, by fiscal month
+============================================================
+
+
+### FY26 (Jul 2025 – Jun 2026)
+July: total=86  weeks=[48(8d), 38(8d)]
+August: total=197  weeks=[55(8d), 8(5d), 48(8d), 86(8d)]
+September: total=220  weeks=[45(8d), 63(8d), 14(3d), 54(8d), 44(8d)]
+October: total=302  weeks=[88(8d), 59(8d), 48(8d), 52(8d), 55(6d)]
+November: total=225  weeks=[59(8d), 62(8d), 42(8d), 62(8d)]
+December: total=305  weeks=[25(4d), 64(8d), 73(8d), 70(8d), 73(8d)]
+January: total=203  weeks=[57(8d), 49(8d), 46(8d), 7(7d), 44(8d)]
+February: total=167  weeks=[40(7d), 49(7d), 47(7d), 31(7d)]
+March: total=180  weeks=[50(7d), 45(7d), 42(7d), 8(2d), 35(7d)]
+April: total=175  weeks=[53(7d), 24(4d), 35(7d), 36(7d), 27(5d)]
+May: total=180  weeks=[29(7d), 19(3d), 40(7d), 58(7d), 34(7d)]
+June: total=265  weeks=[61(7d), 67(7d), 54(7d), 22(2d), 61(7d)]
+YEAR TOTAL = 2505
+
+### FY25 (Jul 2024 – Jun 2025)
+July: total=335  weeks=[72(7d), 78(7d), 56(7d), 72(7d), 57(7d)]
+August: total=246  weeks=[61(7d), 66(7d), 61(7d), 58(7d)]
+September: total=241  weeks=[74(7d), 56(8d), 52(7d), 59(7d)]
+October: total=241  weeks=[44(7d), 38(7d), 43(7d), 70(7d), 46(7d)]
+November: total=234  weeks=[46(7d), 73(7d), 52(7d), 63(7d)]
+December: total=264  weeks=[45(7d), 60(7d), 68(7d), 68(7d), 23(3d)]
+January: total=303  weeks=[57(7d), 46(6d), 73(7d), 58(7d), 69(7d)]
+February: total=213  weeks=[43(7d), 49(6d), 62(8d), 59(7d)]
+March: total=253  weeks=[59(7d), 41(7d), 87(7d), 66(7d)]
+April: total=271  weeks=[56(7d), 67(7d), 25(3d), 54(7d), 69(7d)]
+May: total=250  weeks=[37(5d), 66(8d), 42(8d), 58(8d), 47(8d)]
+June: total=191  weeks=[43(8d), 44(8d), 52(8d), 52(8d)]
+YEAR TOTAL = 3042
+
+FY26 total=2505  FY25 total=3042
+Like-for-like (Aug–Jun, both fully reported): FY26=2419, FY25=2707, YoY=-10.6%
+Per recorded day: FY26=6.70, FY25=8.09 (-17.2%)
+NOTE: July 2025 captured only 2 weeks (16 days) -> excluded from YoY.

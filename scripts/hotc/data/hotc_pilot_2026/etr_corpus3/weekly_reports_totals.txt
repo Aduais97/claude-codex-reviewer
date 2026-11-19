@@ -1,0 +1,106 @@
+CURRENT HOTC WEEKLY DATA REPORTS (pilot period) — Total column per metric per week
+
+HOTC Weekly Data Report — Week 1 1st July - 5th July
+  Calls Made From Businesses: 46
+  Police Calls: 4
+  Aggressive Behaviour: 14
+  Public Drinking/Cannabis: 0
+  Assistance Provided: 5
+  Serious Incidents: 5
+  Arrests: 3
+  Injuries Reported: 0
+  Vagrants Moved On: 27
+  Shoplifting/Theft: 4
+  Intoxicated Persons: 0
+  Medical Responses: 4
+HOTC Weekly Data Report — Week 2 6th July - 12th July
+  Calls Made From Businesses: 61
+  Police Calls: 8
+  Aggressive Behaviour: 19
+  Public Drinking/Cannabis: 4
+  Assistance Provided: 7
+  Serious Incidents: 3
+  Arrests: 2
+  Injuries Reported: 1
+  Vagrants Moved On: 21
+  Shoplifting/Theft: 12
+  Intoxicated Persons: 1
+  Medical Responses: 0
+HOTC Weekly Data Report — Week 3 13th July - 19th July
+  Calls Made From Businesses: 34
+  Police Calls: 2
+  Aggressive Behaviour: 14
+  Public Drinking/Cannabis: 0
+  Assistance Provided: 6
+  Serious Incidents: 4
+  Arrests: 1
+  Injuries Reported: 1
+  Vagrants Moved On: 12
+  Shoplifting/Theft: 5
+  Intoxicated Persons: 1
+  Medical Responses: 0
+HOTC Weekly Data Report — Week 1 1st June - 7th June
+  Calls Made From Businesses: 61
+  Police Calls: 4
+  Aggressive Behaviour: 23
+  Public Drinking/Cannabis: 3
+  Assistance Provided: 7
+  Serious Incidents: 2
+  Arrests: 0
+  Injuries Reported: 0
+  Vagrants Moved On: 23
+  Shoplifting/Theft: 14
+  Intoxicated Persons: 1
+  Medical Responses: 0
+HOTC Weekly Data Report — Week 2 8th June - 14th June
+  Calls Made From Businesses: 67
+  Police Calls: 8
+  Aggressive Behaviour: 27
+  Public Drinking/Cannabis: 1
+  Assistance Provided: 7
+  Serious Incidents: 4
+  Arrests: 3
+  Injuries Reported: 0
+  Vagrants Moved On: 28
+  Shoplifting/Theft: 11
+  Intoxicated Persons: 1
+  Medical Responses: 1
+HOTC Weekly Data Report — Week 3 15th June - 21st June
+  Calls Made From Businesses: 61
+  Police Calls: 6
+  Aggressive Behaviour: 26
+  Public Drinking/Cannabis: 1
+  Assistance Provided: 7
+  Serious Incidents: 2
+  Arrests: 0
+  Injuries Reported: 0
+  Vagrants Moved On: 21
+  Shoplifting/Theft: 18
+  Intoxicated Persons: 3
+  Medical Responses: 0
+HOTC Weekly Data Report — Week 4 22nd June - 28th June
+  Calls Made From Businesses: 54
+  Police Calls: 7
+  Aggressive Behaviour: 16
+  Public Drinking/Cannabis: 1
+  Assistance Provided: 7
+  Serious Incidents: 2
+  Arrests: 4
+  Injuries Reported: 0
+  Vagrants Moved On: 16
+  Shoplifting/Theft: 10
+  Intoxicated Persons: 0
+  Medical Responses: 0
+HOTC Weekly Data Report — Week 5 29th June - 30th June
+  Calls Made From Businesses: 22
+  Police Calls: 0
+  Aggressive Behaviour: 3
+  Public Drinking/Cannabis: 0
+  Assistance Provided: 2
+  Serious Incidents: 0
+  Arrests: 0
+  Injuries Reported: 0
+  Vagrants Moved On: 8
+  Shoplifting/Theft: 5
+  Intoxicated Persons: 0
+  Medical Responses: 0
