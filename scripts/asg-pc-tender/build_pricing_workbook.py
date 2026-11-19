@@ -44,8 +44,8 @@ SUP = dict(base=26.50, stat=1.59,
 
 
 def fill_charge_breakdown(ws):
-    ws["C3"] = "ASG Limited"
-    ws["H3"] = "ASG Limited"
+    ws["C3"] = "Absolute Security Group Limited"
+    ws["H3"] = "Absolute Security Group Limited"
     # Standard Guard -> C (percent/base) and D7 (stat $)
     pct = "0.0%"
     dol = "#,##0.00"

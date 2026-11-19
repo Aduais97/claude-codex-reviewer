@@ -14,7 +14,7 @@ wb = openpyxl.load_workbook(SRC)
 ws = wb["Sheet1"]
 
 ws["C1"] = None  # Date — Ahmad signs on review
-ws["C2"] = "ASG Limited (Absolute Security Group)"
+ws["C2"] = "Absolute Security Group Limited"
 ws["C3"] = "Ahmad Duais, Chief Executive"
 ws["C4"] = "Level 7, 220 Queen Street, Auckland CBD 1010"
 
