@@ -26,17 +26,20 @@ BOLD = Font(bold=True)
 CB = "2. Pricing Proposal - Charge Br"   # exact (31-char truncated) sheet name
 PROF = "3. Pricing Proposal - Profile"
 
-# ---- Build-up inputs (ASG recommended draft) ---------------------------------
+# ---- Build-up inputs (COMPETITIVE scenario) ----------------------------------
+# Base wages per Ahmad 19 Nov; lean 14% operating load; 5% margin to beat FIRST and
+# sit at Allied's upper edge while staying above water.
+# (Premium scenario was base 27.50/31.00, operating 17.5%, margin 11% -> $43.33/$48.85.)
 # Standard Guard
-STD = dict(base=27.50, stat=1.65,                       # $ base, $ stat-holiday loading (~6% of base)
+STD = dict(base=25.50, stat=1.53,                       # $ base, $ stat-holiday loading (~6% of base)
            al=0.08, sick=0.035, bereav=0.003, acc=0.009, kiwi=0.035, other_leave=0.002,
-           training=0.035, uniform=0.015, opsmgmt=0.06, equip=0.015, admin=0.025, other=0.02,
-           margin=0.11)
+           training=0.03, uniform=0.012, opsmgmt=0.045, equip=0.012, admin=0.021, other=0.02,
+           margin=0.05)
 # Supervisor Guard
-SUP = dict(base=31.00, stat=1.86,
+SUP = dict(base=27.25, stat=1.64,
            al=0.08, sick=0.035, bereav=0.003, acc=0.009, kiwi=0.035, other_leave=0.002,
-           training=0.035, uniform=0.015, opsmgmt=0.06, equip=0.015, admin=0.025, other=0.02,
-           margin=0.11)
+           training=0.03, uniform=0.012, opsmgmt=0.045, equip=0.012, admin=0.021, other=0.02,
+           margin=0.05)
 
 
 def fill_charge_breakdown(ws):
@@ -70,11 +73,12 @@ def fill_charge_breakdown(ws):
         "plus alternative-day accrual, blended across productive hours). Approx 6% of base. Confirm per region "
         "anniversary days.", "ASG")
     ws["C6"].comment = Comment(
-        "Base wage set approx 15% above the expected April 2027 minimum wage: workforce-stability positioning "
-        "that supports the 5-10% turnover answer. Confirm before submission.", "ASG")
+        "Base wage above the April 2026 minimum ($23.95), below living wage ($29.90): competitive positioning "
+        "that still supports the stability/turnover answer. Confirm before submission.", "ASG")
     ws["C27"].comment = Comment(
-        "Margin stated plainly at 11%. Genuine recoverable costs sit in the operating rows above, not hidden "
-        "in margin: the template is benchmarked line-by-line by the buyer.", "ASG")
+        "Margin 5% markup to win on price against FIRST while staying above water. This is a thin, strategic "
+        "number: net retained margin after unmodelled costs is near-breakeven (see cost analysis). "
+        "Operating rows already trimmed to a lean 14%.", "ASG")
 
 
 def compute_rate(p):
